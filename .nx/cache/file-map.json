@@ -1,0 +1,176 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.2.8",
+  "deps": {
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@swc/helpers": "~0.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.11.2",
+    "@emotion/babel-plugin": "11.11.0",
+    "@nrwl/react-native": "^17.2.8",
+    "@nx/devkit": "17.2.8",
+    "@nx/eslint": "17.2.8",
+    "@nx/eslint-plugin": "17.2.8",
+    "@nx/js": "17.2.8",
+    "@nx/playwright": "17.2.8",
+    "@nx/react": "17.2.8",
+    "@nx/vite": "17.2.8",
+    "@playwright/test": "^1.36.0",
+    "@swc-node/register": "~1.6.7",
+    "@swc/cli": "~0.1.62",
+    "@swc/core": "~1.3.85",
+    "@testing-library/react": "14.0.0",
+    "@types/node": "18.14.2",
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "@vitejs/plugin-react": "^4.2.0",
+    "@vitest/coverage-v8": "~0.34.6",
+    "@vitest/ui": "~0.34.6",
+    "eslint": "~8.48.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-playwright": "^0.15.3",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jsdom": "~22.1.0",
+    "nx": "17.2.8",
+    "prettier": "^2.6.2",
+    "typescript": "~5.2.2",
+    "vite": "^5.0.0",
+    "vitest": "~0.34.6"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "pluginsConfig": {
+    "@nx/js": {
+      "analyzeSourceFiles": false
+    }
+  },
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6359271932961517713"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "13417776046909105611"
+      },
+      {
+        "file": "README.md",
+        "hash": "408782202854081202"
+      },
+      {
+        "file": "nx.json",
+        "hash": "6086802341582969563"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3133091713932183491"
+      },
+      {
+        "file": "package.json",
+        "hash": "16749481938861635279"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      }
+    ],
+    "projectFileMap": {
+      "operation-stacked-dashboard": [
+        {
+          "file": "apps/operation-stacked-dashboard/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/index.html",
+          "hash": "3937443157413076049"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/project.json",
+          "hash": "1155676763565188472"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/app/app.spec.tsx",
+          "hash": "16939647370701785286"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/app/app.tsx",
+          "hash": "10369353900011751473"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/app/nx-welcome.tsx",
+          "hash": "13758118578713308242"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/main.tsx",
+          "hash": "763379880219152615"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/tsconfig.json",
+          "hash": "17994410774201614780"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/tsconfig.spec.json",
+          "hash": "9472099605191632308"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/vite.config.ts",
+          "hash": "7524054656136432010"
+        }
+      ],
+      "operation-stacked-dashboard-e2e": [
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/playwright.config.ts",
+          "hash": "12916339062508038219"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/project.json",
+          "hash": "18190925588993572420"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625"
+        }
+      ]
+    }
+  }
+}

@@ -1,12 +1,44 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Dependency directories
+node_modules/
+bower_components/
 
-# compiled output
-dist
-tmp
+# .NET Specific
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.nupkg
+*.snk
+*.vs/
+*.vscode/
+*.rdb
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Build outputs
+/dist
+/tmp
 /out-tsc
+/build
+/ios/build
+/android/build
+/android/gradle
 
-# dependencies
-node_modules
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # IDEs and editors
 /.idea
@@ -17,25 +49,18 @@ node_modules
 .settings/
 *.sublime-workspace
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+# Specific to React Native
+*.log
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.app
+.android/
+.ios/
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
+# Others
 .DS_Store
 Thumbs.db
 
-.nx/cache

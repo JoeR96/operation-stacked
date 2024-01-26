@@ -1,0 +1,68 @@
+{
+  "name": "operation-stacked-dashboard",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/operation-stacked-dashboard/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/operation-stacked-dashboard"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "operation-stacked-dashboard:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "operation-stacked-dashboard:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "operation-stacked-dashboard:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "operation-stacked-dashboard:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "operation-stacked-dashboard:build:development"
+        },
+        "production": {
+          "buildTarget": "operation-stacked-dashboard:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["{options.reportsDirectory}"],
+      "options": {
+        "reportsDirectory": "../../coverage/apps/operation-stacked-dashboard"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": []
+}
