@@ -1,0 +1,26 @@
+import { Meta, StoryObj } from '@storybook/react';
+import LoginPage from './LoginPage';
+import { within } from '@storybook/testing-library';
+import userEvent from '@testing-library/user-event';
+
+const meta: Meta<typeof LoginPage> = {
+  title: 'Pages/LoginPage',
+  component: LoginPage,
+};
+export default meta;
+
+type Story = StoryObj<typeof LoginPage>;
+
+export const Login: Story = {
+  args: {},
+  // If you need to simulate interactions or changes, use the 'play' function
+};
+
+export const Register: Story = {
+  args: {},
+  // Simulate clicking the toggle to show the registration form
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    await userEvent.click(canvas.getByText(/register/i));
+  },
+};

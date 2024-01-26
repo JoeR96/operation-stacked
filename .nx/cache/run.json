@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run operation-stacked-dashboard:storybook",
+    "startTime": "2024-01-26T19:55:18.084Z",
+    "endTime": "2024-01-26T20:30:36.141Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "operation-stacked-dashboard:storybook",
+      "target": "storybook",
+      "projectName": "operation-stacked-dashboard",
+      "hash": "208123107550296032",
+      "startTime": "2024-01-26T19:55:18.090Z",
+      "endTime": "2024-01-26T20:30:36.140Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 1
+    }
+  ]
+}

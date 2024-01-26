@@ -4,7 +4,7 @@
   "deps": {
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
-    "@nrwl/react": "^17.2.8",
+    "@mui/material": "^5.15.6",
     "@nrwl/web": "^17.2.8",
     "@nrwl/workspace": "^17.2.8",
     "@swc/helpers": "~0.5.2",
@@ -12,9 +12,11 @@
     "react-dom": "18.2.0",
     "react-router-dom": "6.11.2",
     "tslib": "^2.3.0",
+    "zustand": "^4.5.0",
     "@babel/core": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
     "@emotion/babel-plugin": "11.11.0",
+    "@nrwl/react": "^17.2.8",
     "@nrwl/react-native": "^17.2.8",
     "@nx/devkit": "17.2.8",
     "@nx/eslint": "17.2.8",
@@ -23,8 +25,17 @@
     "@nx/js": "17.2.8",
     "@nx/playwright": "17.2.8",
     "@nx/react": "17.2.8",
+    "@nx/storybook": "17.2.8",
     "@nx/vite": "17.2.8",
+    "@nx/web": "17.2.8",
     "@playwright/test": "^1.36.0",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/core-server": "^7.5.3",
+    "@storybook/jest": "^0.2.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/test-runner": "^0.13.0",
+    "@storybook/testing-library": "^0.2.2",
     "@swc-node/register": "~1.6.7",
     "@swc/cli": "~0.1.62",
     "@swc/core": "~1.3.85",
@@ -59,8 +70,17 @@
     "vitest": "~0.34.6"
   },
   "pathMappings": {
+    "@operation-stacked/api-hooks": [
+      "libs/api-hooks/src/index.ts"
+    ],
+    "@operation-stacked/shared-images": [
+      "libs/shared-images/src/index.ts"
+    ],
     "@operation-stacked/shared-styles": [
       "libs/shared-styles/src/index.ts"
+    ],
+    "@operation-stacked/ui-components": [
+      "libs/ui-components/src/index.ts"
     ]
   },
   "nxJsonPlugins": [],
@@ -72,59 +92,195 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".gitignore",
-        "hash": "11968612441013361296"
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
       },
       {
-        "file": "tsconfig.base.json",
-        "hash": "1545319468787107583"
-      },
-      {
-        "file": "nx.json",
-        "hash": "14291234797481176902"
+        "file": "package-lock.json",
+        "hash": "397222891708192966"
       },
       {
         "file": "README.md",
         "hash": "408782202854081202"
       },
       {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
       },
       {
-        "file": "package.json",
-        "hash": "9898179997071993192"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
+        "file": ".gitignore",
+        "hash": "11968612441013361296"
       },
       {
         "file": ".prettierignore",
         "hash": "16448050467312557263"
       },
       {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
-      },
-      {
         "file": "jest.preset.js",
         "hash": "9430166341120122740"
       },
       {
-        "file": "package-lock.json",
-        "hash": "10128352523577241701"
+        "file": "nx.json",
+        "hash": "17240219796211550540"
       },
       {
-        "file": ".eslintrc.json",
-        "hash": "17866138117546000433"
+        "file": "tsconfig.base.json",
+        "hash": "175364196493831380"
+      },
+      {
+        "file": "package.json",
+        "hash": "3185950950006960943"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
       }
     ],
     "projectFileMap": {
+      "ui-components": [
+        {
+          "file": "libs/ui-components/.babelrc",
+          "hash": "12229791027711577977"
+        },
+        {
+          "file": "libs/ui-components/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/ui-components/README.md",
+          "hash": "16790500731608821553"
+        },
+        {
+          "file": "libs/ui-components/jest.config.ts",
+          "hash": "2885786124586625802"
+        },
+        {
+          "file": "libs/ui-components/package.json",
+          "hash": "8606508987451564102"
+        },
+        {
+          "file": "libs/ui-components/project.json",
+          "hash": "13667586652887936537"
+        },
+        {
+          "file": "libs/ui-components/src/index.ts",
+          "hash": "6168324434060194460"
+        },
+        {
+          "file": "libs/ui-components/src/lib/Button/Button.tsx",
+          "hash": "1718649781058551701"
+        },
+        {
+          "file": "libs/ui-components/src/lib/Button/index.ts",
+          "hash": "10238307972443149507"
+        },
+        {
+          "file": "libs/ui-components/src/lib/TextField/TextField.tsx",
+          "hash": "14073763018783929865"
+        },
+        {
+          "file": "libs/ui-components/src/lib/TextField/index.ts",
+          "hash": "7250052612309996995"
+        },
+        {
+          "file": "libs/ui-components/src/lib/ui-components.spec.tsx",
+          "hash": "16554039707309445415"
+        },
+        {
+          "file": "libs/ui-components/src/lib/ui-components.tsx",
+          "hash": "10921626305687638144"
+        },
+        {
+          "file": "libs/ui-components/tsconfig.json",
+          "hash": "13563888094802511912"
+        },
+        {
+          "file": "libs/ui-components/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/ui-components/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        },
+        {
+          "file": "libs/ui-components/vite.config.ts",
+          "hash": "9601000619485963806"
+        }
+      ],
+      "shared-images": [
+        {
+          "file": "libs/shared-images/.babelrc",
+          "hash": "12229791027711577977"
+        },
+        {
+          "file": "libs/shared-images/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/shared-images/README.md",
+          "hash": "6115892705717105756"
+        },
+        {
+          "file": "libs/shared-images/jest.config.ts",
+          "hash": "15493852686407530328"
+        },
+        {
+          "file": "libs/shared-images/package.json",
+          "hash": "16885909868040723143"
+        },
+        {
+          "file": "libs/shared-images/project.json",
+          "hash": "9311579490146882163"
+        },
+        {
+          "file": "libs/shared-images/src/index.ts",
+          "hash": "535801250216257406"
+        },
+        {
+          "file": "libs/shared-images/src/lib/shared-images.spec.tsx",
+          "hash": "3674134051541306517"
+        },
+        {
+          "file": "libs/shared-images/src/lib/shared-images.tsx",
+          "hash": "17415286944237161289"
+        },
+        {
+          "file": "libs/shared-images/src/lib/shark.png",
+          "hash": "8242786806882089559"
+        },
+        {
+          "file": "libs/shared-images/tsconfig.json",
+          "hash": "13563888094802511912"
+        },
+        {
+          "file": "libs/shared-images/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/shared-images/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        },
+        {
+          "file": "libs/shared-images/vite.config.ts",
+          "hash": "12138921279350350710"
+        }
+      ],
       "operation-stacked-dashboard": [
         {
           "file": "apps/operation-stacked-dashboard/.eslintrc.json",
           "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/main.ts",
+          "hash": "1706640470558176084"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/preview.ts",
+          "hash": "3244421341483603138"
         },
         {
           "file": "apps/operation-stacked-dashboard/index.html",
@@ -132,7 +288,7 @@
         },
         {
           "file": "apps/operation-stacked-dashboard/project.json",
-          "hash": "1155676763565188472"
+          "hash": "6769526926255161719"
         },
         {
           "file": "apps/operation-stacked-dashboard/public/favicon.ico",
@@ -143,8 +299,16 @@
           "hash": "16939647370701785286"
         },
         {
+          "file": "apps/operation-stacked-dashboard/src/app/app.stories.tsx",
+          "hash": "9751975387923039358"
+        },
+        {
           "file": "apps/operation-stacked-dashboard/src/app/app.tsx",
-          "hash": "10369353900011751473"
+          "hash": "10056603486313751030"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/app/nx-welcome.stories.tsx",
+          "hash": "14897452511144273782"
         },
         {
           "file": "apps/operation-stacked-dashboard/src/app/nx-welcome.tsx",
@@ -155,24 +319,122 @@
           "hash": "3244421341483603138"
         },
         {
+          "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.stories.tsx",
+          "hash": "9897718313835335107"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.tsx",
+          "hash": "10681964257514876450"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.stories.tsx",
+          "hash": "8650609828484208726"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.tsx",
+          "hash": "15152302528091272326"
+        },
+        {
           "file": "apps/operation-stacked-dashboard/src/main.tsx",
           "hash": "763379880219152615"
         },
         {
+          "file": "apps/operation-stacked-dashboard/src/pages/LoginPage.stories.tsx",
+          "hash": "12160058274062657251"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/pages/LoginPage.tsx",
+          "hash": "2606586000963988723"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/state/userState.ts",
+          "hash": "10918805934641554070"
+        },
+        {
           "file": "apps/operation-stacked-dashboard/tsconfig.app.json",
-          "hash": "7232119452847825095"
+          "hash": "12915898107119045980"
         },
         {
           "file": "apps/operation-stacked-dashboard/tsconfig.json",
-          "hash": "17994410774201614780"
+          "hash": "1286836882576921350"
         },
         {
           "file": "apps/operation-stacked-dashboard/tsconfig.spec.json",
           "hash": "9472099605191632308"
         },
         {
+          "file": "apps/operation-stacked-dashboard/tsconfig.storybook.json",
+          "hash": "9877693811502968150"
+        },
+        {
           "file": "apps/operation-stacked-dashboard/vite.config.ts",
-          "hash": "7524054656136432010"
+          "hash": "317324610028576881"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/spinner/spinner.css",
+          "hash": "17152763521437324708"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/spinner/Spinner.tsx",
+          "hash": "18191629812244312658"
+        }
+      ],
+      "api-hooks": [
+        {
+          "file": "libs/api-hooks/.babelrc",
+          "hash": "12229791027711577977"
+        },
+        {
+          "file": "libs/api-hooks/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/api-hooks/README.md",
+          "hash": "6441531805309418953"
+        },
+        {
+          "file": "libs/api-hooks/package.json",
+          "hash": "3353930915778299529"
+        },
+        {
+          "file": "libs/api-hooks/project.json",
+          "hash": "11875579873095192737"
+        },
+        {
+          "file": "libs/api-hooks/src/index.ts",
+          "hash": "15222728977300882745"
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.json",
+          "hash": "13092532316302288280"
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "libs/api-hooks/vite.config.ts",
+          "hash": "4111538737366750844"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/hooks/useApiStatus.ts",
+          "hash": "1234313099486028432"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/hooks/useApi.ts",
+          "hash": "1426230801566270460"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/apiStatus.ts",
+          "hash": "6922749566209880143"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/apiClient.ts",
+          "hash": "3863636652458132944"
         }
       ],
       "shared-styles": [
@@ -202,7 +464,15 @@
         },
         {
           "file": "libs/shared-styles/src/index.ts",
-          "hash": "4148095056754217642"
+          "hash": "9533210743612887398"
+        },
+        {
+          "file": "libs/shared-styles/src/lib/commonStyles.ts",
+          "hash": "4028372148628181559"
+        },
+        {
+          "file": "libs/shared-styles/src/lib/theme.ts",
+          "hash": "7567944941058703312"
         },
         {
           "file": "libs/shared-styles/tsconfig.json",
@@ -219,14 +489,6 @@
         {
           "file": "libs/shared-styles/vite.config.ts",
           "hash": "13600882974669851612"
-        },
-        {
-          "file": "libs/shared-styles/src/lib/theme.ts",
-          "hash": "7567944941058703312"
-        },
-        {
-          "file": "libs/shared-styles/src/lib/commonStyles.ts",
-          "hash": "17627419627976851989"
         }
       ],
       "operation-stacked-dashboard-e2e": [
