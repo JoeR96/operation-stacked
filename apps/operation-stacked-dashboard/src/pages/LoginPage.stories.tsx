@@ -2,10 +2,19 @@ import { Meta, StoryObj } from '@storybook/react';
 import LoginPage from './LoginPage';
 import { within } from '@storybook/testing-library';
 import userEvent from '@testing-library/user-event';
+import { MemoryRouter } from 'react-router-dom';
+import React from 'react';
 
 const meta: Meta<typeof LoginPage> = {
   title: 'Pages/LoginPage',
   component: LoginPage,
+  decorators: [
+    (Story) => (
+      <MemoryRouter>
+        <Story />
+      </MemoryRouter>
+    ),
+  ],
 };
 export default meta;
 

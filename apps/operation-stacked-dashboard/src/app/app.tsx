@@ -1,28 +1,24 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import LoginPage from '../pages/LoginPage';
+import DashboardPage from '../pages/DashboardPage';
+import HeaderWrapper from '../components/header/HeaderWrapper';
 
 export function App() {
   return (
       <React.Fragment>
-        <div role="navigation">
-          <ul>
-            <li>
-              <Link to="/">Login</Link> {/* Updated link text to 'Login' */}
-            </li>
-          </ul>
-        </div>
+        <HeaderWrapper />
         <Routes>
           <Route
             path="/"
-            element={<LoginPage />} // Set LoginPage as the default route
+            element={<LoginPage />}
+          /><Route
+            path="/login"
+            element={<LoginPage />}
           />
           <Route
-            path="/page-2"
-            element={
-              <div>
-                <Link to="/">Go back to Login</Link> {/* Updated link text */}
-              </div>
+            path="/dashboard"
+            element={<DashboardPage />
             }
           />
         </Routes>

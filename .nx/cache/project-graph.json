@@ -6703,6 +6703,15 @@
         "hash": "sha512-GBEV4GRADeP+qtB2+6u61stea8mGcOT4mCtrYISZwfu9/ISHFJ/5zOMXYbpBE9RsS5+Gb63DW4FgmnKJ79Kf6w=="
       }
     },
+    "npm:jest-playwright-preset@2.0.0": {
+      "type": "npm",
+      "name": "npm:jest-playwright-preset@2.0.0",
+      "data": {
+        "version": "2.0.0",
+        "packageName": "jest-playwright-preset",
+        "hash": "sha512-pV5ruTJJMen3lwshUL4dlSqLlP8z4q9MXqWJkmy+sB6HYfzXoqBHzhl+5hslznhnSVTe4Dwu+reiiwcUJpYUbw=="
+      }
+    },
     "npm:jest-regex-util@28.0.2": {
       "type": "npm",
       "name": "npm:jest-regex-util@28.0.2",
@@ -12742,15 +12751,6 @@
         "hash": "sha512-h7/wwzPbllgpQhhVcRzRC76/cc89GlazThoV1fDxcALkf26IIlRsu/AcTG64f4nR2WPE3Cbd+i/sVf+NCUHrWQ=="
       }
     },
-    "npm:jest-playwright-preset": {
-      "type": "npm",
-      "name": "npm:jest-playwright-preset",
-      "data": {
-        "version": "2.0.0",
-        "packageName": "jest-playwright-preset",
-        "hash": "sha512-pV5ruTJJMen3lwshUL4dlSqLlP8z4q9MXqWJkmy+sB6HYfzXoqBHzhl+5hslznhnSVTe4Dwu+reiiwcUJpYUbw=="
-      }
-    },
     "npm:jest-pnp-resolver": {
       "type": "npm",
       "name": "npm:jest-pnp-resolver",
@@ -14693,6 +14693,15 @@
         "version": "18.2.0",
         "packageName": "react",
         "hash": "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
+      }
+    },
+    "npm:react-circular-progressbar": {
+      "type": "npm",
+      "name": "npm:react-circular-progressbar",
+      "data": {
+        "version": "2.1.0",
+        "packageName": "react-circular-progressbar",
+        "hash": "sha512-xp4THTrod4aLpGy68FX/k1Q3nzrfHUjUe5v6FsdwXBl3YVMwgeXYQKDrku7n/D6qsJA9CuunarAboC2xCiKs1g=="
       }
     },
     "npm:react-colorful": {
@@ -26475,7 +26484,7 @@
       },
       {
         "source": "npm:@storybook/test-runner",
-        "target": "npm:jest-playwright-preset",
+        "target": "npm:jest-playwright-preset@2.0.0",
         "type": "static"
       },
       {
@@ -27614,6 +27623,58 @@
       {
         "source": "npm:jest-mock@28.1.3",
         "target": "npm:@types/node",
+        "type": "static"
+      }
+    ],
+    "npm:jest-playwright-preset@2.0.0": [
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:jest@28.1.3",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:jest-circus",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:jest-environment-node",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:jest-runner",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:expect-playwright",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:jest-process-manager",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:nyc",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:playwright-core",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:rimraf",
+        "type": "static"
+      },
+      {
+        "source": "npm:jest-playwright-preset@2.0.0",
+        "target": "npm:uuid@8.3.2",
         "type": "static"
       }
     ],
@@ -35779,53 +35840,6 @@
         "type": "static"
       }
     ],
-    "npm:jest-playwright-preset": [
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:jest-circus",
-        "type": "static"
-      },
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:jest-environment-node",
-        "type": "static"
-      },
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:jest-runner",
-        "type": "static"
-      },
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:expect-playwright",
-        "type": "static"
-      },
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:jest-process-manager",
-        "type": "static"
-      },
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:nyc",
-        "type": "static"
-      },
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:playwright-core",
-        "type": "static"
-      },
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:rimraf",
-        "type": "static"
-      },
-      {
-        "source": "npm:jest-playwright-preset",
-        "target": "npm:uuid@8.3.2",
-        "type": "static"
-      }
-    ],
     "npm:jest-pnp-resolver": [
       {
         "source": "npm:jest-pnp-resolver",
@@ -39119,6 +39133,13 @@
       {
         "source": "npm:react",
         "target": "npm:loose-envify",
+        "type": "static"
+      }
+    ],
+    "npm:react-circular-progressbar": [
+      {
+        "source": "npm:react-circular-progressbar",
+        "target": "npm:react",
         "type": "static"
       }
     ],

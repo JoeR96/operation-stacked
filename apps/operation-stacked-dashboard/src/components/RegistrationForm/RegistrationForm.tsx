@@ -123,7 +123,6 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
 };
 
 async function registerUser(email: string, password: string) {
-  // Replace with your registration logic
   try {
     const response = await fetch('https://app.operationstacked.com/auth/register', {
       method: 'POST',
