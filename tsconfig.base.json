@@ -17,6 +17,12 @@
     "paths": {
       "@operation-stacked/api-hooks": ["libs/api-hooks/src/index.ts"],
       "@operation-stacked/shared-images": ["libs/shared-images/src/index.ts"],
+      "@operation-stacked/shared-openapis": [
+        "libs/shared-openapis/src/index.ts"
+      ],
+      "@operation-stacked/shared-services": [
+        "libs/shared-services/src/index.ts"
+      ],
       "@operation-stacked/shared-styles": ["libs/shared-styles/src/index.ts"],
       "@operation-stacked/ui-components": ["libs/ui-components/src/index.ts"]
     }

@@ -80,6 +80,12 @@
     "@operation-stacked/shared-images": [
       "libs/shared-images/src/index.ts"
     ],
+    "@operation-stacked/shared-openapis": [
+      "libs/shared-openapis/src/index.ts"
+    ],
+    "@operation-stacked/shared-services": [
+      "libs/shared-services/src/index.ts"
+    ],
     "@operation-stacked/shared-styles": [
       "libs/shared-styles/src/index.ts"
     ],
@@ -94,63 +100,109 @@
     }
   },
   "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "package.json",
+        "hash": "9715413558003161018"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "11011807070618554662"
+      },
+      {
+        "file": "nx.json",
+        "hash": "17240219796211550540"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "334796811876282330"
+      },
+      {
+        "file": "openapitools.json",
+        "hash": "10050824257331393797"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11968612441013361296"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": "README.md",
+        "hash": "408782202854081202"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "12333515226966617182"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      }
+    ],
     "projectFileMap": {
-      "api-hooks": [
+      "shared-openapis": [
         {
-          "file": "libs/api-hooks/.babelrc",
-          "hash": "12229791027711577977"
+          "file": "libs/shared-openapis/.babelrc",
+          "hash": "2946678488919325452"
         },
         {
-          "file": "libs/api-hooks/.eslintrc.json",
+          "file": "libs/shared-openapis/.eslintrc.json",
           "hash": "11012487992710232822"
         },
         {
-          "file": "libs/api-hooks/README.md",
-          "hash": "6441531805309418953"
+          "file": "libs/shared-openapis/README.md",
+          "hash": "3940964983647289644"
         },
         {
-          "file": "libs/api-hooks/package.json",
-          "hash": "3353930915778299529"
+          "file": "libs/shared-openapis/package.json",
+          "hash": "14437022512711024974"
         },
         {
-          "file": "libs/api-hooks/project.json",
-          "hash": "11875579873095192737"
+          "file": "libs/shared-openapis/project.json",
+          "hash": "655716736255416248"
         },
         {
-          "file": "libs/api-hooks/src/index.ts",
-          "hash": "15222728977300882745"
+          "file": "libs/shared-openapis/src/index.ts",
+          "hash": "3244421341483603138"
         },
         {
-          "file": "libs/api-hooks/src/lib/apiClient.ts",
-          "hash": "3863636652458132944"
+          "file": "libs/shared-openapis/src/lib/authSwagger.json",
+          "hash": "10599121712576169542"
         },
         {
-          "file": "libs/api-hooks/src/lib/apiStatus.ts",
-          "hash": "6922749566209880143"
+          "file": "libs/shared-openapis/src/lib/workoutSwagger.json",
+          "hash": "13292727419946332246"
         },
         {
-          "file": "libs/api-hooks/src/lib/hooks/useApi.ts",
-          "hash": "1426230801566270460"
+          "file": "libs/shared-openapis/tsconfig.json",
+          "hash": "6996585143515498368"
         },
         {
-          "file": "libs/api-hooks/src/lib/hooks/useApiStatus.ts",
-          "hash": "1234313099486028432"
-        },
-        {
-          "file": "libs/api-hooks/tsconfig.json",
-          "hash": "13092532316302288280"
-        },
-        {
-          "file": "libs/api-hooks/tsconfig.lib.json",
+          "file": "libs/shared-openapis/tsconfig.lib.json",
           "hash": "11908890256657676622"
         },
         {
-          "file": "libs/api-hooks/tsconfig.spec.json",
+          "file": "libs/shared-openapis/tsconfig.spec.json",
           "hash": "15943385144407153049"
         },
         {
-          "file": "libs/api-hooks/vite.config.ts",
-          "hash": "4111538737366750844"
+          "file": "libs/shared-openapis/vite.config.ts",
+          "hash": "17366837681604629351"
         }
       ],
       "ui-components": [
@@ -223,6 +275,60 @@
           "hash": "9601000619485963806"
         }
       ],
+      "shared-styles": [
+        {
+          "file": "libs/shared-styles/.babelrc",
+          "hash": "12229791027711577977"
+        },
+        {
+          "file": "libs/shared-styles/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/shared-styles/README.md",
+          "hash": "16012757069767922004"
+        },
+        {
+          "file": "libs/shared-styles/jest.config.ts",
+          "hash": "13126886646441187634"
+        },
+        {
+          "file": "libs/shared-styles/package.json",
+          "hash": "2893238333008024830"
+        },
+        {
+          "file": "libs/shared-styles/project.json",
+          "hash": "14918728993027984329"
+        },
+        {
+          "file": "libs/shared-styles/src/index.ts",
+          "hash": "9533210743612887398"
+        },
+        {
+          "file": "libs/shared-styles/src/lib/commonStyles.ts",
+          "hash": "18038139921870939851"
+        },
+        {
+          "file": "libs/shared-styles/src/lib/theme.ts",
+          "hash": "3637493152757036802"
+        },
+        {
+          "file": "libs/shared-styles/tsconfig.json",
+          "hash": "13563888094802511912"
+        },
+        {
+          "file": "libs/shared-styles/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/shared-styles/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        },
+        {
+          "file": "libs/shared-styles/vite.config.ts",
+          "hash": "13600882974669851612"
+        }
+      ],
       "operation-stacked-dashboard-e2e": [
         {
           "file": "apps/operation-stacked-dashboard-e2e/.eslintrc.json",
@@ -239,6 +345,64 @@
         {
           "file": "apps/operation-stacked-dashboard-e2e/src/example.spec.ts",
           "hash": "16019101014373124625"
+        }
+      ],
+      "api-hooks": [
+        {
+          "file": "libs/api-hooks/.babelrc",
+          "hash": "12229791027711577977"
+        },
+        {
+          "file": "libs/api-hooks/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/api-hooks/README.md",
+          "hash": "6441531805309418953"
+        },
+        {
+          "file": "libs/api-hooks/package.json",
+          "hash": "3353930915778299529"
+        },
+        {
+          "file": "libs/api-hooks/project.json",
+          "hash": "11875579873095192737"
+        },
+        {
+          "file": "libs/api-hooks/src/index.ts",
+          "hash": "15222728977300882745"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/apiClient.ts",
+          "hash": "3863636652458132944"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/apiStatus.ts",
+          "hash": "6922749566209880143"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/hooks/useApi.ts",
+          "hash": "1426230801566270460"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/hooks/useApiStatus.ts",
+          "hash": "1234313099486028432"
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.json",
+          "hash": "13092532316302288280"
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "libs/api-hooks/vite.config.ts",
+          "hash": "4111538737366750844"
         }
       ],
       "operation-stacked-dashboard": [
@@ -276,7 +440,7 @@
         },
         {
           "file": "apps/operation-stacked-dashboard/src/app/app.tsx",
-          "hash": "2541459840955746201"
+          "hash": "7761395134832581732"
         },
         {
           "file": "apps/operation-stacked-dashboard/src/app/nx-welcome.stories.tsx",
@@ -296,19 +460,19 @@
         },
         {
           "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.tsx",
-          "hash": "10681964257514876450"
+          "hash": "5445838391431622520"
         },
         {
           "file": "apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.stories.tsx",
-          "hash": "8650609828484208726"
+          "hash": "16666578156660050349"
         },
         {
           "file": "apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.tsx",
-          "hash": "13928265529460904139"
+          "hash": "9427392644991099972"
         },
         {
           "file": "apps/operation-stacked-dashboard/src/components/card-splash-screen/CardSplashScreen.tsx",
-          "hash": "14526703119826924546"
+          "hash": "1226612682050534481"
         },
         {
           "file": "apps/operation-stacked-dashboard/src/components/card-splash-screen/CenteredWelcomeCard.tsx",
@@ -379,8 +543,16 @@
           "hash": "17152763521437324708"
         },
         {
+          "file": "apps/operation-stacked-dashboard/src/components/username/Username.tsx",
+          "hash": "10542443213497348421"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/environments/environment.ts",
+          "hash": "3092358547027235797"
+        },
+        {
           "file": "apps/operation-stacked-dashboard/src/main.tsx",
-          "hash": "1985941545484906818"
+          "hash": "7576886488624426062"
         },
         {
           "file": "apps/operation-stacked-dashboard/src/pages/DashboardPage.stories.tsx",
@@ -396,7 +568,7 @@
         },
         {
           "file": "apps/operation-stacked-dashboard/src/pages/LoginPage.tsx",
-          "hash": "6034482082818381342"
+          "hash": "15230992278496423867"
         },
         {
           "file": "apps/operation-stacked-dashboard/src/state/userState.ts",
@@ -421,6 +593,10 @@
         {
           "file": "apps/operation-stacked-dashboard/vite.config.ts",
           "hash": "317324610028576881"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/username/Username.stories.tsx",
+          "hash": "14798154802203075597"
         }
       ],
       "shared-images": [
@@ -481,110 +657,148 @@
           "hash": "12138921279350350710"
         }
       ],
-      "shared-styles": [
+      "shared-services": [
         {
-          "file": "libs/shared-styles/.babelrc",
+          "file": "libs/shared-services/.babelrc",
           "hash": "12229791027711577977"
         },
         {
-          "file": "libs/shared-styles/.eslintrc.json",
+          "file": "libs/shared-services/.eslintrc.json",
           "hash": "11012487992710232822"
         },
         {
-          "file": "libs/shared-styles/README.md",
-          "hash": "16012757069767922004"
+          "file": "libs/shared-services/README.md",
+          "hash": "11985231001414063256"
         },
         {
-          "file": "libs/shared-styles/jest.config.ts",
-          "hash": "13126886646441187634"
+          "file": "libs/shared-services/jest.config.ts",
+          "hash": "9846626377464856434"
         },
         {
-          "file": "libs/shared-styles/package.json",
-          "hash": "2893238333008024830"
+          "file": "libs/shared-services/package.json",
+          "hash": "12268300824854350557"
         },
         {
-          "file": "libs/shared-styles/project.json",
-          "hash": "14918728993027984329"
+          "file": "libs/shared-services/project.json",
+          "hash": "10322414130604274430"
         },
         {
-          "file": "libs/shared-styles/src/index.ts",
-          "hash": "9533210743612887398"
+          "file": "libs/shared-services/src/index.ts",
+          "hash": "8195388889153505283"
         },
         {
-          "file": "libs/shared-styles/src/lib/commonStyles.ts",
-          "hash": "18038139921870939851"
+          "file": "libs/shared-services/src/lib/auth-api/.gitignore",
+          "hash": "14031326617291468971"
         },
         {
-          "file": "libs/shared-styles/src/lib/theme.ts",
-          "hash": "3637493152757036802"
+          "file": "libs/shared-services/src/lib/auth-api/.npmignore",
+          "hash": "9470206609760406689"
         },
         {
-          "file": "libs/shared-styles/tsconfig.json",
+          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator-ignore",
+          "hash": "5921108589004068994"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator/FILES",
+          "hash": "6742156222587047428"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator/VERSION",
+          "hash": "16136251632416930662"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/api.ts",
+          "hash": "11238429171788447865"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/base.ts",
+          "hash": "9660359837420387877"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/common.ts",
+          "hash": "11852400538717176723"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/configuration.ts",
+          "hash": "12803565344265064590"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/git_push.sh",
+          "hash": "257268719382818012"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/index.ts",
+          "hash": "10400214793769710701"
+        },
+        {
+          "file": "libs/shared-services/src/lib/shared-services.spec.tsx",
+          "hash": "16302640645570982473"
+        },
+        {
+          "file": "libs/shared-services/src/lib/shared-services.tsx",
+          "hash": "11100221613352283721"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.gitignore",
+          "hash": "14031326617291468971"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.npmignore",
+          "hash": "9470206609760406689"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator-ignore",
+          "hash": "5921108589004068994"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator/FILES",
+          "hash": "6742156222587047428"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator/VERSION",
+          "hash": "16136251632416930662"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/api.ts",
+          "hash": "4153714928682815456"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/base.ts",
+          "hash": "3888649206109040283"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/common.ts",
+          "hash": "7446368755955341330"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/configuration.ts",
+          "hash": "1938829111170000874"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/git_push.sh",
+          "hash": "257268719382818012"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/index.ts",
+          "hash": "129456475843525965"
+        },
+        {
+          "file": "libs/shared-services/tsconfig.json",
           "hash": "13563888094802511912"
         },
         {
-          "file": "libs/shared-styles/tsconfig.lib.json",
+          "file": "libs/shared-services/tsconfig.lib.json",
           "hash": "11908890256657676622"
         },
         {
-          "file": "libs/shared-styles/tsconfig.spec.json",
+          "file": "libs/shared-services/tsconfig.spec.json",
           "hash": "6514620907549802163"
         },
         {
-          "file": "libs/shared-styles/vite.config.ts",
-          "hash": "13600882974669851612"
+          "file": "libs/shared-services/vite.config.ts",
+          "hash": "17007967619637771603"
         }
       ]
-    },
-    "nonProjectFiles": [
-      {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "17866138117546000433"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "11968612441013361296"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "16448050467312557263"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": "README.md",
-        "hash": "408782202854081202"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "12333515226966617182"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "nx.json",
-        "hash": "17240219796211550540"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "334796811876282330"
-      },
-      {
-        "file": "package.json",
-        "hash": "9715413558003161018"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "175364196493831380"
-      }
-    ]
+    }
   }
 }

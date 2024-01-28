@@ -1,30 +1,23 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Box } from '@mui/material';
 import CircularProgressBar from '../circular-progress-bar/CircularProgressBar';
-import { useUserStore } from '../../state/userState';
 import CardComponent from '../card/CardComponent';
-
+import Spinner from '../spinner/Spinner';
+import Username from '../username/Username';
 const CardSplashScreen: React.FC = () => {
-  const {  username, userId } = useUserStore();
-
-  useEffect(() => {
-    if (userId) {
-      //fetchWeekAndDay(userId);
-    }
-  //}, [userId, fetchWeekAndDay]);
-  }, [userId]);
-
   return (
-    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" gap={10} padding={"50px"}>
-      <CardComponent title="Welcome back" subtitle={username} />
+    <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" flexWrap="wrap" gap={2} p={2}>
       <CardComponent>
-        <CircularProgressBar value={1} maxValue={4} title={`Workouts`} />
+        <Username />
       </CardComponent>
       <CardComponent>
-        <CircularProgressBar value={1} maxValue={4} title={`Workouts`} />
+        <CircularProgressBar value={1} maxValue={4} title={"Workouts  "} />
       </CardComponent>
       <CardComponent>
-        <CircularProgressBar value={1} maxValue={4} title={`Workouts`} />
+        <Spinner />
+      </CardComponent>
+      <CardComponent>
+        <Spinner />
       </CardComponent>
     </Box>
   );

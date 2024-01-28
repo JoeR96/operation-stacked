@@ -188,6 +188,163 @@
         "implicitDependencies": []
       }
     },
+    "shared-openapis": {
+      "name": "shared-openapis",
+      "type": "lib",
+      "data": {
+        "root": "libs/shared-openapis",
+        "name": "shared-openapis",
+        "targets": {
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          },
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {},
+            "configurations": {}
+          },
+          "build": {
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "executor": "@nx/vite:build",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "defaultConfiguration": "production",
+            "options": {
+              "outputPath": "dist/libs/shared-openapis"
+            },
+            "configurations": {
+              "development": {
+                "mode": "development"
+              },
+              "production": {
+                "mode": "production"
+              }
+            }
+          },
+          "test": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "^default"
+            ],
+            "executor": "@nx/vite:test",
+            "outputs": [
+              "{options.reportsDirectory}"
+            ],
+            "options": {
+              "reportsDirectory": "../../coverage/libs/shared-openapis"
+            },
+            "configurations": {}
+          }
+        },
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/shared-openapis/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
+    "shared-services": {
+      "name": "shared-services",
+      "type": "lib",
+      "data": {
+        "root": "libs/shared-services",
+        "name": "shared-services",
+        "targets": {
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          },
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.js"
+            ],
+            "executor": "@nx/eslint:lint",
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "options": {},
+            "configurations": {}
+          },
+          "build": {
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "executor": "@nx/vite:build",
+            "outputs": [
+              "{options.outputPath}"
+            ],
+            "defaultConfiguration": "production",
+            "options": {
+              "outputPath": "dist/libs/shared-services"
+            },
+            "configurations": {
+              "development": {
+                "mode": "development"
+              },
+              "production": {
+                "mode": "production"
+              }
+            }
+          },
+          "test": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/jest.preset.js"
+            ],
+            "executor": "@nx/jest:jest",
+            "outputs": [
+              "{workspaceRoot}/coverage/{projectRoot}"
+            ],
+            "options": {
+              "passWithNoTests": true,
+              "jestConfig": "libs/shared-services/jest.config.ts"
+            },
+            "configurations": {
+              "ci": {
+                "ci": true,
+                "codeCoverage": true
+              }
+            }
+          }
+        },
+        "$schema": "../../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "libs/shared-services/src",
+        "projectType": "library",
+        "tags": [],
+        "implicitDependencies": []
+      }
+    },
     "shared-images": {
       "name": "shared-images",
       "type": "lib",
@@ -16829,6 +16986,8 @@
       }
     ],
     "operation-stacked-dashboard": [],
+    "shared-openapis": [],
+    "shared-services": [],
     "shared-images": [],
     "shared-styles": [],
     "ui-components": [],

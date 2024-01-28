@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Grid, Paper, Typography, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { Button, TextField } from '@operation-stacked/ui-components';
 import { useUserStore } from '../../state/userState';
+import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
+import Spinner from '../spinner/Spinner';
+import { AuthApi } from '@operation-stacked/shared-services';
 
 type LoginFormProps = {
   onToggleForm: () => void;
@@ -14,61 +17,23 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm }) => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const verifySession = async () => {
-      try {
-        const response = await fetch('https://app.operationstacked.com/auth/verify', {
-          method: 'GET',
-          credentials: 'include',
-          headers: {
-            'Accept': 'application/json',
-          }
-        });
-
-        if (response.ok) {
-          const data = await response.json();
-
-          if(!data.userId){
-            return;
-          }
-          setUserId(data.userId);
-          navigate('/dashboard');
-        }
-      } catch (error) {
-        console.error('Error during session verification:', error);
-      }
-    };
-    verifySession();
-  }, [navigate]);
+  const { apiStatus, exec, error } = useApi(async (email: string, password: string) => {
+    const authApi = new AuthApi();
+      const response = await authApi.loginPost({ email, password });
+      console.log(response.data.userId)
+      setUserId(response.data.userId);
+      navigate('dashboard')
+    return response.data;
+  });
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    try {
-      const response = await fetch('https://app.operationstacked.com/auth/login', {
-        // const response = await fetch('https://localhost:7099/login', {
-
-        method: 'POST',
-        credentials: 'include', // Important for including session cookies in the request
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ email, password }),
-      });
-      console.log(response.json)
-      const data = await response.json();
-
-      console.log(data)
-      if (data.userId) {
-        setUserId(data.userId); // Or use setUserId(data.userId)
-
-        navigate('/dashboard');
-      }
-
-    } catch (error) {
-      console.error('Error during authentication:', error);
-    }
+    exec(email, password);
   };
+
+  if (apiStatus === PENDING) return <Spinner />;
+  if (apiStatus === ERROR) return <div>Error during login: {error?.message}</div>;
+
   return (
     <React.Fragment>
       <Grid container justifyContent="center" alignItems="center">
@@ -96,7 +61,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm }) => {
                   type="password"
                   variant="outlined"
                   value={password}
-                  onChange={(e : React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+                  onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
                 />
               </Grid>
               <Grid item>
