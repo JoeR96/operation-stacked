@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx build operation-stacked-dashboard",
-    "startTime": "2024-01-27T21:00:35.215Z",
-    "endTime": "2024-01-27T21:00:38.804Z",
+    "startTime": "2024-01-29T16:13:38.673Z",
+    "endTime": "2024-01-29T16:13:42.609Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "operation-stacked-dashboard:build:production",
       "target": "build",
       "projectName": "operation-stacked-dashboard",
-      "hash": "7219662386363899428",
-      "startTime": "2024-01-27T21:00:35.222Z",
-      "endTime": "2024-01-27T21:00:38.803Z",
+      "hash": "17900685483395412247",
+      "startTime": "2024-01-29T16:13:38.679Z",
+      "endTime": "2024-01-29T16:13:42.608Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1
