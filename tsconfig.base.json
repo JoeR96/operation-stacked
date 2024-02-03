@@ -16,6 +16,12 @@
     "baseUrl": ".",
     "paths": {
       "@operation-stacked/api-hooks": ["libs/api-hooks/src/index.ts"],
+      "@operation-stacked/operation-stacked-shared-types": [
+        "libs/operation-stacked-shared-types/src/index.ts"
+      ],
+      "@operation-stacked/operation-stacked-test-lib": [
+        "libs/operation-stacked-test-lib/src/index.ts"
+      ],
       "@operation-stacked/shared-images": ["libs/shared-images/src/index.ts"],
       "@operation-stacked/shared-openapis": [
         "libs/shared-openapis/src/index.ts"

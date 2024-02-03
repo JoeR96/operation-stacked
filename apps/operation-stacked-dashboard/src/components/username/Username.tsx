@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Button, Paper, TextField, Typography } from '@mui/material';
 import { useApi, PENDING, ERROR } from '@operation-stacked/api-hooks';
 import Spinner from '../spinner/Spinner';
@@ -14,6 +14,28 @@ const Username: React.FC<UsernameProps> = ({ useApiHook = useApi, useUserStoreHo
   const { username, setUsername, userId } = useUserStoreHook();
   const [newUsername, setNewUsername] = useState('');
 
+  const getUserApi = useApiHook(async (userId: string) => {
+    console.log('given',userId)
+    const userApi = new UserApi();
+    const lol =  await userApi.userNameUserIdGet(userId);
+    console.log('lol',lol)
+    return lol.data
+  });
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      console.log(userId)
+      const response = await getUserApi.exec(userId as string);
+      console.log('response is', response.data)
+      if (response.data && response.data !== '') {
+        setUsername(response.data);
+      }
+    };
+    if (!username) {
+      fetchUser();
+    }
+  }, []);
+
   const checkUsernameApi = useApiHook(async (username: string) => {
     const userApi = new UserApi();
     return await userApi.userUsernameUsernameGet(username);
@@ -28,18 +50,29 @@ const Username: React.FC<UsernameProps> = ({ useApiHook = useApi, useUserStoreHo
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const isUsernameTaken = await checkUsernameApi.exec(newUsername);
+
     if (isUsernameTaken) {
       alert('Username is already taken. Please choose a different username.');
       return;
     }
-    const result = await setUsernameApi.exec(newUsername);
-    if (result) {
+    const setResult = await setUsernameApi.exec(newUsername);
+    if (setResult) {
       setUsername(newUsername);
     }
   };
 
-  if (checkUsernameApi.apiStatus === PENDING || setUsernameApi.apiStatus === PENDING) {
+  if (getUserApi.apiStatus === PENDING || checkUsernameApi.apiStatus === PENDING || setUsernameApi.apiStatus === PENDING) {
     return <Spinner />;
+  }
+
+  if (getUserApi.apiStatus === ERROR || checkUsernameApi.apiStatus === ERROR || setUsernameApi.apiStatus === ERROR) {
+    return (
+      <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" p={2}>
+        <div style={{ color: 'red' }}>
+          Error: {getUserApi.error?.message || checkUsernameApi.error?.message || setUsernameApi.error?.message}
+        </div>
+      </Box>
+    );
   }
 
   return (
@@ -62,9 +95,6 @@ const Username: React.FC<UsernameProps> = ({ useApiHook = useApi, useUserStoreHo
               Set Username
             </Button>
           </form>
-        )}
-        {(checkUsernameApi.apiStatus === ERROR || setUsernameApi.apiStatus === ERROR) && (
-          <div style={{ color: 'red' }}>Error: {checkUsernameApi.error?.message || setUsernameApi.error?.message}</div>
         )}
       </Paper>
     </Box>

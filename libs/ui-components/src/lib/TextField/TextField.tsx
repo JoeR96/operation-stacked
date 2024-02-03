@@ -8,20 +8,22 @@ interface TextFieldProps extends Omit<MuiTextFieldProps, 'InputProps' | 'InputLa
   InputLabelProps?: React.ComponentProps<typeof MuiTextField>['InputLabelProps'] & {
     style?: React.CSSProperties;
   };
+  borderColor?: string;
 }
 
 const TextField: React.FC<TextFieldProps> = ({
                                                InputProps,
                                                InputLabelProps,
+                                               borderColor,
                                                ...props
                                              }) => {
-  // Define the common style you want to apply
   const commonStyle = { color: 'white' };
 
-  // Apply the common style along with any specific styles provided via props
+  const borderStyle = borderColor ? { border: `1px solid ${borderColor}` } : {};
+
   const customInputProps = {
     ...InputProps,
-    style: { ...commonStyle, ...InputProps?.style },
+    style: { ...commonStyle, ...borderStyle, ...InputProps?.style },
   };
 
   const customInputLabelProps = {
