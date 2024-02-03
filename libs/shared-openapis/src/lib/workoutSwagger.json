@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Operation Stacked Workout",
-    "version": "0.285"
+    "version": "0.296"
   },
   "paths": {
     "/equipment-stack/create": {
@@ -404,7 +404,33 @@
         ],
         "responses": {
           "200": {
-            "description": "Success"
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Exercise"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Exercise"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Exercise"
+                  }
+                }
+              }
+            }
           }
         }
       }
