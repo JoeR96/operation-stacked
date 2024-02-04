@@ -1,8 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('/');
+test('workout service should be active', async ({ request }) => {
+  const response = await request.get('http://workout:8000');
+  expect(response.status()).toBe(200);
+});
 
-  // Expect h1 to contain a substring.
-  expect(await page.locator('h1').innerText()).toContain('Welcome');
+test('auth service should be active', async ({ request }) => {
+  const response = await request.get('http://auth:8000');
+  expect(response.status()).toBe(200);
 });

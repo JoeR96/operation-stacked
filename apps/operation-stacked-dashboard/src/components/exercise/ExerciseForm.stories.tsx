@@ -1,20 +1,19 @@
+// ExerciseForm.stories.tsx
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
 import ExerciseForm, { ExerciseFormProps } from './ExerciseForm';
+import { useUserStore } from '../../state/userState';
+import { Meta, Story } from '@storybook/react';
 
-const meta: Meta = {
+export default {
   title: 'Components/ExerciseForm',
   component: ExerciseForm,
+} as Meta;
+
+const Template: Story<ExerciseFormProps> = () => {
+  // Set initial Zustand state for the story
+  useUserStore.setState({ userId: 'mocked-user-id', username: 'mocked-username' });
+
+  return <ExerciseForm onRefreshExercises={() => {}} />;
 };
-
-export default meta;
-
-const Template: Story<ExerciseFormProps> = (args) => <ExerciseForm {...args} />;
 
 export const Default = Template.bind({});
-Default.args = {
-  onRefreshExercises: () => {
-    // Add your custom action for refreshing exercises here if needed
-    console.log('Refreshing exercises...');
-  },
-};

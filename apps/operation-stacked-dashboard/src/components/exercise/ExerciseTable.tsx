@@ -1,20 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Box, Typography, Paper, Button } from '@mui/material';
 import Spinner from '../spinner/Spinner';
-import { ExerciseApi } from '@operation-stacked/shared-services';
+import { Exercise, ExerciseApi } from '@operation-stacked/shared-services';
 import { useUserStore } from '../../state/userState';
 import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import { Category, EquipmentType } from '@operation-stacked/operation-stacked-shared-types';
 import { barbell } from '@operation-stacked/shared-images';
 
-export const ExerciseTable = ({ onCompleteClick, refreshState, exercisesProp }) => {
-  const [groupedExercises, setGroupedExercises] = useState({});
+
+export interface ExerciseTableProps {
+  onCompleteClick: (exercise: Exercise) => void;
+  refreshState: boolean;
+  exercisesProp?: Exercise[]; // Making this optional since it seems like it could be
+}
+
+export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, refreshState, exercisesProp }) => {
+  const [groupedExercises, setGroupedExercises] = useState<GroupedExercises>({});
   const { userId } = useUserStore();
   const exerciseApi = new ExerciseApi();
 
   const fetchExercises = async () => {
     try {
-      const response = await exerciseApi.exerciseUserIdAllGet(userId);
+      const response = await exerciseApi.exerciseUserIdAllGet(userId as string);
       return response.data;
     } catch (error) {
       console.error("Error fetching workouts:", error);
@@ -45,16 +52,21 @@ export const ExerciseTable = ({ onCompleteClick, refreshState, exercisesProp }) 
     }
   }, [exercises, exercisesProp]);
 
-  const groupExercisesByCategory = (exercises) => {
-    return exercises.reduce((acc, exercise) => {
-      const category = Category[exercise.Category] || 'Others';
-      if (!acc[category]) acc[category] = [];
-      acc[category].push(exercise);
+  interface GroupedExercises {
+    [category: string]: Exercise[];
+  }
+
+  const groupExercisesByCategory = (exercises: Exercise[]): GroupedExercises => {
+    return exercises.reduce((acc: GroupedExercises, exercise) => {
+      const categoryKey = Category[exercise.Category as number] || 'Others';
+      if (!acc[categoryKey]) acc[categoryKey] = [];
+      acc[categoryKey].push(exercise);
       return acc;
-    }, {});
+    }, {} as GroupedExercises);
   };
 
-  const getEquipmentImage = (equipmentType) => barbell; // Simplified for brevity
+
+  const getEquipmentImage = (equipmentType : number) => barbell; // Simplified for brevity
 
   if (apiStatus === PENDING && !exercisesProp) return <Spinner />;
   if (apiStatus === ERROR && !exercisesProp) return <div>Error fetching exercises: {error?.message}</div>;
@@ -78,7 +90,7 @@ export const ExerciseTable = ({ onCompleteClick, refreshState, exercisesProp }) 
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <div>
                     <Typography color="white" fontWeight="bold">{exercise.ExerciseName}</Typography>
-                    <Typography color="white">{EquipmentType[exercise.EquipmentType]}</Typography>
+                    <Typography color="white">{EquipmentType[exercise.EquipmentType as number]}</Typography>
                   </div>
                   <Button
                     variant="contained"
@@ -95,8 +107,8 @@ export const ExerciseTable = ({ onCompleteClick, refreshState, exercisesProp }) 
                   flex: 0.2
                 }}>
                   <img
-                    src={getEquipmentImage(exercise.EquipmentType)}
-                    alt={EquipmentType[exercise.EquipmentType]}
+                    src={getEquipmentImage(exercise.EquipmentType as number)}
+                    alt={EquipmentType[exercise.EquipmentType as number]}
                     style={{ width: '30px', height: '30px' }}
                   />
                 </div>

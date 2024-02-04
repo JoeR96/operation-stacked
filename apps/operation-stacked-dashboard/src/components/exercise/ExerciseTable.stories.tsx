@@ -1,74 +1,43 @@
 import React from 'react';
-import { Story } from '@storybook/react';
-import { ExerciseTable } from './ExerciseTable';
+import { Story, Meta } from '@storybook/react';
+import { ExerciseTable, ExerciseTableProps } from './ExerciseTable';
+import { mockExercises } from './mocks/mockExercises';
 
 export default {
   title: 'Components/ExerciseTable',
   component: ExerciseTable,
-};
+} as Meta;
 
-const Template: Story = (args) => <ExerciseTable {...args} />;
+const Template: Story<ExerciseTableProps> = (args) => <ExerciseTable {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  onCompleteClick: (exercise) => {
-    console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`);
-  },
-  refreshState: false,
+  exercisesProp: mockExercises,
+  onCompleteClick: (exercise) => console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`),
 };
 
+// Since the component does not have explicit props for loading or error states,
+// these stories serve as visual cues in Storybook and do not affect the component directly.
 export const LoadingState = Template.bind({});
 LoadingState.args = {
-  apiStatus: 'PENDING',
-  onCompleteClick: (exercise) => {
-    console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`);
-  },
-  refreshState: false,
+  exercisesProp: [], // Assume no exercises to mimic loading (adjust as needed)
+  onCompleteClick: (exercise) => console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`),
 };
 
 export const ErrorState = Template.bind({});
 ErrorState.args = {
-  apiStatus: 'ERROR',
-  error: { message: 'Error fetching exercises' },
-  onCompleteClick: (exercise) => {
-    console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`);
-  },
-  refreshState: false,
+  exercisesProp: [], // Assume no exercises to mimic an error (adjust as needed)
+  onCompleteClick: (exercise) => console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`),
 };
 
-// Story with no exercises
 export const NoExercises = Template.bind({});
 NoExercises.args = {
-  exercises: [],
-  onCompleteClick: (exercise) => {
-    console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`);
-  },
-  refreshState: false,
+  exercisesProp: [],
+  onCompleteClick: (exercise) => console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`),
 };
 
-// Story with mocked exercises
 export const WithExercises = Template.bind({});
 WithExercises.args = {
-  exercises: [
-    {
-      Id: '1',
-      ExerciseName: 'Squat',
-      Category: 'Legs',
-      EquipmentType: 'Barbell',
-      UserId: 'user123',
-      ExerciseHistories: [],
-    },
-    {
-      Id: '2',
-      ExerciseName: 'Bench Press',
-      Category: 'Chest',
-      EquipmentType: 'Barbell',
-      UserId: 'user123',
-      ExerciseHistories: [],
-    }
-  ],
-  onCompleteClick: (exercise) => {
-    console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`);
-  },
-  refreshState: true,
+  exercisesProp: mockExercises,
+  onCompleteClick: (exercise) => console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`),
 };

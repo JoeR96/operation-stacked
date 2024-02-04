@@ -1,30 +1,57 @@
-// Import necessary dependencies and the ExerciseLayout component
 import React from 'react';
-import { Story } from '@storybook/react';
+import { Story, Meta } from '@storybook/react';
+import { useUserStore } from '../../state/userState';
 import ExerciseLayout from './ExerciseLayout';
 
-// Create a meta object to define the story title and component
 export default {
   title: 'Components/ExerciseLayout',
   component: ExerciseLayout,
-};
+} as Meta;
 
-// Create a Template for the story
-const Template: Story = (args) => <ExerciseLayout {...args} />;
+const Template: Story = () => <ExerciseLayout />;
 
-// Define the Default story
-export const Default = Template.bind({});
-Default.args = {};
+export const InitialState = Template.bind({});
+InitialState.decorators = [
+  (StoryFn) => {
+    // Reset Zustand store to its initial state
+    useUserStore.setState({
+      userId: 'mock-user-id',
+      username: 'mock-username',
+      // Reset or set initial state as required
+    });
+    return <StoryFn />;
+  },
+];
 
-// You can add more stories with different props or states as needed
-// For example, you can create a story with the new exercise form shown:
-export const WithNewExerciseForm = Template.bind({});
-WithNewExerciseForm.args = {
-  showNewExerciseForm: true,
-};
+export const WithExercises = Template.bind({});
+WithExercises.decorators = [
+  (StoryFn) => {
+    useUserStore.setState({
+      userId: 'mock-user-id',
+      username: 'mock-username',
+    });
+    return <StoryFn />;
+  },
+];
 
-// Or a story with the completion form shown:
-export const WithCompletionForm = Template.bind({});
-WithCompletionForm.args = {
-  showCompletionForm: true,
-};
+export const NoExercises = Template.bind({});
+NoExercises.decorators = [
+  (StoryFn) => {
+    useUserStore.setState({
+      userId: 'mock-user-id',
+      username: 'mock-username',
+    });
+    return <StoryFn />;
+  },
+];
+
+export const LoadingState = Template.bind({});
+LoadingState.decorators = [
+  (StoryFn) => {
+    return (
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        <StoryFn />
+      </div>
+    );
+  },
+];

@@ -5,7 +5,7 @@ import { useUserStore } from '../../state/userState';
 import { theme } from '@operation-stacked/shared-styles';
 import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import { Category, EquipmentType } from '@operation-stacked/operation-stacked-shared-types';
-import { ExerciseApi } from '@operation-stacked/shared-services';
+import { CreateExerciseRequest, ExerciseApi } from '@operation-stacked/shared-services';
 import { TextField } from '@operation-stacked/ui-components';
 
 export interface ExerciseFormProps {
@@ -22,12 +22,11 @@ const ExerciseForm: React.FC<ExerciseFormProps> = ({ onRefreshExercises }) => {
   const exerciseApi = new ExerciseApi();
 
   const {
-    data: exerciseData,
     apiStatus,
     error,
     exec
   } = useApi(async (newExerciseRequest) => {
-    return await exerciseApi.exerciseCreateExercisesPost(newExerciseRequest);
+    return await exerciseApi.exerciseCreateExercisesPost(newExerciseRequest as CreateExerciseRequest[]);
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -57,7 +56,6 @@ const ExerciseForm: React.FC<ExerciseFormProps> = ({ onRefreshExercises }) => {
   if (apiStatus === PENDING) return <Spinner />;
   if (apiStatus === ERROR) return <div>Error adding exercise: {error?.message}</div>;
 
-  // noinspection TypeScriptValidateTypes
   return (
     <Paper style={{ padding: 16, background: '#1d1d1d' }}>
       {apiStatus === 'success' ? (
@@ -88,11 +86,15 @@ const ExerciseForm: React.FC<ExerciseFormProps> = ({ onRefreshExercises }) => {
                   label="Category"
                   style={textFieldStyles.input}
                 >
-                  {Object.keys(Category).filter(key => !isNaN(Number(Category[key]))).map(key => (
-                    <MenuItem key={key} value={Category[key]}>
-                      {key}
-                    </MenuItem>
-                  ))}
+                  {Object.entries(Category)
+                    .filter(([key, value]) => !isNaN(Number(value))) // filter by value being a number
+                    .map(([key, value]) => (
+                      // Assuming you want the enum's name as the key and its numeric value as the value:
+                      <MenuItem key={key} value={value as Category}>
+                        {key}
+                      </MenuItem>
+                    ))}
+
                 </Select>
               </FormControl>
             </Grid>
@@ -105,11 +107,15 @@ const ExerciseForm: React.FC<ExerciseFormProps> = ({ onRefreshExercises }) => {
                   label="Equipment Type"
                   style={textFieldStyles.input}
                 >
-                  {Object.keys(EquipmentType).filter(key => !isNaN(Number(EquipmentType[key]))).map(key => (
-                    <MenuItem key={key} value={EquipmentType[key] as EquipmentType}>
-                      {key}
-                    </MenuItem>
-                  ))}
+                  {Object.entries(EquipmentType)
+                    .filter(([key, value]) => !isNaN(Number(value))) // filter by value being a number
+                    .map(([key, value]) => (
+                      // Assuming you want the enum's name as the key and its numeric value as the value:
+                      <MenuItem key={key} value={value as EquipmentType}>
+                        {key}
+                      </MenuItem>
+                    ))}
+
                 </Select>
               </FormControl>
             </Grid>
