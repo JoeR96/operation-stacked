@@ -14,7 +14,6 @@ type LoginFormProps = {
 };
 
 const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
-  console.log(authApi)
   const { setUserId } = useUserStore();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
