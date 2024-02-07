@@ -1,75 +1,54 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Grid, Box, Typography, Paper, Button } from '@mui/material';
+import { useQuery } from 'react-query';
 import Spinner from '../spinner/Spinner';
 import { Exercise, ExerciseApi } from '@operation-stacked/shared-services';
 import { useUserStore } from '../../state/userState';
-import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
-import { Category, EquipmentType } from '@operation-stacked/operation-stacked-shared-types';
 import { barbell } from '@operation-stacked/shared-images';
+import { EquipmentType, mapCategory, mapEquipmentType } from '@operation-stacked/operation-stacked-shared-types';
 
+// Imported or defined mapping functions
 
 export interface ExerciseTableProps {
   onCompleteClick: (exercise: Exercise) => void;
-  refreshState: boolean;
-  exercisesProp?: Exercise[]; // Making this optional since it seems like it could be
+  buttonText: string;
 }
 
-export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, refreshState, exercisesProp }) => {
-  const [groupedExercises, setGroupedExercises] = useState<GroupedExercises>({});
+interface GroupedExercises {
+  [key: string]: Exercise[];
+}
+
+export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, buttonText }) => {
   const { userId } = useUserStore();
   const exerciseApi = new ExerciseApi();
 
-  const fetchExercises = async () => {
-    try {
-      const response = await exerciseApi.exerciseUserIdAllGet(userId as string);
-      return response.data;
-    } catch (error) {
-      console.error("Error fetching workouts:", error);
-      throw error;
+  const { data: exercises, isLoading, isError, error } = useQuery<Exercise[], Error>(
+    ['exercises', userId],
+    () => exerciseApi.exerciseUserIdAllGet(userId as string).then(response => response.data), // Extract the data property from AxiosResponse
+    {
+      onError: (error) => {
+        console.error("Error fetching workouts:", error);
+      },
     }
-  };
+  );
 
-  const {
-    data: exercises,
-    apiStatus,
-    error,
-    exec
-  } = useApi(async () => await fetchExercises());
-
-  // Execute API call if exercisesProp is not provided
-  useEffect(() => {
-    if (!exercisesProp) exec();
-  }, [refreshState, exercisesProp]);
-
-  // Group exercises by category when exercises data changes
-  useEffect(() => {
-    const dataToUse = exercisesProp || exercises;
-    if (dataToUse && dataToUse.length > 0) {
-      const grouped = groupExercisesByCategory(dataToUse);
-      setGroupedExercises(grouped);
-    } else {
-      setGroupedExercises({});
-    }
-  }, [exercises, exercisesProp]);
-
-  interface GroupedExercises {
-    [category: string]: Exercise[];
-  }
 
   const groupExercisesByCategory = (exercises: Exercise[]): GroupedExercises => {
-    return exercises.reduce((acc: GroupedExercises, exercise) => {
-      const categoryKey = Category[exercise.Category as number] || 'Others';
+    return exercises.reduce((acc: GroupedExercises, exercise: Exercise) => {
+      // Use the mapping function to get a string representation of the category
+      const categoryKey = mapCategory(exercise.Category);
       if (!acc[categoryKey]) acc[categoryKey] = [];
       acc[categoryKey].push(exercise);
       return acc;
-    }, {} as GroupedExercises);
+    }, {});
   };
 
+  const groupedExercises = exercises ? groupExercisesByCategory(exercises) : {};
 
-  const getEquipmentImage = (equipmentType : number) => barbell; // Simplified for brevity
+  if (isLoading) return <Spinner />;
 
-  if (apiStatus === PENDING && !exercisesProp) return <Spinner />;
-  if (apiStatus === ERROR && !exercisesProp) return <div>Error fetching exercises: {error?.message}</div>;
+  if (isError) return <div>Error fetching exercises: {error?.message}</div>;
+
   if (!groupedExercises || Object.keys(groupedExercises).length === 0) return <div>No exercises found</div>;
 
   return (
@@ -78,8 +57,8 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, r
         <Grid item xs={12} sm={4} key={index}>
           <Box margin="10px">
             <Typography variant="h5" color="white" marginBottom="10px">{category}</Typography>
-            {exercisesInCategory.map((exercise) => (
-              <Paper key={exercise.Id} sx={{
+            {exercisesInCategory.map((exercise, exerciseIndex) => (
+              <Paper key={exercise.Id || exerciseIndex} sx={{
                 padding: '10px',
                 backgroundColor: "#242424",
                 marginBottom: '10px',
@@ -90,7 +69,7 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, r
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <div>
                     <Typography color="white" fontWeight="bold">{exercise.ExerciseName}</Typography>
-                    <Typography color="white">{EquipmentType[exercise.EquipmentType as number]}</Typography>
+                    <Typography color="white">{mapEquipmentType(exercise.EquipmentType)}</Typography>
                   </div>
                   <Button
                     variant="contained"
@@ -98,17 +77,10 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, r
                     onClick={() => onCompleteClick(exercise)}
                     sx={{ marginLeft: '10px' }}
                   >
-                    Complete
+                    {buttonText}
                   </Button>
-                </div>
-                <div style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  flex: 0.2
-                }}>
                   <img
-                    src={getEquipmentImage(exercise.EquipmentType as number)}
-                    alt={EquipmentType[exercise.EquipmentType as number]}
+                    src={getEquipmentImage(exercise.EquipmentType)}
                     style={{ width: '30px', height: '30px' }}
                   />
                 </div>
@@ -120,3 +92,5 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, r
     </Grid>
   );
 };
+
+const getEquipmentImage = (equipmentType: EquipmentType | undefined): string => barbell; // Implement dynamic URL based on equipmentType if necessary

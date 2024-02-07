@@ -8,11 +8,8 @@ import { Category, EquipmentType } from '@operation-stacked/operation-stacked-sh
 import { CreateExerciseRequest, ExerciseApi } from '@operation-stacked/shared-services';
 import { TextField } from '@operation-stacked/ui-components';
 
-export interface ExerciseFormProps {
-  onRefreshExercises: () => void;
-}
 
-const ExerciseForm: React.FC<ExerciseFormProps> = ({ onRefreshExercises }) => {
+const ExerciseForm = () => {
   const [exerciseName, setExerciseName] = useState<string>('');
   const [category, setCategory] = useState<Category | ''>('');
   const [equipmentType, setEquipmentType] = useState<EquipmentType | ''>('');
@@ -33,8 +30,8 @@ const ExerciseForm: React.FC<ExerciseFormProps> = ({ onRefreshExercises }) => {
     e.preventDefault();
     const newExerciseRequest = [{
       ExerciseName: exerciseName,
-      Category: category as number, // Assuming Category expects a number
-      EquipmentType: equipmentType as number, // Assuming EquipmentType expects a number
+      Category: category as number,
+      EquipmentType: equipmentType as number,
       UserId: userId
     }];
 
@@ -43,8 +40,7 @@ const ExerciseForm: React.FC<ExerciseFormProps> = ({ onRefreshExercises }) => {
       setCategory('');
       setEquipmentType('');
 
-    }).catch(console.error);
-    onRefreshExercises();
+    })
   };
 
   const textFieldStyles = {

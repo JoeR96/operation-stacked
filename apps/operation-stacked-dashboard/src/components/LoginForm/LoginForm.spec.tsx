@@ -13,7 +13,8 @@ jest.mock('@operation-stacked/api-hooks', () => ({
         apiStatus: 'IDLE', // Set the initial status
         exec: async (email, password) => {
             // Mock the API call
-            const response = await callback(email, password);
+            const response = await
+              (email, password);
             return response;
         },
         error: null,

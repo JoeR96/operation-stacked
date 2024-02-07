@@ -1,0 +1,468 @@
+[32minfo[0m[35m[0m => Starting manager..
+[0m[32minfo[0m[35m[0m => Starting preview..
+[0m[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Re-optimizing dependencies because vite config has changed
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.10[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m646 ms[24m for manager and [4m10 s[24m for preview[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:4400/[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://192.168.0.139:4400/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+Error: The following dependencies are imported but could not be resolved:
+
+  [36mreact-datepicker/dist/react-datepicker.css[39m [37m[2m(imported by C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx)[22m[39m
+
+Are they installed?
+    at file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:65506:23
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64906:38
+[2m14:02:19[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:02:19[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist? [33m(x2)[39m
+[2m14:02:19[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:02:19[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:0
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+[2m14:02:21[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33m@emotion/react/jsx-dev-runtime, react-router-dom, @storybook/testing-library, @testing-library/user-event, @mui/material, zustand, formik, yup, react-date-picker, axios, @mui/material/TextField[32m[39m
+[2m14:02:21[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m14:02:22[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:02:22[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:0
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import DatePicker from "react-date-picker";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:03:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx, /src/components/exercise/ExerciseCompletionForm.stories.tsx[22m
+[2m14:03:18[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:03:18[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:0
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import DatePicker from "react-date-picker";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:05:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx, /src/components/exercise/ExerciseCompletionForm.stories.tsx[22m
+[2m14:05:43[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:05:43[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:0
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import DatePicker from "react-date-picker";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:06:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx, /src/components/exercise/ExerciseCompletionForm.stories.tsx[22m
+[2m14:06:12[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:06:12[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:0
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import DatePicker from "react-date-picker";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:07:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx, /src/components/exercise/ExerciseCompletionForm.stories.tsx[22m
+[2m14:07:00[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:07:00[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:0
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import DatePicker from "react-datepicker";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)

@@ -1,10 +1,9 @@
-﻿// In ExerciseCompletionForm.stories.tsx
-import React from 'react';
+﻿import React from 'react';
 import ExerciseCompletionForm, { ExerciseCompletionFormProps } from './ExerciseCompletionForm';
 import { Meta, Story } from '@storybook/react';
 
 export default {
-    title: 'Components/ExerciseCompletionForm',
+    title: 'Exercise/ExerciseCompletionForm',
     component: ExerciseCompletionForm,
 } as Meta;
 

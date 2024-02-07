@@ -1,10 +1,12 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { useUserStore } from '../../state/userState';
 import ExerciseLayout from './ExerciseLayout';
+import { useExerciseStore } from '../../state/exerciseState';
+import { useUserStore } from '../../state/userState';
+import { mockExercises } from '../../../.storybook/mocks/mockExercises'; // Ensure this path is correct
 
 export default {
-  title: 'Components/ExerciseLayout',
+  title: 'Exercise/ExerciseLayout',
   component: ExerciseLayout,
 } as Meta;
 
@@ -15,10 +17,10 @@ InitialState.decorators = [
   (StoryFn) => {
     // Reset Zustand store to its initial state
     useUserStore.setState({
-      userId: 'mock-user-id',
+      userId: '1234',
       username: 'mock-username',
-      // Reset or set initial state as required
     });
+    useExerciseStore.setState({ exercises: [] });
     return <StoryFn />;
   },
 ];
@@ -26,10 +28,12 @@ InitialState.decorators = [
 export const WithExercises = Template.bind({});
 WithExercises.decorators = [
   (StoryFn) => {
+    // Set Zustand store for exercises and user
     useUserStore.setState({
-      userId: 'mock-user-id',
+      userId: '1234', // Updated to match the userId you wanted
       username: 'mock-username',
     });
+    useExerciseStore.setState({ exercises: mockExercises });
     return <StoryFn />;
   },
 ];
@@ -38,9 +42,10 @@ export const NoExercises = Template.bind({});
 NoExercises.decorators = [
   (StoryFn) => {
     useUserStore.setState({
-      userId: 'mock-user-id',
+      userId: '1234', // Ensure consistency in userId across stories
       username: 'mock-username',
     });
+    useExerciseStore.setState({ exercises: [] });
     return <StoryFn />;
   },
 ];
@@ -48,6 +53,7 @@ NoExercises.decorators = [
 export const LoadingState = Template.bind({});
 LoadingState.decorators = [
   (StoryFn) => {
+    // Optionally, simulate loading by setting Zustand store or use args/props
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
         <StoryFn />

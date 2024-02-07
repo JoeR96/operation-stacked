@@ -1,0 +1,4404 @@
+[32minfo[0m[35m[0m => Starting manager..
+[0m[32minfo[0m[35m[0m => Starting preview..
+[0m[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Re-optimizing dependencies because lockfile has changed
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.10[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m689 ms[24m for manager and [4m10 s[24m for preview[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:4400/[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://192.168.0.139:4400/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+[2m00:41:09[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33m@emotion/react/jsx-dev-runtime[32m[39m
+[2m00:41:09[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:03:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 11)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 11)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 11)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   Error: Unexpected `storiesOf` usage: C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 6, col 0).
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m In SB7, we use the next-generation `storyStoreV7` by default, which does not support `storiesOf`. 
+[0m[30;43mWARN[0m[35m[0m More info, with details about how to opt-out here: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#storystorev7-enabled-by-default
+[0m[30;43mWARN[0m[35m[0m     at enter (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:9:5811)
+[0m[30;43mWARN[0m[35m[0m     at NodePath._call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:46:20)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:36:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:82:31)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   Error: Unexpected `storiesOf` usage: C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 5, col 0).
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m In SB7, we use the next-generation `storyStoreV7` by default, which does not support `storiesOf`. 
+[0m[30;43mWARN[0m[35m[0m More info, with details about how to opt-out here: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#storystorev7-enabled-by-default
+[0m[30;43mWARN[0m[35m[0m     at enter (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:9:5811)
+[0m[30;43mWARN[0m[35m[0m     at NodePath._call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:46:20)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:36:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:82:31)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   Error: Unexpected `storiesOf` usage: C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 6, col 0).
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m In SB7, we use the next-generation `storyStoreV7` by default, which does not support `storiesOf`. 
+[0m[30;43mWARN[0m[35m[0m More info, with details about how to opt-out here: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#storystorev7-enabled-by-default
+[0m[30;43mWARN[0m[35m[0m     at enter (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:9:5811)
+[0m[30;43mWARN[0m[35m[0m     at NodePath._call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:46:20)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:36:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:82:31)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   Error: Unexpected `storiesOf` usage: C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 6, col 0).
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m In SB7, we use the next-generation `storyStoreV7` by default, which does not support `storiesOf`. 
+[0m[30;43mWARN[0m[35m[0m More info, with details about how to opt-out here: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#storystorev7-enabled-by-default
+[0m[30;43mWARN[0m[35m[0m     at enter (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:9:5811)
+[0m[30;43mWARN[0m[35m[0m     at NodePath._call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:46:20)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:36:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:82:31)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   Error: Unexpected `storiesOf` usage: C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 5, col 0).
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m In SB7, we use the next-generation `storyStoreV7` by default, which does not support `storiesOf`. 
+[0m[30;43mWARN[0m[35m[0m More info, with details about how to opt-out here: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#storystorev7-enabled-by-default
+[0m[30;43mWARN[0m[35m[0m     at enter (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:9:5811)
+[0m[30;43mWARN[0m[35m[0m     at NodePath._call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:46:20)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.call (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:36:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:82:31)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitSingle (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:65:19)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:109:19)
+[0m[30;43mWARN[0m[35m[0m     at traverseNode (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\traverse-node.js:22:17)
+[0m[30;43mWARN[0m[35m[0m     at NodePath.visit (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\path\context.js:88:52)
+[0m[30;43mWARN[0m[35m[0m     at TraversalContext.visitQueue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\traverse\lib\context.js:86:16)
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:06:46[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+[2m01:06:46[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+[2m01:06:47[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33mreact-date-picker[32m[39m
+[2m01:06:47[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:06:49[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+[2m01:06:49[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+[2m01:07:04[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:04[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:10[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:07:28[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:28[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:07:30[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:30[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:16[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:09:52[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:52[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:09:57[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:57[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:09:58[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:58[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:09[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+[2m01:10:09[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:25[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+[2m01:10:25[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:10:32[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:32[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:10:43[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:43[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:10:50[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:50[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:53[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+[2m01:10:53[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+[2m01:10:59[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:59[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:11:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:11:03[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:11:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:11:04[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:18:04[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:19:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/pages/ExercisePage.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/pages/ExercisePage.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 12)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/pages/ExercisePage.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/pages/ExercisePage.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 12)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:20:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ExercisePage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:20:04[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./ExerciseTable" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseLayout.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseLayout.tsx[39m:3:31
+[33m  18 |  import { useState } from "react";
+  19 |  import { Box, Paper, Button } from "@mui/material";
+  20 |  import { ExercisesTable } from "./ExerciseTable";
+     |                                  ^
+  21 |  import ExerciseCompletionForm from "./ExerciseCompletionForm";
+  22 |  import ExerciseForm from "./ExerciseForm";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+[2m01:20:04[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./ExerciseTable" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseLayout.tsx". Does the file exist?
+[2m01:20:04[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:22:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/dashboard/DashboardHeader.tsx, /src/pages/LoginPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:26:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/ExercisePage.tsx[22m
+[2m01:26:27[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:26:27[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:25
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+[2m01:26:27[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:27:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m
+[2m01:27:43[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+[2m01:27:43[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+[2m01:27:43[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "@operation-stacked/operation-stacked-shared-types" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:27:43[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:25
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:27:43[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:27:43[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "@operation-stacked/operation-stacked-shared-types" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.tsx[39m:7:40
+[33m  22 |  import { theme } from "@operation-stacked/shared-styles";
+  23 |  import { ERROR, PENDING } from "@operation-stacked/api-hooks";
+  24 |  import { Category, EquipmentType } from "@operation-stacked/operation-stacked-shared-types";
+     |                                           ^
+  25 |  export const ExerciseForm = ({ onRefreshExercises }) => {
+  26 |    _s();[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 9)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:28:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 13)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 13)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:28:51[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:25
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:28:51[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "@operation-stacked/operation-stacked-shared-types" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.tsx[39m:7:40
+[33m  22 |  import { theme } from "@operation-stacked/shared-styles";
+  23 |  import { ERROR, PENDING } from "@operation-stacked/api-hooks";
+  24 |  import { Category, EquipmentType } from "@operation-stacked/operation-stacked-shared-types";
+     |                                           ^
+  25 |  export const ExerciseForm = ({ onRefreshExercises }) => {
+  26 |    _s();[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 9)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:28:51[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseLayout.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseLayout.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 14)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseLayout.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseLayout.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 14)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:07[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:25
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:07[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:07[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "@operation-stacked/operation-stacked-shared-types" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.tsx[39m:7:40
+[33m  22 |  import { theme } from "@operation-stacked/shared-styles";
+  23 |  import { ERROR, PENDING } from "@operation-stacked/api-hooks";
+  24 |  import { Category, EquipmentType } from "@operation-stacked/operation-stacked-shared-types";
+     |                                           ^
+  25 |  export const ExerciseForm = ({ onRefreshExercises }) => {
+  26 |    _s();[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 9)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 15)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:27[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:25
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:27[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:27[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "@operation-stacked/operation-stacked-shared-types" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.tsx[39m:7:40
+[33m  22 |  import { theme } from "@operation-stacked/shared-styles";
+  23 |  import { ERROR, PENDING } from "@operation-stacked/api-hooks";
+  24 |  import { Category, EquipmentType } from "@operation-stacked/operation-stacked-shared-types";
+     |                                           ^
+  25 |  export const ExerciseForm = ({ onRefreshExercises }) => {
+  26 |    _s();[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 9)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+[2m01:29:42[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+[2m01:29:43[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "@operation-stacked/operation-stacked-shared-types" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:31:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:31:26[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:31:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:31:58[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:32:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:32:52[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:33:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:33:00[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:34:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:34:09[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:34:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:34:12[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:34:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:34:24[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:35:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:35:51[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:45:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m
+[2m01:45:43[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:45:43[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:45:43[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:45:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m
+[2m01:45:58[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:45:58[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:45:58[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:48:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m
+[2m01:48:37[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:48:38[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:48:38[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:50:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:50:30[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./LoginForm.vue" from "apps\operation-stacked-dashboard\src\components\LoginForm\LoginForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.tsx[39m:4:22
+[33m  1  |  import { render, fireEvent } from "@testing-library/vue";
+  2  |  import LoginForm from "./LoginForm.vue";
+     |                         ^
+  3  |  describe("LoginForm", () => {
+  4  |    it("should handle login form submission", async () => {[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 1)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:50:30[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/pages/LoginPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:00[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+[2m01:51:01[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33m@testing-library/react[32m[39m
+[2m01:51:01[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m01:51:03[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:03[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:03[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:07[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+[2m01:51:07[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./LoginForm.vue" from "apps\operation-stacked-dashboard\src\components\LoginForm\LoginForm.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:07[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./LoginForm.vue" from "apps\operation-stacked-dashboard\src\components\LoginForm\LoginForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.tsx[39m:4:22
+[33m  1  |  import { render, fireEvent } from "@testing-library/vue";
+  2  |  import LoginForm from "./LoginForm.vue";
+     |                         ^
+  3  |  describe("LoginForm", () => {
+  4  |    it("should handle login form submission", async () => {[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 1)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:07[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/pages/LoginPage.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:21[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:51:21[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "react-datepicker/dist/react-datepicker.css" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:3:7
+[33m  18 |  import { useState } from "react";
+  19 |  import { Typography, Box, Grid, CircularProgress } from "@mui/material";
+  20 |  import "react-datepicker/dist/react-datepicker.css";
+     |          ^
+  21 |  import { Button, TextField } from "@operation-stacked/ui-components";
+  22 |  import { theme } from "@operation-stacked/shared-styles";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32) [33m(x2)[39m

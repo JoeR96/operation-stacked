@@ -1,0 +1,323 @@
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m21:02:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m21:02:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m21:02:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m21:02:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m21:04:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/RegistrationForm/RegistrationForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m21:04:18[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\RegistrationForm\RegistrationForm.tsx: Unexpected token (111:36)
+
+[0m [90m 109 |[31m                 [33m<[31m[33mGrid[31m item[33m>[31m[0m
+[0m [90m 110 |[31m                   [33m<[31m[33mBox[31m textAlign[33m=[31m[32m"center"[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 111 |[31m                     [33m<[31m[33mButton[31m onClick[33m=[31m{}[33m>[31m[0m
+[0m [90m     |[31m                                     [31m[1m^[22m[31m[0m
+[0m [90m 112 |[31m                       [33mRegister[31m[0m
+[0m [90m 113 |[31m                     [33m<[31m[33m/[31m[33mButton[31m[33m>[31m[0m
+[0m [90m 114 |[31m                     [33m<[31m[33mButton[31m onClick[33m=[31m{onToggleForm}[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.tsx[39m:111:36
+[33m  112|                        Register
+  113|                      </Button>
+  114|                      <Button onClick={onToggleForm}>
+     |                                               ^
+  115|                        Login
+  116|                      </Button>[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+      at TypeScriptParserMixin.checkExpressionErrors (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3677:12)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10370:12)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6687:31)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6766:36)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6804:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6816:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:39
+      at TypeScriptParserMixin.tryParse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3608:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:18)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11189:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12609:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12260:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m21:05:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/RegistrationForm/RegistrationForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m21:06:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/RegistrationForm/RegistrationForm.tsx[22m [33m(x2)[39m

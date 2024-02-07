@@ -5,7 +5,7 @@ import { useUserStore } from '../../state/userState';
 import { Meta, Story } from '@storybook/react';
 
 export default {
-  title: 'Components/ExerciseForm',
+  title: 'Exercise/ExerciseForm',
   component: ExerciseForm,
 } as Meta;
 

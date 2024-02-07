@@ -1,0 +1,26 @@
+[4m[34mapps\operation-stacked-dashboard\src\components\RegistrationForm\RegistrationForm.tsx:40:13[39m[24m - [31m[1merror[22m[39m [90mTS18047[39m: 'result.data' is possibly 'null'.
+
+[0m [90m 38 | [39m      exec(values[33m.[39memail[33m,[39m values[33m.[39mpassword)[33m.[39mthen((result) [33m=>[39m {[0m
+[0m [90m 39 | [39m        setSubmitting([36mfalse[39m)[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 40 | [39m        [36mif[39m (result[33m.[39mdata[33m.[39mmessage [33m===[39m [32m'Registration successful'[39m) {[0m
+[0m [90m    | [39m            [31m[1m^[22m[39m[0m
+[0m [90m 41 | [39m          setRegistrationMessage([32m'Registration successful'[39m)[33m;[39m[0m
+[0m [90m 42 | [39m          navigate([32m'/login'[39m)[33m;[39m[0m
+[0m [90m 43 | [39m        } [36melse[39m [36mif[39m (result[33m.[39mdata[33m.[39mmessage [33m===[39m [32m'User already exists.'[39m) {[0m
+
+[4m[34mapps\operation-stacked-dashboard\src\components\RegistrationForm\RegistrationForm.tsx:43:20[39m[24m - [31m[1merror[22m[39m [90mTS18047[39m: 'result.data' is possibly 'null'.
+
+[0m [90m 41 | [39m          setRegistrationMessage([32m'Registration successful'[39m)[33m;[39m[0m
+[0m [90m 42 | [39m          navigate([32m'/login'[39m)[33m;[39m[0m
+[0m[31m[1m>[22m[39m[90m 43 | [39m        } [36melse[39m [36mif[39m (result[33m.[39mdata[33m.[39mmessage [33m===[39m [32m'User already exists.'[39m) {[0m
+[0m [90m    | [39m                   [31m[1m^[22m[39m[0m
+[0m [90m 44 | [39m          setRegistrationMessage([32m'User already registered'[39m)[33m;[39m[0m
+[0m [90m 45 | [39m        }[0m
+[0m [90m 46 | [39m      })[33m.[39m[36mcatch[39m(() [33m=>[39m {[0m
+
+Found 2 errors.
+
+ [31m>[39m [0m[7m[1m[31m NX [39m[22m[27m[0m  [31mFound type errors. See above.[39m
+
+   Pass --verbose to see the stacktrace.
+

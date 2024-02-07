@@ -1,0 +1,20 @@
+[4m[34mlibs\shared-services\src\index.ts:2:1[39m[24m - [31m[1merror[22m[39m [90mTS2308[39m: Module './lib/auth-api' has already exported a member named 'Configuration'. Consider explicitly re-exporting to resolve the ambiguity.
+
+[0m [90m 1 | [39m[36mexport[39m [33m*[39m from [32m'./lib/auth-api'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mexport[39m [33m*[39m from [32m'./lib/workout-api'[39m[33m;[39m[0m
+[0m [90m   | [39m[31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[0m
+
+[4m[34mlibs\shared-services\src\index.ts:2:1[39m[24m - [31m[1merror[22m[39m [90mTS2308[39m: Module './lib/auth-api' has already exported a member named 'ConfigurationParameters'. Consider explicitly re-exporting to resolve the ambiguity.
+
+[0m [90m 1 | [39m[36mexport[39m [33m*[39m from [32m'./lib/auth-api'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mexport[39m [33m*[39m from [32m'./lib/workout-api'[39m[33m;[39m[0m
+[0m [90m   | [39m[31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[0m
+
+Found 2 errors.
+
+ [31m>[39m [0m[7m[1m[31m NX [39m[22m[27m[0m  [31mFound type errors. See above.[39m
+
+   Pass --verbose to see the stacktrace.
+

@@ -1,0 +1,40 @@
+
+[7m[1m[34m DEV [39m[22m[27m [34mv0.34.6[39m [90mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard[39m
+[2m      Coverage enabled with [22m[33mv8[39m
+
+ [33m❯[39m src/environments/environment.test.ts [2m ([22m[2m0 test[22m[2m)[22m
+[90mstderr[2m | unknown test[22m[39m
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+ [33m❯[39m src/components/LoginForm/LoginForm.spec.tsx [2m ([22m[2m0 test[22m[2m)[22m
+
+[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 2 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/environments/environment.test.ts [2m[ src/environments/environment.test.ts ][22m
+[31m[1mError[22m: No test suite found in file C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/environments/environment.test.ts[39m
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/2]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/components/LoginForm/LoginForm.spec.tsx [2m[ src/components/LoginForm/LoginForm.spec.tsx ][22m
+[31m[1mError[22m: [vitest] There was an error when mocking a module. If you are using "vi.mock" factory, make sure there are no top level variables inside, since this call is hoisted to top of the file. Read more: https://vitest.dev/api/vi.html#vi-mock[39m
+[36m [2m❯[22m src/components/LoginForm/LoginForm.tsx:[2m9:31[22m[39m
+    [90m  9| [39m
+    [90m 10| [39mtype LoginFormProps = {
+    [90m 11| [39m  onToggleForm: () => void;
+    [90m   | [39m   [31m^[39m
+    [90m 12| [39m};
+    [90m 13| [39m
+
+[31m[1mCaused by: ReferenceError[22m: Cannot access 'mockAuthApi' before initialization[39m
+[36m [2m❯[22m src/components/LoginForm/LoginForm.spec.tsx:[2m3:12[22m[39m
+[90m [2m❯[22m src/components/LoginForm/LoginForm.tsx:[2m9:31[22m[39m
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/2]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[90m (2)[39m
+[2m      Tests [22m [2mno tests[22m
+[2m   Start at [22m 00:18:25
+[2m   Duration [22m 3.59s[2m (transform 219ms, setup 0ms, collect 25ms, tests 0ms, environment 1.36s, prepare 396ms)[22m
+
+
+[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m

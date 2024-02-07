@@ -1,0 +1,2606 @@
+[32minfo[0m[35m[0m => Starting manager..
+[0m[32minfo[0m[35m[0m => Starting preview..
+[0m[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.10[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m250 ms[24m for manager and [4m9.26 s[24m for preview[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:4400/[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://192.168.0.139:4400/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index files:
+[0m[30;43mWARN[0m[35m[0m - ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx,./apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.stories.tsx: Duplicate stories with id: components-exercisecompletionform--default
+[0m[30;43mWARN[0m[35m[0m - ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx,./apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.stories.tsx: Duplicate stories with id: components-exercisecompletionform--loading-state
+[0m[30;43mWARN[0m[35m[0m - ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx,./apps/operation-stacked-dashboard/src/components/exercise/ExerciseForm.stories.tsx: Duplicate stories with id: components-exercisecompletionform--multiple-exercises
+[0m[?25l[2K[1G[36m?[39m [1mWould you like to help improve Storybook by sending anonymous crash reports?[22m [90m»[39m [90m(Y/n)[39m[2m14:19:45[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33m@emotion/react/jsx-dev-runtime[32m[39m
+[2m14:19:45[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+[2m14:19:55[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:19:55[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:0
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+[2m14:19:55[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:25:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:26:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:29:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:30:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:30:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:32:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+[2m14:33:17[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:33:17[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:0
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:35:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:35:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:36:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:36:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:36:45[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:39:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:39:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:40:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:40:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:40:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:40:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:41:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/@fs/C:/Users/joeyr/src/git/operation-stacked/libs/ui-components/src/lib/TextField/TextField.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:42:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/@fs/C:/Users/joeyr/src/git/operation-stacked/libs/ui-components/src/lib/TextField/TextField.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:42:16[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/@fs/C:/Users/joeyr/src/git/operation-stacked/libs/ui-components/src/lib/TextField/TextField.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:42:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:43:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:43:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:43:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:44:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:44:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:44:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:44:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:44:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:44:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:44:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:21[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx: Expected corresponding JSX closing tag for <Grid>. (165:10)
+
+[0m [90m 163 |[31m                       [33m<[31m[33m/[31m[33mButton[31m[33m>[31m[0m
+[0m [90m 164 |[31m                   [33m<[31m[33m/[31m[33mGrid[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 165 |[31m           [33m<[31m[33m/[31m[33mPaper[31m[33m>[31m[0m
+[0m [90m     |[31m           [31m[1m^[22m[31m[0m
+[0m [90m 166 |[31m       [33m<[31m[33m/[31m[33mGrid[31m[33m>[31m[0m
+[0m [90m 167 |[31m     )[33m;[31m[0m
+[0m [90m 168 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:165:10
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6782:16)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6804:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6816:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:39
+      at TypeScriptParserMixin.tryParse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3608:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:18)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11189:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12609:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12260:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:21[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx: Expected corresponding JSX closing tag for <Grid>. (165:10)
+
+[0m [90m 163 |[31m                       [33m<[31m[33m/[31m[33mButton[31m[33m>[31m[0m
+[0m [90m 164 |[31m                   [33m<[31m[33m/[31m[33mGrid[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 165 |[31m           [33m<[31m[33m/[31m[33mPaper[31m[33m>[31m[0m
+[0m [90m     |[31m           [31m[1m^[22m[31m[0m
+[0m [90m 166 |[31m       [33m<[31m[33m/[31m[33mGrid[31m[33m>[31m[0m
+[0m [90m 167 |[31m     )[33m;[31m[0m
+[0m [90m 168 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:165:10
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6782:16)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6804:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6816:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:39
+      at TypeScriptParserMixin.tryParse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3608:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:18)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11189:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12609:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12260:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:24[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx: Expected corresponding JSX closing tag for <Grid>. (165:14)
+
+[0m [90m 163 |[31m                       [33m<[31m[33m/[31m[33mButton[31m[33m>[31m[0m
+[0m [90m 164 |[31m                   [33m<[31m[33m/[31m[33mGrid[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 165 |[31m               [33m<[31m[33m/[31m[33mBox[31m[33m>[31m[0m
+[0m [90m     |[31m               [31m[1m^[22m[31m[0m
+[0m [90m 166 |[31m           [33m<[31m[33m/[31m[33mPaper[31m[33m>[31m[0m
+[0m [90m 167 |[31m       [33m<[31m[33m/[31m[33mGrid[31m[33m>[31m[0m
+[0m [90m 168 |[31m     )[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:165:14
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6782:16)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6804:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6816:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:39
+      at TypeScriptParserMixin.tryParse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3608:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:18)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11189:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12609:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12260:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:24[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseCompletionForm.tsx: Expected corresponding JSX closing tag for <Grid>. (165:14)
+
+[0m [90m 163 |[31m                       [33m<[31m[33m/[31m[33mButton[31m[33m>[31m[0m
+[0m [90m 164 |[31m                   [33m<[31m[33m/[31m[33mGrid[31m[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 165 |[31m               [33m<[31m[33m/[31m[33mBox[31m[33m>[31m[0m
+[0m [90m     |[31m               [31m[1m^[22m[31m[0m
+[0m [90m 166 |[31m           [33m<[31m[33m/[31m[33mPaper[31m[33m>[31m[0m
+[0m [90m 167 |[31m       [33m<[31m[33m/[31m[33mGrid[31m[33m>[31m[0m
+[0m [90m 168 |[31m     )[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.tsx[39m:165:14
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6782:16)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6804:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6816:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:39
+      at TypeScriptParserMixin.tryParse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3608:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:18)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11189:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12609:28)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12260:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:45:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:46:31[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseCompletionForm.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 7)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:46:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:46:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:46:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:47:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:49:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseForm.tsx[22m [33m(x2)[39m
+[2m14:49:20[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseForm.tsx[22m Could not Fast Refresh (export removed)
+[2m14:49:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m
+[2m14:49:20[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseForm.tsx[22m Could not Fast Refresh (export removed)
+[2m14:49:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:55:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m14:55:25[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:56:45[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseForm.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:00:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:00:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:02:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:02:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:03:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:05:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:05:06[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:05:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:06:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m15:06:09[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:07:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:07:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:07:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m15:07:38[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:07:39[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./barbell.png" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:4:0
+[33m  19 |  import { Paper, Button, Typography, Grid, Box } from "@mui/material";
+  20 |  import Spinner from "../spinner/Spinner";
+  21 |  import barbellImage from "./barbell.png";
+     |                            ^
+  22 |  import smithMachineImage from "./smithMachine.png";
+  23 |  import dumbbellImage from "./dumbell.png";[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 6)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:07:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:07:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:09:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:09:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:09:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js, /src/components/exercise/ExerciseLayout.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:09:23[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./ExercisesTable" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.stories.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx[39m:17:33
+[33m  15 |    window.$RefreshSig$ = RefreshRuntime.createSignatureFunctionForTransform;
+  16 |  }
+  17 |  import { ExercisesTable } from "./ExercisesTable";
+     |                                  ^
+  18 |  export default {
+  19 |    title: "Components/ExercisesTable",[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 3)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:09:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:09:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:09:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m
+[2m15:09:47[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseTable.tsx[22m Could not Fast Refresh (export removed)
+[2m15:09:47[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:09:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:10:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:10:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+[2m15:10:43[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m15:10:43[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m

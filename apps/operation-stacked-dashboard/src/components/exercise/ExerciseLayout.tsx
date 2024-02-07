@@ -7,15 +7,10 @@ import { Exercise } from "@operation-stacked/shared-services";
 import ExerciseForm from './ExerciseForm';
 
 const ExerciseLayout = () => {
-    const { userId } = useUserStore();
     const [showNewExerciseForm, setShowNewExerciseForm] = useState(false);
     const [showCompletionForm, setShowCompletionForm] = useState(false);
     const [selectedExerciseId, setSelectedExerciseId] = useState<string>(''); // Initialize as a string or null
-    const [refreshExercises, setRefreshExercises] = useState(false);
 
-    const refreshExercisesList = () => {
-        setRefreshExercises(prevState => !prevState);
-    };
 
     const handleCompleteClick = (exercise: Exercise) => {
         setSelectedExerciseId(exercise.Id as string);
@@ -40,7 +35,7 @@ const ExerciseLayout = () => {
 
           {showNewExerciseForm && (
             <Paper style={{ padding: 16, marginBottom: 16, backgroundColor: '#242424' }}>
-                <ExerciseForm onRefreshExercises={refreshExercisesList} />
+                <ExerciseForm  />
             </Paper>
           )}
 
@@ -49,7 +44,7 @@ const ExerciseLayout = () => {
               exerciseId={selectedExerciseId}
             />
           ) : (
-            <ExerciseTable onCompleteClick={handleCompleteClick} refreshState={refreshExercises} />
+            <ExerciseTable onCompleteClick={handleCompleteClick} buttonText={'Complete'}/>
           )}
       </Box>
     );

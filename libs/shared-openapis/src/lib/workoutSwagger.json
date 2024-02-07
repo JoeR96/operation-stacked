@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Operation Stacked Workout",
-    "version": "0.296"
+    "version": "0.298"
   },
   "paths": {
     "/equipment-stack/create": {
@@ -1671,6 +1671,12 @@
         "format": "int32"
       },
       "Exercise": {
+        "required": [
+          "Category",
+          "EquipmentType",
+          "ExerciseName",
+          "UserId"
+        ],
         "type": "object",
         "properties": {
           "Id": {
@@ -1678,8 +1684,7 @@
             "format": "uuid"
           },
           "ExerciseName": {
-            "type": "string",
-            "nullable": true
+            "type": "string"
           },
           "Category": {
             "$ref": "#/components/schemas/Category"

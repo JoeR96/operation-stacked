@@ -1,0 +1,900 @@
+Re-optimizing dependencies because lockfile has changed
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:04:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:04:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:04:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:04:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:04:49[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\username\Username.tsx: Unexpected token (37:17)
+
+[0m [90m 35 |[31m     [36mconst[31m result [33m=[31m [36mawait[31m setUsernameApi[33m.[31mexec(newUsername)[33m;[31m[0m
+[0m [90m 36 |[31m     console[33m.[31mlog(result)[0m
+[0m[31m[1m>[22m[31m[90m 37 |[31m     [36mif[31m (result [36mas[31m[33m===[31m [36mfalse[31m) {[0m
+[0m [90m    |[31m                  [31m[1m^[22m[31m[0m
+[0m [90m 38 |[31m       setUsername(newUsername)[33m;[31m[0m
+[0m [90m 39 |[31m     }[0m
+[0m [90m 40 |[31m   }[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/username/Username.tsx[39m:37:17
+[33m  36 |      console.log(result)
+  37 |      if (result as=== false) {
+  38 |        setUsername(newUsername);
+     |                         ^
+  39 |      }
+  40 |    };[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+      at TypeScriptParserMixin.tsParseNonArrayType (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8173:10)
+      at TypeScriptParserMixin.tsParseArrayTypeOrHigher (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8176:21)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8232:158
+      at TypeScriptParserMixin.tsInAllowConditionalTypesContext (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8517:14)
+      at TypeScriptParserMixin.tsParseTypeOperatorOrHigher (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8232:114)
+      at TypeScriptParserMixin.tsParseUnionOrIntersectionType (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8239:18)
+      at TypeScriptParserMixin.tsParseIntersectionTypeOrHigher (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8248:17)
+      at TypeScriptParserMixin.tsParseUnionOrIntersectionType (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8239:18)
+      at TypeScriptParserMixin.tsParseUnionTypeOrHigher (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8251:17)
+      at TypeScriptParserMixin.tsParseNonConditionalType (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8418:17)
+      at TypeScriptParserMixin.tsParseType (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8393:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8996:21
+      at TypeScriptParserMixin.tsInType (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8499:14)
+      at TypeScriptParserMixin.parseExprOp (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8986:34)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10404:17)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.parseHeaderExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12498:22)
+      at TypeScriptParserMixin.parseIfStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12596:22)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12258:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseAsyncArrowFromCallExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10778:10)
+      at TypeScriptParserMixin.parseAsyncArrowFromCallExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9385:18)
+      at TypeScriptParserMixin.parseCoverCallAndAsyncArrowHead (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10691:27)
+      at TypeScriptParserMixin.parseSubscript (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10620:19)
+      at TypeScriptParserMixin.parseSubscript (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8968:18)
+      at TypeScriptParserMixin.parseSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10593:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10584:17)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:04:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:05:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:05:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:07:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/LoginForm/LoginForm.tsx, /src/components/RegistrationForm/RegistrationForm.tsx, /src/components/username/Username.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:08:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:13[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:31[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:10:49[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x9)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:11:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x10)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:11:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x11)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:12:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x12)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:12:36[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\username\Username.tsx: Identifier 'userId' has already been declared. (16:10)
+
+[0m [90m 14 |[31m   [36mconst[31m { username[33m,[31m setUsername[33m,[31m userId } [33m=[31m useUserStoreHook()[33m;[31m[0m
+[0m [90m 15 |[31m   [36mconst[31m [newUsername[33m,[31m setNewUsername] [33m=[31m useState([32m''[31m)[33m;[31m[0m
+[0m[31m[1m>[22m[31m[90m 16 |[31m   [36mconst[31m { userId }[33m=[31m useUserStore()[33m;[31m[0m
+[0m [90m    |[31m           [31m[1m^[22m[31m[0m
+[0m [90m 17 |[31m   [36mconst[31m checkUsernameApi [33m=[31m useApiHook([36masync[31m (username[33m:[31m string) [33m=>[31m {[0m
+[0m [90m 18 |[31m     [36mconst[31m userApi [33m=[31m [36mnew[31m [33mUserApi[31m()[33m;[31m[0m
+[0m [90m 19 |[31m     [36mreturn[31m [36mawait[31m userApi[33m.[31muserUsernameUsernameGet(username)[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/username/Username.tsx[39m:16:10
+[33m  14 |    const { username, setUsername, userId } = useUserStoreHook();
+  15 |    const [newUsername, setNewUsername] = useState('');
+  16 |    const { userId }= useUserStore();
+     |                           ^
+  17 |    const checkUsernameApi = useApiHook(async (username: string) => {
+  18 |      const userApi = new UserApi();[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:1491:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:1457:12)
+      at TypeScriptScopeHandler.declareName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6937:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7348:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7344:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7290:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7318:14)
+      at TypeScriptParserMixin.checkLVal (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7318:14)
+      at TypeScriptParserMixin.parseVarId (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12873:10)
+      at TypeScriptParserMixin.parseVarId (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9371:11)
+      at TypeScriptParserMixin.parseVar (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12853:12)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12700:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9102:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12312:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseVar (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12854:91)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12700:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9102:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12312:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12206:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12106:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12096:25)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:12:36[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\username\Username.tsx: Identifier 'userId' has already been declared. (16:10)
+
+[0m [90m 14 |[31m   [36mconst[31m { username[33m,[31m setUsername[33m,[31m userId } [33m=[31m useUserStoreHook()[33m;[31m[0m
+[0m [90m 15 |[31m   [36mconst[31m [newUsername[33m,[31m setNewUsername] [33m=[31m useState([32m''[31m)[33m;[31m[0m
+[0m[31m[1m>[22m[31m[90m 16 |[31m   [36mconst[31m { userId }[33m=[31m useUserStore()[33m;[31m[0m
+[0m [90m    |[31m           [31m[1m^[22m[31m[0m
+[0m [90m 17 |[31m   [36mconst[31m checkUsernameApi [33m=[31m useApiHook([36masync[31m (username[33m:[31m string) [33m=>[31m {[0m
+[0m [90m 18 |[31m     [36mconst[31m userApi [33m=[31m [36mnew[31m [33mUserApi[31m()[33m;[31m[0m
+[0m [90m 19 |[31m     [36mreturn[31m [36mawait[31m userApi[33m.[31muserUsernameUsernameGet(username)[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/username/Username.tsx[39m:16:10
+[33m  14 |    const { username, setUsername, userId } = useUserStoreHook();
+  15 |    const [newUsername, setNewUsername] = useState('');
+  16 |    const { userId }= useUserStore();
+     |                           ^
+  17 |    const checkUsernameApi = useApiHook(async (username: string) => {
+  18 |      const userApi = new UserApi();[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptScopeHandler.checkRedeclarationInScope (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:1491:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:1457:12)
+      at TypeScriptScopeHandler.declareName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6937:11)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7348:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7344:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7290:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7318:14)
+      at TypeScriptParserMixin.checkLVal (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7318:14)
+      at TypeScriptParserMixin.parseVarId (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12873:10)
+      at TypeScriptParserMixin.parseVarId (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9371:11)
+      at TypeScriptParserMixin.parseVar (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12853:12)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12700:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9102:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12312:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseVar (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12854:91)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12700:10)
+      at TypeScriptParserMixin.parseVarStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9102:31)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12312:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12206:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12106:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12096:25) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:13:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:13:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:13:46[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:14:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:14:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:15:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:20:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/username/Username.tsx[22m [33m(x7)[39m
