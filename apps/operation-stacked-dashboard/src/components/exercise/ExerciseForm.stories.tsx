@@ -11,7 +11,6 @@ export default {
 
 const Template: Story<ExerciseFormProps> = () => {
   // Set initial Zustand state for the story
-  useUserStore.setState({ userId: 'mocked-user-id', username: 'mocked-username' });
 
   return <ExerciseForm onRefreshExercises={() => {}} />;
 };

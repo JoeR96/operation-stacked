@@ -20,7 +20,6 @@ const LoggedInState: StoryObj<typeof Header> = {
   name: 'Logged In',
   parameters: {
     userState: {
-      userId: '12345',
       username: 'JohnDoe'
     }
   }

@@ -1,26 +1,29 @@
-import { useExerciseStore } from '../src/state/exerciseState';
-import { useUserStore } from '../src/state/userState';
-import { mockExercises } from './mocks/mockExercises';
+import { initialize, mswDecorator } from 'msw-storybook-addon';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import React from 'react';
 
-const mockGlobalUseExerciseStore = () => {
-  // Correctly using setExercises to update the exercises state
-  useExerciseStore.setState({ exercises: mockExercises });
+initialize({ onUnhandledRequest: 'bypass' });
 
-  // Assuming you want to set specific userId and username for your stories
-  useUserStore.setState({
-    userId: "1234", // Ensure this is a string if your store expects a string
-    username: "Mocked User",
-  });
-};
-
-class Story {
-}
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      retry: false,
+    },
+  },
+});
 
 export const decorators = [
+  mswDecorator, // Add this decorator to enable MSW in Storybook
   (Story) => {
-    // Initialize the Zustand stores with desired states before rendering the story
-    mockGlobalUseExerciseStore(); // Now called without an argument
+    React.useEffect(() => {
+      return () => queryClient.clear();
+    }, []);
 
-    return <Story />;
+    return (
+      <QueryClientProvider client={queryClient}>
+        <Story />
+      </QueryClientProvider>
+    );
   },
 ];

@@ -1,46 +1,67 @@
-import { describe, it, expect, beforeEach, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
-import { mockExercises } from '../../../.storybook/mocks/mockExercises';
-import { useExerciseStore } from '../../state/exerciseState';
-import { useUserStore } from '../../state/userState';
-import React from 'react';
-import { ExerciseTable } from './ExerciseTable'; // Adjust path as necessary
-import '@testing-library/jest-dom'
-// Mocking the Zustand stores directly with predefined states
-vi.mock('../../state/exerciseState', () => ({
-  useExerciseStore: vi.fn(() => ({ exercises: [] })),
-}));
+// ExerciseTable.spec.tsx
+import { describe, it, expect, beforeEach } from 'vitest';
+import { render, screen, waitFor } from '@testing-library/react';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { ExerciseTable } from './ExerciseTable';
+import { ExerciseApi } from '@operation-stacked/shared-services'; // Adjust import paths as necessary
+import '@testing-library/jest-dom';
 
-vi.mock('../../state/userState', () => ({
-  useUserStore: vi.fn(() => ({ userId: '1234', username: 'mock-username' })),
-}));
+// Mock the entire module using Vitest
+vi.mock('@operation-stacked/shared-services', () => {
+  return {
+    ExerciseApi: vi.fn(() => ({
+      exerciseUserIdAllGet: vi.fn(),
+    })),
+  };
+});
+
+// Helper function for rendering with providers
+const renderWithProviders = (ui, { queryClient = new QueryClient(), ...options } = {}) => {
+  return render(ui, {
+    wrapper: ({ children }) => (
+      <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    ),
+    ...options,
+  });
+};
 
 describe('ExerciseTable', () => {
   beforeEach(() => {
-    // Directly setting the mock return values for each test as needed
-    vi.mocked(useExerciseStore).mockReturnValue({
-      exercises: [],
-      // Other state properties or actions as needed
-    });
-    vi.mocked(useUserStore).mockReturnValue({
-      userId: '1234',
-      username: 'mock-username',
-      // Other state properties or actions as needed
-    });
+    // Clear all implementations and mock return values
+    vi.clearAllMocks();
   });
 
-  it('renders without exercises and shows no exercises found message', () => {
-    render(<ExerciseTable buttonText="Complete" onCompleteClick={() => {}} />);
-    expect(screen.getByText('No exercises found')).toBeInTheDocument();
+  it('shows loading state correctly', async () => {
+    // Spy on the method and delay the response to simulate loading
+    const spy = vi.spyOn(ExerciseApi.prototype, 'exerciseUserIdAllGet').mockImplementation(
+      () => new Promise(() => {}) // Never resolving promise to simulate loading
+    );
+
+    renderWithProviders(<ExerciseTable onCompleteClick={() => {}} buttonText="Complete" />);
+    expect(screen.getByText(/loading/i)).toBeInTheDocument();
+
+    spy.mockRestore(); // Restore the original implementation
   });
 
-  it('renders with exercises and groups them correctly', () => {
-    vi.mocked(useExerciseStore).mockReturnValue({ exercises: mockExercises });
-    render(<ExerciseTable buttonText="Complete" onCompleteClick={() => {}} />);
+  it('shows error message when fetching exercises fails', async () => {
+    // Spy on the method and mock a rejected promise to simulate an error
+    const spy = vi.spyOn(ExerciseApi.prototype, 'exerciseUserIdAllGet').mockRejectedValue(new Error('Failed to fetch'));
 
-    for (let exercise of mockExercises) {
-      expect(screen.getByText(exercise.ExerciseName as string)).toBeInTheDocument()
-    }
+    renderWithProviders(<ExerciseTable onCompleteClick={() => {}} buttonText="Complete" />);
+    await waitFor(() => expect(screen.getByText(/error fetching exercises/i)).toBeInTheDocument());
+
+    spy.mockRestore();
   });
 
+  it('displays "No exercises found" when there are no exercises', async () => {
+    // Spy on the method and mock a resolved promise with an empty array
+    const spy = vi.spyOn(ExerciseApi.prototype, 'exerciseUserIdAllGet').mockResolvedValue({ data: [] });
+
+    renderWithProviders(<ExerciseTable onCompleteClick={() => {}} buttonText="Complete" />);
+    await waitFor(() => expect(screen.getByText(/no exercises found/i)).toBeInTheDocument());
+
+    spy.mockRestore();
+  });
+
+  // Add more tests as needed
 });

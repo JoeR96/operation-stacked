@@ -22,9 +22,9 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
   const { userId } = useUserStore();
   const exerciseApi = new ExerciseApi();
 
-  const { data: exercises, isLoading, isError, error } = useQuery<Exercise[], Error>(
+  const { data : exercises , isLoading, isError, error } = useQuery<Exercise[], Error>(
     ['exercises', userId],
-    () => exerciseApi.exerciseUserIdAllGet(userId as string).then(response => response.data), // Extract the data property from AxiosResponse
+    () => exerciseApi.exerciseUserIdAllGet(userId as string).then(response => response.data),
     {
       onError: (error) => {
         console.error("Error fetching workouts:", error);
@@ -32,10 +32,8 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
     }
   );
 
-
   const groupExercisesByCategory = (exercises: Exercise[]): GroupedExercises => {
     return exercises.reduce((acc: GroupedExercises, exercise: Exercise) => {
-      // Use the mapping function to get a string representation of the category
       const categoryKey = mapCategory(exercise.Category);
       if (!acc[categoryKey]) acc[categoryKey] = [];
       acc[categoryKey].push(exercise);
@@ -93,4 +91,4 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
   );
 };
 
-const getEquipmentImage = (equipmentType: EquipmentType | undefined): string => barbell; // Implement dynamic URL based on equipmentType if necessary
+const getEquipmentImage = (equipmentType: EquipmentType | undefined): string => barbell;
