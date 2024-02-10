@@ -5,5 +5,6 @@ export const theme = {
     background: '#222222',
     text: '#FFFFFF',
     accent: '#FFE6C7',
+    cardBackground: '#393939',
   },
 };

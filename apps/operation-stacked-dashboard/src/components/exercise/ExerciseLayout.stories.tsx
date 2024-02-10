@@ -1,6 +1,12 @@
-// ExerciseLayout.stories.jsx
 import React from 'react';
-import { Story, Meta } from '@storybook/react';
+import { useUserStore } from '../../state/userState';
+import type { Meta, StoryFn } from '@storybook/react';
+import {
+  exercisesLoadedHandler,
+  loadingStateHandler,
+  noExercisesHandler,
+  errorStateHandler,
+} from '../../../.storybook/mocks/handlers';
 import ExerciseLayout from './ExerciseLayout';
 
 export default {
@@ -8,30 +14,45 @@ export default {
   component: ExerciseLayout,
 } as Meta;
 
-const Template: Story = (args) => <ExerciseLayout {...args} />;
+const withUserId = (userId: string) => (Story: StoryFn) => {
+  useUserStore.getState().setUserId(userId);
+  return <Story />;
+};
 
-export const InitialState = Template.bind({});
+const Template: StoryFn<React.ReactNode> = (args) => <ExerciseLayout />;
 
-export const WithExercises = Template.bind({});
-WithExercises.parameters = {
-  msw: [
-    // Assuming your component makes a request to this endpoint to fetch exercises
-    {
-      url: 'https://app.operationstacked.com/workout/exercise/1234/all',
-      method: 'GET',
-    },
-  ],
+export const ExercisesLoaded = Template.bind({});
+ExercisesLoaded.decorators = [withUserId('1')];
+ExercisesLoaded.args = {};
+ExercisesLoaded.parameters = {
+  msw: {
+    handlers: [exercisesLoadedHandler],
+  },
+};
+
+export const LoadingState = Template.bind({});
+LoadingState.decorators = [withUserId('2')];
+LoadingState.args = {};
+LoadingState.parameters = {
+  msw: {
+    handlers: [loadingStateHandler],
+  },
 };
 
 export const NoExercises = Template.bind({});
+NoExercises.decorators = [withUserId('3')];
+NoExercises.args = {};
 NoExercises.parameters = {
-  msw: [
-    {
-      url: 'https://app.operationstacked.com/workout/exercise/1234/none',
-      method: 'GET',
-    },
-  ],
+  msw: {
+    handlers: [noExercisesHandler],
+  },
 };
 
-// LoadingState simulation might require custom handling since MSW intercepts are synchronous
-// Consider using component state or args to simulate loading UI
+export const ErrorState = Template.bind({});
+ErrorState.decorators = [withUserId('4')];
+ErrorState.args = {};
+ErrorState.parameters = {
+  msw: {
+    handlers: [errorStateHandler],
+  },
+};

@@ -17,26 +17,31 @@ export enum EquipmentType {
   Cable,
 }
 
-export function mapCategory(apiCategory: Category): Category {
-  const categoryMapping: Record<keyof typeof APICategory, Category> = {
-    NUMBER_0: Category.Shoulders,
-    NUMBER_1: Category.Chest,
-    NUMBER_2: Category.Back,
-    NUMBER_3: Category.Biceps,
-    NUMBER_4: Category.Triceps,
-    NUMBER_5: Category.Legs,
+export function mapCategory(apiCategory: APICategory): Category {
+  const categoryMapping: Record<APICategory, Category> = {
+    [APICategory.NUMBER_0]: Category.Shoulders,
+    [APICategory.NUMBER_1]: Category.Chest,
+    [APICategory.NUMBER_2]: Category.Back,
+    [APICategory.NUMBER_3]: Category.Biceps,
+    [APICategory.NUMBER_4]: Category.Triceps,
+    [APICategory.NUMBER_5]: Category.Legs,
+    // Ensure APICategory is correctly reflecting the numeric values expected
   };
-  return categoryMapping[apiCategory] || Category.Shoulders; // Default to Shoulders or anyy sensible default
+  // Assuming apiCategory is a number that correctly maps to your APICategory enum
+  return categoryMapping[apiCategory] ?? Category.Shoulders; // Using ?? for nullish coalescing
 }
 
-export function mapEquipmentType(apiEquipmentType: EquipmentType): EquipmentType {
-  const equipmentTypeMapping: Record<keyof typeof APIEquipmentType, EquipmentType> = {
-    NUMBER_0: EquipmentType.Barbell,
-    NUMBER_1: EquipmentType.SmithMachine,
-    NUMBER_2: EquipmentType.Dumbbell,
-    NUMBER_3: EquipmentType.Machine,
-    NUMBER_4: EquipmentType.Cable,
-    // Add more mappings as needed based on your API's definitions
+export function mapEquipmentType(apiEquipmentType: APIEquipmentType): EquipmentType {
+  const equipmentTypeMapping: Record<APIEquipmentType, EquipmentType> = {
+    [APIEquipmentType.NUMBER_0]: EquipmentType.Barbell,
+    [APIEquipmentType.NUMBER_1]: EquipmentType.SmithMachine,
+    [APIEquipmentType.NUMBER_2]: EquipmentType.Dumbbell,
+    [APIEquipmentType.NUMBER_3]: EquipmentType.Machine,
+    [APIEquipmentType.NUMBER_4]: EquipmentType.Cable,
+    // Ensure APIEquipmentType correctly reflects the numeric values expected
   };
-  return equipmentTypeMapping[apiEquipmentType] || EquipmentType.Barbell; // Default to Barbell or any sensible default
+  // Assuming apiEquipmentType is a number that correctly maps to your APIEquipmentType enum
+  return equipmentTypeMapping[apiEquipmentType] ?? EquipmentType.Barbell; // Using ?? for nullish coalescing
 }
+
+

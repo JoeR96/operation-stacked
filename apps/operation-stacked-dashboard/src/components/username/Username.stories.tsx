@@ -1,123 +1,82 @@
-import React, { useState } from 'react';
-import { Box, Button, Paper, TextField, Typography } from '@mui/material';
-import { useApi, PENDING, ERROR } from '@operation-stacked/api-hooks';
-import Spinner from '../spinner/Spinner';
+// Username.stories.tsx
+
+import React from 'react';
+import { Meta, StoryFn } from '@storybook/react';
+import Username from './Username';
+import { rest } from 'msw';
 import { useUserStore } from '../../state/userState';
-import { UserApi, SetUsernameRequest } from '@operation-stacked/shared-services';
-
-enum Scenario {
-  NameTaken = 'nameTaken',
-  NameFree = 'nameFree',
-  NameSet = 'nameSet'
-}
-
-const mockUseApi = (scenario: Scenario) => {
-  const exec = async (...args: [string]) => {
-    const username = args[0];
-    switch (scenario) {
-      case Scenario.NameFree:
-        return { data: false, error: null };
-      case Scenario.NameTaken:
-        return { data: true, error: null };
-      case Scenario.NameSet:
-        return { data: false, error: null };
-      default:
-        return { data: null, error: null };
-    }
-  };
-
-  return () => ({
-    exec,
-    data: null,
-    setData: () => {},
-    setApiStatus: () => {},
-    apiStatus: 'idle',
-    normalisedStatuses: {},
-    error: null
-  });
-};
-
-const mockUseUserStore = (scenario: Scenario) => {
-  return () => ({
-    state: {
-      username: scenario === Scenario.NameSet ? 'ExistingUser' : '',
-      userId: 'mockUserId',
-    },
-    actions: {
-      setUsername: () => {},
-      setUserId: () => {},
-    }
-  });
-};
-
-type UsernameProps = {
-  useApiHook?: typeof useApi;
-  useUserStoreHook?: typeof useUserStore;
-};
-
-const Username: React.FC<UsernameProps> = ({ useApiHook = useApi, useUserStoreHook = useUserStore }) => {
-  const { username, setUsername, userId } = useUserStoreHook();
-  const [newUsername, setNewUsername] = useState('');
-
-  const checkUsernameApi = useApiHook(async (username: string) => {
-    const userApi = new UserApi();
-    return await userApi.userUsernameUsernameGet(username);
-  });
-
-  const setUsernameApi = useApiHook(async (username: string) => {
-    const userApi = new UserApi();
-    const setUsernameRequest: SetUsernameRequest = { Username: username, UserId: userId };
-    return await userApi.userSetUsernamePost(setUsernameRequest);
-  });
-
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const isUsernameTaken = await checkUsernameApi.exec(newUsername);
-    if (isUsernameTaken) {
-      alert('Username is already taken. Please choose a different username.');
-      return;
-    }
-    const result = await setUsernameApi.exec(newUsername);
-    if (result) {
-      setUsername(newUsername);
-    }
-  };
-
-  if (checkUsernameApi.apiStatus === PENDING || setUsernameApi.apiStatus === PENDING) {
-    return <Spinner />;
-  }
-
-  return (
-    <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" p={2}>
-      <Paper elevation={3} style={{ padding: '2rem', backgroundColor: '#242424', width: '100%' }}>
-        <Typography variant="h6" gutterBottom style={{ color: 'white', textAlign: 'center' }}>
-          {username ? `Username: ${username}` : 'No username set'}
-        </Typography>
-        {!username && (
-          <form onSubmit={handleSubmit}>
-            <TextField
-              fullWidth
-              label="New Username"
-              variant="outlined"
-              value={newUsername}
-              onChange={(e) => setNewUsername(e.target.value)}
-              style={{ marginBottom: '1rem' }}
-            />
-            <Button type="submit" variant="contained" color="primary">
-              Set Username
-            </Button>
-          </form>
-        )}
-        {(checkUsernameApi.apiStatus === ERROR || setUsernameApi.apiStatus === ERROR) && (
-          <div style={{ color: 'red' }}>Error: {checkUsernameApi.error?.message || setUsernameApi.error?.message}</div>
-        )}
-      </Paper>
-    </Box>
-  );
-};
 
 export default {
-  title: 'Components/Username',
+  title: 'User/Username',
   component: Username,
-  // other properties like 'argTypes', 'decorators', etc. can be added here
+} as Meta;
+
+const withUserId = (userId: string) => (Story: StoryFn) => {
+  useUserStore.getState().setUserId(userId);
+  return <Story />;
+};
+
+// Mock handlers for storybook
+const usernameLoadedHandler = rest.get('https://app.operationstacked.com/workout/user/name/:userId', (req, res, ctx) => {
+  const { userId } = req.params;
+  // Return different usernames based on userId for demonstration
+  switch (userId) {
+    case '2':
+      return res(ctx.json('JohnDoe'));
+    case '3':
+      return res(ctx.json('JaneSmith'));
+    case '4':
+      return res(ctx.json('BobJohnson'));
+    default:
+      return res(ctx.status(404), ctx.json({ error: 'User not found' }));
+  }
+});
+
+const setUsernameHandler = rest.post('https://app.operationstacked.com/workout/user/name/:userId', (req, res, ctx) => {
+  const { userId } = req.params;
+  return res(ctx.json({ userId, status: 'Username set successfully' }));
+});
+
+const loadingStateHandler = rest.get('https://app.operationstacked.com/workout/user/name/:userId', (req, res, ctx) => {
+  return res(ctx.delay('infinite'));
+});
+
+const errorStateHandler = rest.get('https://app.operationstacked.com/workout/user/name/4', (req, res, ctx) => {
+  return res(ctx.status(500));
+});
+
+// UsernameLoaded Story
+export const UsernameLoaded: StoryFn = (args) => <Username {...args} />;
+UsernameLoaded.decorators = [withUserId('2')];
+UsernameLoaded.parameters = {
+  msw: {
+    handlers: [usernameLoadedHandler],
+  },
+};
+
+// LoadingState Story
+export const LoadingState: StoryFn = (args) => <Username {...args} />;
+LoadingState.decorators = [withUserId('3')];
+LoadingState.parameters = {
+  msw: {
+    handlers: [loadingStateHandler],
+  },
+};
+
+// ErrorState Story
+export const ErrorState: StoryFn = (args) => <Username {...args} />;
+ErrorState.decorators = [withUserId('4')];
+ErrorState.parameters = {
+  msw: {
+    handlers: [errorStateHandler],
+  },
+};
+
+// UpdateUsername Story
+export const UpdateUsername: StoryFn = (args) => <Username {...args} />;
+UpdateUsername.decorators = [withUserId('5')]; // For demonstration, use a different userId
+UpdateUsername.parameters = {
+  msw: {
+    handlers: [usernameLoadedHandler, setUsernameHandler],
+  },
 };

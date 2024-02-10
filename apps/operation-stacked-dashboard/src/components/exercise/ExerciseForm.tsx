@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Grid, Paper, FormControl, InputLabel, Select, MenuItem, Typography, Button } from '@mui/material';
+import { Grid, Paper, FormControl, InputLabel, Select, MenuItem, Typography } from '@mui/material';
 import Spinner from '../spinner/Spinner';
 import { useUserStore } from '../../state/userState';
 import { theme } from '@operation-stacked/shared-styles';
 import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import { Category, EquipmentType } from '@operation-stacked/operation-stacked-shared-types';
 import { CreateExerciseRequest, ExerciseApi } from '@operation-stacked/shared-services';
-import { TextField } from '@operation-stacked/ui-components';
+import { Button, TextField } from '@operation-stacked/ui-components';
 
 
 const ExerciseForm = () => {
@@ -116,7 +116,7 @@ const ExerciseForm = () => {
               </FormControl>
             </Grid>
             <Grid item xs={12}>
-              <Button variant="contained" color="primary" type="submit">
+              <Button type="submit">
                 Add Exercise
               </Button>
             </Grid>

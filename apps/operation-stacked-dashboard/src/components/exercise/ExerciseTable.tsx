@@ -1,11 +1,18 @@
 import React from 'react';
-import { Grid, Box, Typography, Paper, Button } from '@mui/material';
+import { Grid, Box, Typography, Paper } from '@mui/material';
 import { useQuery } from 'react-query';
 import Spinner from '../spinner/Spinner';
 import { Exercise, ExerciseApi } from '@operation-stacked/shared-services';
 import { useUserStore } from '../../state/userState';
-import { barbell } from '@operation-stacked/shared-images';
-import { EquipmentType, mapCategory, mapEquipmentType } from '@operation-stacked/operation-stacked-shared-types';
+import { barbell, cableMachine, dumbell, machine, smithMachine } from '@operation-stacked/shared-images';
+import {
+  Category,
+  EquipmentType,
+  mapCategory,
+  mapEquipmentType
+} from '@operation-stacked/operation-stacked-shared-types';
+import { Button } from '@operation-stacked/ui-components';
+import { theme } from '@operation-stacked/shared-styles';
 
 // Imported or defined mapping functions
 
@@ -34,7 +41,9 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
 
   const groupExercisesByCategory = (exercises: Exercise[]): GroupedExercises => {
     return exercises.reduce((acc: GroupedExercises, exercise: Exercise) => {
+      console.log(exercise.Category)
       const categoryKey = mapCategory(exercise.Category);
+      console.log(categoryKey)
       if (!acc[categoryKey]) acc[categoryKey] = [];
       acc[categoryKey].push(exercise);
       return acc;
@@ -42,7 +51,7 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
   };
 
   const groupedExercises = exercises ? groupExercisesByCategory(exercises) : {};
-
+  console.log(groupedExercises)
   if (isLoading) return <Spinner />;
 
   if (isError) return <div>Error fetching exercises: {error?.message}</div>;
@@ -54,34 +63,28 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
       {Object.entries(groupedExercises).map(([category, exercisesInCategory], index) => (
         <Grid item xs={12} sm={4} key={index}>
           <Box margin="10px">
-            <Typography variant="h5" color="white" marginBottom="10px">{category}</Typography>
+            <Typography variant="h5" color="white" marginBottom="10px">{Category[category as keyof typeof Category]}</Typography>
             {exercisesInCategory.map((exercise, exerciseIndex) => (
               <Paper key={exercise.Id || exerciseIndex} sx={{
                 padding: '10px',
-                backgroundColor: "#242424",
+                backgroundColor:  theme.colors.cardBackground,
                 marginBottom: '10px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'space-between'
               }}>
-                <div style={{ display: 'flex', alignItems: 'center' }}>
                   <div>
                     <Typography color="white" fontWeight="bold">{exercise.ExerciseName}</Typography>
-                    <Typography color="white">{mapEquipmentType(exercise.EquipmentType)}</Typography>
                   </div>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={() => onCompleteClick(exercise)}
-                    sx={{ marginLeft: '10px' }}
-                  >
-                    {buttonText}
-                  </Button>
                   <img
                     src={getEquipmentImage(exercise.EquipmentType)}
                     style={{ width: '30px', height: '30px' }}
                   />
-                </div>
+                <Button
+                  onClick={() => onCompleteClick(exercise)}
+                >
+                  {buttonText}
+                </Button>
               </Paper>
             ))}
           </Box>
@@ -91,4 +94,19 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
   );
 };
 
-const getEquipmentImage = (equipmentType: EquipmentType | undefined): string => barbell;
+const getEquipmentImage = (equipmentType: EquipmentType | undefined): string => {
+  switch (equipmentType) {
+    case EquipmentType.Barbell:
+      return barbell;
+    case EquipmentType.SmithMachine:
+      return smithMachine;
+    case EquipmentType.Dumbbell:
+      return dumbell;
+    case EquipmentType.Machine:
+      return machine;
+    case EquipmentType.Cable:
+      return cableMachine;
+    default:
+      return barbell; // default image if equipmentType is undefined or not matched
+  }
+};

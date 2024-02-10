@@ -1,33 +1,58 @@
 import React from 'react';
-import { Meta, StoryObj } from '@storybook/react';
-import { MemoryRouter } from 'react-router-dom';
+import { useUserStore } from '../../state/userState';
+import type { Meta, StoryFn } from '@storybook/react';
+import {
+  exercisesLoadedHandler,
+  loadingStateHandler,
+  noExercisesHandler,
+  errorStateHandler,
+} from '../../../.storybook/mocks/handlers';
 import ExercisePage from './ExercisePage';
-import { rest } from 'msw';
-import { mockExercises } from '../../../.storybook/mocks/mockExercises';
 
-const meta: Meta<typeof ExercisePage> = {
+export default {
   title: 'Pages/ExercisePage',
   component: ExercisePage,
-  decorators: [
-    (Story) => (
-      <MemoryRouter>
-        <Story />
-      </MemoryRouter>
-    ),
-  ],
-};
-export default meta;
+} as Meta;
 
-export const Default: StoryObj<typeof ExercisePage> = {
-  args: {
+const withUserId = (userId: string) => (Story: StoryFn) => {
+  useUserStore.getState().setUserId(userId);
+  return <Story />;
+};
+
+const Template: StoryFn<React.ReactNode> = (args) => <ExercisePage />;
+
+export const ExercisesLoaded = Template.bind({});
+ExercisesLoaded.decorators = [withUserId('1')];
+ExercisesLoaded.args = {};
+ExercisesLoaded.parameters = {
+  msw: {
+    handlers: [exercisesLoadedHandler],
   },
-  parameters: {
-    msw: {
-      handlers: [
-        rest.get(`https://app.operationstacked.com/workout/exercise/1234/all`, (req, res, ctx) => {
-          console.log('state 1')
-          return res(ctx.json([...mockExercises]));
-        }),
-      ],
-    },
-  },};
+};
+
+export const LoadingState = Template.bind({});
+LoadingState.decorators = [withUserId('2')];
+LoadingState.args = {};
+LoadingState.parameters = {
+  msw: {
+    handlers: [loadingStateHandler],
+  },
+};
+
+export const NoExercises = Template.bind({});
+NoExercises.decorators = [withUserId('3')];
+NoExercises.args = {};
+NoExercises.parameters = {
+  msw: {
+    handlers: [noExercisesHandler],
+  },
+};
+
+export const ErrorState = Template.bind({});
+ErrorState.decorators = [withUserId('4')];
+ErrorState.args = {};
+ErrorState.parameters = {
+  msw: {
+    handlers: [errorStateHandler],
+  },
+};

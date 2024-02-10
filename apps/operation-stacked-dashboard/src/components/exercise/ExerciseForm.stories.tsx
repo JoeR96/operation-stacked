@@ -1,6 +1,6 @@
 // ExerciseForm.stories.tsx
 import React from 'react';
-import ExerciseForm, { ExerciseFormProps } from './ExerciseForm';
+import ExerciseForm from './ExerciseForm';
 import { useUserStore } from '../../state/userState';
 import { Meta, Story } from '@storybook/react';
 
@@ -9,7 +9,7 @@ export default {
   component: ExerciseForm,
 } as Meta;
 
-const Template: Story<ExerciseFormProps> = () => {
+const Template: Story<ExerciseForm> = () => {
   // Set initial Zustand state for the story
 
   return <ExerciseForm onRefreshExercises={() => {}} />;

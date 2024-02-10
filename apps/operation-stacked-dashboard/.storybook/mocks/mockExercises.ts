@@ -1,7 +1,7 @@
-import { EquipmentType, Category, Exercise } from '../../../../libs/shared-services/src';
+import { Exercise } from '../../../../libs/shared-services/src';
+import { Category , EquipmentType } from '@operation-stacked/shared-services';
 
 export const mockExercises: Exercise[] = [
-  // Legs
   { Id: '1', ExerciseName: 'Squat', Category: Category.NUMBER_0, EquipmentType: EquipmentType.NUMBER_0, UserId: 'user123', ExerciseHistories: [] },
   { Id: '2', ExerciseName: 'Leg Press', Category: Category.NUMBER_0, EquipmentType: EquipmentType.NUMBER_1, UserId: 'user123', ExerciseHistories: [] },
   { Id: '3', ExerciseName: 'Dumbbell Lunges', Category: Category.NUMBER_0, EquipmentType: EquipmentType.NUMBER_2, UserId: 'user123', ExerciseHistories: [] },

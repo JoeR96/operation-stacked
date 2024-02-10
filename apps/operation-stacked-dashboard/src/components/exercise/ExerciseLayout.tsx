@@ -1,10 +1,11 @@
 ﻿import React, { useState } from 'react';
-import { Box, Paper, Button } from '@mui/material';
+import { Box, Paper } from '@mui/material';
 import { ExerciseTable } from './ExerciseTable';
 import ExerciseCompletionForm from './ExerciseCompletionForm';
 import { useUserStore } from "../../state/userState";
 import { Exercise } from "@operation-stacked/shared-services";
 import ExerciseForm from './ExerciseForm';
+import { Button } from '@operation-stacked/ui-components';
 
 const ExerciseLayout = () => {
     const [showNewExerciseForm, setShowNewExerciseForm] = useState(false);
@@ -26,8 +27,6 @@ const ExerciseLayout = () => {
         style={{ marginBottom: '10px', paddingTop: '100px' }}
       >
           <Button
-            variant="contained"
-            style={{ backgroundColor: '#FFA500', marginBottom: '10px' }}
             onClick={toggleNewExerciseForm}
           >
               {showNewExerciseForm ? 'Hide Add Exercise Form' : 'Show Add Exercise Form'}

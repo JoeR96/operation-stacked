@@ -1,97 +1,62 @@
-import React, { useEffect, useState } from 'react';
-import { Box, Button, Paper, TextField, Typography } from '@mui/material';
-import { useApi, PENDING, ERROR } from '@operation-stacked/api-hooks';
+import React from 'react';
+import { Box, Typography, Paper } from '@mui/material';
+import { useQuery, useMutation, useQueryClient } from 'react-query';
 import Spinner from '../spinner/Spinner';
 import { useUserStore } from '../../state/userState';
-import { UserApi, SetUsernameRequest } from '@operation-stacked/shared-services';
+import { UserApi } from '@operation-stacked/shared-services';
+import { Button, TextField } from '@operation-stacked/ui-components';
 
-type UsernameProps = {
-  useApiHook?: typeof useApi;
-  useUserStoreHook?: typeof useUserStore;
-};
+// Assuming UserApi has been correctly set up to interact with your backend
+const userApi = new UserApi();
 
-const Username: React.FC<UsernameProps> = ({ useApiHook = useApi, useUserStoreHook = useUserStore }) => {
-  const { username, setUsername, userId } = useUserStoreHook();
-  const [newUsername, setNewUsername] = useState('');
+export const Username: React.FC = () => {
+  const queryClient = useQueryClient();
+  const { userId, setUsername: setGlobalUsername, username: globalUsername } = useUserStore();
 
-  const getUserApi = useApiHook(async (userId: string) => {
-    console.log('given',userId)
-    const userApi = new UserApi();
-    const lol =  await userApi.userNameUserIdGet(userId);
-    console.log('lol',lol)
-    return lol.data
+  const { data: username, isLoading, isError, error } = useQuery('username', () => userApi.userNameUserIdGet(userId as string), {
+    enabled: !!userId, // This query will not run until userId is available
+    onSuccess: (data) => {
+      setGlobalUsername(data.data); // Set the global username directly as a string
+    },
   });
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      console.log(userId)
-      const response = await getUserApi.exec(userId as string);
-      console.log('response is', response.data)
-      if (response.data && response.data !== '') {
-        setUsername(response.data);
-      }
-    };
-    if (!username) {
-      fetchUser();
-    }
-  }, []);
-
-  const checkUsernameApi = useApiHook(async (username: string) => {
-    const userApi = new UserApi();
-    return await userApi.userUsernameUsernameGet(username);
+  const setUsernameMutation = useMutation((newUsername: string) => userApi.userSetUsernamePost({ UserId: userId, Username: newUsername }), {
+    onSuccess: () => {
+      queryClient.invalidateQueries('username');
+    },
   });
 
-  const setUsernameApi = useApiHook(async (username: string) => {
-    const userApi = new UserApi();
-    const setUsernameRequest: SetUsernameRequest = { Username: username, UserId: userId };
-    return await userApi.userSetUsernamePost(setUsernameRequest);
-  });
-
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const isUsernameTaken = await checkUsernameApi.exec(newUsername);
-
-    if (isUsernameTaken) {
-      alert('Username is already taken. Please choose a different username.');
-      return;
-    }
-    const setResult = await setUsernameApi.exec(newUsername);
-    if (setResult) {
-      setUsername(newUsername);
-    }
+  const handleSetUsername = (newUsername: string) => {
+    setUsernameMutation.mutate(newUsername);
   };
 
-  if (getUserApi.apiStatus === PENDING || checkUsernameApi.apiStatus === PENDING || setUsernameApi.apiStatus === PENDING) {
-    return <Spinner />;
-  }
+  if (isLoading) return <Spinner />;
 
-  if (getUserApi.apiStatus === ERROR || checkUsernameApi.apiStatus === ERROR || setUsernameApi.apiStatus === ERROR) {
-    return (
-      <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" p={2}>
-        <div style={{ color: 'red' }}>
-          Error: {getUserApi.error?.message || checkUsernameApi.error?.message || setUsernameApi.error?.message}
-        </div>
-      </Box>
-    );
-  }
+  if (isError) return <Box>Error: {error instanceof Error ? error.message : 'An unknown error occurred'}</Box>;
 
   return (
     <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" p={2}>
       <Paper elevation={3} style={{ padding: '2rem', backgroundColor: '#242424', width: '100%' }}>
         <Typography variant="h6" gutterBottom style={{ color: 'white', textAlign: 'center' }}>
-          {username ? `Username: ${username}` : 'No username set'}
+          {globalUsername ? `Username: ${globalUsername}` : 'No username set'}
         </Typography>
-        {!username && (
-          <form onSubmit={handleSubmit}>
+        {!globalUsername && (
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              const formData = new FormData(e.currentTarget);
+              const newUsername = formData.get('username') as string;
+              handleSetUsername(newUsername);
+            }}
+          >
             <TextField
+              name="username"
               fullWidth
               label="New Username"
               variant="outlined"
-              value={newUsername}
-              onChange={(e) => setNewUsername(e.target.value)}
               style={{ marginBottom: '1rem' }}
             />
-            <Button type="submit" variant="contained" color="primary">
+            <Button >
               Set Username
             </Button>
           </form>

@@ -27,5 +27,10 @@ export const mockHandlers = [
   exercisesLoadedHandler,
   loadingStateHandler,
   noExercisesHandler,
-  errorStateHandler,
+  errorStateHandler
 ];
+
+
+
+
+

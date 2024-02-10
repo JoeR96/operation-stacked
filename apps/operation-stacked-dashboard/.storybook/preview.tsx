@@ -1,6 +1,8 @@
 import { initialize, mswDecorator } from 'msw-storybook-addon';
 import { QueryClient, QueryClientProvider } from 'react-query';
+// @ts-ignore
 import React from 'react';
+import './storybook-preview.css'; // Import your custom CSS file
 
 initialize({ onUnhandledRequest: 'bypass' });
 
