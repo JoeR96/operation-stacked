@@ -1,14 +1,14 @@
 // ExerciseTable.stories.js
 import React from 'react';
 import { ExerciseTable, ExerciseTableProps } from './ExerciseTable';
-import { useUserStore } from '../../state/userState';
+import { useUserStore } from '../../../state/userState';
 import type { Meta, StoryFn } from '@storybook/react';
 import {
   exercisesLoadedHandler,
   loadingStateHandler,
   noExercisesHandler,
   errorStateHandler,
-} from '../../../.storybook/mocks/handlers';
+} from '../../../../.storybook/mocks/handlers';
 
 export default {
   title: 'Exercise/ExerciseTable',

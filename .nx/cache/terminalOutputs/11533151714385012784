@@ -1,0 +1,31 @@
+
+ [31m>[39m [0m[7m[1m[31m NX [39m[22m[27m[0m  [31mCannot find module './mocks/handlers'[39m
+
+   Require stack:
+   - C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\.storybook\middleware.js
+   - C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js
+   - C:\Users\joeyr\src\git\operation-stacked\node_modules\@nx\storybook\src\executors\storybook\storybook.impl.js
+   - C:\Users\joeyr\src\git\operation-stacked\node_modules\nx\src\config\schema-utils.js
+   - C:\Users\joeyr\src\git\operation-stacked\node_modules\nx\src\command-line\run\executor-utils.js
+   - C:\Users\joeyr\src\git\operation-stacked\node_modules\nx\src\command-line\run\run.js
+   - C:\Users\joeyr\src\git\operation-stacked\node_modules\nx\bin\run-executor.js
+
+Error: Cannot find module './mocks/handlers'
+Require stack:
+- C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\.storybook\middleware.js
+- C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js
+- C:\Users\joeyr\src\git\operation-stacked\node_modules\@nx\storybook\src\executors\storybook\storybook.impl.js
+- C:\Users\joeyr\src\git\operation-stacked\node_modules\nx\src\config\schema-utils.js
+- C:\Users\joeyr\src\git\operation-stacked\node_modules\nx\src\command-line\run\executor-utils.js
+- C:\Users\joeyr\src\git\operation-stacked\node_modules\nx\src\command-line\run\run.js
+- C:\Users\joeyr\src\git\operation-stacked\node_modules\nx\bin\run-executor.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+    at Module._load (node:internal/modules/cjs/loader:901:27)
+    at Module.require (node:internal/modules/cjs/loader:1115:19)
+    at require (node:internal/modules/helpers:130:18)
+    at Object.<anonymous> (c:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\.storybook\middleware.js:2:26)
+    at Module._compile (node:internal/modules/cjs/loader:1241:14)
+    at Module._compile (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild-register\dist\node.js:2258:26)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1295:10)
+    at Object.newLoader (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild-register\dist\node.js:2262:9)
+    at extensions..js (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild-register\dist\node.js:4838:24)

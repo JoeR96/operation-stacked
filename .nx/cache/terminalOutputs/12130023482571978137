@@ -1,0 +1,3043 @@
+[32minfo[0m[35m[0m => Starting manager..
+[0m[32minfo[0m[35m[0m => Starting preview..
+[0m[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+Re-optimizing dependencies because lockfile has changed
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.10[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m735 ms[24m for manager and [4m14 s[24m for preview[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:4400/[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://192.168.0.139:4400/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+[2m00:28:31[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33m@emotion/react/jsx-dev-runtime, msw-storybook-addon[32m[39m
+[2m00:28:31[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:30:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:30:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:30:29[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:30:29[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\.storybook\preview.tsx: Identifier 'handlers' has already been declared. (6:9)
+
+[0m [90m 4 |[31m[0m
+[0m [90m 5 |[31m [90m// Initialize MSW with the handlers for Storybook[31m[0m
+[0m[31m[1m>[22m[31m[90m 6 |[31m [36mimport[31m { handlers } [36mfrom[31m [32m'./mocks/handlers'[31m[33m;[31m[0m
+[0m [90m   |[31m          [31m[1m^[22m[31m[0m
+[0m [90m 7 |[31m[0m
+[0m [90m 8 |[31m [90m// Initialize MSW with the handlers for Storybook[31m[0m
+[0m [90m 9 |[31m initialize({ onUnhandledRequest[33m:[31m [32m'bypass'[31m })[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.tsx[39m:6:9
+[33m  4  |  
+  5  |  // Initialize MSW with the handlers for Storybook
+  6  |  import { handlers } from './mocks/handlers';
+     |                ^
+  7  |  
+  8  |  // Initialize MSW with the handlers for Storybook[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6923:21)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7348:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7344:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7290:12)
+      at TypeScriptParserMixin.finishImportSpecifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13707:10)
+      at TypeScriptParserMixin.parseImportSpecifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13871:17)
+      at TypeScriptParserMixin.parseImportSpecifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9755:18)
+      at TypeScriptParserMixin.parseNamedImportSpecifiers (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13850:36)
+      at TypeScriptParserMixin.parseImportSpecifiersAndAfter (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13684:37)
+      at TypeScriptParserMixin.parseImport (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13677:17)
+      at TypeScriptParserMixin.parseImport (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9049:26)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12337:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12206:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12106:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12096:25)
+      at TypeScriptParserMixin.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13895:10)
+      at TypeScriptParserMixin.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9733:18)
+      at parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13937:38)
+      at parser (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transformation\normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transformation\index.js:21:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:261:32)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:223:11)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:189:28
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:113:33
+      at step (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:287:14)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:223:11)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:30:29[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\.storybook\preview.tsx: Identifier 'handlers' has already been declared. (6:9)
+
+[0m [90m 4 |[31m[0m
+[0m [90m 5 |[31m [90m// Initialize MSW with the handlers for Storybook[31m[0m
+[0m[31m[1m>[22m[31m[90m 6 |[31m [36mimport[31m { handlers } [36mfrom[31m [32m'./mocks/handlers'[31m[33m;[31m[0m
+[0m [90m   |[31m          [31m[1m^[22m[31m[0m
+[0m [90m 7 |[31m[0m
+[0m [90m 8 |[31m [90m// Initialize MSW with the handlers for Storybook[31m[0m
+[0m [90m 9 |[31m initialize({ onUnhandledRequest[33m:[31m [32m'bypass'[31m })[33m;[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.tsx[39m:6:9
+[33m  4  |  
+  5  |  // Initialize MSW with the handlers for Storybook
+  6  |  import { handlers } from './mocks/handlers';
+     |                ^
+  7  |  
+  8  |  // Initialize MSW with the handlers for Storybook[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptScopeHandler.declareName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6923:21)
+      at TypeScriptParserMixin.declareNameFromIdentifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7348:16)
+      at TypeScriptParserMixin.checkIdentifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7344:12)
+      at TypeScriptParserMixin.checkLVal (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:7290:12)
+      at TypeScriptParserMixin.finishImportSpecifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13707:10)
+      at TypeScriptParserMixin.parseImportSpecifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13871:17)
+      at TypeScriptParserMixin.parseImportSpecifier (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9755:18)
+      at TypeScriptParserMixin.parseNamedImportSpecifiers (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13850:36)
+      at TypeScriptParserMixin.parseImportSpecifiersAndAfter (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13684:37)
+      at TypeScriptParserMixin.parseImport (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13677:17)
+      at TypeScriptParserMixin.parseImport (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9049:26)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12337:27)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12206:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12106:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12096:25)
+      at TypeScriptParserMixin.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13895:10)
+      at TypeScriptParserMixin.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9733:18)
+      at parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13937:38)
+      at parser (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transformation\normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transformation\index.js:21:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:261:32)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:223:11)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:189:28
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:113:33
+      at step (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:287:14)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:223:11) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:30:31[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:30:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:30:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:32:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:32:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:36:17[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:37:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:44:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x8)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:44:14[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/mocks/handlers.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:47:48[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:48:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+[2m00:48:01[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:48:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m00:48:01[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:48:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:48:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+[2m00:48:05[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:48:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m00:48:05[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:48:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:54:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+[2m00:54:00[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:54:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m00:54:00[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:54:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:55:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:55:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:55:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:55:40[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:55:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:57:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:57:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+[2m00:57:19[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:57:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m00:57:19[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:57:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:57:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:57:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:58:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:58:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:58:52[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:59:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m00:59:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseForm.stories.tsx[22m
+[2m00:59:32[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseForm.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m00:59:32[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:01:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   SyntaxError: Unexpected token, expected "," (20:21)
+[0m[30;43mWARN[0m[35m[0m     at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.expect (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3601:28)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11175:14)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11599:24)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+[0m[30;43mWARN[0m[35m[0m     at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11686:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprList (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11661:22)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseArrayLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11563:26)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseArrayLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8895:24)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10856:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+[0m[30;43mWARN[0m[35m[0m     at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:01:12[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.stories.tsx: Unexpected token, expected "," (20:21)
+
+[0m [90m 18 |[31m     ([33mStory[31m) [33m=>[31m ([0m
+[0m [90m 19 |[31m       useUserStore[33m.[31msetState({ userId[33m:[31m [32m'1234'[31m[33m,[31m username[33m:[31m [32m'mocked-username'[31m })[0m
+[0m[31m[1m>[22m[31m[90m 20 |[31m [33m<[31m[33mQueryClientProvider[31m client[33m=[31m{queryClient}[33m>[31m[0m
+[0m [90m    |[31m                      [31m[1m^[22m[31m[0m
+[0m [90m 21 |[31m         [33m<[31m[33mStory[31m [33m/[31m[33m>[31m[0m
+[0m [90m 22 |[31m       [33m<[31m[33m/[31m[33mQueryClientProvider[31m[33m>[31m[0m
+[0m [90m 23 |[31m     )[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx[39m:20:21
+[33m  18 |      (Story) => (
+  19 |        useUserStore.setState({ userId: '1234', username: 'mocked-username' })
+  20 |  <QueryClientProvider client={queryClient}>
+     |                                          ^
+  21 |          <Story />
+  22 |        </QueryClientProvider>[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+      at TypeScriptParserMixin.expect (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3601:28)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11175:14)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11599:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseExprListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11686:18)
+      at TypeScriptParserMixin.parseExprList (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11661:22)
+      at TypeScriptParserMixin.parseArrayLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11563:26)
+      at TypeScriptParserMixin.parseArrayLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8895:24)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10856:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:01:12[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.stories.tsx: Unexpected token, expected "," (20:21)
+
+[0m [90m 18 |[31m     ([33mStory[31m) [33m=>[31m ([0m
+[0m [90m 19 |[31m       useUserStore[33m.[31msetState({ userId[33m:[31m [32m'1234'[31m[33m,[31m username[33m:[31m [32m'mocked-username'[31m })[0m
+[0m[31m[1m>[22m[31m[90m 20 |[31m [33m<[31m[33mQueryClientProvider[31m client[33m=[31m{queryClient}[33m>[31m[0m
+[0m [90m    |[31m                      [31m[1m^[22m[31m[0m
+[0m [90m 21 |[31m         [33m<[31m[33mStory[31m [33m/[31m[33m>[31m[0m
+[0m [90m 22 |[31m       [33m<[31m[33m/[31m[33mQueryClientProvider[31m[33m>[31m[0m
+[0m [90m 23 |[31m     )[33m,[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx[39m:20:21
+[33m  18 |      (Story) => (
+  19 |        useUserStore.setState({ userId: '1234', username: 'mocked-username' })
+  20 |  <QueryClientProvider client={queryClient}>
+     |                                          ^
+  21 |          <Story />
+  22 |        </QueryClientProvider>[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+      at TypeScriptParserMixin.expect (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3601:28)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11175:14)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11599:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseExprListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11686:18)
+      at TypeScriptParserMixin.parseExprList (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11661:22)
+      at TypeScriptParserMixin.parseArrayLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11563:26)
+      at TypeScriptParserMixin.parseArrayLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:8895:24)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10856:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:03:50[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:04:56[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:06:06[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:06:06[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../path/to/your/state/userState" from "apps\operation-stacked-dashboard\.storybook\preview.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.tsx[39m:5:29
+[33m  18 |  import { initialize, mswDecorator } from "msw-storybook-addon";
+  19 |  import { QueryClient, QueryClientProvider } from "react-query";
+  20 |  import { useUserStore } from "../path/to/your/state/userState";
+     |                                ^
+  21 |  import { useUserStoreMock } from "./mocks/useUserStore";
+  22 |  initialize({ onUnhandledRequest: "bypass" });[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:06:06[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../path/to/your/state/userState" from "apps\operation-stacked-dashboard\.storybook\preview.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.tsx[39m:5:29
+[33m  18 |  import { initialize, mswDecorator } from "msw-storybook-addon";
+  19 |  import { QueryClient, QueryClientProvider } from "react-query";
+  20 |  import { useUserStore } from "../path/to/your/state/userState";
+     |                                ^
+  21 |  import { useUserStoreMock } from "./mocks/useUserStore";
+  22 |  initialize({ onUnhandledRequest: "bypass" });[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:06:06[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../path/to/your/state/userState" from "apps\operation-stacked-dashboard\.storybook\preview.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.tsx[39m:5:29
+[33m  18 |  import { initialize, mswDecorator } from "msw-storybook-addon";
+  19 |  import { QueryClient, QueryClientProvider } from "react-query";
+  20 |  import { useUserStore } from "../path/to/your/state/userState";
+     |                                ^
+  21 |  import { useUserStoreMock } from "./mocks/useUserStore";
+  22 |  initialize({ onUnhandledRequest: "bypass" });[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32) [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:06:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:06:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m01:06:11[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:06:11[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+[2m01:06:11[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:06:11[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+[2m01:06:11[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:06:11[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:08:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:08:45[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:08:51[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:08:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:08:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:08:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:09:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:11:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x8)[39m

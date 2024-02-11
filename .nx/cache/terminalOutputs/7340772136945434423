@@ -1,0 +1,677 @@
+[32minfo[0m[35m[0m => Starting manager..
+[0m[32minfo[0m[35m[0m => Starting preview..
+[0m[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[Nx Vite TsPaths] Found tsconfig at C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] first parsed tsconfig:  {
+  resultType: [32m'success'[39m,
+  configFileAbsolutePath: [32m'C:\\Users\\joeyr\\src\\git\\operation-stacked\\tsconfig.base.json'[39m,
+  baseUrl: [32m'.'[39m,
+  absoluteBaseUrl: [32m'C:\\Users\\joeyr\\src\\git\\operation-stacked'[39m,
+  paths: {
+    [32m'@operation-stacked/api-hooks'[39m: [ [32m'libs/api-hooks/src/index.ts'[39m ],
+    [32m'@operation-stacked/operation-stacked-shared-types'[39m: [ [32m'libs/operation-stacked-shared-types/src/index.ts'[39m ],
+    [32m'@operation-stacked/operation-stacked-test-lib'[39m: [ [32m'libs/operation-stacked-test-lib/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-images'[39m: [ [32m'libs/shared-images/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-openapis'[39m: [ [32m'libs/shared-openapis/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-services'[39m: [ [32m'libs/shared-services/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-styles'[39m: [ [32m'libs/shared-styles/src/index.ts'[39m ],
+    [32m'@operation-stacked/ui-components'[39m: [ [32m'libs/ui-components/src/index.ts'[39m ]
+  },
+  addMatchAll: [33mtrue[39m
+}
+
+[Nx Vite TsPaths] Found tsconfig at C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] fallback parsed tsconfig:  {
+  resultType: [32m'success'[39m,
+  configFileAbsolutePath: [32m'C:\\Users\\joeyr\\src\\git\\operation-stacked\\tsconfig.base.json'[39m,
+  baseUrl: [32m'.'[39m,
+  absoluteBaseUrl: [32m'C:\\Users\\joeyr\\src\\git\\operation-stacked'[39m,
+  paths: {
+    [32m'@operation-stacked/api-hooks'[39m: [ [32m'libs/api-hooks/src/index.ts'[39m ],
+    [32m'@operation-stacked/operation-stacked-shared-types'[39m: [ [32m'libs/operation-stacked-shared-types/src/index.ts'[39m ],
+    [32m'@operation-stacked/operation-stacked-test-lib'[39m: [ [32m'libs/operation-stacked-test-lib/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-images'[39m: [ [32m'libs/shared-images/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-openapis'[39m: [ [32m'libs/shared-openapis/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-services'[39m: [ [32m'libs/shared-services/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-styles'[39m: [ [32m'libs/shared-styles/src/index.ts'[39m ],
+    [32m'@operation-stacked/ui-components'[39m: [ [32m'libs/ui-components/src/index.ts'[39m ]
+  },
+  addMatchAll: [33mtrue[39m
+}
+
+[Nx Vite TsPaths] Found tsconfig at C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] first parsed tsconfig:  {
+  resultType: [32m'success'[39m,
+  configFileAbsolutePath: [32m'C:\\Users\\joeyr\\src\\git\\operation-stacked\\tsconfig.base.json'[39m,
+  baseUrl: [32m'.'[39m,
+  absoluteBaseUrl: [32m'C:\\Users\\joeyr\\src\\git\\operation-stacked'[39m,
+  paths: {
+    [32m'@operation-stacked/api-hooks'[39m: [ [32m'libs/api-hooks/src/index.ts'[39m ],
+    [32m'@operation-stacked/operation-stacked-shared-types'[39m: [ [32m'libs/operation-stacked-shared-types/src/index.ts'[39m ],
+    [32m'@operation-stacked/operation-stacked-test-lib'[39m: [ [32m'libs/operation-stacked-test-lib/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-images'[39m: [ [32m'libs/shared-images/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-openapis'[39m: [ [32m'libs/shared-openapis/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-services'[39m: [ [32m'libs/shared-services/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-styles'[39m: [ [32m'libs/shared-styles/src/index.ts'[39m ],
+    [32m'@operation-stacked/ui-components'[39m: [ [32m'libs/ui-components/src/index.ts'[39m ]
+  },
+  addMatchAll: [33mtrue[39m
+}
+
+[Nx Vite TsPaths] Found tsconfig at C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] fallback parsed tsconfig:  {
+  resultType: [32m'success'[39m,
+  configFileAbsolutePath: [32m'C:\\Users\\joeyr\\src\\git\\operation-stacked\\tsconfig.base.json'[39m,
+  baseUrl: [32m'.'[39m,
+  absoluteBaseUrl: [32m'C:\\Users\\joeyr\\src\\git\\operation-stacked'[39m,
+  paths: {
+    [32m'@operation-stacked/api-hooks'[39m: [ [32m'libs/api-hooks/src/index.ts'[39m ],
+    [32m'@operation-stacked/operation-stacked-shared-types'[39m: [ [32m'libs/operation-stacked-shared-types/src/index.ts'[39m ],
+    [32m'@operation-stacked/operation-stacked-test-lib'[39m: [ [32m'libs/operation-stacked-test-lib/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-images'[39m: [ [32m'libs/shared-images/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-openapis'[39m: [ [32m'libs/shared-openapis/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-services'[39m: [ [32m'libs/shared-services/src/index.ts'[39m ],
+    [32m'@operation-stacked/shared-styles'[39m: [ [32m'libs/shared-styles/src/index.ts'[39m ],
+    [32m'@operation-stacked/ui-components'[39m: [ [32m'libs/ui-components/src/index.ts'[39m ]
+  },
+  addMatchAll: [33mtrue[39m
+}
+Re-optimizing dependencies because lockfile has changed
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.10[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m305 ms[24m for manager and [4m11 s[24m for preview[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:4400/[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://192.168.0.139:4400/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-images to C:\Users\joeyr\src\git\operation-stacked\libs\shared-images\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-images to C:\Users\joeyr\src\git\operation-stacked\libs\shared-images\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/operation-stacked-shared-types to C:\Users\joeyr\src\git\operation-stacked\libs\operation-stacked-shared-types\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-images to C:\Users\joeyr\src\git\operation-stacked\libs\shared-images\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Unable to resolve /sb-preview/runtime.js with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /sb-preview/runtime.js to undefined
+
+[Nx Vite TsPaths] Unable to resolve  /iframe.html?html-proxy&direct&index=0.css with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved  /iframe.html?html-proxy&direct&index=0.css to undefined
+
+[Nx Vite TsPaths] Unable to resolve /sb-preview/runtime.js with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /sb-preview/runtime.js to undefined
+
+[Nx Vite TsPaths] Unable to resolve /sb-preview/runtime.js with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /sb-preview/runtime.js to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/react/dist/entry-preview.mjs with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/react/dist/entry-preview.mjs to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/react/dist/entry-preview-docs.mjs with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/react/dist/entry-preview-docs.mjs to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/docs/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/docs/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/actions/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/actions/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/backgrounds/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/backgrounds/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/measure/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/measure/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/outline/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/outline/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/highlight/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/highlight/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-interactions/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-interactions/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/react/dist/entry-preview.mjs with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/react/dist/entry-preview.mjs to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/react/dist/entry-preview-docs.mjs with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/react/dist/entry-preview-docs.mjs to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/docs/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/docs/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/actions/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/actions/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/backgrounds/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/backgrounds/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/measure/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/measure/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/outline/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/outline/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-essentials/highlight/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-essentials/highlight/preview to undefined
+
+[Nx Vite TsPaths] Unable to resolve /virtual:/@storybook/builder-vite/@storybook/addon-interactions/preview with tsconfig paths. Using fallback file matching.
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Trying to resolve file from config in C:\Users\joeyr\src\git\operation-stacked\tsconfig.base.json
+
+[Nx Vite TsPaths] Resolved /virtual:/@storybook/builder-vite/@storybook/addon-interactions/preview to undefined
+[2m02:56:45[22m [36m[1m[vite][22m[39m [32m✨ new dependencies optimized: [33m@emotion/react/jsx-dev-runtime[32m[39m
+[2m02:56:45[22m [36m[1m[vite][22m[39m [32m✨ optimized dependencies changed. reloading[39m
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/operation-stacked-shared-types to C:\Users\joeyr\src\git\operation-stacked\libs\operation-stacked-shared-types\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-images to C:\Users\joeyr\src\git\operation-stacked\libs\shared-images\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/operation-stacked-shared-types to C:\Users\joeyr\src\git\operation-stacked\libs\operation-stacked-shared-types\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-images to C:\Users\joeyr\src\git\operation-stacked\libs\shared-images\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-images to C:\Users\joeyr\src\git\operation-stacked\libs\shared-images\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-styles to C:\Users\joeyr\src\git\operation-stacked\libs\shared-styles\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/ui-components to C:\Users\joeyr\src\git\operation-stacked\libs\ui-components\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:58:35[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/operation-stacked-shared-types to C:\Users\joeyr\src\git\operation-stacked\libs\operation-stacked-shared-types\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-images to C:\Users\joeyr\src\git\operation-stacked\libs\shared-images\src\index.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:58:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:58:55[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx: Unexpected token, expected "," (89:68)
+
+[0m [90m 87 |[31m                 justifyContent[33m:[31m [32m'space-between'[31m[0m
+[0m [90m 88 |[31m               }}[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 89 |[31m                 [33m<[31m[33mdiv[31m style[33m=[31m{{ display[33m:[31m [32m'flex'[31m[33m,[31m alignItems[33m:[31m [32m'center'[31m justifyContent[33m:[31m [32m'space-between'[31m}}[33m>[31m[0m
+[0m [90m    |[31m                                                                     [31m[1m^[22m[31m[0m
+[0m [90m 90 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 91 |[31m                     [33m<[31m[33mTypography[31m color[33m=[31m[32m"white"[31m fontWeight[33m=[31m[32m"bold"[31m[33m>[31m{exercise[33m.[31m[33mExerciseName[31m}[33m<[31m[33m/[31m[33mTypography[31m[33m>[31m[0m
+[0m [90m 92 |[31m                     [33m<[31m[33mTypography[31m color[33m=[31m[32m"white"[31m[33m>[31m{[33mEquipmentType[31m[exercise[33m.[31m[33mEquipmentType[31m [36mas[31m number]}[33m<[31m[33m/[31m[33mTypography[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:89:68
+[33m  89 |                  <div style={{ display: 'flex', alignItems: 'center' justifyContent: 'space-between'}}>
+  90 |                    <div>
+  91 |                      <Typography color="white" fontWeight="bold">{exercise.ExerciseName}</Typography>
+     |                               ^
+  92 |                      <Typography color="white">{EquipmentType[exercise.EquipmentType as number]}</Typography>
+  93 |                    </div>[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+      at TypeScriptParserMixin.expect (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3601:28)
+      at TypeScriptParserMixin.parseObjectLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11334:14)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10865:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6687:31)
+      at TypeScriptParserMixin.jsxParseAttributeValue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6659:21)
+      at TypeScriptParserMixin.jsxParseAttribute (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6708:38)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6722:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9657:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6717:17)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6741:33)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6804:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6816:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:39
+      at TypeScriptParserMixin.tryParse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3608:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:18)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11189:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:58:55[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.tsx: Unexpected token, expected "," (89:68)
+
+[0m [90m 87 |[31m                 justifyContent[33m:[31m [32m'space-between'[31m[0m
+[0m [90m 88 |[31m               }}[33m>[31m[0m
+[0m[31m[1m>[22m[31m[90m 89 |[31m                 [33m<[31m[33mdiv[31m style[33m=[31m{{ display[33m:[31m [32m'flex'[31m[33m,[31m alignItems[33m:[31m [32m'center'[31m justifyContent[33m:[31m [32m'space-between'[31m}}[33m>[31m[0m
+[0m [90m    |[31m                                                                     [31m[1m^[22m[31m[0m
+[0m [90m 90 |[31m                   [33m<[31m[33mdiv[31m[33m>[31m[0m
+[0m [90m 91 |[31m                     [33m<[31m[33mTypography[31m color[33m=[31m[32m"white"[31m fontWeight[33m=[31m[32m"bold"[31m[33m>[31m{exercise[33m.[31m[33mExerciseName[31m}[33m<[31m[33m/[31m[33mTypography[31m[33m>[31m[0m
+[0m [90m 92 |[31m                     [33m<[31m[33mTypography[31m color[33m=[31m[32m"white"[31m[33m>[31m{[33mEquipmentType[31m[exercise[33m.[31m[33mEquipmentType[31m [36mas[31m number]}[33m<[31m[33m/[31m[33mTypography[31m[33m>[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.tsx[39m:89:68
+[33m  89 |                  <div style={{ display: 'flex', alignItems: 'center' justifyContent: 'space-between'}}>
+  90 |                    <div>
+  91 |                      <Typography color="white" fontWeight="bold">{exercise.ExerciseName}</Typography>
+     |                               ^
+  92 |                      <Typography color="white">{EquipmentType[exercise.EquipmentType as number]}</Typography>
+  93 |                    </div>[39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+      at TypeScriptParserMixin.expect (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3601:28)
+      at TypeScriptParserMixin.parseObjectLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11334:14)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10865:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10292:23)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.jsxParseExpressionContainer (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6687:31)
+      at TypeScriptParserMixin.jsxParseAttributeValue (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6659:21)
+      at TypeScriptParserMixin.jsxParseAttribute (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6708:38)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6722:28)
+      at TypeScriptParserMixin.jsxParseOpeningElementAfterName (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9657:18)
+      at TypeScriptParserMixin.jsxParseOpeningElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6717:17)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6741:33)
+      at TypeScriptParserMixin.jsxParseElementAt (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6753:32)
+      at TypeScriptParserMixin.jsxParseElement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6804:17)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6816:19)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:39
+      at TypeScriptParserMixin.tryParse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3608:20)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9394:18)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11189:28)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23) [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:59:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-services to C:\Users\joeyr\src\git\operation-stacked\libs\shared-services\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/api-hooks to C:\Users\joeyr\src\git\operation-stacked\libs\api-hooks\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/operation-stacked-shared-types to C:\Users\joeyr\src\git\operation-stacked\libs\operation-stacked-shared-types\src\index.ts
+
+[Nx Vite TsPaths] Resolved @operation-stacked/shared-images to C:\Users\joeyr\src\git\operation-stacked\libs\shared-images\src\index.ts

@@ -1,0 +1,78 @@
+
+[7m[1m[34m DEV [39m[22m[27m [34mv0.34.6[39m [90mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard[39m
+
+[90mstderr[2m | unknown test[22m[39m
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+[90mstderr[2m | unknown test[22m[39m
+[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`.
+
+ [33m❯[39m src/components/exercise/ExerciseTable.spec.tsx [2m ([22m[2m3 tests[22m [2m|[22m [31m3 failed[39m[2m)[22m[90m 6[2mms[22m[39m
+[31m   [33m❯[31m src/components/exercise/ExerciseTable.spec.tsx[2m > [22mExerciseTable[2m > [22mshows loading state correctly[39m
+[31m     → exerciseUserIdAllGet does not exist[39m
+[31m   [33m❯[31m src/components/exercise/ExerciseTable.spec.tsx[2m > [22mExerciseTable[2m > [22mshows error message when fetching exercises fails[39m
+[31m     → exerciseUserIdAllGet does not exist[39m
+[31m   [33m❯[31m src/components/exercise/ExerciseTable.spec.tsx[2m > [22mExerciseTable[2m > [22mdisplays "No exercises found" when there are no exercises[39m
+[31m     → exerciseUserIdAllGet does not exist[39m
+ [33m❯[39m src/components/LoginForm/LoginForm.spec.tsx [2m ([22m[2m0 test[22m[2m)[22m
+
+[31m⎯⎯⎯⎯⎯⎯[1m[7m Failed Suites 1 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/components/LoginForm/LoginForm.spec.tsx [2m[ src/components/LoginForm/LoginForm.spec.tsx ][22m
+[31m[1mReferenceError[22m: jest is not defined[39m
+[36m [2m❯[22m src/components/LoginForm/LoginForm.spec.tsx:[2m6:1[22m[39m
+    [90m  4| [39m
+    [90m  5| [39m// Mock the useNavigate function
+    [90m  6| [39mjest.mock('react-router-dom', () => ({
+    [90m   | [39m[31m^[39m
+    [90m  7| [39m    useNavigate: () => jest.fn(),
+    [90m  8| [39m}));
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯[22m[39m
+
+[31m⎯⎯⎯⎯⎯⎯⎯[1m[7m Failed Tests 3 [27m[22m⎯⎯⎯⎯⎯⎯⎯[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/components/exercise/ExerciseTable.spec.tsx[2m > [22mExerciseTable[2m > [22mshows loading state correctly
+[31m[1mError[22m: exerciseUserIdAllGet does not exist[39m
+[36m [2m❯[22m src/components/exercise/ExerciseTable.spec.tsx:[2m36:20[22m[39m
+    [90m 34| [39m  it('shows loading state correctly', async () => {
+    [90m 35| [39m    // Spy on the method and delay the response to simulate loading
+    [90m 36| [39m    const spy = vi.spyOn(ExerciseApi.prototype, 'exerciseUserIdAllGet'…
+    [90m   | [39m                   [31m^[39m
+    [90m 37| [39m      () => new Promise(() => {}) // Never resolving promise to simula…
+    [90m 38| [39m    );
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/components/exercise/ExerciseTable.spec.tsx[2m > [22mExerciseTable[2m > [22mshows error message when fetching exercises fails
+[31m[1mError[22m: exerciseUserIdAllGet does not exist[39m
+[36m [2m❯[22m src/components/exercise/ExerciseTable.spec.tsx:[2m48:20[22m[39m
+    [90m 46| [39m  it('shows error message when fetching exercises fails', async () => {
+    [90m 47| [39m    // Spy on the method and mock a rejected promise to simulate an er…
+    [90m 48| [39m    const spy = vi.spyOn(ExerciseApi.prototype, 'exerciseUserIdAllGet'…
+    [90m   | [39m                   [31m^[39m
+    [90m 49| [39m
+    [90m 50| [39m    renderWithProviders(<ExerciseTable onCompleteClick={() => {}} butt…
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯[22m[39m
+
+[31m[1m[7m FAIL [27m[22m[39m src/components/exercise/ExerciseTable.spec.tsx[2m > [22mExerciseTable[2m > [22mdisplays "No exercises found" when there are no exercises
+[31m[1mError[22m: exerciseUserIdAllGet does not exist[39m
+[36m [2m❯[22m src/components/exercise/ExerciseTable.spec.tsx:[2m58:20[22m[39m
+    [90m 56| [39m  it('displays "No exercises found" when there are no exercises', asyn…
+    [90m 57| [39m    // Spy on the method and mock a resolved promise with an empty arr…
+    [90m 58| [39m    const spy = vi.spyOn(ExerciseApi.prototype, 'exerciseUserIdAllGet'…
+    [90m   | [39m                   [31m^[39m
+    [90m 59| [39m
+    [90m 60| [39m    renderWithProviders(<ExerciseTable onCompleteClick={() => {}} butt…
+
+[31m[2m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯[22m[39m
+
+[2m Test Files [22m [1m[31m2 failed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[31m3 failed[39m[22m[90m (3)[39m
+[2m   Start at [22m 22:58:28
+[2m   Duration [22m 3.30s[2m (transform 253ms, setup 0ms, collect 2.29s, tests 6ms, environment 931ms, prepare 321ms)[22m
+
+
+[1m[7m[31m FAIL [39m[27m[22m[31m Tests failed. Watching for file changes...[39m
+       [2mpress [22m[1mh[22m[2m to show help[22m[2m, [22m[2mpress [22m[1mq[22m[2m to quit[22m

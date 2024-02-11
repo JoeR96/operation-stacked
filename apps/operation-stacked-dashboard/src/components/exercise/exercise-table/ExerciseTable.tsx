@@ -1,9 +1,9 @@
 import React from 'react';
 import { Grid, Box, Typography, Paper } from '@mui/material';
 import { useQuery } from 'react-query';
-import Spinner from '../spinner/Spinner';
+import Spinner from '../../spinner/Spinner';
 import { Exercise, ExerciseApi } from '@operation-stacked/shared-services';
-import { useUserStore } from '../../state/userState';
+import { useUserStore } from '../../../state/userState';
 import { barbell, cableMachine, dumbell, machine, smithMachine } from '@operation-stacked/shared-images';
 import {
   Category,

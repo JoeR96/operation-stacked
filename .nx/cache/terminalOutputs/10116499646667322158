@@ -1,0 +1,1235 @@
+[32minfo[0m[35m[0m => Starting manager..
+[0m[32minfo[0m[35m[0m => Starting preview..
+[0m[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.10[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m730 ms[24m for manager and [4m13 s[24m for preview[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:4400/[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://192.168.0.139:4400/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:59:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx, /src/components/LoginForm/LoginForm.tsx, /src/components/exercise/ExerciseTable.tsx, /src/components/exercise/ExerciseForm.tsx, /virtual:/@storybook/builder-vite/vite-app.js, /src/components/dashboard/DashboardMainContent.tsx, /src/components/header/Header.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:59:11[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:00:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:00:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx, /src/components/LoginForm/LoginForm.tsx, /src/components/exercise/ExerciseTable.tsx, /src/components/exercise/ExerciseForm.tsx, /virtual:/@storybook/builder-vite/vite-app.js, /src/components/dashboard/DashboardMainContent.tsx, /src/components/header/Header.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:33:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:34:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:45:28[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m13:45:28[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m13:45:28[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:45:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m13:45:39[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m13:45:39[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:47:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m13:47:14[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m13:47:14[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:47:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m13:47:18[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m13:47:18[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:50:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m13:50:10[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m13:50:10[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:50:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m13:50:57[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m13:50:57[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m13:52:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m13:52:00[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m13:52:00[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m14:04:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:04:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m [33m(x2)[39m
+[2m15:04:27[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m15:04:27[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:07:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m15:07:08[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m15:07:08[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:07:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m15:07:10[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m15:07:10[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:57:22[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:57:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:57:58[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m15:59:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m15:59:21[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m15:59:21[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:01:05[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:01:05[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\.storybook\preview.tsx: 'return' outside of function. (18:2)
+
+[0m [90m 16 |[31m })[33m;[31m[0m
+[0m [90m 17 |[31m[0m
+[0m[31m[1m>[22m[31m[90m 18 |[31m   [36mreturn[31m [33m<[31m[33m>[31m{children}[33m<[31m[33m/[31m[33m>[31m[33m;[31m[0m
+[0m [90m    |[31m   [31m[1m^[22m[31m[0m
+[0m [90m 19 |[31m }[33m;[31m[0m
+[0m [90m 20 |[31m[0m
+[0m [90m 21 |[31m [36mexport[31m [36mconst[31m decorators [33m=[31m [[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.tsx[39m:18:2
+[33m  16 |  });
+  17 |  
+  18 |    return <>{children}</>;
+     |                     ^
+  19 |  };
+  20 |  [39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.parseReturnStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12603:12)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12260:21)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseModuleItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12206:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:36)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseProgram (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12106:10)
+      at TypeScriptParserMixin.parseTopLevel (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12096:25)
+      at TypeScriptParserMixin.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13895:10)
+      at TypeScriptParserMixin.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9733:18)
+      at parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:13937:38)
+      at parser (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\parser\index.js:41:34)
+      at parser.next (<anonymous>)
+      at normalizeFile (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transformation\normalize-file.js:64:37)
+      at normalizeFile.next (<anonymous>)
+      at run (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transformation\index.js:21:50)
+      at run.next (<anonymous>)
+      at transform (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\transform.js:22:33)
+      at transform.next (<anonymous>)
+      at step (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:261:32)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:223:11)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:189:28
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\core\lib\gensync-utils\async.js:67:7
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:113:33
+      at step (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:287:14)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:273:13
+      at async.call.result.err.err (C:\Users\joeyr\src\git\operation-stacked\node_modules\gensync\index.js:223:11)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:01:10[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m16:01:10[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m16:01:10[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:01:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m16:01:18[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m16:01:18[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:01:23[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m16:01:23[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m16:01:23[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:01:25[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m16:01:25[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m16:01:25[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:03:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m16:05:57[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:15:36[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:15:41[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:15:59[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:16:00[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:16:38[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x7)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:18:14[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m18:18:14[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m18:18:14[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+[2m18:18:14[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m18:18:14[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:18:15[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/.storybook/preview.tsx[22m
+[2m18:18:15[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/.storybook/preview.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m18:18:15[22m [36m[1m[vite][22m[39m [32mpage reload [39m[2m.storybook/preview.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:18:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m18:18:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m

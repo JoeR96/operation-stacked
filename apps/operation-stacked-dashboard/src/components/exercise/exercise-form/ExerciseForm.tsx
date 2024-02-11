@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Grid, Paper, FormControl, InputLabel, Select, MenuItem, Typography } from '@mui/material';
-import Spinner from '../spinner/Spinner';
-import { useUserStore } from '../../state/userState';
+import Spinner from '../../spinner/Spinner';
+import { useUserStore } from '../../../state/userState';
 import { theme } from '@operation-stacked/shared-styles';
 import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import { Category, EquipmentType } from '@operation-stacked/operation-stacked-shared-types';

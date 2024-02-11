@@ -4,13 +4,16 @@ import 'react-datepicker/dist/react-datepicker.css';
 import {Button, TextField} from '@operation-stacked/ui-components';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import {WorkoutApi} from "@operation-stacked/shared-services";
+import { Exercise, WorkoutApi } from '@operation-stacked/shared-services';
 import { theme } from '@operation-stacked/shared-styles';
 
 export interface ExerciseCompletionFormProps {
     exerciseId: string;
+    hideCompletionForm: () => void;
+
+
 }
-const ExerciseCompletionForm = ({ exerciseId }: ExerciseCompletionFormProps) => {
+const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseCompletionFormProps) => {
     interface ExerciseState {
         exerciseId: string;
         sets: { reps: number }[];
@@ -80,6 +83,8 @@ const ExerciseCompletionForm = ({ exerciseId }: ExerciseCompletionFormProps) => 
             await workoutApi.workoutCompleteMultiplePost(data);
 
             setIsLoading(false);
+            console.log("tits")
+            hideCompletionForm()
         } catch (error) {
             console.error("API call failed:", error);
             setIsLoading(false);

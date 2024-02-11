@@ -1,5 +1,5 @@
 ﻿import React from 'react'
-import ExerciseLayout from '../../components/exercise/ExerciseLayout';
+import ExerciseLayout from '../../components/exercise/exercise-layout/ExerciseLayout';
 
 const ExercisePage = () => {
 

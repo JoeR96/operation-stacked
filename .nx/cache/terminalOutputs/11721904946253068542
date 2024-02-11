@@ -1,0 +1,28 @@
+[32minfo[0m[35m[0m => Starting manager..
+[0m[32minfo[0m[35m[0m => Starting preview..
+[0m[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.10[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m260 ms[24m for manager and [4m9.6 s[24m for preview[39m         [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:4400/[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://192.168.0.139:4400/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 10)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m[2m00:01:20[22m [31m[1m[vite][22m[39m [31merror while updating dependencies:
+Error: ENOENT: no such file or directory, open 'C:\Users\joeyr\src\git\operation-stacked\node_modules\msw\lib\core\index.mjs'[39m

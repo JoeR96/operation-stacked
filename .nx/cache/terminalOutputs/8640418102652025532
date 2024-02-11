@@ -1,0 +1,1754 @@
+[32minfo[0m[35m[0m => Starting manager..
+[0m[32minfo[0m[35m[0m => Starting preview..
+[0m[33mThe CJS build of Vite's Node API is deprecated. See https://vitejs.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.10[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m729 ms[24m for manager and [4m16 s[24m for preview[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:4400/[39m        [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://192.168.0.139:4400/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:26:55[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/spinner/Spinner.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   NoMetaError: CSF: missing default export C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/spinner/Spinner.stories.tsx (line 1, col 0)
+[0m[30;43mWARN[0m[35m[0m 
+[0m[30;43mWARN[0m[35m[0m More info: https://storybook.js.org/docs/react/writing-stories#default-export
+[0m[30;43mWARN[0m[35m[0m     at CsfFile.parse (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\csf-tools\dist\index.js:14:206)
+[0m[30;43mWARN[0m[35m[0m     at Object.createIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\presets\common-preset.js:21:1999)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.extractStories (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:55:316)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2020
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 16)
+[0m[30;43mWARN[0m[35m[0m     at async Promise.all (index 0)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.updateExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:1653)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.ensureExtracted (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:54:2474)
+[0m[30;43mWARN[0m[35m[0m     at async StoryIndexGenerator.getIndex (C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:60:3619)
+[0m[30;43mWARN[0m[35m[0m     at async C:\Users\joeyr\src\git\operation-stacked\node_modules\@storybook\core-server\dist\index.js:51:5276
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:29:02[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:34:01[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:35:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+[2m01:35:04[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:35:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:35:30[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:38:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+[2m01:38:03[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:38:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:45:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:45:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m [33m(x2)[39m
+[2m01:45:24[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:45:24[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:46:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+[2m01:46:33[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:46:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:46:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:46:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseForm.stories.tsx[22m
+[2m01:46:39[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:46:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+[2m01:46:39[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseForm.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:46:39[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:46:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.stories.tsx[22m
+[2m01:46:42[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseCompletionForm.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:46:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:48:03[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseCompletionForm.stories.tsx[22m
+[2m01:48:04[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseCompletionForm.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m01:48:04[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:57:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:57:54[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:58:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m01:59:12[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x4)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:00:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x5)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:01:45[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x6)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:05:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:05:07[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts:15:18: ERROR: Expected ">" but found "/"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts[39m:15:18
+[33m  
+  [33mExpected ">" but found "/"[33m
+  13 |      mockGlobalUseExerciseStore(mockExercises); // Customize this as needed
+  14 |  
+  15 |      return <Story />;
+     |                    ^
+  16 |    },
+  17 |  ];
+  [39m
+      at failureErrorWithLog (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:1651:15)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:849:29
+      at responseCallbacks.<computed> (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:704:9)
+      at handleIncomingPacket (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:764:9)
+      at Socket.readFromStdout (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:680:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:06:09[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:06:09[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts:21:18: ERROR: Expected ">" but found "/"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts[39m:21:18
+[33m  
+  [33mExpected ">" but found "/"[33m
+  19 |      mockGlobalUseExerciseStore(); // Now called without an argument
+  20 |  
+  21 |      return <Story />;
+     |                    ^
+  22 |    },
+  23 |  ];
+  [39m
+      at failureErrorWithLog (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:1651:15)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:849:29
+      at responseCallbacks.<computed> (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:704:9)
+      at handleIncomingPacket (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:764:9)
+      at Socket.readFromStdout (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:680:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:06:46[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:06:46[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts:24:18: ERROR: Expected ">" but found "/"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts[39m:24:18
+[33m  
+  [33mExpected ">" but found "/"[33m
+  22 |      mockGlobalUseExerciseStore(); // Now called without an argument
+  23 |  
+  24 |      return <Story />;
+     |                    ^
+  25 |    },
+  26 |  ];
+  [39m
+      at failureErrorWithLog (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:1651:15)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:849:29
+      at responseCallbacks.<computed> (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:704:9)
+      at handleIncomingPacket (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:764:9)
+      at Socket.readFromStdout (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:680:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:10:08[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:10:08[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "../state/exerciseState" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.stories.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx[39m:19:35
+[33m  17 |  import { ExerciseTable } from "./ExerciseTable";
+  18 |  import { mockExercises } from "./mocks/mockExercises";
+  19 |  import { useExerciseStore } from "../state/exerciseState";
+     |                                    ^
+  20 |  export default {
+  21 |    title: "Exercise/ExerciseTable",[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 5)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:10:37[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:12:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:16:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:16:27[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "./mocks/mockExercises" from "apps\operation-stacked-dashboard\src\components\exercise\ExerciseTable.stories.tsx". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseTable.stories.tsx[39m:18:32
+[33m  16 |  }
+  17 |  import { ExerciseTable } from "./ExerciseTable";
+  18 |  import { mockExercises } from "./mocks/mockExercises";
+     |                                 ^
+  19 |  import { useExerciseStore } from "../../state/exerciseState";
+  20 |  export default {[39m
+      at formatError (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63768:46)
+      at TransformContext.error (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:63762:19)
+      at normalizeUrl (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62037:33)
+      at async file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62191:47
+      at async Promise.all (index 4)
+      at async TransformContext.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:62112:13)
+      at async Object.transform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:64063:30)
+      at async loadAndTransform (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:49741:29)
+      at async viteTransformMiddleware (file:///C:/Users/joeyr/src/git/operation-stacked/node_modules/vite/dist/node/chunks/dep-9A4-l-43.js:59342:32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:16:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:16:34[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:16:34[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts:24:18: ERROR: Expected ">" but found "/"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts[39m:24:18
+[33m  
+  [33mExpected ">" but found "/"[33m
+  22 |      mockGlobalUseExerciseStore(); // Now called without an argument
+  23 |  
+  24 |      return <Story />;
+     |                    ^
+  25 |    },
+  26 |  ];
+  [39m
+      at failureErrorWithLog (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:1651:15)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:849:29
+      at responseCallbacks.<computed> (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:704:9)
+      at handleIncomingPacket (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:764:9)
+      at Socket.readFromStdout (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:680:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:17:18[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:17:21[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:17:31[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x3)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:18:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m
+[2m02:18:27[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseTable.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m02:18:27[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:18:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+[2m02:18:53[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m02:18:53[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:20:20[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:20:20[22m [31m[1m[vite][22m[39m [31mInternal server error: C:\Users\joeyr\src\git\operation-stacked\apps\operation-stacked-dashboard\src\components\exercise\ExerciseLayout.stories.tsx: Unexpected token (24:4)
+
+[0m [90m 22 |[31m     username[33m:[31m [32m'mock-username'[31m[33m,[31m[0m
+[0m [90m 23 |[31m     [0m
+[0m[31m[1m>[22m[31m[90m 24 |[31m     [36mreturn[31m [33m<[31m[33mStoryFn[31m [33m/[31m[33m>[31m[33m;[31m[0m
+[0m [90m    |[31m     [31m[1m^[22m[31m[0m
+[0m [90m 25 |[31m   }[33m,[31m[0m
+[0m [90m 26 |[31m ][33m;[31m[0m
+[0m [90m 27 |[31m[0m[39m
+  Plugin: [35mvite:react-babel[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/src/components/exercise/ExerciseLayout.stories.tsx[39m:24:4
+[33m  23 |      
+  24 |      return <StoryFn />;
+  25 |    },
+     |     ^
+  26 |  ];
+  27 |  [39m
+      at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+      at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+      at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10964:16)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10297:36)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+      at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12362:23)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12222:17)
+      at TypeScriptParserMixin.parseLabeledStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12748:95)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12364:19)
+      at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+      at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+      at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+      at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+      at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+      at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+      at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+      at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+      at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+      at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+      at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+      at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+      at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+      at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+      at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+      at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+      at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+      at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+      at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+      at TypeScriptParserMixin.parseExprListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11686:18)
+      at TypeScriptParserMixin.parseExprList (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11661:22)
+      at TypeScriptParserMixin.parseArrayLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11563:26)
+[30;43mWARN[0m[35m[0m 🚨 Unable to index ./apps/operation-stacked-dashboard/src/components/exercise/ExerciseLayout.stories.tsx:
+[0m[30;43mWARN[0m[35m[0m   SyntaxError: Unexpected token (24:4)
+[0m[30;43mWARN[0m[35m[0m     at constructor (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:353:19)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.raise (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3277:19)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.unexpected (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:3297:16)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10964:16)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExpressionBase (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10297:36)
+[0m[30;43mWARN[0m[35m[0m     at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:39
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11921:16)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10288:17)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12362:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12222:17)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseLabeledStatement (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12748:95)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12364:19)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseStatementContent (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9132:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseStatementLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12229:17)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseStatementListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12209:17)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseBlockOrModuleBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12786:61)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseBlockBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12779:10)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseBlock (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:12767:10)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseFunctionBody (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11606:24)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseArrowExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11581:10)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseParenAndDistinguishExpression (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11201:12)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10847:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprAtom (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:6821:20)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprSubscripts (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10580:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseUpdate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10563:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10541:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnary (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9456:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeUnaryOrPrivate (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10395:61)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprOps (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10400:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeConditional (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10377:23)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10338:21)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssign (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:9405:20)
+[0m[30;43mWARN[0m[35m[0m     at C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:39
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.allowInAnd (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11926:12)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseMaybeAssignAllowIn (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:10308:17)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprListItem (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11686:18)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseExprList (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11661:22)
+[0m[30;43mWARN[0m[35m[0m     at TypeScriptParserMixin.parseArrayLike (C:\Users\joeyr\src\git\operation-stacked\node_modules\@babel\parser\lib\index.js:11563:26)
+[0m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:20:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+[2m02:20:26[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m02:20:26[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:20:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+[2m02:20:44[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m02:20:44[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:22:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m
+[2m02:22:33[22m [36m[1m[vite][22m[39m [33mhmr invalidate [39m[2m/src/components/exercise/ExerciseLayout.stories.tsx[22m Could not Fast Refresh. Learn more at https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#consistent-components-exports
+[2m02:22:33[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:23:07[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:40:42[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/exercise/ExerciseTable.tsx[22m [33m(x2)[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:49:25[22m [31m[1m[vite][22m[39m [31mInternal server error: Transform failed with 1 error:
+C:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts:24:18: ERROR: Expected ">" but found "/"[39m
+  Plugin: [35mvite:esbuild[39m
+  File: [36mC:/Users/joeyr/src/git/operation-stacked/apps/operation-stacked-dashboard/.storybook/preview.ts[39m:24:18
+[33m  
+  [33mExpected ">" but found "/"[33m
+  22 |      mockGlobalUseExerciseStore(); // Now called without an argument
+  23 |  
+  24 |      return <Story />;
+     |                    ^
+  25 |    },
+  26 |  ];
+  [39m
+      at failureErrorWithLog (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:1651:15)
+      at C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:849:29
+      at responseCallbacks.<computed> (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:704:9)
+      at handleIncomingPacket (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:764:9)
+      at Socket.readFromStdout (C:\Users\joeyr\src\git\operation-stacked\node_modules\esbuild\lib\main.js:680:7)
+      at Socket.emit (node:events:514:28)
+      at addChunk (node:internal/streams/readable:343:12)
+      at readableAddChunk (node:internal/streams/readable:316:9)
+      at Readable.push (node:internal/streams/readable:253:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m02:51:19[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/virtual:/@storybook/builder-vite/vite-app.js[22m
