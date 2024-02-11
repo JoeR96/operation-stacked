@@ -6,7 +6,6 @@ import { Exercise, ExerciseHistory, ExerciseHistoryApi } from '@operation-stacke
 import { theme } from '@operation-stacked/shared-styles';
 import { Category } from '@operation-stacked/operation-stacked-shared-types';
 
-// Updated commonStyles with bold text
 export const commonStyles = {
   button: {
     backgroundColor: theme.colors.primary,
@@ -15,12 +14,13 @@ export const commonStyles = {
   },
   text: {
     color: theme.colors.text,
-    fontWeight: 'bold', // Make text bold
+    fontWeight: 'bold',
+    textAlign: 'center'
   },
 };
 
 interface ExerciseHistoryViewProps {
-  exercise: Exercise; // Changed to pass exerciseId directly
+  exercise: Exercise;
 }
 
 const ExerciseHistoryView: React.FC<ExerciseHistoryViewProps> = ({ exercise }) => {
@@ -37,16 +37,20 @@ const ExerciseHistoryView: React.FC<ExerciseHistoryViewProps> = ({ exercise }) =
   );
 
   if (isLoading) return <Spinner />;
-  if (isError) return <div>Error fetching exercise history: {(error as Error)?.message || 'Unknown error occurred'}</div>;
-
-  // Assuming exerciseHistory is an array of history records
-  if (!exerciseHistory || exerciseHistory.length === 0) return <div>No history found for this exercise</div>;
+  if (isError) return <Spinner />;
+  if (!exerciseHistory || exerciseHistory.length === 0) {
+    return (
+      <Box sx={{ flexGrow: 1, backgroundColor: theme.colors.cardBackground, borderRadius: 5, padding: '20px', textAlign: 'center' }}>
+        No history found for this exercise
+      </Box>
+    );
+  }
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 , backgroundColor: theme.colors.cardBackground, borderRadius: 5}}>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <Typography variant="h4" gutterBottom>
+          <Typography variant="h4" gutterBottom sx={commonStyles.text}>
             Exercise History for {exercise.ExerciseName + " " + Category[exercise.Category]}
           </Typography>
           <Table>
@@ -64,7 +68,7 @@ const ExerciseHistoryView: React.FC<ExerciseHistoryViewProps> = ({ exercise }) =
                   <TableCell sx={commonStyles.text}>{new Date(history.CompletedDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</TableCell>
                   <TableCell sx={commonStyles.text}>{history.CompletedSets}</TableCell>
                   <TableCell sx={commonStyles.text}>{history.CompletedReps}</TableCell>
-                  <TableCell sx={commonStyles.text}>{history.WorkingWeight}</TableCell>
+                  <TableCell sx={commonStyles.text}>{history.WorkingWeight} KG</TableCell>
                 </TableRow>
               ))}
             </TableBody>

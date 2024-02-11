@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Box } from '@mui/material';
-import CircularProgressBar from '../circular-progress-bar/CircularProgressBar';
-import CardComponent from '../card/CardComponent';
-import Spinner from '../spinner/Spinner';
-import { useUserStore } from '../../state/userState';
+import CircularProgressBar from '../../circular-progress-bar/CircularProgressBar';
+import CardComponent from '../../card/CardComponent';
+import Spinner from '../../spinner/Spinner';
+import { useUserStore } from '../../../state/userState';
 
 const DashboardMainContent: React.FC = () => {
   const { username,userId } = useUserStore();

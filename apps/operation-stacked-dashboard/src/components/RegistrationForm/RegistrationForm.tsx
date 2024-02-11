@@ -28,6 +28,16 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
   const [registrationMessage, setRegistrationMessage] = useState('');
   const { apiStatus, exec, error } = useApi(async (email: string, password: string) => await registerUser(email, password));
 
+  // Placeholder for Google Sign-In logic
+  const handleGoogleSignIn = async () => {
+    // Simulate Google Sign-In Success
+    console.log("Google Sign-In successful. Implement your sign-in logic here.");
+    // After successful sign-in with Google, you might want to automatically register or log the user in your system.
+    // Replace the below call with actual user registration or login logic using the details obtained from Google.
+    // Example:
+    // await exec(userDetails.email, userDetails.password);
+  };
+
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -95,8 +105,16 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
         </Grid>
         <Grid item>
           <Box textAlign="center">
-            <Button type={'submit'}>Register</Button>
+            <Button type="submit">Register</Button>
             <Button onClick={onToggleForm}>Login</Button>
+          </Box>
+        </Grid>
+        <Grid item>
+          <Box textAlign="center">
+            <Typography variant="body2" style={{ color: 'white', marginBottom: '20px' }}>
+              OR
+            </Typography>
+            <Button onClick={handleGoogleSignIn}>Register with Google</Button>
           </Box>
         </Grid>
       </Grid>
@@ -106,11 +124,10 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
   return (
     <React.Fragment>
       <Grid container justifyContent="center" alignItems="center">
-        <Paper elevation={3} style={{ padding: '2rem', backgroundColor: '#242424', width: '100%', height: '100%' }}>
+        <Paper elevation={3} style={{ padding: '2rem', backgroundColor: '#242424', width: '100%', maxWidth: '500px' }}>
           <Typography variant="h5" gutterBottom style={{ color: 'white', textAlign: 'center' }}>
             Register
           </Typography>
-
           {registrationMessage ? (
             <div>
               <Typography style={{ color: 'white', textAlign: 'center' }}>

@@ -41,9 +41,7 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
 
   const groupExercisesByCategory = (exercises: Exercise[]): GroupedExercises => {
     return exercises.reduce((acc: GroupedExercises, exercise: Exercise) => {
-      console.log(exercise.Category)
       const categoryKey = mapCategory(exercise.Category);
-      console.log(categoryKey)
       if (!acc[categoryKey]) acc[categoryKey] = [];
       acc[categoryKey].push(exercise);
       return acc;
@@ -61,9 +59,9 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
   return (
     <Grid container spacing={2}>
       {Object.entries(groupedExercises).map(([category, exercisesInCategory], index) => (
-        <Grid item xs={12} sm={4} key={index}>
+        <Grid item xs={2} sm={2} key={index}>
           <Box margin="10px">
-            <Typography variant="h5" color="white" marginBottom="10px">{Category[category as keyof typeof Category]}</Typography>
+            <Typography variant="h5" color="white" marginBottom="10px" sx={{textAlign:'center'}}>{Category[category as keyof typeof Category]}</Typography>
             {exercisesInCategory.map((exercise, exerciseIndex) => (
               <Paper key={exercise.Id || exerciseIndex} sx={{
                 padding: '10px',

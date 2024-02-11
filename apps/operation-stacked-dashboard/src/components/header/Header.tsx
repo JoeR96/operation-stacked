@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useUserStore } from '../../state/userState';
 import { theme } from '@operation-stacked/shared-styles';
@@ -36,21 +36,23 @@ function Header() {
     };
 
     return (
-      <AppBar position="fixed" style={{ backgroundColor: theme.colors.primary }}>
-          <Toolbar>
-              <Typography variant="h6" style={{ flexGrow: 1, color: theme.colors.text }}>
-                  OperationStacked
-              </Typography>
-              {/* Navigation buttons */}
-              <Button color="inherit" onClick={() => handleNavigate('/dashboard')}>Dashboard</Button>
-              <Button color="inherit" onClick={() => handleNavigate('/exercises')}>Exercises</Button>
-              <Button color="inherit" onClick={() => handleNavigate('/workout')}>Workout</Button>
-              <Button color="inherit" onClick={() => handleNavigate('/equipment-stacks')}>Equipment Stacks</Button>
-              <Button color="inherit" onClick={() => handleNavigate('/history')}>History</Button>
-              {/* Logout button */}
-              {userId && <Button color="inherit" onClick={handleLogoutClick}>Logout</Button>}
-          </Toolbar>
-      </AppBar>
+      <Box marginBottom="64px"> {/* Ensure space for the fixed AppBar */}
+          <AppBar position="fixed" style={{ backgroundColor: theme.colors.primary }}>
+              <Toolbar>
+                  <Typography variant="h6" style={{ flexGrow: 1, color: theme.colors.text }}>
+                      OperationStacked
+                  </Typography>
+                  {/* Navigation buttons */}
+                  <Button color="inherit" onClick={() => handleNavigate('/dashboard')}>Dashboard</Button>
+                  <Button color="inherit" onClick={() => handleNavigate('/exercises')}>Exercises</Button>
+                  <Button color="inherit" onClick={() => handleNavigate('/workout')}>Workout</Button>
+                  <Button color="inherit" onClick={() => handleNavigate('/equipment-stacks')}>Equipment Stacks</Button>
+                  <Button color="inherit" onClick={() => handleNavigate('/history')}>History</Button>
+                  {/* Logout button */}
+                  {userId && <Button color="inherit" onClick={handleLogoutClick}>Logout</Button>}
+              </Toolbar>
+          </AppBar>
+      </Box>
     );
 }
 

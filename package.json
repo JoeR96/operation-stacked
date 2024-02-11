@@ -88,6 +88,7 @@
     "react-date-picker": "^10.6.0",
     "react-datepicker": "^5.1.0",
     "react-dom": "18.2.0",
+    "react-google-login": "^5.2.2",
     "react-query": "^3.39.3",
     "react-router-dom": "6.11.2",
     "tslib": "^2.3.0",

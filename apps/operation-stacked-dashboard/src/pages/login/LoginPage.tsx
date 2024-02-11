@@ -21,11 +21,11 @@ const LoginPage = () => {
         </div>
         <div style={{ flex: '0 0 25%', display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100%' }}>
           {showLoginForm ? (
-            <div style={{ height: '100%', width: '100%' }}>
+            <div style={{ height: '100vh', width: '100%' }}>
               <LoginForm onToggleForm={toggleForm} authApi={authApi} />
             </div>
           ) : (
-            <div style={{ height: '100%', width: '100%' }}>
+            <div style={{ height: '100vh', width: '100%' }}>
               <RegistrationForm onToggleForm={toggleForm} />
             </div>
           )}

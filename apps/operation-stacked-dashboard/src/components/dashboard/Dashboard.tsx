@@ -1,7 +1,7 @@
 import React from 'react';
-import DashboardButtonLayout from './DashboardButtonLayout';
+import DashboardButtonLayout from './dashboard-button-layout/DashboardButtonLayout';
 import CardSplashScreen from '../card-splash-screen/CardSplashScreen';
-import DashboardHeader from './DashboardHeader';
+import DashboardHeader from './dashboard-header/DashboardHeader';
 
 const Dashboard: React.FC = () => {
   return (

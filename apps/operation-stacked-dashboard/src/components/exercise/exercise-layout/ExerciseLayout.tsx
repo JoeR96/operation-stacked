@@ -27,8 +27,8 @@ const ExerciseLayout = () => {
     };
 
     return (
-      <Box style={{ marginBottom: '10px', paddingTop: '100px' }}>
-          <Button onClick={toggleNewExerciseForm}>
+      <Box style={{ marginBottom: '10px', padding: '100px' }}>
+          <Button onClick={toggleNewExerciseForm} >
               {showNewExerciseForm ? 'Hide Add Exercise Form' : 'Show Add Exercise Form'}
           </Button>
 

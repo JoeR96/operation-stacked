@@ -1,7 +1,7 @@
 ﻿import React, { useState } from 'react';
 import { Typography, Box, Grid, CircularProgress, Paper } from '@mui/material';
 import 'react-datepicker/dist/react-datepicker.css';
-import {Button, TextField} from '@operation-stacked/ui-components';
+import { Button, TextField } from '@operation-stacked/ui-components';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { Exercise, WorkoutApi } from '@operation-stacked/shared-services';
@@ -10,10 +10,10 @@ import { theme } from '@operation-stacked/shared-styles';
 export interface ExerciseCompletionFormProps {
     exerciseId: string;
     hideCompletionForm: () => void;
-
-
 }
+
 const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseCompletionFormProps) => {
+    // Update ExerciseState interface to include workingWeight field
     interface ExerciseState {
         exerciseId: string;
         sets: { reps: number }[];
@@ -25,6 +25,17 @@ const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseComp
         { exerciseId: '', sets: [{ reps: 0 }], workingWeight: '', dummyTime: new Date() }
     ]);
     const [isLoading, setIsLoading] = useState(false);
+
+    // Function to handle changes in the working weight input field
+    const handleWeightChange = (exerciseIndex: number, value: string) => {
+        const newExercises = exercises.map((exercise, i) => {
+            if (i === exerciseIndex) {
+                return { ...exercise, workingWeight: value };
+            }
+            return exercise;
+        });
+        setExercises(newExercises);
+    };
 
     const handleRepsChange = (exerciseIndex: number, setIndex: number, value: string) => {
         const newExercises = exercises.map((exercise, i) => {
@@ -65,7 +76,6 @@ const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseComp
         setExercises(newExercises);
     };
 
-
     const submitExerciseData = async () => {
         try {
             setIsLoading(true);
@@ -83,16 +93,15 @@ const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseComp
             await workoutApi.workoutCompleteMultiplePost(data);
 
             setIsLoading(false);
-            console.log("tits")
-            hideCompletionForm()
+            hideCompletionForm();
         } catch (error) {
             console.error("API call failed:", error);
             setIsLoading(false);
         }
     };
 
-
-    const handleSubmit = () => {
+    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault(); // Prevent default form submission
         submitExerciseData();
     };
 
@@ -111,11 +120,9 @@ const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseComp
         setExercises(updatedExercises);
     };
 
-
     if (isLoading) {
         return <CircularProgress />;
     }
-
 
     return (
       <Grid container justifyContent="center" alignItems="center" style={{ height: '100%' }}>
@@ -123,11 +130,11 @@ const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseComp
               <Typography variant="h5" gutterBottom style={{ color: 'white', textAlign: 'center' }}>
                   Complete Exercise
               </Typography>
-              <Grid component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
+              <form onSubmit={handleSubmit} noValidate>
                   {exercises.map((exercise, exerciseIndex) => (
                     <Box key={exerciseIndex} sx={{ marginBottom: 2 }}>
                         {exercise.sets.map((set, setIndex) => (
-                          <Grid container spacing={4} key={setIndex} sx={{padding:4}}>
+                          <Grid container spacing={4} key={setIndex} sx={{ padding: 4 }}>
                               <Grid item xs={8}>
                                   <TextField
                                     required
@@ -141,22 +148,32 @@ const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseComp
                                   />
                               </Grid>
                               <Grid item xs={4}>
+                                  <TextField
+                                    required
+                                    fullWidth
+                                    label="Working Weight"
+                                    variant="outlined"
+                                    value={exercise.workingWeight}
+                                    onChange={(e) => handleWeightChange(exerciseIndex, e.target.value)}
+                                    type="number"
+                                    borderColor={theme.colors.primary}
+                                  />
                                   <Button onClick={() => removeSet(exerciseIndex, setIndex)} >
                                       Remove Set
                                   </Button>
                               </Grid>
                           </Grid>
                         ))}
-                            <Grid container justifyContent="center" alignItems="center">
-                                <DatePicker
-                                  selected={exercise.dummyTime}
-                                  onChange={(date: Date | null) => handleDateChange(exerciseIndex, date)}
-                                  dateFormat="yyyy-MM-dd"
-                                />
-                                <Button onClick={() => addSet(exerciseIndex)} >
-                                    Add Set
-                                </Button>
-                            </Grid>
+                        <Grid container justifyContent="center" alignItems="center">
+                            <DatePicker
+                              selected={exercise.dummyTime}
+                              onChange={(date: Date | null) => handleDateChange(exerciseIndex, date)}
+                              dateFormat="yyyy-MM-dd"
+                            />
+                            <Button onClick={() => addSet(exerciseIndex)} >
+                                Add Set
+                            </Button>
+                        </Grid>
                     </Box>
                   ))}
                   <Grid container justifyContent="center" alignItems="center">
@@ -167,10 +184,10 @@ const ExerciseCompletionForm = ({ exerciseId, hideCompletionForm }: ExerciseComp
                           Complete Exercise
                       </Button>
                   </Grid>
-              </Grid>
+              </form>
           </Paper>
       </Grid>
     );
 };
 
-export default ExerciseCompletionForm
+export default ExerciseCompletionForm;
