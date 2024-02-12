@@ -7,10 +7,7 @@ import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import Spinner from '../spinner/Spinner';
 import { AuthApi } from '@operation-stacked/shared-services';
 import { theme } from '@operation-stacked/shared-styles';
-import { GoogleLogin } from 'react-google-login'; // Import the Google Login component
 
-// Replace YOUR_CLIENT_ID with your actual Google client ID
-const clientId = "YOUR_CLIENT_ID";
 
 type LoginFormProps = {
   onToggleForm: () => void;
@@ -29,28 +26,6 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
     navigate('/dashboard'); // Ensure this is the correct path
     return response.data;
   });
-
-  const handleLogin = async (googleData) => {
-    // Here, you would send googleData.tokenId to your backend
-    // to validate and create/use the user in your database
-    const result = await fetch('/api/auth/google-login', {
-      method: 'POST',
-      body: JSON.stringify({
-        token: googleData.tokenId,
-      }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-
-    const data = await result.json();
-    if (data.userId) {
-      setUserId(data.userId);
-      navigate('/dashboard'); // Ensure this is the correct path
-    } else {
-      // Handle error
-    }
-  };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -102,13 +77,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
               </Grid>
               <Grid item>
                 <Box textAlign="center">
-                  <GoogleLogin
-                    clientId={clientId}
-                    buttonText="Login with Google"
-                    onSuccess={handleLogin}
-                    onFailure={(response) => console.error(response)}
-                    cookiePolicy={'single_host_origin'}
-                  />
+
                 </Box>
               </Grid>
             </Grid>

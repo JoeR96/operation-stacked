@@ -19,7 +19,7 @@ export const commonStyles = {
   },
 };
 
-interface ExerciseHistoryViewProps {
+export interface ExerciseHistoryViewProps {
   exercise: Exercise;
 }
 
