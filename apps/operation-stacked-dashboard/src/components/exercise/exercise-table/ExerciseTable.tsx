@@ -66,42 +66,45 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({
   return (
     <Grid container spacing={2}>
       {Object.entries(groupedExercises).map(([category, exercisesInCategory], index) => (
-        <Grid item xs={12} sm={6} md={4} key={index}>
+        <Grid item xs={2} sm={2} md={2} key={index}>
           <Box margin="10px">
             <Typography variant="h5" color="text.primary" marginBottom="10px" sx={{ textAlign: 'center' }}>
               {Category[category as keyof typeof Category]}
             </Typography>
             {exercisesInCategory.map((exercise, exerciseIndex) => (
               <Paper key={exercise.Id || exerciseIndex} sx={{
-                padding: '10px',
+                padding: '5px',
                 backgroundColor: theme.colors.cardBackground,
                 marginBottom: '10px',
                 display: 'flex',
-                flexDirection: 'column',
                 alignItems: 'center',
-                justifyContent: 'center'
+                justifyContent: 'space-between', // This will space out the child elements
               }}>
-                <Typography color="text.primary" fontWeight="bold">
+                <Typography color="text.primary" fontWeight="bold" sx={{ flexGrow: 1, textAlign: 'left', mr: 2 }}>
                   {exercise.ExerciseName}
                 </Typography>
                 <img
                   src={getEquipmentImage(exercise.EquipmentType)}
                   alt="Equipment"
-                  style={{ width: '30px', height: '30px', margin: '10px 0' }}
+                  style={{ width: '30px', height: '30px', margin: '0 10px' }}
                 />
-                <Button
-                  onClick={() => eventHandler(exercise)}
-                >
-                  {buttonText}
-                </Button>
-                {showExtraButton && (
+                <Box display="flex" alignItems="center">
                   <Button
-                    onClick={() => optionalEventHandler(exercise)}
+                    onClick={() => eventHandler(exercise)}
+                    sx={{ marginRight: '10px' }} // Add some spacing between buttons if needed
                   >
-                    {extraButtonText}
+                    {buttonText}
                   </Button>
-                )}
+                  {showExtraButton && (
+                    <Button
+                      onClick={() => optionalEventHandler(exercise)}
+                    >
+                      {extraButtonText}
+                    </Button>
+                  )}
+                </Box>
               </Paper>
+
             ))}
           </Box>
         </Grid>

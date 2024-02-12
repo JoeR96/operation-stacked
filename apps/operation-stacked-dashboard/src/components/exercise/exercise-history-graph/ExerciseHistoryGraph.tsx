@@ -50,8 +50,8 @@ const ExerciseHistoryGraph: React.FC<ExerciseHistoryGraphProps> = ({ exercises, 
 
 
   return (
-    <Box sx={{paddingTop:3}}>
-      <LineChart width={1350} height={575} data={data} >
+    <Box sx={{paddingTop:3.5}}>
+      <LineChart width={950} height={550} data={data} >
       <XAxis dataKey="date" />
       <YAxis />
       <Tooltip />

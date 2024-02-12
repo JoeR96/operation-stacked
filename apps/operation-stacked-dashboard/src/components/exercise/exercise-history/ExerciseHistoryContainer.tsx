@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Grid, Box, Button } from '@mui/material';
+import { Grid, Box, Button, ButtonGroup } from '@mui/material';
 import ExerciseHistoryGraph from '../exercise-history-graph/ExerciseHistoryGraph';
 import Spinner from '../../spinner/Spinner';
 import { Exercise, ExerciseApi } from '@operation-stacked/shared-services';
@@ -11,6 +11,7 @@ const ExerciseHistoryContainer = () => {
   const [selectedExerciseForHistoryView, setSelectedExerciseForHistoryView] = useState<Exercise | null>(null);
   const [exercisesForGraph, setExercisesForGraph] = useState<Exercise[]>([]);
   const queryClient = useQueryClient();
+  const [graphToggle, setGraphToggle] = useState<'weight' | 'volume'>('weight');
 
   const fetchExerciseHistory = async (exerciseId: string) => {
     const exerciseApi = new ExerciseApi();
@@ -53,14 +54,20 @@ const ExerciseHistoryContainer = () => {
     <Grid container spacing={2} justifyContent="center" alignItems="flex-start" style={{ padding: '20px' }}>
 
       <Grid item xs={12} lg={6}>
-        <Box height={600} border="1px solid #ccc" borderRadius={8} marginBottom={4}>
-          <ExerciseHistoryGraph exercises={exercisesForGraph} toggle="weight" />
+        <Box height={600}  borderRadius={8} marginBottom={4}>
+          <Box height={600} borderRadius={8} marginBottom={4} padding={2} display="flex" flexDirection="column">
+            <ExerciseHistoryGraph exercises={exercisesForGraph} toggle={graphToggle} />
+            <ButtonGroup size="small" aria-label="Small outlined button group">
+              <Button onClick={() => setGraphToggle('weight')} variant={graphToggle === 'weight' ? 'contained' : 'outlined'}>Weight</Button>
+              <Button onClick={() => setGraphToggle('volume')} variant={graphToggle === 'volume' ? 'contained' : 'outlined'}>Volume</Button>
+            </ButtonGroup>
+          </Box>
         </Box>
       </Grid>
 
       <Grid item xs={12} lg={6}>
         {selectedExerciseForHistoryView && (
-          <Box height={600} marginBottom={4} border="1px solid #ccc" borderRadius={8} padding={2}>
+          <Box height={600} marginBottom={4}  borderRadius={8} padding={2}>
             <ExerciseHistoryView exercise={selectedExerciseForHistoryView as Exercise} />
           </Box>
         )}
@@ -68,7 +75,7 @@ const ExerciseHistoryContainer = () => {
 
       {/* This Grid item spans the entire width to make the table take up the bottom row */}
       <Grid item xs={12}>
-        <Box border="1px solid #ccc" borderRadius={8} padding={2}>
+        <Box  borderRadius={8} >
           <ExerciseTable eventHandler={setSelectedExerciseForHistoryView} buttonText={'View History'} showExtraButton={true} optionalEventHandler={toggleGraphExercise}  extraButtonText={'Add To Graph'}
           />
         </Box>
