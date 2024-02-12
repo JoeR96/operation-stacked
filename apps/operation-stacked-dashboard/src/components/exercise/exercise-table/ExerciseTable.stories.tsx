@@ -7,7 +7,7 @@ import {
   exercisesLoadedHandler,
   loadingStateHandler,
   noExercisesHandler,
-  errorStateHandler,
+  errorStateHandler, exercisesExtraButtonLoadedHandler
 } from '../../../../.storybook/mocks/handlers';
 
 export default {
@@ -24,7 +24,7 @@ const withUserId = (userId: string) => (Story: StoryFn) => {
 export const ExercisesLoaded: StoryFn<ExerciseTableProps> = (args) => <ExerciseTable {...args} />;
 ExercisesLoaded.decorators = [withUserId('1')];
 ExercisesLoaded.args = {
-  onCompleteClick: (exercise) => console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`), // Adjusted property name for demonstration
+  eventHandler: (exercise) => console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`), // Adjusted property name for demonstration
   buttonText: 'Select',
 };
 ExercisesLoaded.parameters = {
@@ -60,5 +60,19 @@ ErrorState.args = {}; // Specify default props or required props if necessary
 ErrorState.parameters = {
   msw: {
     handlers: [errorStateHandler],
+  },
+};
+
+export const WithExtraButton: StoryFn<typeof ExerciseTable> = (args) => <ExerciseTable {...args} />;
+WithExtraButton.decorators = [withUserId('5')]; // Using a different user ID or the same based on your setup
+WithExtraButton.args = {
+  eventHandler: (exercise) => console.log(`Complete button clicked for exercise: ${exercise.ExerciseName}`),
+  buttonText: 'Complete',
+  showExtraButton: true,
+  optionalEventHandler: (exercise) => console.log(`Extra button clicked for exercise: ${exercise.ExerciseName}`),
+};
+WithExtraButton.parameters = {
+  msw: {
+    handlers: [exercisesExtraButtonLoadedHandler], // Assuming the same handler works here, adjust if needed
   },
 };

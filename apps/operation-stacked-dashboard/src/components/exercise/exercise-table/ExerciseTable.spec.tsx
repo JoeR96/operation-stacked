@@ -37,7 +37,7 @@ describe('ExerciseTable', () => {
       () => new Promise(() => {}) // Never resolving promise to simulate loading
     );
 
-    renderWithProviders(<ExerciseTable onCompleteClick={() => {}} buttonText="Complete" />);
+    renderWithProviders(<ExerciseTable eventHandler={() => {}} buttonText="Complete" />);
     expect(screen.getByText(/loading/i)).toBeInTheDocument();
 
     spy.mockRestore(); // Restore the original implementation
@@ -47,7 +47,7 @@ describe('ExerciseTable', () => {
     // Spy on the method and mock a rejected promise to simulate an error
     const spy = vi.spyOn(ExerciseApi.prototype, 'exerciseUserIdAllGet').mockRejectedValue(new Error('Failed to fetch'));
 
-    renderWithProviders(<ExerciseTable onCompleteClick={() => {}} buttonText="Complete" />);
+    renderWithProviders(<ExerciseTable eventHandler={() => {}} buttonText="Complete" />);
     await waitFor(() => expect(screen.getByText(/error fetching exercises/i)).toBeInTheDocument());
 
     spy.mockRestore();
@@ -57,7 +57,7 @@ describe('ExerciseTable', () => {
     // Spy on the method and mock a resolved promise with an empty array
     const spy = vi.spyOn(ExerciseApi.prototype, 'exerciseUserIdAllGet').mockResolvedValue({ data: [] });
 
-    renderWithProviders(<ExerciseTable onCompleteClick={() => {}} buttonText="Complete" />);
+    renderWithProviders(<ExerciseTable eventHandler={() => {}} buttonText="Complete" />);
     await waitFor(() => expect(screen.getByText(/no exercises found/i)).toBeInTheDocument());
 
     spy.mockRestore();

@@ -14,22 +14,29 @@ import {
 import { Button } from '@operation-stacked/ui-components';
 import { theme } from '@operation-stacked/shared-styles';
 
-// Imported or defined mapping functions
-
 export interface ExerciseTableProps {
-  onCompleteClick: (exercise: Exercise) => void;
+  eventHandler: (exercise: Exercise) => void;
   buttonText: string;
+  extraButtonText: string;
+  showExtraButton?: boolean; // Optional, false by default
+  optionalEventHandler?: (exercise: Exercise) => void; // Optional, no operation by default
 }
 
 interface GroupedExercises {
   [key: string]: Exercise[];
 }
 
-export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, buttonText }) => {
+export const ExerciseTable: React.FC<ExerciseTableProps> = ({
+                                                              eventHandler,
+                                                              buttonText,
+                                                              extraButtonText,
+                                                              showExtraButton = false, // Default to false if not provided
+                                                              optionalEventHandler = () => {} // Default to a no-op function if not provided
+                                                            }) => {
   const { userId } = useUserStore();
   const exerciseApi = new ExerciseApi();
 
-  const { data : exercises , isLoading, isError, error } = useQuery<Exercise[], Error>(
+  const { data: exercises, isLoading, isError, error } = useQuery<Exercise[], Error>(
     ['exercises', userId],
     () => exerciseApi.exerciseUserIdAllGet(userId as string).then(response => response.data),
     {
@@ -49,7 +56,7 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
   };
 
   const groupedExercises = exercises ? groupExercisesByCategory(exercises) : {};
-  console.log(groupedExercises)
+
   if (isLoading) return <Spinner />;
 
   if (isError) return <div>Error fetching exercises: {error?.message}</div>;
@@ -59,30 +66,41 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
   return (
     <Grid container spacing={2}>
       {Object.entries(groupedExercises).map(([category, exercisesInCategory], index) => (
-        <Grid item xs={2} sm={2} key={index}>
+        <Grid item xs={12} sm={6} md={4} key={index}>
           <Box margin="10px">
-            <Typography variant="h5" color="white" marginBottom="10px" sx={{textAlign:'center'}}>{Category[category as keyof typeof Category]}</Typography>
+            <Typography variant="h5" color="text.primary" marginBottom="10px" sx={{ textAlign: 'center' }}>
+              {Category[category as keyof typeof Category]}
+            </Typography>
             {exercisesInCategory.map((exercise, exerciseIndex) => (
               <Paper key={exercise.Id || exerciseIndex} sx={{
                 padding: '10px',
-                backgroundColor:  theme.colors.cardBackground,
+                backgroundColor: theme.colors.cardBackground,
                 marginBottom: '10px',
                 display: 'flex',
+                flexDirection: 'column',
                 alignItems: 'center',
-                justifyContent: 'space-between'
+                justifyContent: 'center'
               }}>
-                  <div>
-                    <Typography color="white" fontWeight="bold">{exercise.ExerciseName}</Typography>
-                  </div>
-                  <img
-                    src={getEquipmentImage(exercise.EquipmentType)}
-                    style={{ width: '30px', height: '30px' }}
-                  />
+                <Typography color="text.primary" fontWeight="bold">
+                  {exercise.ExerciseName}
+                </Typography>
+                <img
+                  src={getEquipmentImage(exercise.EquipmentType)}
+                  alt="Equipment"
+                  style={{ width: '30px', height: '30px', margin: '10px 0' }}
+                />
                 <Button
-                  onClick={() => onCompleteClick(exercise)}
+                  onClick={() => eventHandler(exercise)}
                 >
                   {buttonText}
                 </Button>
+                {showExtraButton && (
+                  <Button
+                    onClick={() => optionalEventHandler(exercise)}
+                  >
+                    {extraButtonText}
+                  </Button>
+                )}
               </Paper>
             ))}
           </Box>
@@ -91,6 +109,7 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({ onCompleteClick, b
     </Grid>
   );
 };
+
 
 const getEquipmentImage = (equipmentType: EquipmentType | undefined): string => {
   switch (equipmentType) {

@@ -44,7 +44,7 @@ const ExerciseLayout = () => {
               hideCompletionForm={hideCompletionForm}
             />
           ) : (
-            <ExerciseTable onCompleteClick={handleCompleteClick} buttonText={'Complete'} />
+            <ExerciseTable eventHandler={handleCompleteClick} buttonText={'Complete'} />
           )}
       </Box>
     );

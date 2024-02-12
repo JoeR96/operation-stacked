@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, CartesianGrid, Legend } from 'recharts';
-import { Exercise } from './ExerciseHistoryTypes'; // Adjust this import according to your file structure
+import { Exercise } from '@operation-stacked/shared-services';
+import { Box } from '@mui/material';
 
 interface GraphData {
   date: string;
@@ -29,6 +30,7 @@ const ExerciseHistoryGraph: React.FC<ExerciseHistoryGraphProps> = ({ exercises, 
           });
         }
       });
+      console.log(exercises)
     });
 
     // Fill data
@@ -48,22 +50,25 @@ const ExerciseHistoryGraph: React.FC<ExerciseHistoryGraphProps> = ({ exercises, 
 
 
   return (
-    <LineChart width={600} height={300} data={data}>
+    <Box sx={{paddingTop:3}}>
+      <LineChart width={1350} height={575} data={data} >
       <XAxis dataKey="date" />
       <YAxis />
       <Tooltip />
       <CartesianGrid stroke="#f5f5f5" />
-      {exercises.map((exercise) => (
-        <Line
-          key={exercise.ExerciseName}
-          type="monotone"
-          dataKey={exercise.ExerciseName}
-          stroke="#ff7300"
-          // Add more customization here if needed
-        />
-      ))}
-      <Legend />
-    </LineChart>
+    {exercises.map((exercise) => (
+      <Line
+      key={exercise.ExerciseName}
+         type="monotone"
+         dataKey={exercise.ExerciseName}
+         stroke="#ff7300"
+      // Add more customization here if needed
+    />
+  ))}
+  <Legend />
+</LineChart>
+    </Box>
+
   );
 };
 
