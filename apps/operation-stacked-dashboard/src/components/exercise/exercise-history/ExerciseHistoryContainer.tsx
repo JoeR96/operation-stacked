@@ -3,14 +3,13 @@ import { Grid, Box, Button, ButtonGroup } from '@mui/material';
 import ExerciseHistoryGraph from '../exercise-history-graph/ExerciseHistoryGraph';
 import Spinner from '../../spinner/Spinner';
 import { Exercise, ExerciseApi } from '@operation-stacked/shared-services';
-import { useQuery, useQueryClient } from 'react-query';
+import { useQuery } from 'react-query';
 import { ExerciseTable } from '../exercise-table/ExerciseTable';
 import ExerciseHistoryView from './ExerciseHistoryView';
 
 const ExerciseHistoryContainer = () => {
   const [selectedExerciseForHistoryView, setSelectedExerciseForHistoryView] = useState<Exercise | null>(null);
   const [exercisesForGraph, setExercisesForGraph] = useState<Exercise[]>([]);
-  const queryClient = useQueryClient();
   const [graphToggle, setGraphToggle] = useState<'weight' | 'volume'>('weight');
 
   const fetchExerciseHistory = async (exerciseId: string) => {
@@ -51,7 +50,7 @@ const ExerciseHistoryContainer = () => {
   if (isError) return <div>Error fetching exercise history: {error?.message}</div>;
 
   return (
-    <Grid container spacing={2} justifyContent="center" alignItems="flex-start" style={{ padding: '20px' }}>
+    <Grid container spacing={2} justifyContent="center" alignItems="flex-start" style={{ padding: '5px' }}>
 
       <Grid item xs={12} lg={6}>
         <Box height={600}  borderRadius={8} marginBottom={4}>

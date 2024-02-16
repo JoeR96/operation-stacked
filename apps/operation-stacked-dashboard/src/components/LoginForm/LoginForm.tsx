@@ -5,8 +5,9 @@ import { Button, TextField } from '@operation-stacked/ui-components';
 import { useUserStore } from '../../state/userState';
 import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import Spinner from '../spinner/Spinner';
-import { AuthApi } from '@operation-stacked/shared-services';
+import { AuthApi, GoogleAuthApi, UserApi, UserIdApi } from '@operation-stacked/shared-services';
 import { theme } from '@operation-stacked/shared-styles';
+import { GoogleLogin } from '@react-oauth/google';
 
 
 type LoginFormProps = {
@@ -20,12 +21,37 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const { apiStatus, exec, error } = useApi(async (email: string, password: string) => {
-    const response = await authApi.loginPost({ email, password });
-    console.log(response.data.userId)
+    const response = await authApi.apiAuthLoginPost({ email, password });
+    console.log(response.data)
     setUserId(response.data.userId);
     navigate('/dashboard'); // Ensure this is the correct path
     return response.data;
   });
+  const handleGoogleSuccess = async (response) => {
+    console.log(response.credential)
+    const idToken = response.credential; // The ID token from Google
+
+    try {
+      const api = new GoogleAuthApi();
+      const authResponse = await
+         api.googleAuthGoogleSignInPost({idToken : idToken});
+      console.log(authResponse)
+      // Send the ID token to your backend for validation and Cognito authentication
+
+      const authUserApi = new UserIdApi();
+      if (authResponse.data.success) {
+        const userId = await authUserApi.apiUserIdGetUserIdGet();
+        console.log(userId.userId)
+        setUserId(userId.userId);
+        // Navigate to dashboard or other page as needed
+        navigate('/dashboard');
+      } else {
+        console.error('Authentication failed');
+      }
+    } catch (error) {
+      console.error('Error processing login', error);
+    }
+  };
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -77,7 +103,10 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
               </Grid>
               <Grid item>
                 <Box textAlign="center">
-
+                  <GoogleLogin
+                    onSuccess={handleGoogleSuccess}
+                    useOneTap
+                  />
                 </Box>
               </Grid>
             </Grid>

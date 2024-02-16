@@ -5,10 +5,12 @@ import DashboardPage from '../pages/dashboard/DashboardPage';
 import HeaderWrapper from '../components/header/HeaderWrapper';
 import ExercisePage from '../pages/exercise/ExercisePage';
 import ExerciseHistoryPage from '../pages/exercise-history/ExerciseHistoryPage';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 export function App() {
   return (
       <React.Fragment>
+        <GoogleOAuthProvider clientId={"876582448990-0ac35vm82d195s99isjnevbtljirsmuf.apps.googleusercontent.com"}>
         <HeaderWrapper />
         <Routes>
           <Route
@@ -33,6 +35,8 @@ export function App() {
             }
           />
         </Routes>
+        </GoogleOAuthProvider>
+
       </React.Fragment>
   );
 }

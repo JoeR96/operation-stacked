@@ -6,7 +6,7 @@ import { exerciseHistoryHandler } from '../../../../.storybook/mocks/handlers';
 
 
 export default {
-  title: 'Exercise/ExerciseHistoryView',
+  title: 'ExerciseHistory/ExerciseHistoryView',
   component: ExerciseHistoryView,
 } as Meta<ExerciseHistoryViewProps>;
 

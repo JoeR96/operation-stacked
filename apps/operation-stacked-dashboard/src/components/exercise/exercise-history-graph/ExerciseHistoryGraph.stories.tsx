@@ -6,7 +6,7 @@ import { mockExercisesWithMultipleHistory } from '../../../../.storybook/mocks/m
 
 
 export default {
-  title: 'Exercise/ExerciseHistoryGraph',
+  title: 'ExerciseHistory/ExerciseHistoryGraph',
   component: ExerciseHistoryGraph,
 } as Meta;
 

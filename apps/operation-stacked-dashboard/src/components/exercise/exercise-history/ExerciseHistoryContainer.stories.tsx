@@ -12,7 +12,7 @@ import {
 const queryClient = new QueryClient();
 
 export default {
-  title: 'Exercise/ExerciseHistoryContainer',
+  title: 'ExerciseHistory/ExerciseHistoryContainer',
   component: ExerciseHistoryContainer,
   decorators: [
     (Story) => (
