@@ -80,6 +80,7 @@
     "@mui/material": "^5.15.6",
     "@nrwl/web": "^17.2.8",
     "@nrwl/workspace": "^17.2.8",
+    "@react-oauth/google": "^0.12.1",
     "@swc/helpers": "~0.5.2",
     "formik": "^2.4.5",
     "node-fetch": "^3.3.2",

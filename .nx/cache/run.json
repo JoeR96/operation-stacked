@@ -1,18 +1,18 @@
 {
   "run": {
-    "command": "nx run operation-stacked-dashboard:storybook",
-    "startTime": "2024-02-10T20:00:24.598Z",
-    "endTime": "2024-02-11T03:49:01.694Z",
+    "command": "nx serve operation-stacked-dashboard",
+    "startTime": "2024-02-13T23:48:05.108Z",
+    "endTime": "2024-02-16T01:35:52.487Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "operation-stacked-dashboard:storybook",
-      "target": "storybook",
+      "taskId": "operation-stacked-dashboard:serve:development",
+      "target": "serve",
       "projectName": "operation-stacked-dashboard",
-      "hash": "7019212681758978114",
-      "startTime": "2024-02-10T20:00:24.603Z",
-      "endTime": "2024-02-11T03:49:01.676Z",
+      "hash": "3753681314922595663",
+      "startTime": "2024-02-13T23:48:05.115Z",
+      "endTime": "2024-02-16T01:35:52.485Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

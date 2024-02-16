@@ -31,22 +31,22 @@ import { BASE_PATH, COLLECTION_FORMATS, BaseAPI, RequiredError, operationServerM
 export interface AuthResponse {
     /**
      * 
-     * @type {string}
-     * @memberof AuthResponse
-     */
-    'userId'?: string;
-    /**
-     * 
      * @type {boolean}
      * @memberof AuthResponse
      */
-    'emailTaken'?: boolean;
+    'success'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof AuthResponse
      */
     'message'?: string | null;
+    /**
+     * 
+     * @type {Array<string>}
+     * @memberof AuthResponse
+     */
+    'errors'?: Array<string> | null;
 }
 /**
  * 
@@ -59,19 +59,19 @@ export interface ConfirmForgotPasswordRequest {
      * @type {string}
      * @memberof ConfirmForgotPasswordRequest
      */
-    'email': string;
+    'email'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ConfirmForgotPasswordRequest
      */
-    'verificationCode': string;
+    'code'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ConfirmForgotPasswordRequest
      */
-    'newPassword': string;
+    'newPassword'?: string | null;
 }
 /**
  * 
@@ -84,7 +84,20 @@ export interface ForgotPasswordRequest {
      * @type {string}
      * @memberof ForgotPasswordRequest
      */
-    'email': string;
+    'email'?: string | null;
+}
+/**
+ * 
+ * @export
+ * @interface GoogleSignInRequest
+ */
+export interface GoogleSignInRequest {
+    /**
+     * 
+     * @type {string}
+     * @memberof GoogleSignInRequest
+     */
+    'idToken'?: string | null;
 }
 /**
  * 
@@ -104,6 +117,45 @@ export interface LoginRequest {
      * @memberof LoginRequest
      */
     'password'?: string | null;
+}
+/**
+ * 
+ * @export
+ * @interface ProblemDetails
+ */
+export interface ProblemDetails {
+    [key: string]: any;
+
+    /**
+     * 
+     * @type {string}
+     * @memberof ProblemDetails
+     */
+    'type'?: string | null;
+    /**
+     * 
+     * @type {string}
+     * @memberof ProblemDetails
+     */
+    'title'?: string | null;
+    /**
+     * 
+     * @type {number}
+     * @memberof ProblemDetails
+     */
+    'status'?: number | null;
+    /**
+     * 
+     * @type {string}
+     * @memberof ProblemDetails
+     */
+    'detail'?: string | null;
+    /**
+     * 
+     * @type {string}
+     * @memberof ProblemDetails
+     */
+    'instance'?: string | null;
 }
 /**
  * 
@@ -137,8 +189,8 @@ export const AuthApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        confirmForgotPasswordPost: async (confirmForgotPasswordRequest?: ConfirmForgotPasswordRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/confirm-forgot-password`;
+        apiAuthConfirmForgotPasswordPost: async (confirmForgotPasswordRequest?: ConfirmForgotPasswordRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/auth/confirm-forgot-password`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -170,8 +222,8 @@ export const AuthApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPasswordPost: async (forgotPasswordRequest?: ForgotPasswordRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/forgot-password`;
+        apiAuthForgotPasswordPost: async (forgotPasswordRequest?: ForgotPasswordRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/auth/forgot-password`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -203,8 +255,8 @@ export const AuthApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        loginPost: async (loginRequest?: LoginRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/login`;
+        apiAuthLoginPost: async (loginRequest?: LoginRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/auth/login`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -232,41 +284,12 @@ export const AuthApiAxiosParamCreator = function (configuration?: Configuration)
         },
         /**
          * 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        logoutPost: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/logout`;
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-
-    
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
          * @param {RegisterUserRequest} [registerUserRequest] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        registerPost: async (registerUserRequest?: RegisterUserRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/register`;
+        apiAuthRegisterPost: async (registerUserRequest?: RegisterUserRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/auth/register`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -292,13 +315,284 @@ export const AuthApiAxiosParamCreator = function (configuration?: Configuration)
                 options: localVarRequestOptions,
             };
         },
+    }
+};
+
+/**
+ * AuthApi - functional programming interface
+ * @export
+ */
+export const AuthApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = AuthApiAxiosParamCreator(configuration)
+    return {
+        /**
+         * 
+         * @param {ConfirmForgotPasswordRequest} [confirmForgotPasswordRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiAuthConfirmForgotPasswordPost(confirmForgotPasswordRequest?: ConfirmForgotPasswordRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiAuthConfirmForgotPasswordPost(confirmForgotPasswordRequest, options);
+            const index = configuration?.serverIndex ?? 0;
+            const operationBasePath = operationServerMap['AuthApi.apiAuthConfirmForgotPasswordPost']?.[index]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+        },
+        /**
+         * 
+         * @param {ForgotPasswordRequest} [forgotPasswordRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiAuthForgotPasswordPost(forgotPasswordRequest?: ForgotPasswordRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiAuthForgotPasswordPost(forgotPasswordRequest, options);
+            const index = configuration?.serverIndex ?? 0;
+            const operationBasePath = operationServerMap['AuthApi.apiAuthForgotPasswordPost']?.[index]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+        },
+        /**
+         * 
+         * @param {LoginRequest} [loginRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiAuthLoginPost(loginRequest?: LoginRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiAuthLoginPost(loginRequest, options);
+            const index = configuration?.serverIndex ?? 0;
+            const operationBasePath = operationServerMap['AuthApi.apiAuthLoginPost']?.[index]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+        },
+        /**
+         * 
+         * @param {RegisterUserRequest} [registerUserRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async apiAuthRegisterPost(registerUserRequest?: RegisterUserRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiAuthRegisterPost(registerUserRequest, options);
+            const index = configuration?.serverIndex ?? 0;
+            const operationBasePath = operationServerMap['AuthApi.apiAuthRegisterPost']?.[index]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+        },
+    }
+};
+
+/**
+ * AuthApi - factory interface
+ * @export
+ */
+export const AuthApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = AuthApiFp(configuration)
+    return {
+        /**
+         * 
+         * @param {ConfirmForgotPasswordRequest} [confirmForgotPasswordRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiAuthConfirmForgotPasswordPost(confirmForgotPasswordRequest?: ConfirmForgotPasswordRequest, options?: any): AxiosPromise<void> {
+            return localVarFp.apiAuthConfirmForgotPasswordPost(confirmForgotPasswordRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @param {ForgotPasswordRequest} [forgotPasswordRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiAuthForgotPasswordPost(forgotPasswordRequest?: ForgotPasswordRequest, options?: any): AxiosPromise<void> {
+            return localVarFp.apiAuthForgotPasswordPost(forgotPasswordRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @param {LoginRequest} [loginRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiAuthLoginPost(loginRequest?: LoginRequest, options?: any): AxiosPromise<AuthResponse> {
+            return localVarFp.apiAuthLoginPost(loginRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @param {RegisterUserRequest} [registerUserRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        apiAuthRegisterPost(registerUserRequest?: RegisterUserRequest, options?: any): AxiosPromise<AuthResponse> {
+            return localVarFp.apiAuthRegisterPost(registerUserRequest, options).then((request) => request(axios, basePath));
+        },
+    };
+};
+
+/**
+ * AuthApi - object-oriented interface
+ * @export
+ * @class AuthApi
+ * @extends {BaseAPI}
+ */
+export class AuthApi extends BaseAPI {
+    /**
+     * 
+     * @param {ConfirmForgotPasswordRequest} [confirmForgotPasswordRequest] 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AuthApi
+     */
+    public apiAuthConfirmForgotPasswordPost(confirmForgotPasswordRequest?: ConfirmForgotPasswordRequest, options?: RawAxiosRequestConfig) {
+        return AuthApiFp(this.configuration).apiAuthConfirmForgotPasswordPost(confirmForgotPasswordRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @param {ForgotPasswordRequest} [forgotPasswordRequest] 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AuthApi
+     */
+    public apiAuthForgotPasswordPost(forgotPasswordRequest?: ForgotPasswordRequest, options?: RawAxiosRequestConfig) {
+        return AuthApiFp(this.configuration).apiAuthForgotPasswordPost(forgotPasswordRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @param {LoginRequest} [loginRequest] 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AuthApi
+     */
+    public apiAuthLoginPost(loginRequest?: LoginRequest, options?: RawAxiosRequestConfig) {
+        return AuthApiFp(this.configuration).apiAuthLoginPost(loginRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @param {RegisterUserRequest} [registerUserRequest] 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof AuthApi
+     */
+    public apiAuthRegisterPost(registerUserRequest?: RegisterUserRequest, options?: RawAxiosRequestConfig) {
+        return AuthApiFp(this.configuration).apiAuthRegisterPost(registerUserRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+}
+
+
+
+/**
+ * GoogleAuthApi - axios parameter creator
+ * @export
+ */
+export const GoogleAuthApiAxiosParamCreator = function (configuration?: Configuration) {
+    return {
+        /**
+         * 
+         * @param {GoogleSignInRequest} [googleSignInRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        googleAuthGoogleSignInPost: async (googleSignInRequest?: GoogleSignInRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/GoogleAuth/GoogleSignIn`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(googleSignInRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+    }
+};
+
+/**
+ * GoogleAuthApi - functional programming interface
+ * @export
+ */
+export const GoogleAuthApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = GoogleAuthApiAxiosParamCreator(configuration)
+    return {
+        /**
+         * 
+         * @param {GoogleSignInRequest} [googleSignInRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async googleAuthGoogleSignInPost(googleSignInRequest?: GoogleSignInRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.googleAuthGoogleSignInPost(googleSignInRequest, options);
+            const index = configuration?.serverIndex ?? 0;
+            const operationBasePath = operationServerMap['GoogleAuthApi.googleAuthGoogleSignInPost']?.[index]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+        },
+    }
+};
+
+/**
+ * GoogleAuthApi - factory interface
+ * @export
+ */
+export const GoogleAuthApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = GoogleAuthApiFp(configuration)
+    return {
+        /**
+         * 
+         * @param {GoogleSignInRequest} [googleSignInRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        googleAuthGoogleSignInPost(googleSignInRequest?: GoogleSignInRequest, options?: any): AxiosPromise<AuthResponse> {
+            return localVarFp.googleAuthGoogleSignInPost(googleSignInRequest, options).then((request) => request(axios, basePath));
+        },
+    };
+};
+
+/**
+ * GoogleAuthApi - object-oriented interface
+ * @export
+ * @class GoogleAuthApi
+ * @extends {BaseAPI}
+ */
+export class GoogleAuthApi extends BaseAPI {
+    /**
+     * 
+     * @param {GoogleSignInRequest} [googleSignInRequest] 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof GoogleAuthApi
+     */
+    public googleAuthGoogleSignInPost(googleSignInRequest?: GoogleSignInRequest, options?: RawAxiosRequestConfig) {
+        return GoogleAuthApiFp(this.configuration).googleAuthGoogleSignInPost(googleSignInRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+}
+
+
+
+/**
+ * UserIdApi - axios parameter creator
+ * @export
+ */
+export const UserIdApiAxiosParamCreator = function (configuration?: Configuration) {
+    return {
         /**
          * 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        verifyGet: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/verify`;
+        apiUserIdGetUserIdGet: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/api/UserId/get-user-id`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -325,216 +619,59 @@ export const AuthApiAxiosParamCreator = function (configuration?: Configuration)
 };
 
 /**
- * AuthApi - functional programming interface
+ * UserIdApi - functional programming interface
  * @export
  */
-export const AuthApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = AuthApiAxiosParamCreator(configuration)
+export const UserIdApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = UserIdApiAxiosParamCreator(configuration)
     return {
         /**
          * 
-         * @param {ConfirmForgotPasswordRequest} [confirmForgotPasswordRequest] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async confirmForgotPasswordPost(confirmForgotPasswordRequest?: ConfirmForgotPasswordRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.confirmForgotPasswordPost(confirmForgotPasswordRequest, options);
+        async apiUserIdGetUserIdGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.apiUserIdGetUserIdGet(options);
             const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['AuthApi.confirmForgotPasswordPost']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
-        },
-        /**
-         * 
-         * @param {ForgotPasswordRequest} [forgotPasswordRequest] 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async forgotPasswordPost(forgotPasswordRequest?: ForgotPasswordRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPasswordPost(forgotPasswordRequest, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['AuthApi.forgotPasswordPost']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
-        },
-        /**
-         * 
-         * @param {LoginRequest} [loginRequest] 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async loginPost(loginRequest?: LoginRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthResponse>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.loginPost(loginRequest, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['AuthApi.loginPost']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
-        },
-        /**
-         * 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async logoutPost(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logoutPost(options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['AuthApi.logoutPost']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
-        },
-        /**
-         * 
-         * @param {RegisterUserRequest} [registerUserRequest] 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async registerPost(registerUserRequest?: RegisterUserRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthResponse>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.registerPost(registerUserRequest, options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['AuthApi.registerPost']?.[index]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
-        },
-        /**
-         * 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async verifyGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.verifyGet(options);
-            const index = configuration?.serverIndex ?? 0;
-            const operationBasePath = operationServerMap['AuthApi.verifyGet']?.[index]?.url;
+            const operationBasePath = operationServerMap['UserIdApi.apiUserIdGetUserIdGet']?.[index]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
         },
     }
 };
 
 /**
- * AuthApi - factory interface
+ * UserIdApi - factory interface
  * @export
  */
-export const AuthApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = AuthApiFp(configuration)
+export const UserIdApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = UserIdApiFp(configuration)
     return {
         /**
          * 
-         * @param {ConfirmForgotPasswordRequest} [confirmForgotPasswordRequest] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        confirmForgotPasswordPost(confirmForgotPasswordRequest?: ConfirmForgotPasswordRequest, options?: any): AxiosPromise<void> {
-            return localVarFp.confirmForgotPasswordPost(confirmForgotPasswordRequest, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @param {ForgotPasswordRequest} [forgotPasswordRequest] 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        forgotPasswordPost(forgotPasswordRequest?: ForgotPasswordRequest, options?: any): AxiosPromise<void> {
-            return localVarFp.forgotPasswordPost(forgotPasswordRequest, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @param {LoginRequest} [loginRequest] 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        loginPost(loginRequest?: LoginRequest, options?: any): AxiosPromise<AuthResponse> {
-            return localVarFp.loginPost(loginRequest, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        logoutPost(options?: any): AxiosPromise<void> {
-            return localVarFp.logoutPost(options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @param {RegisterUserRequest} [registerUserRequest] 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        registerPost(registerUserRequest?: RegisterUserRequest, options?: any): AxiosPromise<AuthResponse> {
-            return localVarFp.registerPost(registerUserRequest, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        verifyGet(options?: any): AxiosPromise<void> {
-            return localVarFp.verifyGet(options).then((request) => request(axios, basePath));
+        apiUserIdGetUserIdGet(options?: any): AxiosPromise<string> {
+            return localVarFp.apiUserIdGetUserIdGet(options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * AuthApi - object-oriented interface
+ * UserIdApi - object-oriented interface
  * @export
- * @class AuthApi
+ * @class UserIdApi
  * @extends {BaseAPI}
  */
-export class AuthApi extends BaseAPI {
-    /**
-     * 
-     * @param {ConfirmForgotPasswordRequest} [confirmForgotPasswordRequest] 
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof AuthApi
-     */
-    public confirmForgotPasswordPost(confirmForgotPasswordRequest?: ConfirmForgotPasswordRequest, options?: RawAxiosRequestConfig) {
-        return AuthApiFp(this.configuration).confirmForgotPasswordPost(confirmForgotPasswordRequest, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @param {ForgotPasswordRequest} [forgotPasswordRequest] 
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof AuthApi
-     */
-    public forgotPasswordPost(forgotPasswordRequest?: ForgotPasswordRequest, options?: RawAxiosRequestConfig) {
-        return AuthApiFp(this.configuration).forgotPasswordPost(forgotPasswordRequest, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @param {LoginRequest} [loginRequest] 
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof AuthApi
-     */
-    public loginPost(loginRequest?: LoginRequest, options?: RawAxiosRequestConfig) {
-        return AuthApiFp(this.configuration).loginPost(loginRequest, options).then((request) => request(this.axios, this.basePath));
-    }
-
+export class UserIdApi extends BaseAPI {
     /**
      * 
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof AuthApi
+     * @memberof UserIdApi
      */
-    public logoutPost(options?: RawAxiosRequestConfig) {
-        return AuthApiFp(this.configuration).logoutPost(options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @param {RegisterUserRequest} [registerUserRequest] 
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof AuthApi
-     */
-    public registerPost(registerUserRequest?: RegisterUserRequest, options?: RawAxiosRequestConfig) {
-        return AuthApiFp(this.configuration).registerPost(registerUserRequest, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof AuthApi
-     */
-    public verifyGet(options?: RawAxiosRequestConfig) {
-        return AuthApiFp(this.configuration).verifyGet(options).then((request) => request(this.axios, this.basePath));
+    public apiUserIdGetUserIdGet(options?: RawAxiosRequestConfig) {
+        return UserIdApiFp(this.configuration).apiUserIdGetUserIdGet(options).then((request) => request(this.axios, this.basePath));
     }
 }
 

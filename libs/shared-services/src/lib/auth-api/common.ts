@@ -144,7 +144,13 @@ export const toPathString = function (url: URL) {
  */
 export const createRequestFunction = function (axiosArgs: RequestArgs, globalAxios: AxiosInstance, BASE_PATH: string, configuration?: Configuration) {
     return <T = unknown, R = AxiosResponse<T>>(axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
-        const axiosRequestArgs = {...axiosArgs.options, url: (axios.defaults.baseURL ? '' : configuration?.basePath ?? basePath) + axiosArgs.url};
+        // Add withCredentials: true to the axios request arguments
+        const axiosRequestArgs = {
+            ...axiosArgs.options,
+            url: (axios.defaults.baseURL ? '' : configuration?.basePath ?? basePath) + axiosArgs.url,
+            withCredentials: true // This line includes credentials with the request
+        };
         return axios.request<T, R>(axiosRequestArgs);
     };
-}
+};
+

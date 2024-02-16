@@ -5004,6 +5004,15 @@
         "hash": "sha512-J3Q4Bkuo99k7mu+jPS9gSUSgq+lLRSI/+ahXNwV92XgJ/8UgOTxu2LPwhJnBk/sQKxq7E8WkZBnBiozukQMqrw=="
       }
     },
+    "npm:@react-oauth/google": {
+      "type": "npm",
+      "name": "npm:@react-oauth/google",
+      "data": {
+        "version": "0.12.1",
+        "packageName": "@react-oauth/google",
+        "hash": "sha512-qagsy22t+7UdkYAiT5ZhfM4StXi9PPNvw0zuwNmabrWyMKddczMtBIOARflbaIj+wHiQjnMAsZmzsUYuXeyoSg=="
+      }
+    },
     "npm:@remix-run/router": {
       "type": "npm",
       "name": "npm:@remix-run/router",
@@ -24639,6 +24648,16 @@
     {
       "source": "npm:@react-native/virtualized-lists",
       "target": "npm:nullthrows",
+      "type": "static"
+    },
+    {
+      "source": "npm:@react-oauth/google",
+      "target": "npm:react",
+      "type": "static"
+    },
+    {
+      "source": "npm:@react-oauth/google",
+      "target": "npm:react-dom",
       "type": "static"
     },
     {
