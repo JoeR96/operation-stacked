@@ -6,9 +6,10 @@ import { useNavigate } from 'react-router-dom';
 import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import { Button, TextField } from '@operation-stacked/ui-components';
 import Spinner from '../spinner/Spinner';
-import { AuthApi, RegisterUserRequest } from '@operation-stacked/shared-services';
+import { Auth } from 'aws-amplify';
+import { GoogleLogin } from '@react-oauth/google';
+import { UserApi } from '@operation-stacked/shared-services'; // Ensure this is the correct import path
 
-// Yup schema for validation
 const validationSchema = Yup.object({
   email: Yup.string().email('Invalid email format').required('Required'),
   password: Yup.string()
@@ -26,83 +27,49 @@ export type RegistrationFormProps = {
 const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => {
   const navigate = useNavigate();
   const [registrationMessage, setRegistrationMessage] = useState('');
-  const { apiStatus, exec, error } = useApi(async (email: string, password: string) => await registerUser(email, password));
+  const userApi = new UserApi(); // Initialize your User API here
 
+  const handleGoogleSuccess = async (response) => {
+    const { credential } = response;
+
+    try {
+      await Auth.federatedSignIn('google', { token: credential, expires_at: 3600 });
+
+      const currentUser = await Auth.currentAuthenticatedUser();
+      const cognitoUserId = currentUser.attributes.sub; // Cognito User ID
+
+      await userApi.userCreateUserPost({
+        CognitoUserId : cognitoUserId
+      });
+
+      navigate('/dashboard'); // Navigate to dashboard upon successful registration
+    } catch (error) {
+      console.error('Google registration failed:', error);
+      setRegistrationMessage('Google registration failed. Please try again.');
+    }
+  };
+
+  const { apiStatus, exec, error } = useApi(async (email: string, password: string) => {
+    const response = await userApi.apiAuthLoginPost({ email, password });
+    console.log(response.data);
+    navigate('/dashboard'); // Ensure this is the correct path
+    return response.data;
+  });
 
   const formik = useFormik({
     initialValues: {
       email: '',
       password: '',
     },
-    validationSchema: validationSchema,
+    validationSchema,
     onSubmit: (values, { setSubmitting }) => {
-      exec(values.email, values.password).then((result) => {
-        setSubmitting(false);
-        if (result.data && result.data.emailTaken) {
-          setRegistrationMessage('User already registered. Please try a different email.');
-        } else if (result.data && !result.data.emailTaken) {
-          setRegistrationMessage(result.data.message || 'Registration successful');
-          navigate('/login');
-        } else {
-          setRegistrationMessage('An error occurred. Please try again.');
-        }
-      }).catch(() => {
-        setSubmitting(false);
-        setRegistrationMessage('An error occurred. Please try again.');
-      });
+      exec(values.email, values.password);
+      setSubmitting(false);
     },
   });
 
-  if (apiStatus === PENDING) {
-    return <Spinner />;
-  }
-
-  if (apiStatus === ERROR) {
-    return <div>Error during registration: {error?.message}</div>;
-  }
-
-  const renderForm = () => (
-    <form onSubmit={formik.handleSubmit}>
-      <Grid container direction="column" spacing={2}>
-        <Grid item>
-          <TextField
-            fullWidth
-            label="Email"
-            variant="outlined"
-            id="email"
-            name="email"
-            type="email"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.email}
-            error={formik.touched.email && Boolean(formik.errors.email)}
-            helperText={formik.touched.email && formik.errors.email}
-          />
-        </Grid>
-        <Grid item>
-          <TextField
-            fullWidth
-            label="Password"
-            variant="outlined"
-            id="password"
-            name="password"
-            type="password"
-            onChange={formik.handleChange}
-            onBlur={formik.handleBlur}
-            value={formik.values.password}
-            error={formik.touched.password && Boolean(formik.errors.password)}
-            helperText={formik.touched.password && formik.errors.password}
-          />
-        </Grid>
-        <Grid item>
-          <Box textAlign="center">
-            <Button type="submit">Register</Button>
-            <Button onClick={onToggleForm}>Login</Button>
-          </Box>
-        </Grid>
-      </Grid>
-    </form>
-  );
+  if (apiStatus === PENDING) return <Spinner />;
+  if (apiStatus === ERROR) return <div>Error during registration: {error?.message}</div>;
 
   return (
     <React.Fragment>
@@ -111,37 +78,60 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
           <Typography variant="h5" gutterBottom style={{ color: 'white', textAlign: 'center' }}>
             Register
           </Typography>
-          {registrationMessage ? (
-            <div>
-              <Typography style={{ color: 'white', textAlign: 'center' }}>
-                {registrationMessage}
-              </Typography>
-              {registrationMessage !== 'Registration successful' && (
-                <Button onClick={() => setRegistrationMessage('')}>
-                  Try Again
-                </Button>
-              )}
-              {registrationMessage === 'Registration successful' && (
-                <Button onClick={() => navigate('/login')}>
-                  Return to Login
-                </Button>
-              )}
-            </div>
-          ) : renderForm()}
+          {registrationMessage && (
+            <Typography style={{ color: 'white', textAlign: 'center' }}>
+              {registrationMessage}
+            </Typography>
+          )}
+          <form onSubmit={formik.handleSubmit}>
+            <Grid container direction="column" spacing={2}>
+              <Grid item>
+                <TextField
+                  fullWidth
+                  label="Email"
+                  variant="outlined"
+                  id="email"
+                  name="email"
+                  type="email"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.email}
+                  error={formik.touched.email && Boolean(formik.errors.email)}
+                  helperText={formik.touched.email && formik.errors.email}
+                />
+              </Grid>
+              <Grid item>
+                <TextField
+                  fullWidth
+                  label="Password"
+                  variant="outlined"
+                  id="password"
+                  name="password"
+                  type="password"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.password}
+                  error={formik.touched.password && Boolean(formik.errors.password)}
+                  helperText={formik.touched.password && formik.errors.password}
+                />
+              </Grid>
+              <Grid item>
+                <Box textAlign="center">
+                  <Button type="submit">Register</Button>
+                  <Button onClick={onToggleForm}>Login</Button>
+                </Box>
+              </Grid>
+              <Grid item>
+                <Box textAlign="center">
+                  <GoogleLogin onSuccess={handleGoogleSuccess} onError={() => setRegistrationMessage('Google Login failed. Please try again.')} useOneTap />
+                </Box>
+              </Grid>
+            </Grid>
+          </form>
         </Paper>
       </Grid>
     </React.Fragment>
   );
 };
-
-async function registerUser(email: string, password: string) {
-  const authApi = new AuthApi();
-  const requestPayload: RegisterUserRequest = {
-    email: email,
-    password: password,
-  };
-  const response = await authApi.registerPost(requestPayload);
-  return response.data;
-}
 
 export default RegistrationForm;

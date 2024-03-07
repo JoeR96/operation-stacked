@@ -488,6 +488,39 @@ export const GoogleAuthApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
+        googleAuthGoogleRegisterPost: async (googleSignInRequest?: GoogleSignInRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/GoogleAuth/GoogleRegister`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(googleSignInRequest, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @param {GoogleSignInRequest} [googleSignInRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
         googleAuthGoogleSignInPost: async (googleSignInRequest?: GoogleSignInRequest, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/GoogleAuth/GoogleSignIn`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -531,6 +564,18 @@ export const GoogleAuthApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
+        async googleAuthGoogleRegisterPost(googleSignInRequest?: GoogleSignInRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.googleAuthGoogleRegisterPost(googleSignInRequest, options);
+            const index = configuration?.serverIndex ?? 0;
+            const operationBasePath = operationServerMap['GoogleAuthApi.googleAuthGoogleRegisterPost']?.[index]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, operationBasePath || basePath);
+        },
+        /**
+         * 
+         * @param {GoogleSignInRequest} [googleSignInRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
         async googleAuthGoogleSignInPost(googleSignInRequest?: GoogleSignInRequest, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.googleAuthGoogleSignInPost(googleSignInRequest, options);
             const index = configuration?.serverIndex ?? 0;
@@ -553,6 +598,15 @@ export const GoogleAuthApiFactory = function (configuration?: Configuration, bas
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
+        googleAuthGoogleRegisterPost(googleSignInRequest?: GoogleSignInRequest, options?: any): AxiosPromise<AuthResponse> {
+            return localVarFp.googleAuthGoogleRegisterPost(googleSignInRequest, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @param {GoogleSignInRequest} [googleSignInRequest] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
         googleAuthGoogleSignInPost(googleSignInRequest?: GoogleSignInRequest, options?: any): AxiosPromise<AuthResponse> {
             return localVarFp.googleAuthGoogleSignInPost(googleSignInRequest, options).then((request) => request(axios, basePath));
         },
@@ -566,6 +620,17 @@ export const GoogleAuthApiFactory = function (configuration?: Configuration, bas
  * @extends {BaseAPI}
  */
 export class GoogleAuthApi extends BaseAPI {
+    /**
+     * 
+     * @param {GoogleSignInRequest} [googleSignInRequest] 
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof GoogleAuthApi
+     */
+    public googleAuthGoogleRegisterPost(googleSignInRequest?: GoogleSignInRequest, options?: RawAxiosRequestConfig) {
+        return GoogleAuthApiFp(this.configuration).googleAuthGoogleRegisterPost(googleSignInRequest, options).then((request) => request(this.axios, this.basePath));
+    }
+
     /**
      * 
      * @param {GoogleSignInRequest} [googleSignInRequest] 

@@ -36,7 +36,6 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
       const authResponse = await
          api.googleAuthGoogleSignInPost({idToken : idToken});
       console.log(authResponse)
-      // Send the ID token to your backend for validation and Cognito authentication
 
       const authUserApi = new UserIdApi();
       if (authResponse.data.success) {
