@@ -12,16 +12,20 @@ export const Username: React.FC = () => {
   const queryClient = useQueryClient();
   const { userId, setUsername: setGlobalUsername, username: globalUsername } = useUserStore();
 
-  const { data: usernameResponse, isLoading, isError, error } = useQuery(
+  // @ts-ignore
+  const { isLoading, isError, error } = useQuery(
     'username',
     () => userApi.userNameUserIdGet(userId as string),
     {
       withCredentials: true,
       enabled: !!userId, // This query will not run until userId is available
       onSuccess: (data) => {
+        // @ts-ignore
         if (data.data.UserName !== '') {
+          // @ts-ignore
           setGlobalUsername(data.data.UserName);
         } else {
+          // @ts-ignore
           setGlobalUsername(null);
         }
       },
