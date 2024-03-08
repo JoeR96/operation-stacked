@@ -6,19 +6,27 @@ import { useUserStore } from '../../state/userState';
 import { UserApi } from '@operation-stacked/shared-services';
 import { Button, TextField } from '@operation-stacked/ui-components';
 
-// Assuming UserApi has been correctly set up to interact with your backend
 const userApi = new UserApi();
 
 export const Username: React.FC = () => {
   const queryClient = useQueryClient();
   const { userId, setUsername: setGlobalUsername, username: globalUsername } = useUserStore();
 
-  const { data: username, isLoading, isError, error } = useQuery('username', () => userApi.userNameUserIdGet(userId as string), {
-    enabled: !!userId, // This query will not run until userId is available
-    onSuccess: (data) => {
-      setGlobalUsername(data.data); // Set the global username directly as a string
-    },
-  });
+  const { data: usernameResponse, isLoading, isError, error } = useQuery(
+    'username',
+    () => userApi.userNameUserIdGet(userId as string),
+    {
+      withCredentials: true,
+      enabled: !!userId, // This query will not run until userId is available
+      onSuccess: (data) => {
+        if (data.data.UserName !== '') {
+          setGlobalUsername(data.data.UserName);
+        } else {
+          setGlobalUsername(null);
+        }
+      },
+    }
+  );
 
   const setUsernameMutation = useMutation((newUsername: string) => userApi.userSetUsernamePost({ UserId: userId, Username: newUsername }), {
     onSuccess: () => {

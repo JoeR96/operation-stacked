@@ -5,7 +5,7 @@ import { Button, TextField } from '@operation-stacked/ui-components';
 import { useUserStore } from '../../state/userState';
 import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import Spinner from '../spinner/Spinner';
-import { AuthApi, GoogleAuthApi, UserApi, UserIdApi } from '@operation-stacked/shared-services';
+import { AuthApi, GoogleAuthApi,  UserIdApi } from '@operation-stacked/shared-services';
 import { theme } from '@operation-stacked/shared-styles';
 import { GoogleLogin } from '@react-oauth/google';
 
@@ -21,9 +21,10 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
   const { apiStatus, exec, error } = useApi(async (email: string, password: string) => {
-    const response = await authApi.apiAuthLoginPost({ email, password });
-    console.log(response.data)
-    setUserId(response.data.userId);
+    const response = await authApi.apiAuthLoginPost({ email, password }, {withCredentials:true});
+    const lol = response.data.data.userId
+    console.log(lol)
+    setUserId(response.data.data.userId);
     navigate('/dashboard'); // Ensure this is the correct path
     return response.data;
   });
@@ -39,9 +40,11 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
 
       const authUserApi = new UserIdApi();
       if (authResponse.data.success) {
-        const userId = await authUserApi.apiUserIdGetUserIdGet();
-        console.log(userId.userId)
-        setUserId(userId.userId);
+        console.log('settingStuf')
+        const userId = await authUserApi.apiUserIdGetUserIdGet({withCredentials:true});
+
+        console.log(userId.data.userId)
+        setUserId(userId.data.userId);
         // Navigate to dashboard or other page as needed
         navigate('/dashboard');
       } else {

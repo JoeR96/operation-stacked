@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Operation Stacked Workout",
-    "version": "0.302"
+    "version": "0.313"
   },
   "paths": {
     "/equipment-stack/create": {
@@ -410,7 +410,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exercise"
+                    "$ref": "#/components/schemas/ExerciseDto"
                   }
                 }
               },
@@ -418,7 +418,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exercise"
+                    "$ref": "#/components/schemas/ExerciseDto"
                   }
                 }
               },
@@ -426,7 +426,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Exercise"
+                    "$ref": "#/components/schemas/ExerciseDto"
                   }
                 }
               }
@@ -2031,24 +2031,24 @@
       "ProblemDetails": {
         "type": "object",
         "properties": {
-          "type": {
+          "Type": {
             "type": "string",
             "nullable": true
           },
-          "title": {
+          "Title": {
             "type": "string",
             "nullable": true
           },
-          "status": {
+          "Status": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "detail": {
+          "Detail": {
             "type": "string",
             "nullable": true
           },
-          "instance": {
+          "Instance": {
             "type": "string",
             "nullable": true
           }

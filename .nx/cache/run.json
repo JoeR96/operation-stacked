@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx serve operation-stacked-dashboard",
-    "startTime": "2024-03-02T15:47:23.814Z",
-    "endTime": "2024-03-02T15:51:55.706Z",
+    "startTime": "2024-03-08T12:45:38.549Z",
+    "endTime": "2024-03-08T14:12:19.861Z",
     "inner": false
   },
   "tasks": [
@@ -10,9 +10,9 @@
       "taskId": "operation-stacked-dashboard:serve:development",
       "target": "serve",
       "projectName": "operation-stacked-dashboard",
-      "hash": "16455806050790481411",
-      "startTime": "2024-03-02T15:47:23.819Z",
-      "endTime": "2024-03-02T15:51:55.705Z",
+      "hash": "16864968733267934290",
+      "startTime": "2024-03-08T12:45:38.556Z",
+      "endTime": "2024-03-08T14:12:19.860Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 1

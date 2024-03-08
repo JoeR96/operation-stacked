@@ -858,27 +858,27 @@
       "type": "npm",
       "name": "npm:@aws-amplify/analytics",
       "data": {
-        "version": "7.0.18",
+        "version": "7.0.19",
         "packageName": "@aws-amplify/analytics",
-        "hash": "sha512-losVNHrEXyoCgLvhYnnUmNkekymAlAhiQGSx9guQU5ddtidJYuXOHlR1U2xz0xsmFVvOlZIYO3ctlIlIoK62jw=="
+        "hash": "sha512-YZKzzp6GGRZMCGXLRqLGafoAL/6VsSr1E3EGun74bFCoECd0pYEffwbtnLHTglppuuQKAKxQve0IybZ0wEWabQ=="
       }
     },
     "npm:@aws-amplify/api": {
       "type": "npm",
       "name": "npm:@aws-amplify/api",
       "data": {
-        "version": "6.0.18",
+        "version": "6.0.19",
         "packageName": "@aws-amplify/api",
-        "hash": "sha512-BdtQD2BWD9LGJVPuy4+3jYZaSeem2ZHiOODYn0YduRspo5ATLGnyCpfuNJ6IYOCu3P70yHxcRFxMlxDBKtQZyw=="
+        "hash": "sha512-z7gH0fqQjTsomYRzztGLn0iAttui2fh21sgZqnZ5D1bvxV1QOeQ2cblxWtBU2Z3nUxZbduHR7jNzi4dhjvKS+w=="
       }
     },
     "npm:@aws-amplify/api-graphql": {
       "type": "npm",
       "name": "npm:@aws-amplify/api-graphql",
       "data": {
-        "version": "4.0.18",
+        "version": "4.0.19",
         "packageName": "@aws-amplify/api-graphql",
-        "hash": "sha512-nZgy9mxx2QIMqr7ej0sMV4Lig7ml9NbqT/XQxT0NSrkmQyTYWXtHTw39nminuuXNt08Ee9/7xTR54aapIluUug=="
+        "hash": "sha512-vora2hpymmr2GWUC/MKlsoE7OAvL/qtuvGjb5M2d/W8gu01jQgg2tGQxp+QesdDn5wGv0PJ/UFeTVLS9RUu9og=="
       }
     },
     "npm:graphql@15.8.0": {
@@ -948,27 +948,27 @@
       "type": "npm",
       "name": "npm:@aws-amplify/api-rest",
       "data": {
-        "version": "4.0.18",
+        "version": "4.0.19",
         "packageName": "@aws-amplify/api-rest",
-        "hash": "sha512-DC/mfvG1878ofU/AL5K98q7HtIxullK/cp1ufi4sKcqBdChV1AVcT+KyJSRGYuIPcXyV1csxroSe1ZsdtMS38w=="
+        "hash": "sha512-2pXZmc1xU+wCPFAitpimLlYluD04TPu1qZzGvc+0I01LhhVxoSBZWcpX9zWcWfWVvzC09jZRkL65jeHn/WuwWA=="
       }
     },
     "npm:@aws-amplify/auth": {
       "type": "npm",
       "name": "npm:@aws-amplify/auth",
       "data": {
-        "version": "6.0.18",
+        "version": "6.0.19",
         "packageName": "@aws-amplify/auth",
-        "hash": "sha512-c1NUfdRw6/f6wXft4t//tnDSZeL+5YFP/cdZC1Zk/FgUFpNLPAbVlGvNbRa1tTugpzvMI2bs0ccTk8yKq4ys+Q=="
+        "hash": "sha512-bWfneHqlui43ROlP/ofV14SyPqIzQDrWxyhjPJ9/ePR4hGy51I7BAuUslkwf8Y7m203+9eR6QtarC5mKVZZCgg=="
       }
     },
     "npm:@aws-amplify/core": {
       "type": "npm",
       "name": "npm:@aws-amplify/core",
       "data": {
-        "version": "6.0.18",
+        "version": "6.0.19",
         "packageName": "@aws-amplify/core",
-        "hash": "sha512-TfeYMAeSo15aG69CHVIoDZIUYlce4EcPhNTnuNIll4cTVYe3MgitgToE0mhRovqba1YHEgYcdoYsTfFJYyhvxg=="
+        "hash": "sha512-M6QR7rc0ksZxRzfx1Qq+WESLF0IQyULONTB6N5gjZT+GC1XCLssp3+cDeujjc56NMllGKBdJaPO8cZJcCcL1uQ=="
       }
     },
     "npm:@aws-sdk/types@3.398.0": {
@@ -993,18 +993,18 @@
       "type": "npm",
       "name": "npm:@aws-amplify/data-schema-types",
       "data": {
-        "version": "0.7.6",
+        "version": "0.7.7",
         "packageName": "@aws-amplify/data-schema-types",
-        "hash": "sha512-g5LmvLEJ5BDtfxRT6QK/+HhTfGGADbF7gbxtWPbhP9hRYwDai0A9ARJ6qETLPzUE/1vXtURlJV+MLutsDrIkPA=="
+        "hash": "sha512-DjHeJ2dfTPTG+MjkguTcKTy20OlP4DOo1AORPSz23Yl4W+0P2DfG03VlT6o9xc9jWqreQ3oJGkDsO/2oR81KsA=="
       }
     },
     "npm:@aws-amplify/datastore": {
       "type": "npm",
       "name": "npm:@aws-amplify/datastore",
       "data": {
-        "version": "5.0.18",
+        "version": "5.0.19",
         "packageName": "@aws-amplify/datastore",
-        "hash": "sha512-B17KujW2dcA9YgGny/8mM8mddIqBfrSig5tH8T4hh0U71hG58pBz4T7RtSBZVZ0oEdcB6rkqaqmVTIDTqr7sqQ=="
+        "hash": "sha512-Jl01wDeQkTypN8aCCISCcmssVZJNkEwwE1e5QAwl5Q58btOCgiskhaFPoVf/IzCkh/g19QRYhUl6N9JJWkstXg=="
       }
     },
     "npm:buffer@4.9.2": {
@@ -1047,18 +1047,18 @@
       "type": "npm",
       "name": "npm:@aws-amplify/notifications",
       "data": {
-        "version": "2.0.18",
+        "version": "2.0.19",
         "packageName": "@aws-amplify/notifications",
-        "hash": "sha512-pPnFhRzbCxmsGJ4eB31a75smhsF52QG0kafp8bFQM+UtwEUp9LI6pwzlod3EYVAamMTy0oI44YNr/ar3cpz/fw=="
+        "hash": "sha512-OxV/pEaXbFv5ceBEgUjE74CRToA2Wdki3YKLvdzopKXYiUW8npUqY06n9iqvinKKfVwRf5xcVESSAE0NxH6ioQ=="
       }
     },
     "npm:@aws-amplify/storage": {
       "type": "npm",
       "name": "npm:@aws-amplify/storage",
       "data": {
-        "version": "6.0.18",
+        "version": "6.0.19",
         "packageName": "@aws-amplify/storage",
-        "hash": "sha512-YqJu5EhSd42y2pljhvzQXoibMHPudZSqqiz7+uJG3PumMgntkthvoEMT6n8CZN9CdUcLjnZ1OrI8tEZHvOn9WQ=="
+        "hash": "sha512-yxrVRFaB3GY/MwNS47MvNy8wkNmtdY6Ns72i7AXfa7NjfbMT2KjCT00R3HQ23xPPMpwo71QWd4y1oB9jq1ONuw=="
       }
     },
     "npm:@aws-amplify/ui": {
@@ -5435,6 +5435,114 @@
         "hash": "sha512-QCriI4CFCuG+0WTbpu3fHljVR1x6bjNSrbq8nqu8Z/3y+si2/O+7lVNSTkQNr1X2eBPqtIX74APS7ExG8c4vog=="
       }
     },
+    "npm:@octokit/auth-token": {
+      "type": "npm",
+      "name": "npm:@octokit/auth-token",
+      "data": {
+        "version": "4.0.0",
+        "packageName": "@octokit/auth-token",
+        "hash": "sha512-tY/msAuJo6ARbK6SPIxZrPBms3xPbfwBrulZe0Wtr/DIY9lje2HeV1uoebShn6mx7SjCHif6EjMvoREj+gZ+SA=="
+      }
+    },
+    "npm:@octokit/core": {
+      "type": "npm",
+      "name": "npm:@octokit/core",
+      "data": {
+        "version": "5.1.0",
+        "packageName": "@octokit/core",
+        "hash": "sha512-BDa2VAMLSh3otEiaMJ/3Y36GU4qf6GI+VivQ/P41NC6GHcdxpKlqV0ikSZ5gdQsmS3ojXeRx5vasgNTinF0Q4g=="
+      }
+    },
+    "npm:@octokit/endpoint": {
+      "type": "npm",
+      "name": "npm:@octokit/endpoint",
+      "data": {
+        "version": "9.0.4",
+        "packageName": "@octokit/endpoint",
+        "hash": "sha512-DWPLtr1Kz3tv8L0UvXTDP1fNwM0S+z6EJpRcvH66orY6Eld4XBMCSYsaWp4xIm61jTWxK68BrR7ibO+vSDnZqw=="
+      }
+    },
+    "npm:@octokit/graphql": {
+      "type": "npm",
+      "name": "npm:@octokit/graphql",
+      "data": {
+        "version": "7.0.2",
+        "packageName": "@octokit/graphql",
+        "hash": "sha512-OJ2iGMtj5Tg3s6RaXH22cJcxXRi7Y3EBqbHTBRq+PQAqfaS8f/236fUrWhfSn8P4jovyzqucxme7/vWSSZBX2Q=="
+      }
+    },
+    "npm:@octokit/openapi-types": {
+      "type": "npm",
+      "name": "npm:@octokit/openapi-types",
+      "data": {
+        "version": "20.0.0",
+        "packageName": "@octokit/openapi-types",
+        "hash": "sha512-EtqRBEjp1dL/15V7WiX5LJMIxxkdiGJnabzYx5Apx4FkQIFgAfKumXeYAqqJCj1s+BMX4cPFIFC4OLCR6stlnA=="
+      }
+    },
+    "npm:@octokit/plugin-paginate-rest": {
+      "type": "npm",
+      "name": "npm:@octokit/plugin-paginate-rest",
+      "data": {
+        "version": "9.2.1",
+        "packageName": "@octokit/plugin-paginate-rest",
+        "hash": "sha512-wfGhE/TAkXZRLjksFXuDZdmGnJQHvtU/joFQdweXUgzo1XwvBCD4o4+75NtFfjfLK5IwLf9vHTfSiU3sLRYpRw=="
+      }
+    },
+    "npm:@octokit/plugin-request-log": {
+      "type": "npm",
+      "name": "npm:@octokit/plugin-request-log",
+      "data": {
+        "version": "4.0.1",
+        "packageName": "@octokit/plugin-request-log",
+        "hash": "sha512-GihNqNpGHorUrO7Qa9JbAl0dbLnqJVrV8OXe2Zm5/Y4wFkZQDfTreBzVmiRfJVfE4mClXdihHnbpyyO9FSX4HA=="
+      }
+    },
+    "npm:@octokit/plugin-rest-endpoint-methods": {
+      "type": "npm",
+      "name": "npm:@octokit/plugin-rest-endpoint-methods",
+      "data": {
+        "version": "10.4.1",
+        "packageName": "@octokit/plugin-rest-endpoint-methods",
+        "hash": "sha512-xV1b+ceKV9KytQe3zCVqjg+8GTGfDYwaT1ATU5isiUyVtlVAO3HNdzpS4sr4GBx4hxQ46s7ITtZrAsxG22+rVg=="
+      }
+    },
+    "npm:@octokit/request": {
+      "type": "npm",
+      "name": "npm:@octokit/request",
+      "data": {
+        "version": "8.2.0",
+        "packageName": "@octokit/request",
+        "hash": "sha512-exPif6x5uwLqv1N1irkLG1zZNJkOtj8bZxuVHd71U5Ftuxf2wGNvAJyNBcPbPC+EBzwYEbBDdSFb8EPcjpYxPQ=="
+      }
+    },
+    "npm:@octokit/request-error": {
+      "type": "npm",
+      "name": "npm:@octokit/request-error",
+      "data": {
+        "version": "5.0.1",
+        "packageName": "@octokit/request-error",
+        "hash": "sha512-X7pnyTMV7MgtGmiXBwmO6M5kIPrntOXdyKZLigNfQWSEQzVxR4a4vo49vJjTWX70mPndj8KhfT4Dx+2Ng3vnBQ=="
+      }
+    },
+    "npm:@octokit/rest": {
+      "type": "npm",
+      "name": "npm:@octokit/rest",
+      "data": {
+        "version": "20.0.2",
+        "packageName": "@octokit/rest",
+        "hash": "sha512-Ux8NDgEraQ/DMAU1PlAohyfBBXDwhnX2j33Z1nJNziqAfHi70PuxkFYIcIt8aIAxtRE7KVuKp8lSR8pA0J5iOQ=="
+      }
+    },
+    "npm:@octokit/types": {
+      "type": "npm",
+      "name": "npm:@octokit/types",
+      "data": {
+        "version": "12.6.0",
+        "packageName": "@octokit/types",
+        "hash": "sha512-1rhSOfRa6H9w4YwK0yrf5faDaDTb+yLyBUKOCV4xtCDB5VmIPqd/v9yr9o6SAzOAlRxMiRiCic6JVM1/kunVkw=="
+      }
+    },
     "npm:@open-draft/until": {
       "type": "npm",
       "name": "npm:@open-draft/until",
@@ -6942,36 +7050,36 @@
       "type": "npm",
       "name": "npm:@smithy/abort-controller",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/abort-controller",
-        "hash": "sha512-c2aYH2Wu1RVE3rLlVgg2kQOBJGM0WbjReQi5DnPTm2Zb7F0gk7J2aeQeaX2u/lQZoHl6gv8Oac7mt9alU3+f4A=="
+        "hash": "sha512-66HO817oIZ2otLIqy06R5muapqZjkgF1jfU0wyNko8cuqZNu8nbS9ljlhcRYw/M/uWRJzB9ih81DLSHhYbBLlQ=="
       }
     },
     "npm:@smithy/config-resolver": {
       "type": "npm",
       "name": "npm:@smithy/config-resolver",
       "data": {
-        "version": "2.1.4",
+        "version": "2.1.5",
         "packageName": "@smithy/config-resolver",
-        "hash": "sha512-AW2WUZmBAzgO3V3ovKtsUbI3aBNMeQKFDumoqkNxaVDWF/xfnxAWqBKDr/NuG7c06N2Rm4xeZLPiJH/d+na0HA=="
+        "hash": "sha512-LcBB5JQC3Tx2ZExIJzfvWaajhFIwHrUNQeqxhred2r5nnqrdly9uoCrvM1sxOOdghYuWWm2Kr8tBCDOmxsgeTA=="
       }
     },
     "npm:@smithy/credential-provider-imds": {
       "type": "npm",
       "name": "npm:@smithy/credential-provider-imds",
       "data": {
-        "version": "2.2.4",
+        "version": "2.2.6",
         "packageName": "@smithy/credential-provider-imds",
-        "hash": "sha512-DdatjmBZQnhGe1FhI8gO98f7NmvQFSDiZTwC3WMvLTCKQUY+Y1SVkhJqIuLu50Eb7pTheoXQmK+hKYUgpUWsNA=="
+        "hash": "sha512-+xQe4Pite0kdk9qn0Vyw5BRVh0iSlj+T4TEKRXr4E1wZKtVgIzGlkCrfICSjiPVFkPxk4jMpVboMYdEiiA88/w=="
       }
     },
     "npm:@smithy/eventstream-codec": {
       "type": "npm",
       "name": "npm:@smithy/eventstream-codec",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/eventstream-codec",
-        "hash": "sha512-rGlCVuwSDv6qfKH4/lRxFjcZQnIE0LZ3D4lkMHg7ZSltK9rA74r0VuGSvWVQ4N/d70VZPaniFhp4Z14QYZsa+A=="
+        "hash": "sha512-UkiieTztP7adg8EuqZvB0Y4LewdleZCJU7Kgt9RDutMsRYqO32fMpWeQHeTHaIMosmzcRZUykMRrhwGJe9mP3A=="
       }
     },
     "npm:@smithy/util-hex-encoding@2.1.1": {
@@ -6996,54 +7104,54 @@
       "type": "npm",
       "name": "npm:@smithy/eventstream-serde-browser",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/eventstream-serde-browser",
-        "hash": "sha512-qAgKbZ9m2oBfSyJWWurX/MvQFRPrYypj79cDSleEgDwBoez6Tfd+FTpu2L/j3ZeC3mDlDHIKWksoeaXZpLLAHw=="
+        "hash": "sha512-K0SyvrUu/vARKzNW+Wp9HImiC/cJ6K88/n7FTH1slY+MErdKoiSbRLaXbJ9qD6x1Hu28cplHMlhADwZelUx/Ww=="
       }
     },
     "npm:@smithy/eventstream-serde-config-resolver": {
       "type": "npm",
       "name": "npm:@smithy/eventstream-serde-config-resolver",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/eventstream-serde-config-resolver",
-        "hash": "sha512-48rvsNv/MgAFCxOE0qwR7ZwKhaEdDoTxqH5HM+T6SDxICmPGb7gEuQzjTxQhcieCPgqyXeZFW8cU0QJxdowuIg=="
+        "hash": "sha512-FH+2AwOwZ0kHPB9sciWJtUqx81V4vizfT3P6T9eslmIC2hi8ch/KFvQlF7jDmwR1aLlPlq6qqLKLqzK/71Ki4A=="
       }
     },
     "npm:@smithy/eventstream-serde-node": {
       "type": "npm",
       "name": "npm:@smithy/eventstream-serde-node",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/eventstream-serde-node",
-        "hash": "sha512-RPJWWDhj8isk3NtGfm3Xt1WdHyX9ZE42V+m1nLU1I0zZ1hEol/oawHsTnhva/VR5bn+bJ2zscx+BYr0cEPRtmg=="
+        "hash": "sha512-gsc5ZTvVcB9sleLQzsK/rOhgn52+AAsmhEr41WDwAcctccBjh429+b8gT9t+SU8QyajypfsLOZfJQu0+zE515Q=="
       }
     },
     "npm:@smithy/eventstream-serde-universal": {
       "type": "npm",
       "name": "npm:@smithy/eventstream-serde-universal",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/eventstream-serde-universal",
-        "hash": "sha512-ssvSMk1LX2jRhiOVgVLGfNJXdB8SvyjieKcJDHq698Gi3LOog6g/+l7ggrN+hZxyjUiDF4cUxgKaZTBUghzhLw=="
+        "hash": "sha512-NKLAsYnZA5s+ntipJRKo1RrRbhYHrsEnmiUoz0EhVYrAih+UELY9sKR+A1ujGaFm3nKDs5fPfiozC2wpXq2zUA=="
       }
     },
     "npm:@smithy/fetch-http-handler": {
       "type": "npm",
       "name": "npm:@smithy/fetch-http-handler",
       "data": {
-        "version": "2.4.3",
+        "version": "2.4.4",
         "packageName": "@smithy/fetch-http-handler",
-        "hash": "sha512-Fn/KYJFo6L5I4YPG8WQb2hOmExgRmNpVH5IK2zU3JKrY5FKW7y9ar5e0BexiIC9DhSKqKX+HeWq/Y18fq7Dkpw=="
+        "hash": "sha512-DSUtmsnIx26tPuyyrK49dk2DAhPgEw6xRW7V62nMHIB5dk3NqhGnwcKO2fMdt/l3NUVgia34ZsSJA8bD+3nh7g=="
       }
     },
-    "npm:@smithy/protocol-http@3.2.1": {
+    "npm:@smithy/protocol-http@3.2.2": {
       "type": "npm",
-      "name": "npm:@smithy/protocol-http@3.2.1",
+      "name": "npm:@smithy/protocol-http@3.2.2",
       "data": {
-        "version": "3.2.1",
+        "version": "3.2.2",
         "packageName": "@smithy/protocol-http",
-        "hash": "sha512-KLrQkEw4yJCeAmAH7hctE8g9KwA7+H2nSJwxgwIxchbp/L0B5exTdOQi9D5HinPLlothoervGmhpYKelZ6AxIA=="
+        "hash": "sha512-xYBlllOQcOuLoxzhF2u8kRHhIFGQpDeTQj/dBSnw4kfI29WMKL5RnW1m9YjnJAJ49miuIvrkJR+gW5bCQ+Mchw=="
       }
     },
     "npm:@smithy/protocol-http": {
@@ -7059,18 +7167,18 @@
       "type": "npm",
       "name": "npm:@smithy/hash-node",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/hash-node",
-        "hash": "sha512-FsAPCUj7VNJIdHbSxMd5uiZiF20G2zdSDgrgrDrHqIs/VMxK85Vqk5kMVNNDMCZmMezp6UKnac0B4nAyx7HJ9g=="
+        "hash": "sha512-uvCcpDLXaTTL0X/9ezF8T8sS77UglTfZVQaUOBiCvR0QydeSyio3t0Hj3QooVdyFsKTubR8gCk/ubLk3vAyDng=="
       }
     },
-    "npm:@smithy/util-utf8@2.1.1": {
+    "npm:@smithy/util-utf8@2.2.0": {
       "type": "npm",
-      "name": "npm:@smithy/util-utf8@2.1.1",
+      "name": "npm:@smithy/util-utf8@2.2.0",
       "data": {
-        "version": "2.1.1",
+        "version": "2.2.0",
         "packageName": "@smithy/util-utf8",
-        "hash": "sha512-BqTpzYEcUMDwAKr7/mVRUtHDhs6ZoXDi9NypMvMfOr/+u1NW7JgqodPDECiiLboEm6bobcPcECxzjtQh865e9A=="
+        "hash": "sha512-hBsKr5BqrDrKS8qy+YcV7/htmMGxriA1PREOf/8AGBhHIZnfilVv1Waf1OyKhSbFW15U/8+gcMUQ9/Kk5qwpHQ=="
       }
     },
     "npm:@smithy/util-utf8": {
@@ -7086,9 +7194,9 @@
       "type": "npm",
       "name": "npm:@smithy/invalid-dependency",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/invalid-dependency",
-        "hash": "sha512-wkra7d/G4CbngV4xsjYyAYOvdAhahQje/WymuQdVEnXFExJopEu7fbL5AEAlBPgWHXwu94VnCSG00gVzRfExyg=="
+        "hash": "sha512-QzlNBl6jt3nb9jNnE51wTegReVvUdozyMMrFEyb/rc6AzPID1O+qMJYjAAoNw098y0CZVfCpEnoK2+mfBOd8XA=="
       }
     },
     "npm:@smithy/is-array-buffer": {
@@ -7113,153 +7221,153 @@
       "type": "npm",
       "name": "npm:@smithy/middleware-content-length",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/middleware-content-length",
-        "hash": "sha512-aJduhkC+dcXxdnv5ZpM3uMmtGmVFKx412R1gbeykS5HXDmRU6oSsyy2SoHENCkfOGKAQOjVE2WVqDJibC0d21g=="
+        "hash": "sha512-C6VRwfcr0w9qRFhDGCpWMVhlEIBFlmlPRP1aX9Cv9xDj9SUwlDrNvoV1oP1vjRYuLxCDgovBBynCwwcluS2wLw=="
       }
     },
     "npm:@smithy/middleware-endpoint": {
       "type": "npm",
       "name": "npm:@smithy/middleware-endpoint",
       "data": {
-        "version": "2.4.4",
+        "version": "2.4.6",
         "packageName": "@smithy/middleware-endpoint",
-        "hash": "sha512-4yjHyHK2Jul4JUDBo2sTsWY9UshYUnXeb/TAK/MTaPEb8XQvDmpwSFnfIRDU45RY1a6iC9LCnmJNg/yHyfxqkw=="
+        "hash": "sha512-AsXtUXHPOAS0EGZUSFOsVJvc7p0KL29PGkLxLfycPOcFVLru/oinYB6yvyL73ZZPX2OB8sMYUMrj7eH2kI7V/w=="
       }
     },
     "npm:@smithy/middleware-retry": {
       "type": "npm",
       "name": "npm:@smithy/middleware-retry",
       "data": {
-        "version": "2.1.4",
+        "version": "2.1.6",
         "packageName": "@smithy/middleware-retry",
-        "hash": "sha512-Cyolv9YckZTPli1EkkaS39UklonxMd08VskiuMhURDjC0HHa/AD6aK/YoD21CHv9s0QLg0WMLvk9YeLTKkXaFQ=="
+        "hash": "sha512-khpSV0NxqMHfa06kfG4WYv+978sVvfTFmn0hIFKKwOXtIxyYtPKiQWFT4nnwZD07fGdYGbtCBu3YALc8SsA5mA=="
       }
     },
     "npm:@smithy/middleware-serde": {
       "type": "npm",
       "name": "npm:@smithy/middleware-serde",
       "data": {
-        "version": "2.1.3",
+        "version": "2.2.1",
         "packageName": "@smithy/middleware-serde",
-        "hash": "sha512-s76LId+TwASrHhUa9QS4k/zeXDUAuNuddKklQzRgumbzge5BftVXHXIqL4wQxKGLocPwfgAOXWx+HdWhQk9hTg=="
+        "hash": "sha512-VAWRWqnNjgccebndpyK94om4ZTYzXLQxUmNCXYzM/3O9MTfQjTNBgtFtQwyIIez6z7LWcCsXmnKVIOE9mLqAHQ=="
       }
     },
     "npm:@smithy/middleware-stack": {
       "type": "npm",
       "name": "npm:@smithy/middleware-stack",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/middleware-stack",
-        "hash": "sha512-opMFufVQgvBSld/b7mD7OOEBxF6STyraVr1xel1j0abVILM8ALJvRoFbqSWHGmaDlRGIiV9Q5cGbWi0sdiEaLQ=="
+        "hash": "sha512-Qqs2ba8Ax1rGKOSGJS2JN23fhhox2WMdRuzx0NYHtXzhxbJOIMmz9uQY6Hf4PY8FPteBPp1+h0j5Fmr+oW12sg=="
       }
     },
     "npm:@smithy/node-config-provider": {
       "type": "npm",
       "name": "npm:@smithy/node-config-provider",
       "data": {
-        "version": "2.2.4",
+        "version": "2.2.5",
         "packageName": "@smithy/node-config-provider",
-        "hash": "sha512-nqazHCp8r4KHSFhRQ+T0VEkeqvA0U+RhehBSr1gunUuNW3X7j0uDrWBxB2gE9eutzy6kE3Y7L+Dov/UXT871vg=="
+        "hash": "sha512-CxPf2CXhjO79IypHJLBATB66Dw6suvr1Yc2ccY39hpR6wdse3pZ3E8RF83SODiNH0Wjmkd0ze4OF8exugEixgA=="
       }
     },
     "npm:@smithy/node-http-handler": {
       "type": "npm",
       "name": "npm:@smithy/node-http-handler",
       "data": {
-        "version": "2.4.1",
+        "version": "2.4.2",
         "packageName": "@smithy/node-http-handler",
-        "hash": "sha512-HCkb94soYhJMxPCa61wGKgmeKpJ3Gftx1XD6bcWEB2wMV1L9/SkQu/6/ysKBnbOzWRE01FGzwrTxucHypZ8rdg=="
+        "hash": "sha512-yrj3c1g145uiK5io+1UPbJAHo8BSGORkBzrmzvAsOmBKb+1p3jmM8ZwNLDH/HTTxVLm9iM5rMszx+iAh1HUC4Q=="
       }
     },
     "npm:@smithy/property-provider": {
       "type": "npm",
       "name": "npm:@smithy/property-provider",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/property-provider",
-        "hash": "sha512-bMz3se+ySKWNrgm7eIiQMa2HO/0fl2D0HvLAdg9pTMcpgp4SqOAh6bz7Ik6y7uQqSrk4rLjIKgbQ6yzYgGehCQ=="
+        "hash": "sha512-nWaY/MImj1BiXZ9WY65h45dcxOx8pl06KYoHxwojDxDL+Q9yLU1YnZpgv8zsHhEftlj9KhePENjQTlNowWVyug=="
       }
     },
     "npm:@smithy/querystring-builder": {
       "type": "npm",
       "name": "npm:@smithy/querystring-builder",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/querystring-builder",
-        "hash": "sha512-kFD3PnNqKELe6m9GRHQw/ftFFSZpnSeQD4qvgDB6BQN6hREHELSosVFUMPN4M3MDKN2jAwk35vXHLoDrNfKu0A=="
+        "hash": "sha512-LXSL0J/nRWvGT+jIj+Fip3j0J1ZmHkUyBFRzg/4SmPNCLeDrtVu7ptKOnTboPsFZu5BxmpYok3kJuQzzRdrhbw=="
       }
     },
     "npm:@smithy/querystring-parser": {
       "type": "npm",
       "name": "npm:@smithy/querystring-parser",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/querystring-parser",
-        "hash": "sha512-3+CWJoAqcBMR+yvz6D+Fc5VdoGFtfenW6wqSWATWajrRMGVwJGPT3Vy2eb2bnMktJc4HU4bpjeovFa566P3knQ=="
+        "hash": "sha512-U2b8olKXgZAs0eRo7Op11jTNmmcC/sqYmsA7vN6A+jkGnDvJlEl7AetUegbBzU8q3D6WzC5rhR/joIy8tXPzIg=="
       }
     },
     "npm:@smithy/service-error-classification": {
       "type": "npm",
       "name": "npm:@smithy/service-error-classification",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/service-error-classification",
-        "hash": "sha512-iUrpSsem97bbXHHT/v3s7vaq8IIeMo6P6cXdeYHrx0wOJpMeBGQF7CB0mbJSiTm3//iq3L55JiEm8rA7CTVI8A=="
+        "hash": "sha512-JW2Hthy21evnvDmYYk1kItOmbp3X5XI5iqorXgFEunb6hQfSDZ7O1g0Clyxg7k/Pcr9pfLk5xDIR2To/IohlsQ=="
       }
     },
     "npm:@smithy/shared-ini-file-loader": {
       "type": "npm",
       "name": "npm:@smithy/shared-ini-file-loader",
       "data": {
-        "version": "2.3.4",
+        "version": "2.3.5",
         "packageName": "@smithy/shared-ini-file-loader",
-        "hash": "sha512-CiZmPg9GeDKbKmJGEFvJBsJcFnh0AQRzOtQAzj1XEa8N/0/uSN/v1LYzgO7ry8hhO8+9KB7+DhSW0weqBra4Aw=="
+        "hash": "sha512-oI99+hOvsM8oAJtxAGmoL/YCcGXtbP0fjPseYGaNmJ4X5xOFTer0KPk7AIH3AL6c5AlYErivEi1X/X78HgTVIw=="
       }
     },
     "npm:@smithy/signature-v4": {
       "type": "npm",
       "name": "npm:@smithy/signature-v4",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/signature-v4",
-        "hash": "sha512-Jq4iPPdCmJojZTsPePn4r1ULShh6ONkokLuxp1Lnk4Sq7r7rJp4HlA1LbPBq4bD64TIzQezIpr1X+eh5NYkNxw=="
+        "hash": "sha512-gnu9gCn0qQ8IdhNjs6o3QVCXzUs33znSDYwVMWo3nX4dM6j7z9u6FC302ShYyVWfO4MkVMuGCCJ6nl3PcH7V1Q=="
       }
     },
     "npm:@smithy/smithy-client": {
       "type": "npm",
       "name": "npm:@smithy/smithy-client",
       "data": {
-        "version": "2.4.2",
+        "version": "2.4.4",
         "packageName": "@smithy/smithy-client",
-        "hash": "sha512-ntAFYN51zu3N3mCd95YFcFi/8rmvm//uX+HnK24CRbI6k5Rjackn0JhgKz5zOx/tbNvOpgQIwhSX+1EvEsBLbA=="
+        "hash": "sha512-SNE17wjycPZIJ2P5sv6wMTteV/vQVPdaqQkoK1KeGoWHXx79t3iLhQXj1uqRdlkMUS9pXJrLOAS+VvUSOYwQKw=="
       }
     },
     "npm:@smithy/types": {
       "type": "npm",
       "name": "npm:@smithy/types",
       "data": {
-        "version": "2.10.1",
+        "version": "2.11.0",
         "packageName": "@smithy/types",
-        "hash": "sha512-hjQO+4ru4cQ58FluQvKKiyMsFg0A6iRpGm2kqdH8fniyNd2WyanoOsYJfMX/IFLuLxEoW6gnRkNZy1y6fUUhtA=="
+        "hash": "sha512-AR0SXO7FuAskfNhyGfSTThpLRntDI5bOrU0xrpVYU0rZyjl3LBXInZFMTP/NNSd7IS6Ksdtar0QvnrPRIhVrLQ=="
       }
     },
     "npm:@smithy/url-parser": {
       "type": "npm",
       "name": "npm:@smithy/url-parser",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/url-parser",
-        "hash": "sha512-X1NRA4WzK/ihgyzTpeGvI9Wn45y8HmqF4AZ/FazwAv8V203Ex+4lXqcYI70naX9ETqbqKVzFk88W6WJJzCggTQ=="
+        "hash": "sha512-1hTy6UYRYqOZlHKH2/2NzdNQ4NNmW2Lp0sYYvztKy+dEQuLvZL9w88zCzFQqqFer3DMcscYOshImxkJTGdV+rg=="
       }
     },
     "npm:@smithy/util-base64": {
       "type": "npm",
       "name": "npm:@smithy/util-base64",
       "data": {
-        "version": "2.1.1",
+        "version": "2.2.0",
         "packageName": "@smithy/util-base64",
-        "hash": "sha512-UfHVpY7qfF/MrgndI5PexSKVTxSZIdz9InghTFa49QOvuu9I52zLPLUHXvHpNuMb1iD2vmc6R+zbv/bdMipR/g=="
+        "hash": "sha512-RiQI/Txu0SxCR38Ky5BMEVaFfkNTBjpbxlr2UhhxggSmnsHDQPZJWMtPoXs7TWZaseslIlAWMiHmqRT3AV/P2w=="
       }
     },
     "npm:@smithy/util-body-length-browser": {
@@ -7302,45 +7410,45 @@
       "type": "npm",
       "name": "npm:@smithy/util-defaults-mode-browser",
       "data": {
-        "version": "2.1.4",
+        "version": "2.1.6",
         "packageName": "@smithy/util-defaults-mode-browser",
-        "hash": "sha512-J6XAVY+/g7jf03QMnvqPyU+8jqGrrtXoKWFVOS+n1sz0Lg8HjHJ1ANqaDN+KTTKZRZlvG8nU5ZrJOUL6VdwgcQ=="
+        "hash": "sha512-lM2JMYCilrejfGf8WWnVfrKly3vf+mc5x9TrTpT++qIKP452uWfLqlaUxbz1TkSfhqm8RjrlY22589B9aI8A9w=="
       }
     },
     "npm:@smithy/util-defaults-mode-node": {
       "type": "npm",
       "name": "npm:@smithy/util-defaults-mode-node",
       "data": {
-        "version": "2.2.3",
+        "version": "2.2.6",
         "packageName": "@smithy/util-defaults-mode-node",
-        "hash": "sha512-ttUISrv1uVOjTlDa3nznX33f0pthoUlP+4grhTvOzcLhzArx8qHB94/untGACOG3nlf8vU20nI2iWImfzoLkYA=="
+        "hash": "sha512-UmUbPHbkBJCXRFbq+FPLpVwiFPHj1oPWXJS2f2sy23PtXM94c9X5EceI6JKuKdBty+tzhrAs5JbmPM/HvmDB8Q=="
       }
     },
     "npm:@smithy/util-middleware": {
       "type": "npm",
       "name": "npm:@smithy/util-middleware",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/util-middleware",
-        "hash": "sha512-/+2fm7AZ2ozl5h8wM++ZP0ovE9/tiUUAHIbCfGfb3Zd3+Dyk17WODPKXBeJ/TnK5U+x743QmA0xHzlSm8I/qhw=="
+        "hash": "sha512-5yYNOgCN0DL0OplME0pthoUR/sCfipnROkbTO7m872o0GHCVNJj5xOFJ143rvHNA54+pIPMLum4z2DhPC2pVGA=="
       }
     },
     "npm:@smithy/util-retry": {
       "type": "npm",
       "name": "npm:@smithy/util-retry",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/util-retry",
-        "hash": "sha512-Kbvd+GEMuozbNUU3B89mb99tbufwREcyx2BOX0X2+qHjq6Gvsah8xSDDgxISDwcOHoDqUWO425F0Uc/QIRhYkg=="
+        "hash": "sha512-JRZwhA3fhkdenSEYIWatC8oLwt4Bdf2LhHbNQApqb7yFoIGMl4twcYI3BcJZ7YIBZrACA9jGveW6tuCd836XzQ=="
       }
     },
     "npm:@smithy/util-stream": {
       "type": "npm",
       "name": "npm:@smithy/util-stream",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/util-stream",
-        "hash": "sha512-HvpEQbP8raTy9n86ZfXiAkf3ezp1c3qeeO//zGqwZdrfaoOpGKQgF2Sv1IqZp7wjhna7pvczWaGUHjcOPuQwKw=="
+        "hash": "sha512-CiWaFPXstoR7v/PGHddFckovkhJb28wgQR7LwIt6RsQCJeRIHvUTVWhXw/Pco6Jm6nz/vfzN9FFdj/JN7RTkxQ=="
       }
     },
     "npm:@smithy/util-uri-escape": {
@@ -7356,9 +7464,9 @@
       "type": "npm",
       "name": "npm:@smithy/util-waiter",
       "data": {
-        "version": "2.1.3",
+        "version": "2.1.4",
         "packageName": "@smithy/util-waiter",
-        "hash": "sha512-3R0wNFAQQoH9e4m+bVLDYNOst2qNxtxFgq03WoNHWTBOqQT3jFnOBRj1W51Rf563xDA5kwqjziksxn6RKkHB+Q=="
+        "hash": "sha512-AK17WaC0hx1wR9juAOsQkJ6DjDxBGEf5TrKhpXtNFEn+cVto9Li3MVsdpAO97AF7bhFXSyC8tJA3F4ThhqwCdg=="
       }
     },
     "npm:@storybook/addon-actions": {
@@ -9899,6 +10007,15 @@
         "hash": "sha512-gkdtIO+xSO/SmI0W68DBg4u1KElmIUo3vXzgHyGPs6cxgB0sa3TlptRAAE0hUY1hM6FcDKEv7aIwiTGm76cXfQ=="
       }
     },
+    "npm:@vitejs/plugin-basic-ssl": {
+      "type": "npm",
+      "name": "npm:@vitejs/plugin-basic-ssl",
+      "data": {
+        "version": "1.1.0",
+        "packageName": "@vitejs/plugin-basic-ssl",
+        "hash": "sha512-wO4Dk/rm8u7RNhOf95ZzcEmC9rYOncYgvq4z3duaJrCgjN8BxAnDVyndanfcJZ0O6XZzHz6Q0hTimxTg8Y9g/A=="
+      }
+    },
     "npm:@vitest/coverage-v8": {
       "type": "npm",
       "name": "npm:@vitest/coverage-v8",
@@ -10313,6 +10430,15 @@
         "hash": "sha512-4I7Td01quW/RpocfNayFdFVk1qSuoh0E7JrbRJ16nH01HhKFQ88INq9Sd+nd72zqRySlr9BmDA8xlEJ6vJMrYA=="
       }
     },
+    "npm:amplify": {
+      "type": "npm",
+      "name": "npm:amplify",
+      "data": {
+        "version": "0.0.11",
+        "packageName": "amplify",
+        "hash": "sha512-RkVzlUUUczGhjRWTX3QXEPzgPScdUXvmthgvcNpCQHfxshvxLPTdiLP6kLaUb/eo8IpnjLpKqUWxTIT97c8xew=="
+      }
+    },
     "npm:anser": {
       "type": "npm",
       "name": "npm:anser",
@@ -10623,9 +10749,9 @@
       "type": "npm",
       "name": "npm:aws-amplify",
       "data": {
-        "version": "6.0.18",
+        "version": "6.0.19",
         "packageName": "aws-amplify",
-        "hash": "sha512-3gQPdtRngtaIoFrKyhuhu4AUNsUKMSexu+ImfI5DomCKq1WvWZ/fOfw6Chjccgvhg0C/ThuSkdoOTcGeRx+N0g=="
+        "hash": "sha512-M2kBWd2RO0a/2KvtgxsKSzIwvfN1eJ1x3P+MU1jtAZIqhBIYpCUZYN4MQjnygp2p5iiit19KEsUw4c8INJ3trQ=="
       }
     },
     "npm:axe-core": {
@@ -10806,6 +10932,15 @@
         "version": "5.2.1",
         "packageName": "safe-buffer",
         "hash": "sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ=="
+      }
+    },
+    "npm:before-after-hook": {
+      "type": "npm",
+      "name": "npm:before-after-hook",
+      "data": {
+        "version": "2.2.3",
+        "packageName": "before-after-hook",
+        "hash": "sha512-NzUnlZexiaH/46WDhANlyR2bXRopNg4F/zuSA3OpZnllCUgRaOF2znDioDWrmbNVsuZk6l9pMquQB38cfBZwkQ=="
       }
     },
     "npm:better-opn": {
@@ -12309,6 +12444,15 @@
         "version": "4.2.3",
         "packageName": "deprecated-react-native-prop-types",
         "hash": "sha512-2rLTiMKidIFFYpIVM69UnQKngLqQfL6I11Ch8wGSBftS18FUXda+o2we2950X+1dmbgps28niI3qwyH4eX3Z1g=="
+      }
+    },
+    "npm:deprecation": {
+      "type": "npm",
+      "name": "npm:deprecation",
+      "data": {
+        "version": "2.3.1",
+        "packageName": "deprecation",
+        "hash": "sha512-xmHIy4F3scKVwMsQ4WnVaS8bHOx0DmVwRywosKhaILI0ywMDWPtBSku2HNxRvF7jtwDRsoEwYQSfbxj8b7RlJQ=="
       }
     },
     "npm:dequal": {
@@ -18890,6 +19034,15 @@
         "hash": "sha512-1KROIZWo6bcMrZEwiH2UrXDyalAa0uqzWCxCJj6lPOvTve2WkfgCytoDTPaMnodXh1WrXOq0haVYHj99ynJlsg=="
       }
     },
+    "npm:universal-user-agent": {
+      "type": "npm",
+      "name": "npm:universal-user-agent",
+      "data": {
+        "version": "6.0.1",
+        "packageName": "universal-user-agent",
+        "hash": "sha512-yCzhz6FN2wU1NiiQRogkTQszlQSlpWaw8SvVegAc+bDxbzHgh1vX8uIe8OYyMH6DwH+sdTJsgMl36+mSMdRJIQ=="
+      }
+    },
     "npm:unload": {
       "type": "npm",
       "name": "npm:unload",
@@ -19158,6 +19311,15 @@
         "version": "2.3.0",
         "packageName": "vite-plugin-dts",
         "hash": "sha512-WbJgGtsStgQhdm3EosYmIdTGbag5YQpZ3HXWUAPCDyoXI5qN6EY0V7NXq0lAmnv9hVQsvh0htbYcg0Or5Db9JQ=="
+      }
+    },
+    "npm:vite-plugin-mkcert": {
+      "type": "npm",
+      "name": "npm:vite-plugin-mkcert",
+      "data": {
+        "version": "1.17.4",
+        "packageName": "vite-plugin-mkcert",
+        "hash": "sha512-P/B/tXhsUdpFO4Go1f2obu8WL3xxA3lbsbz4YzflbWfqWl15uwFiXaiCCBztJu1f4WnilrdXYihGrGT9jU743A=="
       }
     },
     "npm:vitest": {
@@ -27263,6 +27425,171 @@
         "type": "static"
       }
     ],
+    "npm:@octokit/core": [
+      {
+        "source": "npm:@octokit/core",
+        "target": "npm:@octokit/auth-token",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/core",
+        "target": "npm:@octokit/graphql",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/core",
+        "target": "npm:@octokit/request",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/core",
+        "target": "npm:@octokit/request-error",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/core",
+        "target": "npm:@octokit/types",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/core",
+        "target": "npm:before-after-hook",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/core",
+        "target": "npm:universal-user-agent",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/endpoint": [
+      {
+        "source": "npm:@octokit/endpoint",
+        "target": "npm:@octokit/types",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/endpoint",
+        "target": "npm:universal-user-agent",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/graphql": [
+      {
+        "source": "npm:@octokit/graphql",
+        "target": "npm:@octokit/request",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/graphql",
+        "target": "npm:@octokit/types",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/graphql",
+        "target": "npm:universal-user-agent",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/plugin-paginate-rest": [
+      {
+        "source": "npm:@octokit/plugin-paginate-rest",
+        "target": "npm:@octokit/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/plugin-paginate-rest",
+        "target": "npm:@octokit/types",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/plugin-request-log": [
+      {
+        "source": "npm:@octokit/plugin-request-log",
+        "target": "npm:@octokit/core",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/plugin-rest-endpoint-methods": [
+      {
+        "source": "npm:@octokit/plugin-rest-endpoint-methods",
+        "target": "npm:@octokit/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/plugin-rest-endpoint-methods",
+        "target": "npm:@octokit/types",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/request": [
+      {
+        "source": "npm:@octokit/request",
+        "target": "npm:@octokit/endpoint",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/request",
+        "target": "npm:@octokit/request-error",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/request",
+        "target": "npm:@octokit/types",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/request",
+        "target": "npm:universal-user-agent",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/request-error": [
+      {
+        "source": "npm:@octokit/request-error",
+        "target": "npm:@octokit/types",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/request-error",
+        "target": "npm:deprecation",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/request-error",
+        "target": "npm:once",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/rest": [
+      {
+        "source": "npm:@octokit/rest",
+        "target": "npm:@octokit/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/rest",
+        "target": "npm:@octokit/plugin-paginate-rest",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/rest",
+        "target": "npm:@octokit/plugin-request-log",
+        "type": "static"
+      },
+      {
+        "source": "npm:@octokit/rest",
+        "target": "npm:@octokit/plugin-rest-endpoint-methods",
+        "type": "static"
+      }
+    ],
+    "npm:@octokit/types": [
+      {
+        "source": "npm:@octokit/types",
+        "target": "npm:@octokit/openapi-types",
+        "type": "static"
+      }
+    ],
     "npm:@phenomnomnominal/tsquery": [
       {
         "source": "npm:@phenomnomnominal/tsquery",
@@ -30265,7 +30592,7 @@
     "npm:@smithy/fetch-http-handler": [
       {
         "source": "npm:@smithy/fetch-http-handler",
-        "target": "npm:@smithy/protocol-http@3.2.1",
+        "target": "npm:@smithy/protocol-http@3.2.2",
         "type": "static"
       },
       {
@@ -30289,14 +30616,14 @@
         "type": "static"
       }
     ],
-    "npm:@smithy/protocol-http@3.2.1": [
+    "npm:@smithy/protocol-http@3.2.2": [
       {
-        "source": "npm:@smithy/protocol-http@3.2.1",
+        "source": "npm:@smithy/protocol-http@3.2.2",
         "target": "npm:@smithy/types",
         "type": "static"
       },
       {
-        "source": "npm:@smithy/protocol-http@3.2.1",
+        "source": "npm:@smithy/protocol-http@3.2.2",
         "target": "npm:tslib",
         "type": "static"
       }
@@ -30314,7 +30641,7 @@
       },
       {
         "source": "npm:@smithy/hash-node",
-        "target": "npm:@smithy/util-utf8@2.1.1",
+        "target": "npm:@smithy/util-utf8@2.2.0",
         "type": "static"
       },
       {
@@ -30323,14 +30650,14 @@
         "type": "static"
       }
     ],
-    "npm:@smithy/util-utf8@2.1.1": [
+    "npm:@smithy/util-utf8@2.2.0": [
       {
-        "source": "npm:@smithy/util-utf8@2.1.1",
+        "source": "npm:@smithy/util-utf8@2.2.0",
         "target": "npm:@smithy/util-buffer-from",
         "type": "static"
       },
       {
-        "source": "npm:@smithy/util-utf8@2.1.1",
+        "source": "npm:@smithy/util-utf8@2.2.0",
         "target": "npm:tslib",
         "type": "static"
       }
@@ -30374,7 +30701,7 @@
     "npm:@smithy/middleware-content-length": [
       {
         "source": "npm:@smithy/middleware-content-length",
-        "target": "npm:@smithy/protocol-http@3.2.1",
+        "target": "npm:@smithy/protocol-http@3.2.2",
         "type": "static"
       },
       {
@@ -30433,7 +30760,7 @@
       },
       {
         "source": "npm:@smithy/middleware-retry",
-        "target": "npm:@smithy/protocol-http@3.2.1",
+        "target": "npm:@smithy/protocol-http@3.2.2",
         "type": "static"
       },
       {
@@ -30526,7 +30853,7 @@
       },
       {
         "source": "npm:@smithy/node-http-handler",
-        "target": "npm:@smithy/protocol-http@3.2.1",
+        "target": "npm:@smithy/protocol-http@3.2.2",
         "type": "static"
       },
       {
@@ -30650,7 +30977,7 @@
       },
       {
         "source": "npm:@smithy/signature-v4",
-        "target": "npm:@smithy/util-utf8@2.1.1",
+        "target": "npm:@smithy/util-utf8@2.2.0",
         "type": "static"
       },
       {
@@ -30672,7 +30999,7 @@
       },
       {
         "source": "npm:@smithy/smithy-client",
-        "target": "npm:@smithy/protocol-http@3.2.1",
+        "target": "npm:@smithy/protocol-http@3.2.2",
         "type": "static"
       },
       {
@@ -30719,6 +31046,11 @@
       {
         "source": "npm:@smithy/util-base64",
         "target": "npm:@smithy/util-buffer-from",
+        "type": "static"
+      },
+      {
+        "source": "npm:@smithy/util-base64",
+        "target": "npm:@smithy/util-utf8@2.2.0",
         "type": "static"
       },
       {
@@ -30893,7 +31225,7 @@
       },
       {
         "source": "npm:@smithy/util-stream",
-        "target": "npm:@smithy/util-utf8@2.1.1",
+        "target": "npm:@smithy/util-utf8@2.2.0",
         "type": "static"
       },
       {
@@ -36032,6 +36364,13 @@
       {
         "source": "npm:@typescript-eslint/visitor-keys",
         "target": "npm:eslint-visitor-keys",
+        "type": "static"
+      }
+    ],
+    "npm:@vitejs/plugin-basic-ssl": [
+      {
+        "source": "npm:@vitejs/plugin-basic-ssl",
+        "target": "npm:vite",
         "type": "static"
       }
     ],
@@ -49533,6 +49872,33 @@
       {
         "source": "npm:magic-string@0.29.0",
         "target": "npm:@jridgewell/sourcemap-codec",
+        "type": "static"
+      }
+    ],
+    "npm:vite-plugin-mkcert": [
+      {
+        "source": "npm:vite-plugin-mkcert",
+        "target": "npm:vite",
+        "type": "static"
+      },
+      {
+        "source": "npm:vite-plugin-mkcert",
+        "target": "npm:@octokit/rest",
+        "type": "static"
+      },
+      {
+        "source": "npm:vite-plugin-mkcert",
+        "target": "npm:axios",
+        "type": "static"
+      },
+      {
+        "source": "npm:vite-plugin-mkcert",
+        "target": "npm:debug",
+        "type": "static"
+      },
+      {
+        "source": "npm:vite-plugin-mkcert",
+        "target": "npm:picocolors",
         "type": "static"
       }
     ],

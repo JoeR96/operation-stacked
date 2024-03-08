@@ -46,6 +46,7 @@
     "@types/react-dom": "18.2.14",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
     "@typescript-eslint/parser": "^6.9.1",
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
     "@vitejs/plugin-react": "^4.2.0",
     "@vitest/coverage-v8": "~0.34.6",
     "@vitest/ui": "~0.34.6",
@@ -69,6 +70,7 @@
     "typescript": "~5.2.2",
     "vite": "^5.0.0",
     "vite-plugin-dts": "~2.3.0",
+    "vite-plugin-mkcert": "^1.17.4",
     "vitest": "^0.34.6"
   },
   "workspaces": [
@@ -84,7 +86,8 @@
     "@nrwl/workspace": "^17.2.8",
     "@react-oauth/google": "^0.12.1",
     "@swc/helpers": "~0.5.2",
-    "aws-amplify": "^6.0.18",
+    "amplify": "^0.0.11",
+    "aws-amplify": "^6.0.19",
     "formik": "^2.4.5",
     "node-fetch": "^3.3.2",
     "react": "18.2.0",

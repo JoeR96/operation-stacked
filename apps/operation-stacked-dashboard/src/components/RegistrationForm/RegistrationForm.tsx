@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom';
 import { ERROR, PENDING, useApi } from '@operation-stacked/api-hooks';
 import { Button, TextField } from '@operation-stacked/ui-components';
 import Spinner from '../spinner/Spinner';
-import { Auth } from 'aws-amplify';
 import { GoogleLogin } from '@react-oauth/google';
 import { UserApi } from '@operation-stacked/shared-services'; // Ensure this is the correct import path
 
