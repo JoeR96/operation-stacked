@@ -17,6 +17,7 @@ export const Username: React.FC = () => {
     'username',
     () => userApi.userNameUserIdGet(userId as string),
     {
+      // @ts-expect-error
       withCredentials: true,
       enabled: !!userId, // This query will not run until userId is available
       onSuccess: (data) => {

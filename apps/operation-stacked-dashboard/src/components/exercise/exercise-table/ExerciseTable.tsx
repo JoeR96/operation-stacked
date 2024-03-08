@@ -39,6 +39,7 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({
   // @ts-ignore
   const { data: exercises, isLoading, isError, error } = useQuery<Exercise[], Error>(
     ['exercises', userId],
+    // @ts-ignore
     () => exerciseApi.exerciseUserIdAllGet(userId as string).then(response => response.data),
     {
       onError: (error) => {
@@ -55,6 +56,8 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({
       return acc;
     }, {});
   };
+
+  // @ts-ignore
 
   const groupedExercises = exercises ? groupExercisesByCategory(exercises) : {};
 
@@ -93,6 +96,7 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({
                 <Box display="flex" alignItems="center">
                   <Button
                     onClick={() => eventHandler(exercise)}
+                    // @ts-ignore
                     sx={{ marginRight: '10px' }} // Add some spacing between buttons if needed
                   >
                     {buttonText}

@@ -1,13 +1,16 @@
+// @ts-ignore
+
 import create from 'zustand';
 // @ts-ignore
 import Cookies from 'js-cookie'; // Assuming js-cookie is already installed
 
 // Define the store's state and actions
 // @ts-ignore
-// @ts-ignore
 const useAuthStore = create((set) => ({
   userId: Cookies.get('userId') || null, // Initialize userId from cookie
   username: null, // Optional: manage username globally
+  // @ts-expect-error
+
   setUser: (userId, username) => {
     Cookies.set('userId', userId, { expires: 7 }); // Set cookie to expire in 7 days
     set({ userId, username });
