@@ -16,15 +16,19 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # Set your Node.js version here
+          node-version: '16'  # Using Node.js version 16
 
       # Install dependencies
       - name: Install Dependencies
         run: npm install
 
-      # Build your NX app
+      # Install Nx CLI globally to use Nx commands
+      - name: Install Nx CLI
+        run: npm install -g nx
+
+      # Build your Nx app
       - name: Build
-        run: npm run nx build operation-stacked-dashboard
+        run: nx build operation-stacked-dashboard
 
       # Deploy to S3
       - name: Deploy to S3
@@ -35,7 +39,7 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          SOURCE_DIR: 'dist/apps/operation-stacked-dashboard'  # Adjusted for NX workspace
+          SOURCE_DIR: 'dist/apps/operation-stacked-dashboard'  # Adjusted for Nx workspace structure
 
       # Invalidate CloudFront cache
       - name: Invalidate CloudFront Distribution
@@ -43,6 +47,6 @@ jobs:
         env:
           DISTRIBUTION: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
           PATHS: '/*'  # Invalidate all files
-          AWS_REGION: 'us-east-1'  # Set your AWS region here
+          AWS_REGION: 'us-east-1'
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
