@@ -32,6 +32,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
     const { credential } = response;
 
     try {
+      // @ts-ignore
       await Auth.federatedSignIn('google', { token: credential, expires_at: 3600 });
 
       const currentUser = await Auth.currentAuthenticatedUser();
@@ -49,6 +50,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
   };
 
   const { apiStatus, exec, error } = useApi(async (email: string, password: string) => {
+    // @ts-ignore
     const response = await userApi.apiAuthLoginPost({ email, password });
     console.log(response.data);
     navigate('/dashboard'); // Ensure this is the correct path

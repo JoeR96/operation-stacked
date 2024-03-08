@@ -22,8 +22,10 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
   const navigate = useNavigate();
   const { apiStatus, exec, error } = useApi(async (email: string, password: string) => {
     const response = await authApi.apiAuthLoginPost({ email, password }, {withCredentials:true});
+    // @ts-ignore
     const lol = response.data.data.userId
     console.log(lol)
+    // @ts-ignore
     setUserId(response.data.data.userId);
     navigate('/dashboard'); // Ensure this is the correct path
     return response.data;
@@ -43,7 +45,9 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
         console.log('settingStuf')
         const userId = await authUserApi.apiUserIdGetUserIdGet({withCredentials:true});
 
+        // @ts-ignore
         console.log(userId.data.userId)
+        // @ts-ignore
         setUserId(userId.data.userId);
         // Navigate to dashboard or other page as needed
         navigate('/dashboard');
