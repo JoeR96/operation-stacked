@@ -28,6 +28,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
   const [registrationMessage, setRegistrationMessage] = useState('');
   const userApi = new UserApi(); // Initialize your User API here
 
+  // @ts-ignore
   const handleGoogleSuccess = async (response) => {
     const { credential } = response;
 
@@ -35,6 +36,7 @@ const RegistrationForm: React.FC<RegistrationFormProps> = ({ onToggleForm }) => 
       // @ts-ignore
       await Auth.federatedSignIn('google', { token: credential, expires_at: 3600 });
 
+      // @ts-ignore
       const currentUser = await Auth.currentAuthenticatedUser();
       const cognitoUserId = currentUser.attributes.sub; // Cognito User ID
 

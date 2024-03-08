@@ -30,6 +30,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onToggleForm, authApi }) => {
     navigate('/dashboard'); // Ensure this is the correct path
     return response.data;
   });
+  // @ts-ignore
   const handleGoogleSuccess = async (response) => {
     console.log(response.credential)
     const idToken = response.credential; // The ID token from Google

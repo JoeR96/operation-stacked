@@ -8,8 +8,7 @@ import { barbell, cableMachine, dumbell, machine, smithMachine } from '@operatio
 import {
   Category,
   EquipmentType,
-  mapCategory,
-  mapEquipmentType
+  mapCategory
 } from '@operation-stacked/operation-stacked-shared-types';
 import { Button } from '@operation-stacked/ui-components';
 import { theme } from '@operation-stacked/shared-styles';
@@ -36,6 +35,8 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({
   const { userId } = useUserStore();
   const exerciseApi = new ExerciseApi();
 
+
+  // @ts-ignore
   const { data: exercises, isLoading, isError, error } = useQuery<Exercise[], Error>(
     ['exercises', userId],
     () => exerciseApi.exerciseUserIdAllGet(userId as string).then(response => response.data),
@@ -63,6 +64,7 @@ export const ExerciseTable: React.FC<ExerciseTableProps> = ({
 
   if (!groupedExercises || Object.keys(groupedExercises).length === 0) return <div>No exercises found</div>;
 
+  // @ts-ignore
   return (
     <Grid container spacing={2}>
       {Object.entries(groupedExercises).map(([category, exercisesInCategory], index) => (
