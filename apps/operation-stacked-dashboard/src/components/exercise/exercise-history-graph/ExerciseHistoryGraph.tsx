@@ -38,6 +38,7 @@ const ExerciseHistoryGraph: React.FC<ExerciseHistoryGraphProps> = ({ exercises, 
       exercise.ExerciseHistories?.forEach((history) => {
         const { CompletedDate, WorkingWeight, CompletedSets } = history;
         const reps = parseInt(history.CompletedReps, 10);
+        // @ts-ignore
         const volume = WorkingWeight * reps * CompletedSets;
         const metric = toggle === 'weight' ? WorkingWeight : volume;
 

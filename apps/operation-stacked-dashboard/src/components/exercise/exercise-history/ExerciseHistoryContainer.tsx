@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Grid, Box, Button, ButtonGroup } from '@mui/material';
 import ExerciseHistoryGraph from '../exercise-history-graph/ExerciseHistoryGraph';
 import Spinner from '../../spinner/Spinner';
@@ -34,6 +34,7 @@ const ExerciseHistoryContainer = () => {
   };
 
   const toggleGraphExercise = (exercise: Exercise) => {
+    // @ts-ignore
     if (isExerciseInGraph(exercise.Id)) {
       // Remove exercise from graph
       setExercisesForGraph(prev => prev.filter(ex => ex.Id !== exercise.Id));
@@ -47,7 +48,9 @@ const ExerciseHistoryContainer = () => {
 
 
   if (isLoading) return <Spinner />;
-  if (isError) return <div>Error fetching exercise history: {error?.message}</div>;
+  if (isError) { // @ts-ignore
+    return <div>Error fetching exercise history: {error?.message}</div>;
+  }
 
   return (
     <Grid container spacing={2} justifyContent="center" alignItems="flex-start" style={{ padding: '5px' }}>

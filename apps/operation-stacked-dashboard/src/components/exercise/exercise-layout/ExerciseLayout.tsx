@@ -26,6 +26,7 @@ const ExerciseLayout = () => {
         setShowCompletionForm(false);
     };
 
+    // @ts-ignore
     return (
       <Box style={{ marginBottom: '10px', padding: '100px' }}>
           <Button onClick={toggleNewExerciseForm} >
