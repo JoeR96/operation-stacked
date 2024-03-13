@@ -1,0 +1,25 @@
+name: Deploy to iOS Device
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Expo CLI
+        run: npm install -g expo-cli
+      - name: Authenticate with Expo
+        run: expo login -u ${{ secrets.EXPO_USERNAME }} -p ${{ secrets.EXPO_PASSWORD }}
+      - name: Build iOS app
+        run: expo build:ios --release-channel prod
+      - name: Upload app to Expo
+        run: expo upload:ios --release-channel prod --path ./ios.ipa
+      - name: Trigger OTA update
+        uses: retyui/expo-ota-action@v1
+        with:
+          expo_token: ${{ secrets.EXPO_TOKEN }}
+          release_channel: prod
