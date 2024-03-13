@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Operation Stacked Workout",
-    "version": "0.313"
+    "version": "0.315"
   },
   "paths": {
     "/equipment-stack/create": {
@@ -475,6 +475,29 @@
         }
       }
     },
+    "/exercise/{userId}/generate-basic-exercises": {
+      "get": {
+        "tags": [
+          "Exercise"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/exercise-history/{exerciseId}": {
       "get": {
         "tags": [
@@ -703,6 +726,197 @@
         "responses": {
           "200": {
             "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/session": {
+      "post": {
+        "tags": [
+          "Session"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Session"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Session"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Session"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionCreatedResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionCreatedResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionCreatedResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/session/{sessionId}/exercise": {
+      "post": {
+        "tags": [
+          "Session"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddExerciseToSessionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddExerciseToSessionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddExerciseToSessionRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/session/add-set": {
+      "post": {
+        "tags": [
+          "Session"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddSetRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddSetRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddSetRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/session/delete-set": {
+      "delete": {
+        "tags": [
+          "Session"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSetRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSetRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSetRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/session/{sessionId}": {
+      "get": {
+        "tags": [
+          "Session"
+        ],
+        "parameters": [
+          {
+            "name": "sessionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Session"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Session"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Session"
+                }
+              }
+            }
           }
         }
       }
@@ -1411,6 +1625,42 @@
   },
   "components": {
     "schemas": {
+      "AddExerciseToSessionRequest": {
+        "type": "object",
+        "properties": {
+          "SessionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ExerciseId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddSetRequest": {
+        "type": "object",
+        "properties": {
+          "SessionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ExerciseId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "Reps": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Weight": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
       "Category": {
         "enum": [
           0,
@@ -1652,6 +1902,24 @@
         },
         "additionalProperties": false
       },
+      "DeleteSetRequest": {
+        "type": "object",
+        "properties": {
+          "SessionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ExerciseId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "SetId": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "EquipmentStack": {
         "type": "object",
         "properties": {
@@ -1714,7 +1982,8 @@
           1,
           2,
           3,
-          4
+          4,
+          5
         ],
         "type": "integer",
         "format": "int32"
@@ -2031,29 +2300,121 @@
       "ProblemDetails": {
         "type": "object",
         "properties": {
-          "Type": {
+          "type": {
             "type": "string",
             "nullable": true
           },
-          "Title": {
+          "title": {
             "type": "string",
             "nullable": true
           },
-          "Status": {
+          "status": {
             "type": "integer",
             "format": "int32",
             "nullable": true
           },
-          "Detail": {
+          "detail": {
             "type": "string",
             "nullable": true
           },
-          "Instance": {
+          "instance": {
             "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": { }
+      },
+      "Session": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "UserId": {
+            "type": "string",
+            "nullable": true
+          },
+          "SessionStartDateTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "SessionName": {
+            "type": "string",
+            "nullable": true
+          },
+          "SessionExercises": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SessionExercise"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SessionCreatedResponse": {
+        "type": "object",
+        "properties": {
+          "sessionName": {
+            "type": "string",
+            "nullable": true
+          },
+          "SessionCreatedTime": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SessionExercise": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "Session": {
+            "$ref": "#/components/schemas/Session"
+          },
+          "SessionId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "ExerciseId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "Exercise": {
+            "$ref": "#/components/schemas/Exercise"
+          },
+          "Sets": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Set"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Set": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "Reps": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "Weight": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
       },
       "SetUsernameRequest": {
         "type": "object",
