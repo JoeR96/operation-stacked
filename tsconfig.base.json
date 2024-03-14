@@ -30,7 +30,8 @@
         "libs/shared-services/src/index.ts"
       ],
       "@operation-stacked/shared-styles": ["libs/shared-styles/src/index.ts"],
-      "@operation-stacked/ui-components": ["libs/ui-components/src/index.ts"]
+      "@operation-stacked/ui-components": ["libs/ui-components/src/index.ts"],
+      "shared-auth": ["libs/shared-auth/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -6,14 +6,18 @@
     "@aws-amplify/ui-react": "^6.1.5",
     "@emotion/react": "11.11.1",
     "@emotion/styled": "11.11.0",
+    "@expo/config": "^8.1.1",
+    "@expo/metro-config": "^0.10.0",
     "@mui/material": "^5.15.6",
     "@nrwl/web": "^17.2.8",
     "@nrwl/workspace": "^17.2.8",
+    "@react-native-google-signin/google-signin": "^11.0.0",
     "@react-oauth/google": "^0.12.1",
     "@swc/helpers": "~0.5.2",
     "amplify": "^0.0.11",
     "aws-amplify": "^6.0.19",
     "expo": "^50.0.11",
+    "expo-status-bar": "~1.11.1",
     "formik": "^2.4.5",
     "js-cookie": "^3.0.5",
     "node-fetch": "^3.3.2",
@@ -22,31 +26,35 @@
     "react-date-picker": "^10.6.0",
     "react-datepicker": "^5.1.0",
     "react-dom": "18.2.0",
+    "react-native": "^0.73.4",
     "react-query": "^3.39.3",
     "react-router-dom": "6.11.2",
     "recharts": "^2.12.0",
     "tslib": "^2.3.0",
     "yup": "^1.3.3",
     "zustand": "^4.5.0",
-    "expo-status-bar": "~1.11.1",
-    "react-native": "0.73.4",
     "@babel/core": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
     "@emotion/babel-plugin": "11.11.0",
     "@nrwl/jest": "^17.2.8",
     "@nrwl/react": "^17.2.8",
-    "@nrwl/react-native": "^17.2.8",
+    "@nrwl/react-native": "^17.3.2",
+    "@nx/cypress": "17.2.8",
     "@nx/devkit": "17.2.8",
     "@nx/eslint": "17.2.8",
     "@nx/eslint-plugin": "17.2.8",
-    "@nx/jest": "17.2.8",
-    "@nx/js": "17.2.8",
+    "@nx/jest": "18.0.8",
+    "@nx/js": "18.0.8",
     "@nx/playwright": "17.2.8",
     "@nx/react": "17.2.8",
+    "@nx/react-native": "18.0.8",
     "@nx/storybook": "17.2.8",
     "@nx/vite": "17.2.8",
     "@nx/web": "17.2.8",
     "@playwright/test": "^1.41.1",
+    "@react-native-community/cli-platform-android": "12.3.0",
+    "@react-native/babel-preset": "^0.73.18",
+    "@react-native/metro-config": "^0.73.2",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-interactions": "^7.5.3",
     "@storybook/core-server": "^7.5.3",
@@ -54,15 +62,17 @@
     "@storybook/react-vite": "^7.5.3",
     "@storybook/test-runner": "^0.13.0",
     "@storybook/testing-library": "^0.2.2",
-    "@swc-node/register": "~1.6.7",
+    "@swc-node/register": "~1.8.0",
     "@swc/cli": "~0.1.62",
     "@swc/core": "~1.3.85",
     "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/jest-native": "~5.4.3",
     "@testing-library/react": "^14.2.1",
+    "@testing-library/react-native": "~12.4.2",
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^29.5.11",
     "@types/node": "18.16.9",
-    "@types/react": "18.2.33",
+    "@types/react": "~18.2.45",
     "@types/react-datepicker": "^4.19.5",
     "@types/react-dom": "18.2.14",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
@@ -72,8 +82,10 @@
     "@vitest/coverage-v8": "~0.34.6",
     "@vitest/ui": "~0.34.6",
     "babel-jest": "^29.7.0",
+    "cypress": "^13.0.0",
     "eslint": "~8.48.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-cypress": "^2.13.4",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jsx-a11y": "6.7.1",
     "eslint-plugin-playwright": "^0.15.3",
@@ -81,11 +93,16 @@
     "eslint-plugin-react-hooks": "4.6.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.4.1",
+    "jest-react-native": "18.0.0",
     "jsdom": "~22.1.0",
     "msw-storybook-addon": "^1.10.0",
     "nx": "17.2.8",
     "playwright": "^1.41.1",
     "prettier": "^2.6.2",
+    "react-native-svg": "14.1.0",
+    "react-native-svg-transformer": "1.2.0",
+    "react-native-web": "^0.19.9",
+    "react-test-renderer": "18.2.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.1",
     "typescript": "~5.2.2",
@@ -118,12 +135,36 @@
     ],
     "@operation-stacked/ui-components": [
       "libs/ui-components/src/index.ts"
+    ],
+    "shared-auth": [
+      "libs/shared-auth/src/index.ts"
     ]
   },
-  "nxJsonPlugins": [],
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/react-native/plugin",
+      "options": {
+        "startTargetName": "start",
+        "podInstallTargetName": "pod-install",
+        "bundleTargetName": "bundle",
+        "runIosTargetName": "run-ios",
+        "runAndroidTargetName": "run-android",
+        "buildIosTargetName": "build-ios",
+        "buildAndroidTargetName": "build-android",
+        "syncDepsTargetName": "sync-deps",
+        "upgradeTargetname": "upgrade"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
   "pluginsConfig": {
     "@nx/js": {
-      "analyzeSourceFiles": false
+      "analyzeSourceFiles": true
     }
   },
   "fileMap": {
@@ -171,53 +212,199 @@
         },
         {
           "file": "libs/operation-stacked-test-lib/vite.config.ts",
-          "hash": "9108678531236795902"
+          "hash": "9108678531236795902",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
         }
       ],
-      "operation-stacked-shared-types": [
+      "shared-services": [
         {
-          "file": "libs/operation-stacked-shared-types/.babelrc",
-          "hash": "2946678488919325452"
+          "file": "libs/shared-services/.babelrc",
+          "hash": "12229791027711577977"
         },
         {
-          "file": "libs/operation-stacked-shared-types/.eslintrc.json",
+          "file": "libs/shared-services/.eslintrc.json",
           "hash": "11012487992710232822"
         },
         {
-          "file": "libs/operation-stacked-shared-types/README.md",
-          "hash": "8170770966292916377"
+          "file": "libs/shared-services/README.md",
+          "hash": "11985231001414063256"
         },
         {
-          "file": "libs/operation-stacked-shared-types/package.json",
-          "hash": "10488029484144568538"
+          "file": "libs/shared-services/config/environment.dev.ts",
+          "hash": "224505662428182599"
         },
         {
-          "file": "libs/operation-stacked-shared-types/project.json",
-          "hash": "12977413694184130815"
+          "file": "libs/shared-services/config/environment.prod.ts",
+          "hash": "16002801581693281102"
         },
         {
-          "file": "libs/operation-stacked-shared-types/src/index.ts",
-          "hash": "17726869874083022085"
+          "file": "libs/shared-services/config/environment.test.ts",
+          "hash": "14969927059608022940"
         },
         {
-          "file": "libs/operation-stacked-shared-types/src/lib/operation-stacked-shared-types.tsx",
-          "hash": "7402625623407751847"
+          "file": "libs/shared-services/jest.config.ts",
+          "hash": "9846626377464856434"
         },
         {
-          "file": "libs/operation-stacked-shared-types/tsconfig.json",
-          "hash": "6996585143515498368"
+          "file": "libs/shared-services/package.json",
+          "hash": "12268300824854350557"
         },
         {
-          "file": "libs/operation-stacked-shared-types/tsconfig.lib.json",
+          "file": "libs/shared-services/project.json",
+          "hash": "10322414130604274430"
+        },
+        {
+          "file": "libs/shared-services/src/index.ts",
+          "hash": "13039857376845062655"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/.gitignore",
+          "hash": "14031326617291468971"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/.npmignore",
+          "hash": "9470206609760406689"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator-ignore",
+          "hash": "5921108589004068994"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator/FILES",
+          "hash": "14844632436296116986"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator/VERSION",
+          "hash": "16136251632416930662"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/api.ts",
+          "hash": "6927624817358407406",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/base.ts",
+          "hash": "9660359837420387877",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/common.ts",
+          "hash": "6307702009395972564",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/configuration.ts",
+          "hash": "12803565344265064590"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/git_push.sh",
+          "hash": "257268719382818012"
+        },
+        {
+          "file": "libs/shared-services/src/lib/auth-api/index.ts",
+          "hash": "10400214793769710701"
+        },
+        {
+          "file": "libs/shared-services/src/lib/shared-services.spec.tsx",
+          "hash": "16302640645570982473",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/shared-services/src/lib/shared-services.tsx",
+          "hash": "11100221613352283721",
+          "deps": [
+            "npm:@emotion/styled"
+          ]
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.gitignore",
+          "hash": "14031326617291468971"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.npmignore",
+          "hash": "9470206609760406689"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator-ignore",
+          "hash": "5921108589004068994"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator/FILES",
+          "hash": "14844632436296116986"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator/VERSION",
+          "hash": "16136251632416930662"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/api.ts",
+          "hash": "16664727333302757425",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/base.ts",
+          "hash": "12798794074354386969",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/common.ts",
+          "hash": "5170460070719186832",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/configuration.ts",
+          "hash": "14203554222851135130"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/git_push.sh",
+          "hash": "257268719382818012"
+        },
+        {
+          "file": "libs/shared-services/src/lib/workout-api/index.ts",
+          "hash": "9237846337947469553"
+        },
+        {
+          "file": "libs/shared-services/tsconfig.json",
+          "hash": "13563888094802511912"
+        },
+        {
+          "file": "libs/shared-services/tsconfig.lib.json",
           "hash": "11908890256657676622"
         },
         {
-          "file": "libs/operation-stacked-shared-types/tsconfig.spec.json",
-          "hash": "15943385144407153049"
+          "file": "libs/shared-services/tsconfig.spec.json",
+          "hash": "6514620907549802163"
         },
         {
-          "file": "libs/operation-stacked-shared-types/vite.config.ts",
-          "hash": "11847239989883420017"
+          "file": "libs/shared-services/vite.config.ts",
+          "hash": "17007967619637771603",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
         }
       ],
       "shared-images": [
@@ -287,83 +474,14 @@
         },
         {
           "file": "libs/shared-images/vite.config.ts",
-          "hash": "12138921279350350710"
-        }
-      ],
-      "operation-stacked-dashboard-e2e": [
-        {
-          "file": "apps/operation-stacked-dashboard-e2e/.eslintrc.json",
-          "hash": "632147010597293032"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard-e2e/Dockerfile",
-          "hash": "4564862022976967195"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard-e2e/docker-compose.yml",
-          "hash": "3122741200087295698"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard-e2e/playwright.config.ts",
-          "hash": "12916339062508038219"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard-e2e/project.json",
-          "hash": "18190925588993572420"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard-e2e/src/example.spec.ts",
-          "hash": "10815747871621126628"
-        }
-      ],
-      "shared-openapis": [
-        {
-          "file": "libs/shared-openapis/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/shared-openapis/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "libs/shared-openapis/README.md",
-          "hash": "3940964983647289644"
-        },
-        {
-          "file": "libs/shared-openapis/package.json",
-          "hash": "14437022512711024974"
-        },
-        {
-          "file": "libs/shared-openapis/project.json",
-          "hash": "655716736255416248"
-        },
-        {
-          "file": "libs/shared-openapis/src/index.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/shared-openapis/src/lib/authSwagger.json",
-          "hash": "1656356395372797514"
-        },
-        {
-          "file": "libs/shared-openapis/src/lib/workoutSwagger.json",
-          "hash": "15582210825048937172"
-        },
-        {
-          "file": "libs/shared-openapis/tsconfig.json",
-          "hash": "6996585143515498368"
-        },
-        {
-          "file": "libs/shared-openapis/tsconfig.lib.json",
-          "hash": "11908890256657676622"
-        },
-        {
-          "file": "libs/shared-openapis/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "libs/shared-openapis/vite.config.ts",
-          "hash": "17366837681604629351"
+          "hash": "12138921279350350710",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
         }
       ],
       "ui-components": [
@@ -397,27 +515,42 @@
         },
         {
           "file": "libs/ui-components/src/lib/Button/Button.tsx",
-          "hash": "4867910467823691200"
+          "hash": "6326928828808408079",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "shared-styles"
+          ]
         },
         {
           "file": "libs/ui-components/src/lib/Button/index.ts",
-          "hash": "10238307972443149507"
+          "hash": "1956462143047153242"
         },
         {
           "file": "libs/ui-components/src/lib/TextField/TextField.tsx",
-          "hash": "11347611696684608845"
+          "hash": "15954198192661495074",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
         },
         {
           "file": "libs/ui-components/src/lib/TextField/index.ts",
-          "hash": "7250052612309996995"
+          "hash": "10020908021807251283"
         },
         {
           "file": "libs/ui-components/src/lib/ui-components.spec.tsx",
-          "hash": "16554039707309445415"
+          "hash": "16554039707309445415",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
         },
         {
           "file": "libs/ui-components/src/lib/ui-components.tsx",
-          "hash": "10921626305687638144"
+          "hash": "10921626305687638144",
+          "deps": [
+            "npm:@emotion/styled"
+          ]
         },
         {
           "file": "libs/ui-components/tsconfig.json",
@@ -433,511 +566,127 @@
         },
         {
           "file": "libs/ui-components/vite.config.ts",
-          "hash": "9601000619485963806"
+          "hash": "9601000619485963806",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
         }
       ],
-      "operation-stacked-dashboard": [
+      "shared-openapis": [
         {
-          "file": "apps/operation-stacked-dashboard/.eslintrc.json",
+          "file": "libs/shared-openapis/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/shared-openapis/.eslintrc.json",
           "hash": "11012487992710232822"
         },
         {
-          "file": "apps/operation-stacked-dashboard/.gitignore",
-          "hash": "2954339993390735028"
+          "file": "libs/shared-openapis/README.md",
+          "hash": "3940964983647289644"
         },
         {
-          "file": "apps/operation-stacked-dashboard/.storybook/main.ts",
-          "hash": "4148678684349403656"
+          "file": "libs/shared-openapis/package.json",
+          "hash": "14437022512711024974"
         },
         {
-          "file": "apps/operation-stacked-dashboard/.storybook/mocks/browser.ts",
-          "hash": "6464618966275142383"
+          "file": "libs/shared-openapis/project.json",
+          "hash": "655716736255416248"
         },
         {
-          "file": "apps/operation-stacked-dashboard/.storybook/mocks/handlers.ts",
-          "hash": "12511279992095088992"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/.storybook/mocks/mockExercises.ts",
-          "hash": "14493672462738274710"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/.storybook/mocks/useUserStore.ts",
-          "hash": "8815995016540654447"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/.storybook/preview.tsx",
-          "hash": "11258704617632455189"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/.storybook/storybook-preview.css",
-          "hash": "8214936497566430858"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/Dockerfile",
-          "hash": "9113319022057377983"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/.config/project-config.json",
-          "hash": "10034129960889045319"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/README.md",
-          "hash": "9213201827306025567"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/backend/auth/operationstackeddash8ef6bbb7/cli-inputs.json",
-          "hash": "12613296885888641380"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/backend/backend-config.json",
-          "hash": "14398664085131929680"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/backend/tags.json",
-          "hash": "344355778499095363"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/backend/types/amplify-dependent-resources-ref.d.ts",
-          "hash": "16339382008075331945"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/cli.json",
-          "hash": "2035936060670704392"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/hooks/README.md",
-          "hash": "4491822230140534369"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/amplify/team-provider-info.json",
-          "hash": "17249566063306979717"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/cert.pem",
-          "hash": "16216675645226792374"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/index.html",
-          "hash": "3937443157413076049"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/key.pem",
-          "hash": "10555017020700826623"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/mockServiceWorker.js",
-          "hash": "8037870577926689062"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/project.json",
-          "hash": "6769526926255161719"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/app/app.tsx",
-          "hash": "9040303277763879733"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/assets/.gitkeep",
+          "file": "libs/shared-openapis/src/index.ts",
           "hash": "3244421341483603138"
         },
         {
-          "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.spec.tsx",
-          "hash": "17838279532738316550"
+          "file": "libs/shared-openapis/src/lib/authSwagger.json",
+          "hash": "10012393990371595899"
         },
         {
-          "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.stories.tsx",
-          "hash": "9897718313835335107"
+          "file": "libs/shared-openapis/src/lib/workoutSwagger.json",
+          "hash": "2458695770197263457"
         },
         {
-          "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.tsx",
-          "hash": "3572149974679065414"
+          "file": "libs/shared-openapis/tsconfig.json",
+          "hash": "6996585143515498368"
         },
         {
-          "file": "apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.stories.tsx",
-          "hash": "16666578156660050349"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.tsx",
-          "hash": "10772274038178991382"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/card-splash-screen/CardSplashScreen.tsx",
-          "hash": "1226612682050534481"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/card-splash-screen/CenteredWelcomeCard.tsx",
-          "hash": "5711765854486335360"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/card/CardComponent.stories.tsx",
-          "hash": "9925923233287899954"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/card/CardComponent.tsx",
-          "hash": "565574084784097164"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/circular-progress-bar/CircularProgressBar.stories.tsx",
-          "hash": "1059909164450795289"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/circular-progress-bar/CircularProgressBar.tsx",
-          "hash": "9584729801571804622"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/dashboard/Dashboard.tsx",
-          "hash": "3276589763572194424"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-button-layout/DashboardButtonLayout.stories.tsx",
-          "hash": "8144661245714158619"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-button-layout/DashboardButtonLayout.tsx",
-          "hash": "18013011745351974153"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-header/DashboardHeader.stories.tsx",
-          "hash": "11904897042577251975"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-header/DashboardHeader.tsx",
-          "hash": "13029733973712012019"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-main-content/DashboardMainContent..stories.tsx",
-          "hash": "2418799166504531726"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-main-content/DashboardMainContent.tsx",
-          "hash": "1612790520918534731"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-completion-form/ExerciseCompletionForm.stories.tsx",
-          "hash": "15999782299636276560"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-completion-form/ExerciseCompletionForm.tsx",
-          "hash": "3878296499315029289"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-form/ExerciseForm.stories.tsx",
-          "hash": "5835035138864334165"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-form/ExerciseForm.tsx",
-          "hash": "8194015068485655982"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history-graph/ExerciseHistoryGraph.stories.tsx",
-          "hash": "8666052620134459277"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history-graph/ExerciseHistoryGraph.tsx",
-          "hash": "7793274106369166929"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history/ExerciseHistoryContainer.stories.tsx",
-          "hash": "14166737701346811073"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history/ExerciseHistoryContainer.tsx",
-          "hash": "1619574572747145621"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history/ExerciseHistoryView.stories.tsx",
-          "hash": "2821425599138592783"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history/ExerciseHistoryView.tsx",
-          "hash": "10207576548123859731"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-layout/ExerciseLayout.stories.tsx",
-          "hash": "12437802127302104620"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-layout/ExerciseLayout.tsx",
-          "hash": "4312691682520338212"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-table/ExerciseTable.spec.tsx",
-          "hash": "15374545483861175209"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-table/ExerciseTable.stories.tsx",
-          "hash": "4119048223617558698"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-table/ExerciseTable.tsx",
-          "hash": "14452207991786405641"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/header/Header.stories.tsx",
-          "hash": "11168693439493457203"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/header/Header.tsx",
-          "hash": "10153208553797716503"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/header/HeaderWrapper.tsx",
-          "hash": "13331498094874503931"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/spinner/Spinner.stories.tsx",
-          "hash": "6270383533802303114"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/spinner/Spinner.tsx",
-          "hash": "18191629812244312658"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/spinner/spinner.css",
-          "hash": "17152763521437324708"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/username/Username.stories.tsx",
-          "hash": "877351243476145356"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/components/username/Username.tsx",
-          "hash": "2207605389701665360"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/context/authContext.tsx",
-          "hash": "3825903924456940276"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/environments/environment.dev.ts",
-          "hash": "3321031889991214668"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/environments/environment.prod.ts",
-          "hash": "16002735754004218215"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/main.tsx",
-          "hash": "11012906370121147608"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/pages/dashboard/DashboardPage.stories.tsx",
-          "hash": "13126798687388305557"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/pages/dashboard/DashboardPage.tsx",
-          "hash": "2291312166067874984"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/pages/exercise-history/ExerciseHistoryPage.tsx",
-          "hash": "6117105442137764491"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/pages/exercise/ExercisePage.stories.tsx",
-          "hash": "11161504506353325801"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/pages/exercise/ExercisePage.tsx",
-          "hash": "7966457413244637214"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/pages/login/LoginPage.stories.tsx",
-          "hash": "13559056860066942797"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/pages/login/LoginPage.tsx",
-          "hash": "8259204669529972716"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/state/authStore.ts",
-          "hash": "2171651184817812557"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/state/exerciseState.tsx",
-          "hash": "16126259005532642355"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/src/state/userState.ts",
-          "hash": "10918805934641554070"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/tsconfig.app.json",
-          "hash": "12915898107119045980"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/tsconfig.json",
-          "hash": "1286836882576921350"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/tsconfig.spec.json",
-          "hash": "9472099605191632308"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/tsconfig.storybook.json",
-          "hash": "9877693811502968150"
-        },
-        {
-          "file": "apps/operation-stacked-dashboard/vite.config.ts",
-          "hash": "17486956260382039973"
-        }
-      ],
-      "shared-services": [
-        {
-          "file": "libs/shared-services/.babelrc",
-          "hash": "12229791027711577977"
-        },
-        {
-          "file": "libs/shared-services/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "libs/shared-services/README.md",
-          "hash": "11985231001414063256"
-        },
-        {
-          "file": "libs/shared-services/config/environment.dev.ts",
-          "hash": "10507200404492569312"
-        },
-        {
-          "file": "libs/shared-services/config/environment.prod.ts",
-          "hash": "10075385094906808726"
-        },
-        {
-          "file": "libs/shared-services/config/environment.test.ts",
-          "hash": "4385155288503751385"
-        },
-        {
-          "file": "libs/shared-services/jest.config.ts",
-          "hash": "9846626377464856434"
-        },
-        {
-          "file": "libs/shared-services/package.json",
-          "hash": "12268300824854350557"
-        },
-        {
-          "file": "libs/shared-services/project.json",
-          "hash": "10322414130604274430"
-        },
-        {
-          "file": "libs/shared-services/src/index.ts",
-          "hash": "13039857376845062655"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/.gitignore",
-          "hash": "14031326617291468971"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/.npmignore",
-          "hash": "9470206609760406689"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator-ignore",
-          "hash": "5921108589004068994"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator/FILES",
-          "hash": "6742156222587047428"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/.openapi-generator/VERSION",
-          "hash": "16136251632416930662"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/api.ts",
-          "hash": "6927624817358407406"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/base.ts",
-          "hash": "9660359837420387877"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/common.ts",
-          "hash": "6307702009395972564"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/configuration.ts",
-          "hash": "12803565344265064590"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/git_push.sh",
-          "hash": "257268719382818012"
-        },
-        {
-          "file": "libs/shared-services/src/lib/auth-api/index.ts",
-          "hash": "10400214793769710701"
-        },
-        {
-          "file": "libs/shared-services/src/lib/shared-services.spec.tsx",
-          "hash": "16302640645570982473"
-        },
-        {
-          "file": "libs/shared-services/src/lib/shared-services.tsx",
-          "hash": "11100221613352283721"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/.gitignore",
-          "hash": "14031326617291468971"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/.npmignore",
-          "hash": "9470206609760406689"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator-ignore",
-          "hash": "5921108589004068994"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator/FILES",
-          "hash": "6742156222587047428"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/.openapi-generator/VERSION",
-          "hash": "16136251632416930662"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/api.ts",
-          "hash": "15362024690151626206"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/base.ts",
-          "hash": "17367050433483184886"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/common.ts",
-          "hash": "15172313722508721299"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/configuration.ts",
-          "hash": "808890437017230701"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/git_push.sh",
-          "hash": "257268719382818012"
-        },
-        {
-          "file": "libs/shared-services/src/lib/workout-api/index.ts",
-          "hash": "7014612568221506556"
-        },
-        {
-          "file": "libs/shared-services/tsconfig.json",
-          "hash": "13563888094802511912"
-        },
-        {
-          "file": "libs/shared-services/tsconfig.lib.json",
+          "file": "libs/shared-openapis/tsconfig.lib.json",
           "hash": "11908890256657676622"
         },
         {
-          "file": "libs/shared-services/tsconfig.spec.json",
-          "hash": "6514620907549802163"
+          "file": "libs/shared-openapis/tsconfig.spec.json",
+          "hash": "15943385144407153049"
         },
         {
-          "file": "libs/shared-services/vite.config.ts",
-          "hash": "17007967619637771603"
+          "file": "libs/shared-openapis/vite.config.ts",
+          "hash": "17366837681604629351",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "operation-stacked-shared-types": [
+        {
+          "file": "libs/operation-stacked-shared-types/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/README.md",
+          "hash": "8170770966292916377"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/package.json",
+          "hash": "10488029484144568538"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/project.json",
+          "hash": "12977413694184130815"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/src/index.ts",
+          "hash": "17726869874083022085"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/src/lib/operation-stacked-shared-types.tsx",
+          "hash": "7402625623407751847",
+          "deps": [
+            "shared-services"
+          ]
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/tsconfig.json",
+          "hash": "6996585143515498368"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "libs/operation-stacked-shared-types/vite.config.ts",
+          "hash": "11847239989883420017",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
         }
       ],
       "api-hooks": [
@@ -967,19 +716,28 @@
         },
         {
           "file": "libs/api-hooks/src/lib/apiClient.ts",
-          "hash": "3863636652458132944"
+          "hash": "12359804693478855100",
+          "deps": [
+            "npm:axios"
+          ]
         },
         {
           "file": "libs/api-hooks/src/lib/apiStatus.ts",
-          "hash": "6922749566209880143"
+          "hash": "13538772125258907930"
         },
         {
           "file": "libs/api-hooks/src/lib/hooks/useApi.ts",
-          "hash": "1426230801566270460"
+          "hash": "12874769632793212618",
+          "deps": [
+            "npm:react"
+          ]
         },
         {
           "file": "libs/api-hooks/src/lib/hooks/useApiStatus.ts",
-          "hash": "1234313099486028432"
+          "hash": "12918655321694395752",
+          "deps": [
+            "npm:react"
+          ]
         },
         {
           "file": "libs/api-hooks/tsconfig.json",
@@ -995,7 +753,1065 @@
         },
         {
           "file": "libs/api-hooks/vite.config.ts",
-          "hash": "4111538737366750844"
+          "hash": "4111538737366750844",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "operation-stacked-dashboard": [
+        {
+          "file": "apps/operation-stacked-dashboard/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/main.ts",
+          "hash": "4148678684349403656",
+          "deps": [
+            "npm:@storybook/react-vite"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/mocks/browser.ts",
+          "hash": "13687439085856725028",
+          "deps": [
+            "npm:msw"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/mocks/handlers.ts",
+          "hash": "9484810582099184093",
+          "deps": [
+            "npm:msw"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/mocks/mockExercises.ts",
+          "hash": "9644922056017269973",
+          "deps": [
+            "shared-services"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/mocks/useUserStore.ts",
+          "hash": "9431167528396867077"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/preview.tsx",
+          "hash": "15189044337277620958",
+          "deps": [
+            "npm:msw-storybook-addon",
+            "npm:react-query",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/.storybook/storybook-preview.css",
+          "hash": "6810057317224940622"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/Dockerfile",
+          "hash": "8612646808636437746"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/index.html",
+          "hash": "3937443157413076049"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/mockServiceWorker.js",
+          "hash": "8037870577926689062"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/project.json",
+          "hash": "6769526926255161719"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/app/app.tsx",
+          "hash": "9040303277763879733",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom",
+            "npm:@react-oauth/google"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.spec.tsx",
+          "hash": "11207837992300082881",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.stories.tsx",
+          "hash": "16826751835762861971",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:react-router-dom",
+            "npm:@storybook/testing-library",
+            "npm:@storybook/jest"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/LoginForm/LoginForm.tsx",
+          "hash": "5483477098370935189",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-router-dom",
+            "ui-components",
+            "api-hooks",
+            "shared-services",
+            "shared-styles",
+            "npm:@react-oauth/google"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.stories.tsx",
+          "hash": "15866056700512279362",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/RegistrationForm/RegistrationForm.tsx",
+          "hash": "9820375985113937520",
+          "deps": [
+            "npm:react",
+            "npm:formik",
+            "npm:yup",
+            "npm:@mui/material",
+            "npm:react-router-dom",
+            "api-hooks",
+            "ui-components",
+            "npm:@react-oauth/google",
+            "shared-services"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/card-splash-screen/CardSplashScreen.tsx",
+          "hash": "18213049154051663920",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/card-splash-screen/CenteredWelcomeCard.tsx",
+          "hash": "2853988277930748039",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/card/CardComponent.stories.tsx",
+          "hash": "3594424097319108322",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/card/CardComponent.tsx",
+          "hash": "5754711374195328795",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "shared-styles"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/circular-progress-bar/CircularProgressBar.stories.tsx",
+          "hash": "18249025775341609686",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/circular-progress-bar/CircularProgressBar.tsx",
+          "hash": "10121150754126017996",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-circular-progressbar",
+            "shared-styles"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/dashboard/Dashboard.tsx",
+          "hash": "10434238620089707299",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-button-layout/DashboardButtonLayout.stories.tsx",
+          "hash": "16638425575142601667",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-button-layout/DashboardButtonLayout.tsx",
+          "hash": "7383633532879949094",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-router-dom",
+            "ui-components"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-header/DashboardHeader.stories.tsx",
+          "hash": "7059625498656868961",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-header/DashboardHeader.tsx",
+          "hash": "1400414547385234770",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "shared-images"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-main-content/DashboardMainContent..stories.tsx",
+          "hash": "2035041387162645926",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/dashboard/dashboard-main-content/DashboardMainContent.tsx",
+          "hash": "1521602739409859708",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-completion-form/ExerciseCompletionForm.stories.tsx",
+          "hash": "14537641514914316280",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-completion-form/ExerciseCompletionForm.tsx",
+          "hash": "11027377164041369490",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-datepicker",
+            "ui-components",
+            "shared-services",
+            "shared-styles"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-form/ExerciseForm.stories.tsx",
+          "hash": "15140928621717936354",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-form/ExerciseForm.tsx",
+          "hash": "13081899322847781600",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "shared-styles",
+            "api-hooks",
+            "operation-stacked-shared-types",
+            "shared-services",
+            "ui-components"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history-graph/ExerciseHistoryGraph.stories.tsx",
+          "hash": "10423753650874850199",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "shared-services"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history-graph/ExerciseHistoryGraph.tsx",
+          "hash": "9353164155337898311",
+          "deps": [
+            "npm:react",
+            "npm:recharts",
+            "shared-services",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history/ExerciseHistoryContainer.stories.tsx",
+          "hash": "17119568781765521208",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:react-query"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history/ExerciseHistoryContainer.tsx",
+          "hash": "7981894314924567495",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "shared-services",
+            "npm:react-query"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history/ExerciseHistoryView.stories.tsx",
+          "hash": "16254158405373083719",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-history/ExerciseHistoryView.tsx",
+          "hash": "12228067294559912724",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-query",
+            "shared-services",
+            "shared-styles",
+            "operation-stacked-shared-types"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-layout/ExerciseLayout.stories.tsx",
+          "hash": "15009108448786400466",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-layout/ExerciseLayout.tsx",
+          "hash": "4782061636541700981",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "shared-services",
+            "ui-components"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-table/ExerciseTable.spec.tsx",
+          "hash": "5892438110135765421",
+          "deps": [
+            "npm:vitest",
+            "npm:@testing-library/react",
+            "npm:react-query",
+            "shared-services",
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-table/ExerciseTable.stories.tsx",
+          "hash": "15565765252282430322",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/exercise/exercise-table/ExerciseTable.tsx",
+          "hash": "5073198387529238584",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-query",
+            "shared-services",
+            "shared-images",
+            "operation-stacked-shared-types",
+            "ui-components",
+            "shared-styles"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/header/Header.stories.tsx",
+          "hash": "1350635566302905771",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/header/Header.tsx",
+          "hash": "10201414964649771554",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-router-dom",
+            "shared-styles"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/header/HeaderWrapper.tsx",
+          "hash": "12919539441109980262",
+          "deps": [
+            "npm:react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/spinner/Spinner.stories.tsx",
+          "hash": "12053658779384912302",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/spinner/Spinner.tsx",
+          "hash": "1820815743352536907",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/spinner/spinner.css",
+          "hash": "9497506437931597320"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/username/Username.stories.tsx",
+          "hash": "17019224938493866334",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:msw"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/components/username/Username.tsx",
+          "hash": "11892939230064174211",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "npm:react-query",
+            "shared-services",
+            "ui-components"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/context/authContext.tsx",
+          "hash": "18443585398489997443",
+          "deps": [
+            "npm:react",
+            "shared-services"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/environments/environment.dev.ts",
+          "hash": "10348542452236130259"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/environments/environment.prod.ts",
+          "hash": "14009297926756918331"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/main.tsx",
+          "hash": "11012906370121147608",
+          "deps": [
+            "npm:react",
+            "npm:react-dom",
+            "npm:react-router-dom",
+            "shared-styles",
+            "npm:react-query"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/pages/dashboard/DashboardPage.stories.tsx",
+          "hash": "14083019831753423109",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react",
+            "npm:react-router-dom"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/pages/dashboard/DashboardPage.tsx",
+          "hash": "8984237235154210669",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/pages/exercise-history/ExerciseHistoryPage.tsx",
+          "hash": "10847668746509569218",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/pages/exercise/ExercisePage.stories.tsx",
+          "hash": "14507317791812183444",
+          "deps": [
+            "npm:react",
+            "npm:@storybook/react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/pages/exercise/ExercisePage.tsx",
+          "hash": "5582134656679713570",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/pages/login/LoginPage.stories.tsx",
+          "hash": "14694121644843954208",
+          "deps": [
+            "npm:@storybook/react",
+            "npm:@storybook/testing-library",
+            "npm:@testing-library/user-event",
+            "npm:react-router-dom",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/pages/login/LoginPage.tsx",
+          "hash": "739200826772427352",
+          "deps": [
+            "shared-images",
+            "shared-services",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/state/authStore.ts",
+          "hash": "7994344980238108444",
+          "deps": [
+            "npm:zustand",
+            "npm:js-cookie"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/state/exerciseState.tsx",
+          "hash": "8657003074095862898",
+          "deps": [
+            "npm:zustand",
+            "shared-services"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/src/state/userState.ts",
+          "hash": "97259911391067144",
+          "deps": [
+            "npm:zustand"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/tsconfig.app.json",
+          "hash": "12915898107119045980"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/tsconfig.json",
+          "hash": "1286836882576921350"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/tsconfig.spec.json",
+          "hash": "9472099605191632308"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/tsconfig.storybook.json",
+          "hash": "9877693811502968150"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard/vite.config.ts",
+          "hash": "17486956260382039973",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite",
+            "npm:vite-plugin-mkcert"
+          ]
+        }
+      ],
+      "operation-stacked-dashboard-e2e": [
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/Dockerfile",
+          "hash": "17021969965573652010"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/docker-compose.yml",
+          "hash": "17748314876491346853"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/playwright.config.ts",
+          "hash": "12916339062508038219",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/project.json",
+          "hash": "18190925588993572420"
+        },
+        {
+          "file": "apps/operation-stacked-dashboard-e2e/src/example.spec.ts",
+          "hash": "10815747871621126628",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        }
+      ],
+      "operation-stacked-native": [
+        {
+          "file": "apps/operation-stacked-native/.babelrc.js",
+          "hash": "16687177253134695009"
+        },
+        {
+          "file": "apps/operation-stacked-native/.eslintrc.json",
+          "hash": "4314008619601461772"
+        },
+        {
+          "file": "apps/operation-stacked-native/Gemfile",
+          "hash": "1957400604555329275"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/build.gradle",
+          "hash": "8945912971328467658"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/debug.keystore",
+          "hash": "5037686243849261810"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/proguard-rules.pro",
+          "hash": "13814197385154279786"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/androidTest/java/com/operationstackednative/DetoxTest.java",
+          "hash": "9829373689939569916"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/debug/AndroidManifest.xml",
+          "hash": "6240243292074074294"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/AndroidManifest.xml",
+          "hash": "7079440948961830635"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/java/com/operationstackednative/MainActivity.kt",
+          "hash": "601107040627118709"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/java/com/operationstackednative/MainApplication.kt",
+          "hash": "15895933552608283533"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/drawable/rn_edit_text_material.xml",
+          "hash": "617140720749664772"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-hdpi/ic_launcher.png",
+          "hash": "10788509195642110029"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+          "hash": "14348562046770238248"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-mdpi/ic_launcher.png",
+          "hash": "328692529308011025"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+          "hash": "11802043336826859502"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+          "hash": "13006206334539413900"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+          "hash": "1812825738055967771"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+          "hash": "6104457872863500683"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+          "hash": "2478168592410677995"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+          "hash": "12283149652938275290"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+          "hash": "7126668675123994836"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/values/strings.xml",
+          "hash": "11849756631988019614"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/values/styles.xml",
+          "hash": "14052910750539201041"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/app/src/main/res/xml/network_security_config.xml",
+          "hash": "7470100900868657300"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/build.gradle",
+          "hash": "7395773396094635710"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/gradle.properties",
+          "hash": "17172799516360292792"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/gradle/wrapper/gradle-wrapper.jar",
+          "hash": "11064621541907778082"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/gradle/wrapper/gradle-wrapper.properties",
+          "hash": "11373314242672843943"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/gradlew",
+          "hash": "63851577207042696"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/gradlew.bat",
+          "hash": "18278234324834608139"
+        },
+        {
+          "file": "apps/operation-stacked-native/android/settings.gradle",
+          "hash": "7003618588874609405"
+        },
+        {
+          "file": "apps/operation-stacked-native/app.json",
+          "hash": "6752175089371681031"
+        },
+        {
+          "file": "apps/operation-stacked-native/index.html",
+          "hash": "9796254174020651057"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/.xcode.env",
+          "hash": "12704946661619936455"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/.xcode.env.local",
+          "hash": "16651525398563713347"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative.xcodeproj/project.pbxproj",
+          "hash": "14609048708193680289"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative.xcodeproj/xcshareddata/xcschemes/OperationStackedNative.xcscheme",
+          "hash": "12535873522011455054"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative.xcworkspace/contents.xcworkspacedata",
+          "hash": "5798766967046812724"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative/AppDelegate.h",
+          "hash": "4105548683868581501"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative/AppDelegate.mm",
+          "hash": "17151963175606876337"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative/Images.xcassets/AppIcon.appiconset/Contents.json",
+          "hash": "11595540762170193386"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative/Images.xcassets/Contents.json",
+          "hash": "16272710630576636421"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative/Info.plist",
+          "hash": "14221984542015082413"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative/LaunchScreen.storyboard",
+          "hash": "11378211584044169942"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNative/main.m",
+          "hash": "3932908704591016568"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNativeTests/Info.plist",
+          "hash": "490535150174461673"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/OperationStackedNativeTests/OperationStackedNativeTests.m",
+          "hash": "10471553044012950375"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/Podfile",
+          "hash": "179397988660962317"
+        },
+        {
+          "file": "apps/operation-stacked-native/ios/Podfile.lock",
+          "hash": "5218810520965205360"
+        },
+        {
+          "file": "apps/operation-stacked-native/jest.config.ts",
+          "hash": "17777791129412226282",
+          "deps": [
+            [
+              "npm:react-native",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/metro.config.js",
+          "hash": "7815571197687333190",
+          "deps": [
+            "npm:@nx/react-native",
+            "npm:@react-native/metro-config",
+            "npm:react-native-svg-transformer"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/package.json",
+          "hash": "12098001268209856590",
+          "deps": [
+            "npm:@react-native/metro-config",
+            "npm:@testing-library/jest-native",
+            "npm:@testing-library/react-native",
+            "npm:react",
+            "npm:react-native",
+            "npm:react-native-svg",
+            "npm:metro-config"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/pages/LoginPage/LoginScreen.tsx",
+          "hash": "608003714384305454",
+          "deps": [
+            "npm:react-native",
+            "npm:@react-native-google-signin/google-signin"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/project.json",
+          "hash": "2133854352524147835"
+        },
+        {
+          "file": "apps/operation-stacked-native/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/operation-stacked-native/src/app/App.spec.tsx",
+          "hash": "3379911321437688186",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react-native"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/src/app/App.tsx",
+          "hash": "3198635358478771523",
+          "deps": [
+            "npm:react",
+            "npm:react-native",
+            "npm:react-native-svg",
+            "npm:@react-native-google-signin/google-signin"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/operation-stacked-native/src/main-web.tsx",
+          "hash": "15724100768856802330",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/src/main.tsx",
+          "hash": "13939125493973441862",
+          "deps": [
+            "npm:react-native"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/test-setup.ts",
+          "hash": "9919311210714806624",
+          "deps": [
+            "npm:@testing-library/jest-native"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native/tsconfig.app.json",
+          "hash": "3874957292705852786"
+        },
+        {
+          "file": "apps/operation-stacked-native/tsconfig.json",
+          "hash": "3271334188009701059"
+        },
+        {
+          "file": "apps/operation-stacked-native/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        },
+        {
+          "file": "apps/operation-stacked-native/vite.config.ts",
+          "hash": "14255371126689045061",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite",
+            "npm:esbuild",
+            "npm:fs"
+          ]
+        }
+      ],
+      "operation-stacked-native-e2e": [
+        {
+          "file": "apps/operation-stacked-native-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/cypress.config.ts",
+          "hash": "828370864697436263",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/project.json",
+          "hash": "1676237695803358887"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/e2e/app.cy.ts",
+          "hash": "4101849979881852881"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/tsconfig.json",
+          "hash": "10740392072068377465"
+        }
+      ],
+      "shared-auth": [
+        {
+          "file": "libs/shared-auth/.eslintrc.json",
+          "hash": "10905178498824427073"
+        },
+        {
+          "file": "libs/shared-auth/README.md",
+          "hash": "16518323440389602833"
+        },
+        {
+          "file": "libs/shared-auth/package.json",
+          "hash": "13098373854876461184"
+        },
+        {
+          "file": "libs/shared-auth/project.json",
+          "hash": "4295237278891696919"
+        },
+        {
+          "file": "libs/shared-auth/src/index.ts",
+          "hash": "13469881942385048733"
+        },
+        {
+          "file": "libs/shared-auth/src/lib/shared-auth.spec.ts",
+          "hash": "5522531578429994150"
+        },
+        {
+          "file": "libs/shared-auth/src/lib/shared-auth.ts",
+          "hash": "8898100966770516626",
+          "deps": [
+            "shared-services"
+          ]
+        },
+        {
+          "file": "libs/shared-auth/tsconfig.json",
+          "hash": "5840880287502376438"
+        },
+        {
+          "file": "libs/shared-auth/tsconfig.lib.json",
+          "hash": "15010950034258366291"
+        },
+        {
+          "file": "libs/shared-auth/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "libs/shared-auth/vite.config.ts",
+          "hash": "4351085915816544959",
+          "deps": [
+            "npm:vite",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
         }
       ],
       "shared-styles": [
@@ -1029,11 +1845,11 @@
         },
         {
           "file": "libs/shared-styles/src/lib/commonStyles.ts",
-          "hash": "18038139921870939851"
+          "hash": "3730834758099239919"
         },
         {
           "file": "libs/shared-styles/src/lib/theme.ts",
-          "hash": "9912953313167036858"
+          "hash": "10487919062683937558"
         },
         {
           "file": "libs/shared-styles/tsconfig.json",
@@ -1049,14 +1865,21 @@
         },
         {
           "file": "libs/shared-styles/vite.config.ts",
-          "hash": "13600882974669851612"
+          "hash": "13600882974669851612",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
         }
       ]
     },
     "nonProjectFiles": [
       {
         "file": ".env.tests",
-        "hash": "15906268842329583179"
+        "hash": "762632019752055074"
       },
       {
         "file": ".eslintignore",
@@ -1068,11 +1891,11 @@
       },
       {
         "file": ".github/workflows/main.yml",
-        "hash": "2844096839763297389"
+        "hash": "2146484467892939314"
       },
       {
         "file": ".gitignore",
-        "hash": "11968612441013361296"
+        "hash": "1682142997627553956"
       },
       {
         "file": ".prettierignore",
@@ -1087,828 +1910,100 @@
         "hash": "408782202854081202"
       },
       {
-        "file": "apps/OperationStacked/.dockerignore",
-        "hash": "7940830218517418704"
-      },
-      {
-        "file": "apps/OperationStacked/.env.production",
-        "hash": "809308025598296619"
-      },
-      {
-        "file": "apps/OperationStacked/.gitattributes",
-        "hash": "7654051957085971"
-      },
-      {
-        "file": "apps/OperationStacked/.github/workflows/containers.json",
-        "hash": "14808355864645398713"
-      },
-      {
-        "file": "apps/OperationStacked/.github/workflows/deploy.yaml",
-        "hash": "10104879936197038764"
-      },
-      {
-        "file": "apps/OperationStacked/.gitignore",
-        "hash": "4574041166232787091"
-      },
-      {
-        "file": "apps/OperationStacked/.idea/.idea.OperationStacked/.idea/.gitignore",
-        "hash": "18118508651369860737"
-      },
-      {
-        "file": "apps/OperationStacked/.idea/.idea.OperationStacked/.idea/aws.xml",
-        "hash": "13335036118462585361"
-      },
-      {
-        "file": "apps/OperationStacked/.idea/.idea.OperationStacked/.idea/dataSources.xml",
-        "hash": "3668735312197918762"
-      },
-      {
-        "file": "apps/OperationStacked/.idea/.idea.OperationStacked/.idea/encodings.xml",
-        "hash": "3438396218772277268"
-      },
-      {
-        "file": "apps/OperationStacked/.idea/.idea.OperationStacked/.idea/indexLayout.xml",
-        "hash": "16239154720693508508"
-      },
-      {
-        "file": "apps/OperationStacked/.idea/.idea.OperationStacked/.idea/inspectionProfiles/Project_Default.xml",
-        "hash": "17291092184341056690"
-      },
-      {
-        "file": "apps/OperationStacked/.idea/.idea.OperationStacked/.idea/vcs.xml",
-        "hash": "6419677818559445992"
-      },
-      {
-        "file": "apps/OperationStacked/.idea/config/applicationhost.config",
-        "hash": "17960771952470350500"
-      },
-      {
-        "file": "apps/OperationStacked/Dockerfile",
-        "hash": "15085643257609123064"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Adapters/CreateEquipmentStackRequestAdapter.cs",
-        "hash": "10197147978381071438"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Adapters/CreateLinearProgressionExerciseRequestAdapter.cs",
-        "hash": "7314057254255910702"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Adapters/ExerciseAdapter.cs",
-        "hash": "15694171313816549643"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Adapters/LinearProgressionExerciseAdapter.cs",
-        "hash": "12113202755485925635"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Adapters/WorkoutExerciseAdapter.cs",
-        "hash": "8894951760282920746"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Builders/EquipmentStackBuilder.cs",
-        "hash": "1293563654241315420"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Builders/ExerciseBuilder.cs",
-        "hash": "8141201615340667476"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Builders/LinearProgressionBuilder.cs",
-        "hash": "9344947136872262449"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/Builders/WorkoutExerciseBuilder.cs",
-        "hash": "978923585221913242"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/OpenAPIs/authSwagger.json",
-        "hash": "5492011183433442593"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/OpenAPIs/workoutSwagger.json",
-        "hash": "12549221006141455236"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.TestLib/OperationStacked.TestLib.csproj",
-        "hash": "15533971448711942077"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.lutconfig",
-        "hash": "16635541441604435370"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked.sln",
-        "hash": "338754752321170756"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Abstractions/IExercise.cs",
-        "hash": "9971324050819490520"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/BasicExercises.json",
-        "hash": "7504955906123267308"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Controllers/EquipmentStackController.cs",
-        "hash": "8253177285068302204"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Controllers/ExerciseController.cs",
-        "hash": "18304094250882348163"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Controllers/ExerciseHistoryController.cs",
-        "hash": "2850284329832631005"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Controllers/UserController.cs",
-        "hash": "4165628498564259346"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Controllers/VersionController.cs",
-        "hash": "14326324694775927303"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Controllers/WorkoutController.cs",
-        "hash": "2182252846096995848"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Controllers/WorkoutExerciseController.cs",
-        "hash": "13764358029139328981"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/DTOs/ExerciseGHistoryDTO.cs",
-        "hash": "7474097474960245319"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/DTOs/LinearProgressionExerciseDto.cs",
-        "hash": "15626148998420583233"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Data/OperationStackedContext.cs",
-        "hash": "7289869051564564255"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Dockerfile",
-        "hash": "1520251493185119520"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/A2SHypertrophyExercise.cs",
-        "hash": "3284187939924193408"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/BaseEntity.cs",
-        "hash": "7284488793035698463"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/EquipmentStack.cs",
-        "hash": "6753831663109646378"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/Exercise.cs",
-        "hash": "9875354082180534546"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/ExerciseHistory.cs",
-        "hash": "10284400029382141964"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/ExerciseStack.cs",
-        "hash": "4312374436269011901"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/LinearProgressionExercise.cs",
-        "hash": "13195691868806349010"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/User.cs",
-        "hash": "5062672179925182486"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/Workout.cs",
-        "hash": "10282570199169799155"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Entities/WorkoutExercise.cs",
-        "hash": "17067477818371332618"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Enums/A2SBlocks.cs",
-        "hash": "5580102439867777838"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Enums/Category.cs",
-        "hash": "9484910409709317720"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Enums/EquipmentStackKey.cs",
-        "hash": "8661551997366627918"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Enums/EquiptmentType.cs",
-        "hash": "11930582810580726935"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/AmazonSecretExtensions/AmazonSecretExtensions.cs",
-        "hash": "9717641600277124498"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/AmazonSecretExtensions/AmazonSimpleSystemsManagementExtensions.cs",
-        "hash": "3121626666463581295"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/AuthenticationExtensions/AuthenticationExtensions.cs",
-        "hash": "16812538390193908245"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/CorsExtensions/CorsExtensions.cs",
-        "hash": "16081170255858416227"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/EnumExtensions/EnumExtensions.cs",
-        "hash": "4439638060811778364"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/ExerciseExtensions/ExerciseExtensions.cs",
-        "hash": "10186459751003019223"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/FactoryExtensions/ExerciseFactoryExtensions.cs",
-        "hash": "3988626779608376386"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/ServiceExtensions/ServiceExtensions.cs",
-        "hash": "2630227766436524644"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/TemplateExtensions/A2SHypertrophyExtensions.cs",
-        "hash": "8831787048776076372"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Extensions/TemplateExtensions/LinearProgressionExtensions.cs",
-        "hash": "4152872402860801916"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Factories/ILinearProgressionService.cs",
-        "hash": "16034291038159808544"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Factories/LinearProgressionService.cs",
-        "hash": "5578787540032686910"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Migrations/20240301171134_PostGRES1.Designer.cs",
-        "hash": "5173689548479116763"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Migrations/20240301171134_PostGRES1.cs",
-        "hash": "1513123222988410978"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Migrations/OperationStackedContextModelSnapshot.cs",
-        "hash": "2256106179800747755"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/A2S/A2SBlockTemplateValue.cs",
-        "hash": "3057365633073935474"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/A2S/HyperTrophyBlockAuxillaryLift.cs",
-        "hash": "13505245781565667276"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/A2S/HyperTrophyBlockPrimaryLift.cs",
-        "hash": "11500983190786053897"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/A2S/PeakingBlockAuxillaryLift.cs",
-        "hash": "15698896499691446893"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/A2S/PeakingBlockPrimaryLift.cs",
-        "hash": "8549915502825456067"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/A2S/StrengthBlockAuxillaryLift.cs",
-        "hash": "5602832424358121117"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/A2S/StrengthBlockPrimaryLift.cs",
-        "hash": "15037657985069616546"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/CreateExerciseRequest.cs",
-        "hash": "11688315520359776241"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/ExerciseTemplate.cs",
-        "hash": "587747869623486298"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/WorkoutCreationResponseStatus.cs",
-        "hash": "14491003894332834747"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Models/WorkoutExerciseModel.cs",
-        "hash": "7391660594240443768"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/OperationStacked.csproj",
-        "hash": "1933516786176719785"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Options/AwsOptions.cs",
-        "hash": "17671958853248615434"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Options/ConnectionStringOptions.cs",
-        "hash": "12269150111174156014"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Pagination/PaginatedResult.cs",
-        "hash": "5270062864105469580"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Program.cs",
-        "hash": "634250711019366673"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Properties/launchSettings.json",
-        "hash": "17444681072215379082"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/EquipmentStackRepository/EquipmentStackRepository.cs",
-        "hash": "1879883054200184429"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/EquipmentStackRepository/IEquipmentStackRepository.cs",
-        "hash": "8868808083241414479"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/ExerciseHistoryRepository/ExerciseHistoryRepository.cs",
-        "hash": "5743173945846059448"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/ExerciseHistoryRepository/IExerciseHistoryRepository.cs",
-        "hash": "7997030607259953602"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/ExerciseRepository/ExerciseRepository.cs",
-        "hash": "3175052095272023076"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/ExerciseRepository/IExerciseRepository.cs",
-        "hash": "18103609587236591509"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/RepositoryBase.cs",
-        "hash": "18300166915225903083"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/WorkoutRepository/IWorkoutRepository.cs",
-        "hash": "330404775234008563"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Repositories/WorkoutRepository/WorkoutRepository.cs",
-        "hash": "10527289871268878581"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/CompleteExerciseRequest.cs",
-        "hash": "5318281407228504410"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/CreateEquipmentStackRequest.cs",
-        "hash": "9813669403363936781"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/CreateExerciseRequest.cs",
-        "hash": "17961254151686006254"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/CreateLinearProgressionExerciseRequest.cs",
-        "hash": "14829337632004893222"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/CreateWorkoutExerciseRequest.cs",
-        "hash": "9452294335015905660"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/CreateWorkoutRequest.cs",
-        "hash": "4438023327759223164"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/GetWorkoutRequest.cs",
-        "hash": "8686294475363520361"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/LoginRequest.cs",
-        "hash": "274059760076497394"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/RegistrationRequest.cs",
-        "hash": "17094002413487205255"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/SetUsernameRequest.cs",
-        "hash": "7497142713359244867"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/UpdateExerciseRequest.cs",
-        "hash": "9086472398199417904"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/UpdateUserRequest.cs",
-        "hash": "13669983119148537090"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/UpdateWeekAndDayRequest.cs",
-        "hash": "6530945906357543264"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Requests/UserIdRequest.cs",
-        "hash": "2174336728481490940"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/EquipmentStackResponse.cs",
-        "hash": "15753565142158820787"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/ExerciseCompletedResponse.cs",
-        "hash": "14920071903389656266"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/GetExerciseResult.cs",
-        "hash": "3556899850410129604"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/GetWorkoutResult.cs",
-        "hash": "3026776849737502936"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/LoginRequestResult.cs",
-        "hash": "15231839147690870929"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/RegisterRequestResult.cs",
-        "hash": "7254086664681870846"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/Response.cs",
-        "hash": "2525151037371721582"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/WeekAndDayResponse.cs",
-        "hash": "13684260772117990314"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Response/WorkoutCreationResult.cs",
-        "hash": "3535125147403582391"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/A2S/A2SHypertrophyService.cs",
-        "hash": "6419291817140391997"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/A2S/IA2SHypertrophyService.cs",
-        "hash": "13116743740294279332"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/ExerciseCompletionService/ExerciseHistoryService.cs",
-        "hash": "2479747441519876306"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/ExerciseCompletionService/IExerciseHistoryService.cs",
-        "hash": "12877419766883634375"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/ExerciseCreationService/ExerciseCreationService.cs",
-        "hash": "16758733869417100070"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/ExerciseCreationService/IExerciseCreationService.cs",
-        "hash": "13491406540871011189"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/ExerciseProgressionService/IWorkoutExerciseProgressionService.cs",
-        "hash": "14185591519167527251"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/ExerciseProgressionService/WorkoutExerciseProgressionService.cs",
-        "hash": "5839407985818585293"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/ExerciseRetrievalService/ExerciseRetrievalService.cs",
-        "hash": "16920139172233774241"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/ExerciseRetrievalService/IExerciseRetrievalService.cs",
-        "hash": "18206810738645767374"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/Logger/CloudWatchLogger.cs",
-        "hash": "1369722116058127714"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/UserAccountsService/IUserAccountService.cs",
-        "hash": "566809047353540372"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/UserAccountsService/UserAccountService.cs",
-        "hash": "11047586520321479816"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/WorkoutExerciseService/IWorkoutExerciseService.cs",
-        "hash": "12679792075850617568"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/WorkoutExerciseService/WorkoutExerciseService.cs",
-        "hash": "10456522172501902973"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/WorkoutService/IWorkoutService.cs",
-        "hash": "8544564332016159690"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Services/WorkoutService/WorkoutService.cs",
-        "hash": "17294311453947766897"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/Utilities/DynamoDbUtilities.cs",
-        "hash": "1591404405022324181"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/appsettings.Development.json",
-        "hash": "14635983813299266254"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/appsettings.json",
-        "hash": "11180594813522859373"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/containers.json",
-        "hash": "14808355864645398713"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/json.json",
-        "hash": "13816754514852842466"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStacked/public-endpoints.json",
-        "hash": "6514849248663540098"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/ApiClientFactory.cs",
-        "hash": "13734434939948125914"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/Functional/EquipmentStackTests.cs",
-        "hash": "10121916476487750561"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/Functional/ExerciseCreation.cs",
-        "hash": "3298020412448941503"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/Functional/ExerciseTests.cs",
-        "hash": "7695057892914076123"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/Functional/LinearProgressionProgressTests.cs",
-        "hash": "14547899115397208891"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/Functional/LinearProgressionWorkoutTests.cs",
-        "hash": "9804435959666853362"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/Functional/RealWorkoutDataSeed.cs",
-        "hash": "17986873427911338352"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/OperationStackedTests.csproj",
-        "hash": "10694317966598396181"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/UnitTests/EquipmentStackTests.cs",
-        "hash": "1366320307901974283"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/UnitTests/LinearProgressionBarbellTests.cs",
-        "hash": "9558781492468760104"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/UnitTests/LinearProgressionDumbbellTests.cs",
-        "hash": "9894298124382434717"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/UnitTests/LinearProgressionMachineTests.cs",
-        "hash": "14873140073384809204"
-      },
-      {
-        "file": "apps/OperationStacked/OperationStackedTests/workoutSwagger.json",
-        "hash": "12549221006141455236"
-      },
-      {
-        "file": "apps/OperationStacked/README.md",
-        "hash": "10468564144598956560"
-      },
-      {
-        "file": "apps/OperationStacked/Terraform/Database/rds.tf",
-        "hash": "4407607891356070909"
-      },
-      {
-        "file": "apps/OperationStacked/Terraform/main.tf",
-        "hash": "2324691333515815294"
-      },
-      {
-        "file": "apps/OperationStacked/containers.json",
-        "hash": "14808355864645398713"
-      },
-      {
-        "file": "apps/OperationStacked/env.test",
-        "hash": "3244421341483603138"
-      },
-      {
-        "file": "apps/OperationStacked/environments/environment.dev.ts",
-        "hash": "4685926799879457757"
-      },
-      {
-        "file": "apps/OperationStacked/global.json",
-        "hash": "14876514675254872370"
-      },
-      {
-        "file": "apps/OperationStacked/public-endpoints.json",
-        "hash": "6514849248663540098"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.dockerignore",
-        "hash": "8910046064271638155"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.gitattributes",
-        "hash": "7654051957085971"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.github/workflows/deploy.yml",
-        "hash": "15423767241086828659"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.gitignore",
-        "hash": "4574041166232787091"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.idea/.idea.OperationStackedAuth/.idea/.gitignore",
-        "hash": "3344783266833674886"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.idea/.idea.OperationStackedAuth/.idea/aws.xml",
-        "hash": "7572234469711857755"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.idea/.idea.OperationStackedAuth/.idea/encodings.xml",
-        "hash": "3438396218772277268"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.idea/.idea.OperationStackedAuth/.idea/indexLayout.xml",
-        "hash": "11133979566435219608"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.idea/.idea.OperationStackedAuth/.idea/vcs.xml",
-        "hash": "13076890194361308264"
-      },
-      {
-        "file": "apps/OperationStackedAuth/.idea/config/applicationhost.config",
-        "hash": "17473032199065702519"
-      },
-      {
-        "file": "apps/OperationStackedAuth/Dockerfile",
-        "hash": "15135231826665885617"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth.Tests/ApiClientFactory.cs",
-        "hash": "6332000365258431681"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth.Tests/LoginTest.cs",
-        "hash": "1228580839840417510"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth.Tests/OperationStackedAuth.Tests.csproj",
-        "hash": "2673336410556862284"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth.Tests/Usings.cs",
-        "hash": "17144179774649288678"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth.Tests/swagger.json",
-        "hash": "7805641821028365241"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth.sln",
-        "hash": "1836922117765171472"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Controllers/AuthController.cs",
-        "hash": "11457983997899324891"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Controllers/GoogleController.cs",
-        "hash": "4869992682040038778"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Controllers/UserIdController.cs",
-        "hash": "16319398786894959282"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Data/OperationStackedAuthDbContext.cs",
-        "hash": "9015870751650148380"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Models/User.cs",
-        "hash": "17003498176393817293"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/OperationStackedAuth.csproj",
-        "hash": "9829839137774095502"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Options/AwsOptions.cs",
-        "hash": "1029250433127251221"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Options/CognitoUserPoolOptions.cs",
-        "hash": "1074406311396984506"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Program.cs",
-        "hash": "17626728975374028170"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Properties/launchSettings.json",
-        "hash": "12079578688364177898"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/README.md",
-        "hash": "11705257273161095450"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Requests/ConfirmForgotPasswordRequest.cs",
-        "hash": "13964724378657442650"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Requests/ForgotPasswordRequest.cs",
-        "hash": "8039990557360834009"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Requests/GoogleSignInRequest.cs",
-        "hash": "12622467632225568679"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Requests/LoginRequest.cs",
-        "hash": "13773096634732271722"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Requests/RegisterUserRequest.cs",
-        "hash": "4892108208507362219"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Responses/AuthResponse.cs",
-        "hash": "15817022973202910736"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Services/AuthService.cs",
-        "hash": "3348918298517468586"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/Services/IAuthService.cs",
-        "hash": "13637480341999934628"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/appsettings.Development.json",
-        "hash": "16170409904280151858"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/appsettings.json",
-        "hash": "15427925196725288801"
-      },
-      {
-        "file": "apps/OperationStackedAuth/OperationStackedAuth/containers.json",
-        "hash": "14808355864645398713"
-      },
-      {
-        "file": "apps/OperationStackedAuth/README.md",
-        "hash": "10468564144598956560"
+        "file": "app.json",
+        "hash": "465785141870367217"
       },
       {
         "file": "apps/operation-stacked-iac/cognito.tf",
-        "hash": "10827259297267691174"
+        "hash": "5689213762808639001"
       },
       {
         "file": "apps/operation-stacked-iac/post-auth-lambda.tf",
-        "hash": "8031882140439757315"
+        "hash": "2360504607976569168"
+      },
+      {
+        "file": "index.js",
+        "hash": "16528171701554453975"
+      },
+      {
+        "file": "ios/.gitignore",
+        "hash": "7693209614351072706"
+      },
+      {
+        "file": "ios/.xcode.env",
+        "hash": "2240437479405059044"
+      },
+      {
+        "file": "ios/Podfile",
+        "hash": "12361922530486397673"
+      },
+      {
+        "file": "ios/Podfile.lock",
+        "hash": "7026562329005046517"
+      },
+      {
+        "file": "ios/Podfile.properties.json",
+        "hash": "5211804213638352897"
+      },
+      {
+        "file": "ios/operationstacked.xcodeproj/project.pbxproj",
+        "hash": "15523167332961170430"
+      },
+      {
+        "file": "ios/operationstacked.xcodeproj/xcshareddata/xcschemes/operationstacked.xcscheme",
+        "hash": "6609457683095087566"
+      },
+      {
+        "file": "ios/operationstacked.xcworkspace/contents.xcworkspacedata",
+        "hash": "14658468640181006801"
+      },
+      {
+        "file": "ios/operationstacked/AppDelegate.h",
+        "hash": "792400665824721941"
+      },
+      {
+        "file": "ios/operationstacked/AppDelegate.mm",
+        "hash": "14541024468879151280"
+      },
+      {
+        "file": "ios/operationstacked/Images.xcassets/AppIcon.appiconset/Contents.json",
+        "hash": "17425444470188619154"
+      },
+      {
+        "file": "ios/operationstacked/Images.xcassets/Contents.json",
+        "hash": "3228211763563848421"
+      },
+      {
+        "file": "ios/operationstacked/Images.xcassets/SplashScreenBackground.imageset/Contents.json",
+        "hash": "4247874317787655860"
+      },
+      {
+        "file": "ios/operationstacked/Images.xcassets/SplashScreenBackground.imageset/image.png",
+        "hash": "2436970695013080240"
+      },
+      {
+        "file": "ios/operationstacked/Info.plist",
+        "hash": "6209332583306086619"
+      },
+      {
+        "file": "ios/operationstacked/SplashScreen.storyboard",
+        "hash": "1067189067241653539"
+      },
+      {
+        "file": "ios/operationstacked/Supporting/Expo.plist",
+        "hash": "11354932031473076364"
+      },
+      {
+        "file": "ios/operationstacked/main.m",
+        "hash": "17318292586232496677"
+      },
+      {
+        "file": "ios/operationstacked/noop-file.swift",
+        "hash": "15309833591389969687"
+      },
+      {
+        "file": "ios/operationstacked/operationstacked.entitlements",
+        "hash": "12066357273802162219"
       },
       {
         "file": "jest.config.ts",
@@ -1919,8 +2014,8 @@
         "hash": "9430166341120122740"
       },
       {
-        "file": "key.pem",
-        "hash": "14181582743116477077"
+        "file": "metro.config.js",
+        "hash": "18020544129651031475"
       },
       {
         "file": "mockServiceWorker.js",
@@ -1928,7 +2023,7 @@
       },
       {
         "file": "nx.json",
-        "hash": "17240219796211550540"
+        "hash": "4236755453514560136"
       },
       {
         "file": "openapitools.json",
@@ -1936,15 +2031,15 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "1911748909697393169"
+        "hash": "14573033011396628881"
       },
       {
         "file": "package.json",
-        "hash": "1782026513379789309"
+        "hash": "12107357899640471365"
       },
       {
         "file": "tsconfig.base.json",
-        "hash": "3056114026753020194"
+        "hash": "12180816744022914618"
       }
     ]
   }
