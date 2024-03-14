@@ -1,0 +1,70 @@
+{
+  "name": "operation-stacked-native",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/operation-stacked-native/src",
+  "projectType": "application",
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/operation-stacked-native/jest.config.ts"
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/operation-stacked-native"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "operation-stacked-native:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "operation-stacked-native:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "operation-stacked-native:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "operation-stacked-native:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "operation-stacked-native:build:development"
+        },
+        "production": {
+          "buildTarget": "operation-stacked-native:build:production"
+        }
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "operation-stacked-native:build"
+      }
+    }
+  },
+  "tags": []
+}

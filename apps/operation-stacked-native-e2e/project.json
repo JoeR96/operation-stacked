@@ -1,0 +1,26 @@
+{
+  "name": "operation-stacked-native-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/operation-stacked-native-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/operation-stacked-native-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "operation-stacked-native:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "operation-stacked-native:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "operation-stacked-native:serve-static"
+        }
+      }
+    }
+  },
+  "implicitDependencies": ["operation-stacked-native"],
+  "tags": []
+}
