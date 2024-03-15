@@ -173,98 +173,6 @@
   },
   "fileMap": {
     "projectFileMap": {
-      "ui-components": [
-        {
-          "file": "libs/ui-components/.babelrc",
-          "hash": "12229791027711577977"
-        },
-        {
-          "file": "libs/ui-components/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "libs/ui-components/README.md",
-          "hash": "16790500731608821553"
-        },
-        {
-          "file": "libs/ui-components/jest.config.ts",
-          "hash": "2885786124586625802"
-        },
-        {
-          "file": "libs/ui-components/package.json",
-          "hash": "8606508987451564102"
-        },
-        {
-          "file": "libs/ui-components/project.json",
-          "hash": "13667586652887936537"
-        },
-        {
-          "file": "libs/ui-components/src/index.ts",
-          "hash": "6168324434060194460"
-        },
-        {
-          "file": "libs/ui-components/src/lib/Button/Button.tsx",
-          "hash": "6326928828808408079",
-          "deps": [
-            "npm:react",
-            "npm:@mui/material",
-            "shared-styles"
-          ]
-        },
-        {
-          "file": "libs/ui-components/src/lib/Button/index.ts",
-          "hash": "1956462143047153242"
-        },
-        {
-          "file": "libs/ui-components/src/lib/TextField/TextField.tsx",
-          "hash": "15954198192661495074",
-          "deps": [
-            "npm:react",
-            "npm:@mui/material"
-          ]
-        },
-        {
-          "file": "libs/ui-components/src/lib/TextField/index.ts",
-          "hash": "10020908021807251283"
-        },
-        {
-          "file": "libs/ui-components/src/lib/ui-components.spec.tsx",
-          "hash": "16554039707309445415",
-          "deps": [
-            "npm:@testing-library/react"
-          ]
-        },
-        {
-          "file": "libs/ui-components/src/lib/ui-components.tsx",
-          "hash": "10921626305687638144",
-          "deps": [
-            "npm:@emotion/styled"
-          ]
-        },
-        {
-          "file": "libs/ui-components/tsconfig.json",
-          "hash": "13563888094802511912"
-        },
-        {
-          "file": "libs/ui-components/tsconfig.lib.json",
-          "hash": "11908890256657676622"
-        },
-        {
-          "file": "libs/ui-components/tsconfig.spec.json",
-          "hash": "6514620907549802163"
-        },
-        {
-          "file": "libs/ui-components/vite.config.ts",
-          "hash": "9601000619485963806",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:vite-plugin-dts",
-            "npm:path",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
       "operation-stacked-dashboard-e2e": [
         {
           "file": "apps/operation-stacked-dashboard-e2e/.eslintrc.json",
@@ -346,6 +254,192 @@
         {
           "file": "libs/operation-stacked-shared-types/vite.config.ts",
           "hash": "11847239989883420017",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "shared-auth": [
+        {
+          "file": "libs/shared-auth/.eslintrc.json",
+          "hash": "10905178498824427073"
+        },
+        {
+          "file": "libs/shared-auth/README.md",
+          "hash": "16518323440389602833"
+        },
+        {
+          "file": "libs/shared-auth/package.json",
+          "hash": "13098373854876461184"
+        },
+        {
+          "file": "libs/shared-auth/project.json",
+          "hash": "4295237278891696919"
+        },
+        {
+          "file": "libs/shared-auth/src/index.ts",
+          "hash": "13469881942385048733"
+        },
+        {
+          "file": "libs/shared-auth/src/lib/shared-auth.spec.ts",
+          "hash": "5522531578429994150"
+        },
+        {
+          "file": "libs/shared-auth/src/lib/shared-auth.ts",
+          "hash": "8898100966770516626",
+          "deps": [
+            "shared-services"
+          ]
+        },
+        {
+          "file": "libs/shared-auth/tsconfig.json",
+          "hash": "5840880287502376438"
+        },
+        {
+          "file": "libs/shared-auth/tsconfig.lib.json",
+          "hash": "15010950034258366291"
+        },
+        {
+          "file": "libs/shared-auth/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "libs/shared-auth/vite.config.ts",
+          "hash": "4351085915816544959",
+          "deps": [
+            "npm:vite",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "api-hooks": [
+        {
+          "file": "libs/api-hooks/.babelrc",
+          "hash": "12229791027711577977"
+        },
+        {
+          "file": "libs/api-hooks/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/api-hooks/README.md",
+          "hash": "6441531805309418953"
+        },
+        {
+          "file": "libs/api-hooks/package.json",
+          "hash": "3353930915778299529"
+        },
+        {
+          "file": "libs/api-hooks/project.json",
+          "hash": "11875579873095192737"
+        },
+        {
+          "file": "libs/api-hooks/src/index.ts",
+          "hash": "15222728977300882745"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/apiClient.ts",
+          "hash": "12359804693478855100",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "libs/api-hooks/src/lib/apiStatus.ts",
+          "hash": "13538772125258907930"
+        },
+        {
+          "file": "libs/api-hooks/src/lib/hooks/useApi.ts",
+          "hash": "12874769632793212618",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/api-hooks/src/lib/hooks/useApiStatus.ts",
+          "hash": "12918655321694395752",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.json",
+          "hash": "13092532316302288280"
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/api-hooks/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "libs/api-hooks/vite.config.ts",
+          "hash": "4111538737366750844",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "shared-openapis": [
+        {
+          "file": "libs/shared-openapis/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/shared-openapis/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/shared-openapis/README.md",
+          "hash": "3940964983647289644"
+        },
+        {
+          "file": "libs/shared-openapis/package.json",
+          "hash": "14437022512711024974"
+        },
+        {
+          "file": "libs/shared-openapis/project.json",
+          "hash": "655716736255416248"
+        },
+        {
+          "file": "libs/shared-openapis/src/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/shared-openapis/src/lib/authSwagger.json",
+          "hash": "10012393990371595899"
+        },
+        {
+          "file": "libs/shared-openapis/src/lib/workoutSwagger.json",
+          "hash": "2458695770197263457"
+        },
+        {
+          "file": "libs/shared-openapis/tsconfig.json",
+          "hash": "6996585143515498368"
+        },
+        {
+          "file": "libs/shared-openapis/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/shared-openapis/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "libs/shared-openapis/vite.config.ts",
+          "hash": "17366837681604629351",
           "deps": [
             "npm:vite",
             "npm:@vitejs/plugin-react",
@@ -958,74 +1052,58 @@
           ]
         }
       ],
-      "shared-images": [
+      "shared-styles": [
         {
-          "file": "libs/shared-images/.babelrc",
+          "file": "libs/shared-styles/.babelrc",
           "hash": "12229791027711577977"
         },
         {
-          "file": "libs/shared-images/.eslintrc.json",
+          "file": "libs/shared-styles/.eslintrc.json",
           "hash": "11012487992710232822"
         },
         {
-          "file": "libs/shared-images/README.md",
-          "hash": "6115892705717105756"
+          "file": "libs/shared-styles/README.md",
+          "hash": "16012757069767922004"
         },
         {
-          "file": "libs/shared-images/jest.config.ts",
-          "hash": "15493852686407530328"
+          "file": "libs/shared-styles/jest.config.ts",
+          "hash": "13126886646441187634"
         },
         {
-          "file": "libs/shared-images/package.json",
-          "hash": "16885909868040723143"
+          "file": "libs/shared-styles/package.json",
+          "hash": "2893238333008024830"
         },
         {
-          "file": "libs/shared-images/project.json",
-          "hash": "9311579490146882163"
+          "file": "libs/shared-styles/project.json",
+          "hash": "14918728993027984329"
         },
         {
-          "file": "libs/shared-images/src/index.ts",
-          "hash": "10640291204388741223"
+          "file": "libs/shared-styles/src/index.ts",
+          "hash": "9533210743612887398"
         },
         {
-          "file": "libs/shared-images/src/lib/barbell.png",
-          "hash": "4302717524459791820"
+          "file": "libs/shared-styles/src/lib/commonStyles.ts",
+          "hash": "3730834758099239919"
         },
         {
-          "file": "libs/shared-images/src/lib/cableMachine.png",
-          "hash": "6297260649598768263"
+          "file": "libs/shared-styles/src/lib/theme.ts",
+          "hash": "10487919062683937558"
         },
         {
-          "file": "libs/shared-images/src/lib/dumbell.png",
-          "hash": "17086072520431304507"
-        },
-        {
-          "file": "libs/shared-images/src/lib/machine.png",
-          "hash": "16784031894505324134"
-        },
-        {
-          "file": "libs/shared-images/src/lib/shark.png",
-          "hash": "8242786806882089559"
-        },
-        {
-          "file": "libs/shared-images/src/lib/smithMachine.png",
-          "hash": "13852717329541354491"
-        },
-        {
-          "file": "libs/shared-images/tsconfig.json",
+          "file": "libs/shared-styles/tsconfig.json",
           "hash": "13563888094802511912"
         },
         {
-          "file": "libs/shared-images/tsconfig.lib.json",
+          "file": "libs/shared-styles/tsconfig.lib.json",
           "hash": "11908890256657676622"
         },
         {
-          "file": "libs/shared-images/tsconfig.spec.json",
+          "file": "libs/shared-styles/tsconfig.spec.json",
           "hash": "6514620907549802163"
         },
         {
-          "file": "libs/shared-images/vite.config.ts",
-          "hash": "12138921279350350710",
+          "file": "libs/shared-styles/vite.config.ts",
+          "hash": "13600882974669851612",
           "deps": [
             "npm:vite",
             "npm:@vitejs/plugin-react",
@@ -1033,48 +1111,6 @@
             "npm:path",
             "npm:@nx/vite"
           ]
-        }
-      ],
-      "operation-stacked-native-e2e": [
-        {
-          "file": "apps/operation-stacked-native-e2e/.eslintrc.json",
-          "hash": "14060216369337943343"
-        },
-        {
-          "file": "apps/operation-stacked-native-e2e/cypress.config.ts",
-          "hash": "828370864697436263",
-          "deps": [
-            "npm:@nx/cypress",
-            "npm:cypress"
-          ]
-        },
-        {
-          "file": "apps/operation-stacked-native-e2e/project.json",
-          "hash": "1676237695803358887"
-        },
-        {
-          "file": "apps/operation-stacked-native-e2e/src/e2e/app.cy.ts",
-          "hash": "4101849979881852881"
-        },
-        {
-          "file": "apps/operation-stacked-native-e2e/src/fixtures/example.json",
-          "hash": "11785586596216172004"
-        },
-        {
-          "file": "apps/operation-stacked-native-e2e/src/support/app.po.ts",
-          "hash": "11157016311132186162"
-        },
-        {
-          "file": "apps/operation-stacked-native-e2e/src/support/commands.ts",
-          "hash": "5397443931564808659"
-        },
-        {
-          "file": "apps/operation-stacked-native-e2e/src/support/e2e.ts",
-          "hash": "1054106023200826784"
-        },
-        {
-          "file": "apps/operation-stacked-native-e2e/tsconfig.json",
-          "hash": "10740392072068377465"
         }
       ],
       "operation-stacked-native": [
@@ -1394,71 +1430,184 @@
           ]
         }
       ],
-      "api-hooks": [
+      "operation-stacked-native-e2e": [
         {
-          "file": "libs/api-hooks/.babelrc",
-          "hash": "12229791027711577977"
+          "file": "apps/operation-stacked-native-e2e/.eslintrc.json",
+          "hash": "14060216369337943343"
         },
         {
-          "file": "libs/api-hooks/.eslintrc.json",
+          "file": "apps/operation-stacked-native-e2e/cypress.config.ts",
+          "hash": "828370864697436263",
+          "deps": [
+            "npm:@nx/cypress",
+            "npm:cypress"
+          ]
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/project.json",
+          "hash": "1676237695803358887"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/e2e/app.cy.ts",
+          "hash": "4101849979881852881"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/support/app.po.ts",
+          "hash": "11157016311132186162"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/support/commands.ts",
+          "hash": "5397443931564808659"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/src/support/e2e.ts",
+          "hash": "1054106023200826784"
+        },
+        {
+          "file": "apps/operation-stacked-native-e2e/tsconfig.json",
+          "hash": "10740392072068377465"
+        }
+      ],
+      "operation-stacked-test-lib": [
+        {
+          "file": "libs/operation-stacked-test-lib/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/operation-stacked-test-lib/.eslintrc.json",
           "hash": "11012487992710232822"
         },
         {
-          "file": "libs/api-hooks/README.md",
-          "hash": "6441531805309418953"
+          "file": "libs/operation-stacked-test-lib/README.md",
+          "hash": "16995883632467036531"
         },
         {
-          "file": "libs/api-hooks/package.json",
-          "hash": "3353930915778299529"
+          "file": "libs/operation-stacked-test-lib/package.json",
+          "hash": "2425816237509952345"
         },
         {
-          "file": "libs/api-hooks/project.json",
-          "hash": "11875579873095192737"
+          "file": "libs/operation-stacked-test-lib/project.json",
+          "hash": "16702492525844524765"
         },
         {
-          "file": "libs/api-hooks/src/index.ts",
-          "hash": "15222728977300882745"
+          "file": "libs/operation-stacked-test-lib/src/index.ts",
+          "hash": "3081539614290554935"
         },
         {
-          "file": "libs/api-hooks/src/lib/apiClient.ts",
-          "hash": "12359804693478855100",
-          "deps": [
-            "npm:axios"
-          ]
+          "file": "libs/operation-stacked-test-lib/src/lib/node.ts",
+          "hash": "5965296435972581187"
         },
         {
-          "file": "libs/api-hooks/src/lib/apiStatus.ts",
-          "hash": "13538772125258907930"
+          "file": "libs/operation-stacked-test-lib/tsconfig.json",
+          "hash": "6996585143515498368"
         },
         {
-          "file": "libs/api-hooks/src/lib/hooks/useApi.ts",
-          "hash": "12874769632793212618",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/api-hooks/src/lib/hooks/useApiStatus.ts",
-          "hash": "12918655321694395752",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/api-hooks/tsconfig.json",
-          "hash": "13092532316302288280"
-        },
-        {
-          "file": "libs/api-hooks/tsconfig.lib.json",
+          "file": "libs/operation-stacked-test-lib/tsconfig.lib.json",
           "hash": "11908890256657676622"
         },
         {
-          "file": "libs/api-hooks/tsconfig.spec.json",
+          "file": "libs/operation-stacked-test-lib/tsconfig.spec.json",
           "hash": "15943385144407153049"
         },
         {
-          "file": "libs/api-hooks/vite.config.ts",
-          "hash": "4111538737366750844",
+          "file": "libs/operation-stacked-test-lib/vite.config.ts",
+          "hash": "9108678531236795902",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:vite-plugin-dts",
+            "npm:path",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "ui-components": [
+        {
+          "file": "libs/ui-components/.babelrc",
+          "hash": "12229791027711577977"
+        },
+        {
+          "file": "libs/ui-components/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/ui-components/README.md",
+          "hash": "16790500731608821553"
+        },
+        {
+          "file": "libs/ui-components/jest.config.ts",
+          "hash": "2885786124586625802"
+        },
+        {
+          "file": "libs/ui-components/package.json",
+          "hash": "8606508987451564102"
+        },
+        {
+          "file": "libs/ui-components/project.json",
+          "hash": "13667586652887936537"
+        },
+        {
+          "file": "libs/ui-components/src/index.ts",
+          "hash": "6168324434060194460"
+        },
+        {
+          "file": "libs/ui-components/src/lib/Button/Button.tsx",
+          "hash": "6326928828808408079",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material",
+            "shared-styles"
+          ]
+        },
+        {
+          "file": "libs/ui-components/src/lib/Button/index.ts",
+          "hash": "1956462143047153242"
+        },
+        {
+          "file": "libs/ui-components/src/lib/TextField/TextField.tsx",
+          "hash": "15954198192661495074",
+          "deps": [
+            "npm:react",
+            "npm:@mui/material"
+          ]
+        },
+        {
+          "file": "libs/ui-components/src/lib/TextField/index.ts",
+          "hash": "10020908021807251283"
+        },
+        {
+          "file": "libs/ui-components/src/lib/ui-components.spec.tsx",
+          "hash": "16554039707309445415",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "libs/ui-components/src/lib/ui-components.tsx",
+          "hash": "10921626305687638144",
+          "deps": [
+            "npm:@emotion/styled"
+          ]
+        },
+        {
+          "file": "libs/ui-components/tsconfig.json",
+          "hash": "13563888094802511912"
+        },
+        {
+          "file": "libs/ui-components/tsconfig.lib.json",
+          "hash": "11908890256657676622"
+        },
+        {
+          "file": "libs/ui-components/tsconfig.spec.json",
+          "hash": "6514620907549802163"
+        },
+        {
+          "file": "libs/ui-components/vite.config.ts",
+          "hash": "9601000619485963806",
           "deps": [
             "npm:vite",
             "npm:@vitejs/plugin-react",
@@ -1653,226 +1802,77 @@
           ]
         }
       ],
-      "shared-styles": [
+      "shared-images": [
         {
-          "file": "libs/shared-styles/.babelrc",
+          "file": "libs/shared-images/.babelrc",
           "hash": "12229791027711577977"
         },
         {
-          "file": "libs/shared-styles/.eslintrc.json",
+          "file": "libs/shared-images/.eslintrc.json",
           "hash": "11012487992710232822"
         },
         {
-          "file": "libs/shared-styles/README.md",
-          "hash": "16012757069767922004"
+          "file": "libs/shared-images/README.md",
+          "hash": "6115892705717105756"
         },
         {
-          "file": "libs/shared-styles/jest.config.ts",
-          "hash": "13126886646441187634"
+          "file": "libs/shared-images/jest.config.ts",
+          "hash": "15493852686407530328"
         },
         {
-          "file": "libs/shared-styles/package.json",
-          "hash": "2893238333008024830"
+          "file": "libs/shared-images/package.json",
+          "hash": "16885909868040723143"
         },
         {
-          "file": "libs/shared-styles/project.json",
-          "hash": "14918728993027984329"
+          "file": "libs/shared-images/project.json",
+          "hash": "9311579490146882163"
         },
         {
-          "file": "libs/shared-styles/src/index.ts",
-          "hash": "9533210743612887398"
+          "file": "libs/shared-images/src/index.ts",
+          "hash": "10640291204388741223"
         },
         {
-          "file": "libs/shared-styles/src/lib/commonStyles.ts",
-          "hash": "3730834758099239919"
+          "file": "libs/shared-images/src/lib/barbell.png",
+          "hash": "4302717524459791820"
         },
         {
-          "file": "libs/shared-styles/src/lib/theme.ts",
-          "hash": "10487919062683937558"
+          "file": "libs/shared-images/src/lib/cableMachine.png",
+          "hash": "6297260649598768263"
         },
         {
-          "file": "libs/shared-styles/tsconfig.json",
+          "file": "libs/shared-images/src/lib/dumbell.png",
+          "hash": "17086072520431304507"
+        },
+        {
+          "file": "libs/shared-images/src/lib/machine.png",
+          "hash": "16784031894505324134"
+        },
+        {
+          "file": "libs/shared-images/src/lib/shark.png",
+          "hash": "8242786806882089559"
+        },
+        {
+          "file": "libs/shared-images/src/lib/smithMachine.png",
+          "hash": "13852717329541354491"
+        },
+        {
+          "file": "libs/shared-images/tsconfig.json",
           "hash": "13563888094802511912"
         },
         {
-          "file": "libs/shared-styles/tsconfig.lib.json",
+          "file": "libs/shared-images/tsconfig.lib.json",
           "hash": "11908890256657676622"
         },
         {
-          "file": "libs/shared-styles/tsconfig.spec.json",
+          "file": "libs/shared-images/tsconfig.spec.json",
           "hash": "6514620907549802163"
         },
         {
-          "file": "libs/shared-styles/vite.config.ts",
-          "hash": "13600882974669851612",
+          "file": "libs/shared-images/vite.config.ts",
+          "hash": "12138921279350350710",
           "deps": [
             "npm:vite",
             "npm:@vitejs/plugin-react",
-            "npm:vite-plugin-dts",
-            "npm:path",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "operation-stacked-test-lib": [
-        {
-          "file": "libs/operation-stacked-test-lib/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/README.md",
-          "hash": "16995883632467036531"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/package.json",
-          "hash": "2425816237509952345"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/project.json",
-          "hash": "16702492525844524765"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/src/index.ts",
-          "hash": "3081539614290554935"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/src/lib/node.ts",
-          "hash": "5965296435972581187"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/tsconfig.json",
-          "hash": "6996585143515498368"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/tsconfig.lib.json",
-          "hash": "11908890256657676622"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "libs/operation-stacked-test-lib/vite.config.ts",
-          "hash": "9108678531236795902",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:vite-plugin-dts",
-            "npm:path",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "shared-openapis": [
-        {
-          "file": "libs/shared-openapis/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/shared-openapis/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "libs/shared-openapis/README.md",
-          "hash": "3940964983647289644"
-        },
-        {
-          "file": "libs/shared-openapis/package.json",
-          "hash": "14437022512711024974"
-        },
-        {
-          "file": "libs/shared-openapis/project.json",
-          "hash": "655716736255416248"
-        },
-        {
-          "file": "libs/shared-openapis/src/index.ts",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "libs/shared-openapis/src/lib/authSwagger.json",
-          "hash": "10012393990371595899"
-        },
-        {
-          "file": "libs/shared-openapis/src/lib/workoutSwagger.json",
-          "hash": "2458695770197263457"
-        },
-        {
-          "file": "libs/shared-openapis/tsconfig.json",
-          "hash": "6996585143515498368"
-        },
-        {
-          "file": "libs/shared-openapis/tsconfig.lib.json",
-          "hash": "11908890256657676622"
-        },
-        {
-          "file": "libs/shared-openapis/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "libs/shared-openapis/vite.config.ts",
-          "hash": "17366837681604629351",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:vite-plugin-dts",
-            "npm:path",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "shared-auth": [
-        {
-          "file": "libs/shared-auth/.eslintrc.json",
-          "hash": "10905178498824427073"
-        },
-        {
-          "file": "libs/shared-auth/README.md",
-          "hash": "16518323440389602833"
-        },
-        {
-          "file": "libs/shared-auth/package.json",
-          "hash": "13098373854876461184"
-        },
-        {
-          "file": "libs/shared-auth/project.json",
-          "hash": "4295237278891696919"
-        },
-        {
-          "file": "libs/shared-auth/src/index.ts",
-          "hash": "13469881942385048733"
-        },
-        {
-          "file": "libs/shared-auth/src/lib/shared-auth.spec.ts",
-          "hash": "5522531578429994150"
-        },
-        {
-          "file": "libs/shared-auth/src/lib/shared-auth.ts",
-          "hash": "8898100966770516626",
-          "deps": [
-            "shared-services"
-          ]
-        },
-        {
-          "file": "libs/shared-auth/tsconfig.json",
-          "hash": "5840880287502376438"
-        },
-        {
-          "file": "libs/shared-auth/tsconfig.lib.json",
-          "hash": "15010950034258366291"
-        },
-        {
-          "file": "libs/shared-auth/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "libs/shared-auth/vite.config.ts",
-          "hash": "4351085915816544959",
-          "deps": [
-            "npm:vite",
             "npm:vite-plugin-dts",
             "npm:path",
             "npm:@nx/vite"

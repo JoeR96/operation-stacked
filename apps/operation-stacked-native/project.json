@@ -9,6 +9,11 @@
          "options": {
                "platform": "ios"
             }
+         }, "run-android": {
+         "executor": "@nx/expo:run",
+         "options": {
+               "platform": "android"
+            }
          },
     "test": {
       "executor": "@nx/jest:jest",
