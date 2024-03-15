@@ -4,6 +4,12 @@
   "sourceRoot": "apps/operation-stacked-native/src",
   "projectType": "application",
   "targets": {
+    "run-ios": {
+         "executor": "@nx/expo:run",
+         "options": {
+               "platform": "ios"
+            }
+         },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],

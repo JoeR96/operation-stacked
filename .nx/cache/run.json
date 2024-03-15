@@ -1,21 +1,21 @@
 {
   "run": {
-    "command": "nx serve operation-stacked-dashboard",
-    "startTime": "2024-03-08T14:15:13.615Z",
-    "endTime": "2024-03-09T03:56:22.588Z",
+    "command": "nx run operation-stacked-native:run-ios",
+    "startTime": "2024-03-15T22:30:21.494Z",
+    "endTime": "2024-03-15T22:34:37.630Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "operation-stacked-dashboard:serve:development",
-      "target": "serve",
-      "projectName": "operation-stacked-dashboard",
-      "hash": "3810715121595677728",
-      "startTime": "2024-03-08T14:15:13.620Z",
-      "endTime": "2024-03-09T03:56:22.584Z",
+      "taskId": "operation-stacked-native:run-ios",
+      "target": "run-ios",
+      "projectName": "operation-stacked-native",
+      "hash": "468050350927602320",
+      "startTime": "2024-03-15T22:30:21.510Z",
+      "endTime": "2024-03-15T22:34:37.606Z",
       "params": "",
       "cacheStatus": "cache-miss",
-      "status": 1
+      "status": 0
     }
   ]
 }
