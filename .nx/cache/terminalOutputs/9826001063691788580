@@ -1,0 +1,2 @@
+[31m[1merror[22m[39m [0mCannot start server in new window because no terminal app was specified.[0m
+Warning: run-commands command "react-native run-ios" exited with non-zero status code
