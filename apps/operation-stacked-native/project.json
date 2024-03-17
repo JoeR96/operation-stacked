@@ -5,11 +5,38 @@
   "projectType": "application",
   "targets": {
     "run-ios": {
-         "executor": "@nx/expo:run",
-         "options": {
-               "platform": "ios"
-            }
-         }, "run-android": {
+      "executor": "@nx/expo:run",
+      "options": {
+        "platform": "ios",
+        "devClient": true
+      }
+    }
+,
+    "run-ios-dev-client": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "npx expo start --dev-client --ios"
+          }
+        ],
+        "cwd": "apps/operation-stacked-native",
+        "parallel": false
+      }
+    } , "run-android-dev-client": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          {
+            "command": "expo start --dev-client --android"
+          }
+        ],
+        "cwd": "apps/operation-stacked-native",
+        "parallel": false
+      }
+    }
+  ,
+    "run-android": {
          "executor": "@nx/expo:run",
          "options": {
                "platform": "android"

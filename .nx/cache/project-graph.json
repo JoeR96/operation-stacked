@@ -441,16 +441,16 @@
           "run-ios": {
             "executor": "@nx/expo:run",
             "options": {
-              "platform": "ios"
+              "platform": "ios",
+              "devClient": true
             },
             "configurations": {}
           },
           "run-android": {
+            "executor": "@nx/expo:run",
             "options": {
-              "cwd": "apps/operation-stacked-native",
-              "command": "react-native run-android"
+              "platform": "android"
             },
-            "executor": "nx:run-commands",
             "configurations": {}
           },
           "build-ios": {
@@ -596,6 +596,32 @@
                 "mode": "production"
               }
             }
+          },
+          "run-ios-dev-client": {
+            "executor": "nx:run-commands",
+            "options": {
+              "commands": [
+                {
+                  "command": "npx expo start --dev-client --ios"
+                }
+              ],
+              "cwd": "apps/operation-stacked-native",
+              "parallel": false
+            },
+            "configurations": {}
+          },
+          "run-android-dev-client": {
+            "executor": "nx:run-commands",
+            "options": {
+              "commands": [
+                {
+                  "command": "expo start --dev-client --android"
+                }
+              ],
+              "cwd": "apps/operation-stacked-native",
+              "parallel": false
+            },
+            "configurations": {}
           },
           "serve": {
             "executor": "@nx/vite:dev-server",
@@ -4079,6 +4105,15 @@
         "version": "8.12.0",
         "packageName": "ajv",
         "hash": "sha512-sRu1kpcO9yLtYxBKvqfTeh9KzZEwO3STyX1HT+4CaDzC6HpTGYhIhPIzj9XuKU7KYDwnaeh5hcOwjy1QuJzBPA=="
+      }
+    },
+    "npm:ajv@8.11.0": {
+      "type": "npm",
+      "name": "npm:ajv@8.11.0",
+      "data": {
+        "version": "8.11.0",
+        "packageName": "ajv",
+        "hash": "sha512-wGgprdCvMalC0BztXvitD2hC04YffAvtsUn93JbGXYLAtCUO4xd17mCCZQxUOItiBwZvJScWo8NIvQMQ71rdpg=="
       }
     },
     "npm:brace-expansion@1.1.11": {
@@ -16015,6 +16050,42 @@
         "hash": "sha512-1pVVjwk733hbbIjtQcvUFCme540v4gFemdNlaxM2UXKbfRCOh2hzgKN5joHMOysoXQe736TTUrRj7UaZI5Yyhg=="
       }
     },
+    "npm:expo-dev-client": {
+      "type": "npm",
+      "name": "npm:expo-dev-client",
+      "data": {
+        "version": "3.3.10",
+        "packageName": "expo-dev-client",
+        "hash": "sha512-UhZOJ+O90dRo7S/rmFmVIWwa/HxOqoQ4ySCqvWh87O3pFQuluPfVI9PdKicF4djYrNHZZmE8UXqBDN41hiYtAA=="
+      }
+    },
+    "npm:expo-dev-launcher": {
+      "type": "npm",
+      "name": "npm:expo-dev-launcher",
+      "data": {
+        "version": "3.6.8",
+        "packageName": "expo-dev-launcher",
+        "hash": "sha512-lFyxRXpUk0z7V7BDd1tFg/M9eFPzo+WRq7kQBA4F8bFPX6drYuTjPqs/bEF/6A5S38oA1wcA34bY9TNgkiKf5w=="
+      }
+    },
+    "npm:expo-dev-menu": {
+      "type": "npm",
+      "name": "npm:expo-dev-menu",
+      "data": {
+        "version": "4.5.7",
+        "packageName": "expo-dev-menu",
+        "hash": "sha512-yIAsiKIhxvAmzd6x25HTvANeengGg2Uax6JnKy7+YfxgynKtqmWUlGCyc9EECoQI4+ItxbfjU4fSTxTiQYGFug=="
+      }
+    },
+    "npm:expo-dev-menu-interface": {
+      "type": "npm",
+      "name": "npm:expo-dev-menu-interface",
+      "data": {
+        "version": "1.7.2",
+        "packageName": "expo-dev-menu-interface",
+        "hash": "sha512-V/geSB9rW0IPTR+d7E5CcvkV0uVUCE7SMHZqE/J0/dH06Wo8AahB16fimXeh5/hTL2Qztq8CQ41xpFUBoA9TEw=="
+      }
+    },
     "npm:expo-file-system": {
       "type": "npm",
       "name": "npm:expo-file-system",
@@ -16033,6 +16104,15 @@
         "hash": "sha512-q1Td2zUvmLbCA9GV4OG4nLPw5gJuNY1VrPycsnemN1m8XWTzzs8nyECQQqrcBhgulCgcKZZJJ6U0kC2iuSoQHQ=="
       }
     },
+    "npm:expo-json-utils": {
+      "type": "npm",
+      "name": "npm:expo-json-utils",
+      "data": {
+        "version": "0.12.3",
+        "packageName": "expo-json-utils",
+        "hash": "sha512-4pypQdinpNc6XY9wsZk56njvzDh+B/9mISr7FPP3CVk1QGB1nSLh883/BCDSgnsephATZkC5HG+cdE60kCAR6A=="
+      }
+    },
     "npm:expo-keep-awake": {
       "type": "npm",
       "name": "npm:expo-keep-awake",
@@ -16040,6 +16120,15 @@
         "version": "12.8.2",
         "packageName": "expo-keep-awake",
         "hash": "sha512-uiQdGbSX24Pt8nGbnmBtrKq6xL/Tm3+DuDRGBk/3ZE/HlizzNosGRIufIMJ/4B4FRw4dw8KU81h2RLuTjbay6g=="
+      }
+    },
+    "npm:expo-manifests": {
+      "type": "npm",
+      "name": "npm:expo-manifests",
+      "data": {
+        "version": "0.13.2",
+        "packageName": "expo-manifests",
+        "hash": "sha512-l0Sia1WmLULx8V41K8RzGLsFoTe4qqthPRGpHjItsYn8ZB6lRrdTBM9OYp2McIflgqN1HAimUCQMFIwJyH+UmA=="
       }
     },
     "npm:expo-modules-autolinking": {
@@ -16067,6 +16156,15 @@
         "version": "1.11.1",
         "packageName": "expo-status-bar",
         "hash": "sha512-ddQEtCOgYHTLlFUe/yH67dDBIoct5VIULthyT3LRJbEwdpzAgueKsX2FYK02ldh440V87PWKCamh7R9evk1rrg=="
+      }
+    },
+    "npm:expo-updates-interface": {
+      "type": "npm",
+      "name": "npm:expo-updates-interface",
+      "data": {
+        "version": "0.15.3",
+        "packageName": "expo-updates-interface",
+        "hash": "sha512-uLvsbaCmUsXgJqeen8rYH/jPr874ZUCXEvWpKHxrCv5/XATPlYEaDuecbNSGQ+cu78i6MdtB4BHOwZmoH2d47A=="
       }
     },
     "npm:express": {
@@ -24318,6 +24416,11 @@
       {
         "source": "operation-stacked-native",
         "target": "npm:@react-native-google-signin/google-signin",
+        "type": "static"
+      },
+      {
+        "source": "operation-stacked-native",
+        "target": "shared-services",
         "type": "static"
       },
       {
@@ -49390,6 +49493,116 @@
         "type": "static"
       }
     ],
+    "npm:expo-dev-client": [
+      {
+        "source": "npm:expo-dev-client",
+        "target": "npm:expo",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-client",
+        "target": "npm:expo-dev-launcher",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-client",
+        "target": "npm:expo-dev-menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-client",
+        "target": "npm:expo-dev-menu-interface",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-client",
+        "target": "npm:expo-manifests",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-client",
+        "target": "npm:expo-updates-interface",
+        "type": "static"
+      }
+    ],
+    "npm:expo-dev-launcher": [
+      {
+        "source": "npm:expo-dev-launcher",
+        "target": "npm:expo",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-launcher",
+        "target": "npm:ajv@8.11.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-launcher",
+        "target": "npm:expo-dev-menu",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-launcher",
+        "target": "npm:expo-manifests",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-launcher",
+        "target": "npm:resolve-from",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-launcher",
+        "target": "npm:semver@7.6.0",
+        "type": "static"
+      }
+    ],
+    "npm:ajv@8.11.0": [
+      {
+        "source": "npm:ajv@8.11.0",
+        "target": "npm:fast-deep-equal",
+        "type": "static"
+      },
+      {
+        "source": "npm:ajv@8.11.0",
+        "target": "npm:json-schema-traverse",
+        "type": "static"
+      },
+      {
+        "source": "npm:ajv@8.11.0",
+        "target": "npm:require-from-string",
+        "type": "static"
+      },
+      {
+        "source": "npm:ajv@8.11.0",
+        "target": "npm:uri-js",
+        "type": "static"
+      }
+    ],
+    "npm:expo-dev-menu": [
+      {
+        "source": "npm:expo-dev-menu",
+        "target": "npm:expo",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-menu",
+        "target": "npm:expo-dev-menu-interface",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-dev-menu",
+        "target": "npm:semver@7.6.0",
+        "type": "static"
+      }
+    ],
+    "npm:expo-dev-menu-interface": [
+      {
+        "source": "npm:expo-dev-menu-interface",
+        "target": "npm:expo",
+        "type": "static"
+      }
+    ],
     "npm:expo-file-system": [
       {
         "source": "npm:expo-file-system",
@@ -49413,6 +49626,23 @@
       {
         "source": "npm:expo-keep-awake",
         "target": "npm:expo",
+        "type": "static"
+      }
+    ],
+    "npm:expo-manifests": [
+      {
+        "source": "npm:expo-manifests",
+        "target": "npm:expo",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-manifests",
+        "target": "npm:@expo/config",
+        "type": "static"
+      },
+      {
+        "source": "npm:expo-manifests",
+        "target": "npm:expo-json-utils",
         "type": "static"
       }
     ],
@@ -49452,6 +49682,13 @@
       {
         "source": "npm:expo-modules-core",
         "target": "npm:invariant",
+        "type": "static"
+      }
+    ],
+    "npm:expo-updates-interface": [
+      {
+        "source": "npm:expo-updates-interface",
+        "target": "npm:expo",
         "type": "static"
       }
     ],

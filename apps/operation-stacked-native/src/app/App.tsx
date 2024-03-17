@@ -17,10 +17,7 @@ export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
 // In your App.js or an appropriate place
-
-  GoogleSignin.configure({
-    webClientId: '876582448990-0ac35vm82d195s99isjnevbtljirsmuf.apps.googleusercontent.com',
-  });
+;
 
   return (
     <>
