@@ -1,5 +1,6 @@
 import {View, Button, Text, StyleSheet} from 'react-native';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import { GoogleAuthApi, UserIdApi } from '@operation-stacked/shared-services';
 
 const googleAuthApi = new GoogleAuthApi();
 const userIdApi = new UserIdApi();

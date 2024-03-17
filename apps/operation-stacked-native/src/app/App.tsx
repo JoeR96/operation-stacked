@@ -11,13 +11,10 @@ import {
   Linking,
 } from 'react-native';
 import Svg, { G, Path } from 'react-native-svg';
-import {GoogleSignin} from '@react-native-google-signin/google-signin';
 
 export const App = () => {
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
-// In your App.js or an appropriate place
-;
 
   return (
     <>

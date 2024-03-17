@@ -1,5 +1,1145 @@
 {
+  "17797928478444964203": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "4387040461989674255": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "602716828222726260": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "14757971462252776635": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "917401493216511131": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "15758058540424373290": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
   "15997750007564406361": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "539949238305498970": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "16567543381878017061": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "12098089340425029104": {
+    "start": {
+      "command": "react-native start",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "pod-install": {
+      "command": "pod install",
+      "options": {
+        "cwd": "apps/operation-stacked-native/ios"
+      },
+      "dependsOn": [
+        "sync-deps"
+      ],
+      "cache": true,
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Pods",
+        "{workspaceRoot}/apps/operation-stacked-native/ios/Podfile.lock"
+      ]
+    },
+    "run-ios": {
+      "command": "react-native run-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "run-android": {
+      "command": "react-native run-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    },
+    "build-ios": {
+      "command": "react-native build-ios",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-ios"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/ios/build/Build/Products"
+      ]
+    },
+    "build-android": {
+      "command": "react-native build-android",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "cache": true,
+      "dependsOn": [
+        "^build-android"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/operation-stacked-native/android/app/build/outputs"
+      ]
+    },
+    "bundle": {
+      "command": "react-native bundle",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      },
+      "dependsOn": [
+        "^bundle"
+      ],
+      "inputs": [
+        "default",
+        "^default",
+        {
+          "externalDependencies": [
+            "react-native"
+          ]
+        }
+      ]
+    },
+    "sync-deps": {
+      "executor": "@nx/react-native:sync-deps"
+    },
+    "upgrade": {
+      "command": "react-native upgrade",
+      "options": {
+        "cwd": "apps/operation-stacked-native"
+      }
+    }
+  },
+  "7430168670565515938": {
     "start": {
       "command": "react-native start",
       "options": {
