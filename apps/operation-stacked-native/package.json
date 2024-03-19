@@ -3,12 +3,37 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@react-native/metro-config": "*",
     "@testing-library/jest-native": "*",
     "@testing-library/react-native": "*",
-    "react": "*",
+    "metro-config": "*",
     "react-native": "*",
+    "expo": "*",
     "react-native-svg": "*",
-    "metro-config": "*"
-  }
+    "react-native-web": "*",
+    "jest-expo": "*",
+    "@expo/metro-config": "*",
+    "react-native-svg-transformer": "*",
+    "react": "*",
+    "tsconfig-paths-webpack-plugin": "*",
+    "@nx/webpack": "*",
+    "expo-auth-session": "*",
+    "expo-random": "*",
+    "base-64": "*",
+    "axios": "*",
+    "@testing-library/react": "*",
+    "@emotion/styled": "*",
+    "vite": "*",
+    "@vitejs/plugin-react": "*",
+    "vite-plugin-dts": "*",
+    "@nx/vite": "*",
+    "expo-crypto": "*",
+    "zustand": "*"
+  },
+  "scripts": {
+    "eas-build-pre-install": "cd ../../ && node tools/scripts/eas-build-pre-install.mjs . apps/operation-stacked-native && cp package-lock.json apps/operation-stacked-native",
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/operation-stacked-native",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "devDependencies": {}
 }

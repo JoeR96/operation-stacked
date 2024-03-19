@@ -18,18 +18,11 @@
     },
     "@nx/vite:test": {
       "cache": true,
-      "inputs": [
-        "default",
-        "^default"
-      ]
+      "inputs": ["default", "^default"]
     },
     "@nx/jest:jest": {
       "cache": true,
-      "inputs": [
-        "default",
-        "^default",
-        "{workspaceRoot}/jest.preset.js"
-      ],
+      "inputs": ["default", "^default", "{workspaceRoot}/jest.preset.js"],
       "options": {
         "passWithNoTests": true
       },
@@ -45,13 +38,8 @@
     },
     "@nx/vite:build": {
       "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "default",
-        "^default"
-      ]
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
     },
     "@nx/eslint:lint": {
       "cache": true,
@@ -61,6 +49,11 @@
         "{workspaceRoot}/.eslintignore",
         "{workspaceRoot}/eslint.config.js"
       ]
+    },
+    "@nx/expo:build": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["default", "^default"]
     }
   },
   "nxCloudAccessToken": "ZGYzNGFhOTQtOGM0Ni00NGVhLWFjZjMtZjQyNmFmZGE4YjdkfHJlYWQtd3JpdGU=",
@@ -85,9 +78,7 @@
   "tasksRunnerOptions": {
     "default": {
       "options": {
-        "cacheableOperations": [
-          "build-storybook"
-        ]
+        "cacheableOperations": ["build-storybook"]
       }
     }
   },

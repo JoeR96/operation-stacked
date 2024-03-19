@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Operation Stacked Workout",
-    "version": "0.315"
+    "version": "0.317"
   },
   "paths": {
     "/equipment-stack/create": {
@@ -921,6 +921,95 @@
         }
       }
     },
+    "/api/session/all-sessions/{userId}": {
+      "get": {
+        "tags": [
+          "Session"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Session"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Session"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Session"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/session/active-session/{userId}": {
+      "get": {
+        "tags": [
+          "Session"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActiveSessionResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActiveSessionResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ActiveSessionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/user/updateWeekAndDay": {
       "post": {
         "tags": [
@@ -1625,6 +1714,18 @@
   },
   "components": {
     "schemas": {
+      "ActiveSessionResponse": {
+        "type": "object",
+        "properties": {
+          "hasActiveSessio": {
+            "type": "boolean"
+          },
+          "session": {
+            "$ref": "#/components/schemas/Session"
+          }
+        },
+        "additionalProperties": false
+      },
       "AddExerciseToSessionRequest": {
         "type": "object",
         "properties": {
@@ -2333,7 +2434,7 @@
           },
           "UserId": {
             "type": "string",
-            "nullable": true
+            "format": "uuid"
           },
           "SessionStartDateTime": {
             "type": "string",
@@ -2349,6 +2450,9 @@
               "$ref": "#/components/schemas/SessionExercise"
             },
             "nullable": true
+          },
+          "IsActive": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

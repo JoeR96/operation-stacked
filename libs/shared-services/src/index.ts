@@ -1,3 +1,2 @@
-export * from './lib/auth-api'
-// @ts-ignore
+// Explicitly re-export non-conflicting members
 export * from './lib/workout-api';

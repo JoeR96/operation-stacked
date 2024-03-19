@@ -4,44 +4,71 @@
   "sourceRoot": "apps/operation-stacked-native/src",
   "projectType": "application",
   "targets": {
+    "start": {
+      "executor": "@nx/expo:start",
+      "dependsOn": ["sync-deps"],
+      "options": {}
+    },
+    "serve": {
+      "executor": "@nx/expo:serve",
+      "dependsOn": ["sync-deps"],
+      "options": {
+        "port": 4200
+      }
+    },
     "run-ios": {
       "executor": "@nx/expo:run",
+      "dependsOn": ["sync-deps"],
       "options": {
-        "platform": "ios",
-        "devClient": true
+        "platform": "ios"
       }
-    }
-,
-    "run-ios-dev-client": {
-      "executor": "nx:run-commands",
-      "options": {
-        "commands": [
-          {
-            "command": "npx expo start --dev-client --ios"
-          }
-        ],
-        "cwd": "apps/operation-stacked-native",
-        "parallel": false
-      }
-    } , "run-android-dev-client": {
-      "executor": "nx:run-commands",
-      "options": {
-        "commands": [
-          {
-            "command": "expo start --dev-client --android"
-          }
-        ],
-        "cwd": "apps/operation-stacked-native",
-        "parallel": false
-      }
-    }
-  ,
+    },
     "run-android": {
-         "executor": "@nx/expo:run",
-         "options": {
-               "platform": "android"
-            }
-         },
+      "executor": "@nx/expo:run",
+      "dependsOn": ["sync-deps"],
+      "options": {
+        "platform": "android"
+      }
+    },
+    "build": {
+      "executor": "@nx/expo:build",
+      "dependsOn": ["sync-deps"],
+      "options": {}
+    },
+    "submit": {
+      "executor": "@nx/expo:submit",
+      "options": {}
+    },
+    "build-list": {
+      "executor": "@nx/expo:build-list",
+      "options": {}
+    },
+    "sync-deps": {
+      "executor": "@nx/expo:sync-deps",
+      "options": {}
+    },
+    "prebuild": {
+      "executor": "@nx/expo:prebuild",
+      "dependsOn": ["sync-deps"],
+      "options": {}
+    },
+    "install": {
+      "executor": "@nx/expo:install",
+      "options": {}
+    },
+    "update": {
+      "executor": "@nx/expo:update",
+      "options": {}
+    },
+    "export": {
+      "executor": "@nx/expo:export",
+      "dependsOn": ["sync-deps"],
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "platform": "all",
+        "outputDir": "dist/apps/operation-stacked-native"
+      }
+    },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
@@ -49,58 +76,11 @@
         "jestConfig": "apps/operation-stacked-native/jest.config.ts"
       }
     },
-    "build": {
-      "executor": "@nx/vite:build",
-      "outputs": ["{options.outputPath}"],
-      "defaultConfiguration": "production",
-      "options": {
-        "outputPath": "dist/apps/operation-stacked-native"
-      },
-      "configurations": {
-        "development": {
-          "mode": "development"
-        },
-        "production": {
-          "mode": "production"
-        }
-      }
-    },
-    "serve": {
-      "executor": "@nx/vite:dev-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "operation-stacked-native:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "operation-stacked-native:build:development",
-          "hmr": true
-        },
-        "production": {
-          "buildTarget": "operation-stacked-native:build:production",
-          "hmr": false
-        }
-      }
-    },
-    "preview": {
-      "executor": "@nx/vite:preview-server",
-      "defaultConfiguration": "development",
-      "options": {
-        "buildTarget": "operation-stacked-native:build"
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "operation-stacked-native:build:development"
-        },
-        "production": {
-          "buildTarget": "operation-stacked-native:build:production"
-        }
-      }
-    },
     "serve-static": {
       "executor": "@nx/web:file-server",
       "options": {
-        "buildTarget": "operation-stacked-native:build"
+        "buildTarget": "operation-stacked-native:export",
+        "staticFilePath": "dist/apps/operation-stacked-native"
       }
     }
   },

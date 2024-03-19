@@ -1,18 +1,29 @@
 {
   "run": {
-    "command": "nx run operation-stacked-native:run-ios-dev-client",
-    "startTime": "2024-03-17T02:41:50.421Z",
-    "endTime": "2024-03-17T02:42:39.094Z",
+    "command": "nx run operation-stacked-native:run-ios",
+    "startTime": "2024-03-18T21:30:04.985Z",
+    "endTime": "2024-03-18T21:34:05.058Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "operation-stacked-native:run-ios-dev-client",
-      "target": "run-ios-dev-client",
+      "taskId": "operation-stacked-native:sync-deps",
+      "target": "sync-deps",
       "projectName": "operation-stacked-native",
-      "hash": "5896189995284195327",
-      "startTime": "2024-03-17T02:41:50.428Z",
-      "endTime": "2024-03-17T02:42:39.092Z",
+      "hash": "16044435154671896508",
+      "startTime": "2024-03-18T21:30:04.991Z",
+      "endTime": "2024-03-18T21:30:05.172Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "operation-stacked-native:run-ios",
+      "target": "run-ios",
+      "projectName": "operation-stacked-native",
+      "hash": "3983414545527649446",
+      "startTime": "2024-03-18T21:30:05.173Z",
+      "endTime": "2024-03-18T21:34:05.036Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
