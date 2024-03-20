@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "title": "Operation Stacked Workout",
-    "version": "0.317"
+    "version": "0.319"
   },
   "paths": {
     "/equipment-stack/create": {
@@ -870,6 +870,37 @@
             "application/*+json": {
               "schema": {
                 "$ref": "#/components/schemas/DeleteSetRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/session/delete-exercise": {
+      "delete": {
+        "tags": [
+          "Session"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSessionExerciseRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSessionExerciseRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeleteSessionExerciseRequest"
               }
             }
           }
@@ -2003,6 +2034,16 @@
         },
         "additionalProperties": false
       },
+      "DeleteSessionExerciseRequest": {
+        "type": "object",
+        "properties": {
+          "Id": {
+            "type": "string",
+            "format": "uuid"
+          }
+        },
+        "additionalProperties": false
+      },
       "DeleteSetRequest": {
         "type": "object",
         "properties": {
@@ -2460,13 +2501,8 @@
       "SessionCreatedResponse": {
         "type": "object",
         "properties": {
-          "sessionName": {
-            "type": "string",
-            "nullable": true
-          },
-          "SessionCreatedTime": {
-            "type": "string",
-            "format": "date-time"
+          "session": {
+            "$ref": "#/components/schemas/Session"
           }
         },
         "additionalProperties": false
